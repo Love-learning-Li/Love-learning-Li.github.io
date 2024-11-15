@@ -1,31 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>利用传输门做二选一选择器的CMOS电路分析</title>
-    <url>/2024/11/16/2024.9.10/</url>
-    <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，&#96;只需关注<strong>导电沟道是否产生</strong>即可。</p>
-<p>如图1所示为传输门的CMOS电路示意图</p>
-<ul>
-<li>当$C&#x3D;1$时，下面对MOS管的导通情况进行分析:</li>
+    <title>ADC参数总结</title>
+    <url>/2024/11/16/2024.9.19/</url>
+    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
+<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ&#x2F;step$</li>
 </ul>
-<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; V_{DD} \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; V_{GBN} -V_{SBN} &#x3D; V_{DD} - V_{i}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;0\<br>    \therefore &amp;V_{GP} &#x3D; 0V \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &#x3D; V_{GBP} - V_{SBP} &#x3D; V_{DD} - (V_{i} - V_{DD}) &#x3D; - V_{i}<br>\end{align*}$$</p>
-<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证$V_{GSN} &#x3D; V_{DD} - V_{i} \geq v_{TH} $，即NMOS产生导电沟道；</p>
-<p>当$V_{i} &gt;  V_{TH} $ ，可保证$V_{GSP} &#x3D; - V_{i} \leq -v_{TH} $，即PMOS产生导电沟道；</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都可保证至少有一个MOS管存在导电沟道，使得$V_{o}&#x3D;V_{i}$。</p>
-<ul>
-<li>当$C&#x3D;0$时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; 0V \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; 0  &lt; V_{TH}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;1\<br>    \therefore &amp;V_{GP} &#x3D; V_{DD} \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &gt; - V_{TH}<br>\end{align*}$$</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
-<h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
+<p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+<p>- </p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>课堂汇报(论文解读)的PPT注意事项</title>
+    <url>/2024/11/16/2024.9.20/</url>
+    <content><![CDATA[<h1 id="课堂汇报-论文解读-的PPT注意事项"><a href="#课堂汇报-论文解读-的PPT注意事项" class="headerlink" title="课堂汇报(论文解读)的PPT注意事项"></a>课堂汇报(论文解读)的PPT注意事项</h1><p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
+<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
+<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
+<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
+<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
+<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
+<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>IC工艺</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简并or退化？本征or掺杂？</title>
+    <url>/2024/11/16/2024.9.25/</url>
+    <content><![CDATA[<h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
+<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
+</blockquote>
+<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
+<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
+</blockquote>
+<p>其中费米狄拉克分布函数为:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}</script><p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}</script><p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    \big\vert E - E_{F} \big\vert > 3k_{0} T
+\end{align*}</script><p>因此<strong>对于非简并半导体</strong>，我们要求：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    E_{v} + 3k_{0}T < E_{F} < E_{c} - 3k_{0}T
+\end{align*}</script><p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    n_{0} &= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) 
+\end{align*}</script><p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
+<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>半导体掺杂后可能带来简并或非简并。</li>
+<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
+<li>非简并的半导体可能是考虑了杂质补偿。</li>
+<li>非简并的半导体既有掺杂的也有本征的。</li>
+</ul>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ADC参数总结</title>
+    <url>/2024/11/16/2024.9.19(%E6%9C%AA%E5%AE%8C%E6%88%90)/</url>
+    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
+<li><p>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ/step$</p>
+</li>
+<li><p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>SAR ADC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>氢原子模型和类氢原子模型</title>
+    <url>/2024/11/16/2024.9.17/</url>
+    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
+<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
+<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+</blockquote>
+<ul>
+<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态$E<em>{1}$、$E</em>{2}$、$E_{3}$……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
+<li>跃迁假设：电子从$E<em>{m}$能级跃迁到$E</em>{n}$能级所需的能量满足$h\nu=E<em>{n}-E</em>{m}$。</li>
+<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足$2\pi r\cdot m_{e} v = n h$，即电子只能在轨道角动量等于约化普朗克常数$\hbar$的整数倍的轨道上运动。</li>
+</ul>
+<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：</p>
+<script type="math/tex; mode=display">\begin{align*}
+   &m v r = n \frac{h}{2\pi} \\
+   &m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}
+\end{align*}</script><p>联立得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
+\end{align*}</script><p>考虑电子的总能量为动能与势能之和：</p>
+<script type="math/tex; mode=display">\begin{align*}
+   E_{n} &= E_{k,n} + E_{p,n} \\
+   &= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\\
+   &= -\frac{1}{2}mv^{2}
+\end{align*}</script><p>化简得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}</script><h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
+<p>考虑如下两条修正:</p>
+</blockquote>
+<ul>
+<li>考虑晶体内的杂质原子，即正负电荷处在介电常数$\epsilon=\epsilon<em>{0}\epsilon</em>{r}$的介质中。</li>
+<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量$m_{0}$用有效质量$m^{\ast}$替代。</li>
+</ul>
+<p>即得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} &= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \\
+   E_{n} &= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}</script><p>当$n=1$时为基态，此时</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{0} &= 0.053nm \\
+   E_{0} &= 13.6eV
+\end{align*}</script><p>则进一步化简得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} &= \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \\
+   \triangle E_{n} &= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
+\end{align*}</script><p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
   </entry>
   <entry>
     <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
@@ -56,113 +173,55 @@
 </li>
 </ul>
 ]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
   </entry>
   <entry>
-    <title>氢原子模型和类氢原子模型</title>
-    <url>/2024/11/16/2024.9.17/</url>
-    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
-<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
-<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
-</blockquote>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <url>/2024/11/16/2024.9.10/</url>
+    <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，`只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<p>如图1所示为传输门的CMOS电路示意图</p>
 <ul>
-<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态$E_{1}$、$E_{2}$、$E_{3}$……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
-<li>跃迁假设：电子从$E_{m}$能级跃迁到$E_{n}$能级所需的能量满足$h\nu&#x3D;E_{n}-E_{m}$。</li>
-<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足$2\pi r\cdot m_{e} v &#x3D; n h$，即电子只能在轨道角动量等于约化普朗克常数$\hbar$的整数倍的轨道上运动。</li>
+<li>当$C=1$时，下面对MOS管的导通情况进行分析:<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+  \because &C=1\\
+  \therefore &V_{GN} = V_{DD} \\
+  \because &V_{BN} = 0V\\
+\end{align*}</script></li>
 </ul>
-<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：<br>$$\begin{align*}<br>   &amp;m v r &#x3D; n \frac{h}{2\pi} \<br>   &amp;m\frac{v^{2}}{r} &#x3D; \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}<br>\end{align*}$$</p>
-<p>联立得:<br>$$\begin{align*}<br>   r_{n} &#x3D; \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}<br>\end{align*}$$</p>
-<p>考虑电子的总能量为动能与势能之和：<br>$$\begin{align*}<br>   E_{n} &amp;&#x3D; E_{k,n} + E_{p,n} \<br>   &amp;&#x3D; \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\<br>   &amp;&#x3D; -\frac{1}{2}mv^{2}<br>\end{align*}$$</p>
-<p>化简得:<br>$$\begin{align*}<br>   E_{n} &#x3D; -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
-<h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
-<p>考虑如下两条修正:</p>
-</blockquote>
+<script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i} 
+\end{align*}</script><h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &\overline{C}=0\\
+    \therefore &V_{GP} = 0V \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} - V_{DD}) = - V_{i}
+\end{align*}</script><p>当$V<em>{i} &lt; V</em>{DD} - V<em>{TH} $ ，可保证$V</em>{GSN} = V<em>{DD} - V</em>{i} \geq v_{TH} $，即NMOS产生导电沟道；</p>
+<p>当$V<em>{i} &gt;  V</em>{TH} $ ，可保证$V<em>{GSP} = - V</em>{i} \leq -v_{TH} $，即PMOS产生导电沟道；</p>
+<p>故$V<em>{i}$无论取任何值(但都必须保证小于$V</em>{DD}$)都可保证至少有一个MOS管存在导电沟道，使得$V<em>{o}=V</em>{i}$。</p>
 <ul>
-<li>考虑晶体内的杂质原子，即正负电荷处在介电常数$\epsilon&#x3D;\epsilon_{0}\epsilon_{r}$的介质中。</li>
-<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量$m_{0}$用有效质量$m^{\ast}$替代。</li>
+<li>当$C=0$时，下面对MOS管的导通情况进行分析:<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+  \because &C=1\\
+  \therefore &V_{GN} = 0V \\
+  \because &V_{BN} = 0V\\
+\end{align*}</script></li>
 </ul>
-<p>即得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \<br>   E_{n} &amp;&#x3D; -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
-<p>当$n&#x3D;1$时为基态，此时<br>$$\begin{align*}<br>   r_{0} &amp;&#x3D; 0.053nm \<br>   E_{0} &amp;&#x3D; 13.6eV<br>\end{align*}$$</p>
-<p>则进一步化简得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \<br>   \triangle E_{n} &amp;&#x3D; \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}<br>\end{align*}$$</p>
-<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSN} = 0  < V_{TH} 
+\end{align*}</script><h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &\overline{C}=1\\
+    \therefore &V_{GP} = V_{DD} \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSP} > - V_{TH}
+\end{align*}</script><p>故$V<em>{i}$无论取任何值(但都必须保证小于$V</em>{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
+<h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>ADC参数总结</title>
-    <url>/2024/11/16/2024.9.19(%E6%9C%AA%E5%AE%8C%E6%88%90)/</url>
-    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
-<li><p>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ&#x2F;step$</p>
-</li>
-<li><p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>ADC参数总结</title>
-    <url>/2024/11/16/2024.9.19/</url>
-    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
-<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ&#x2F;step$</li>
-</ul>
-<p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-<p>- </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>课堂汇报(论文解读)的PPT注意事项</title>
-    <url>/2024/11/16/2024.9.20/</url>
-    <content><![CDATA[<h1 id="课堂汇报-论文解读-的PPT注意事项"><a href="#课堂汇报-论文解读-的PPT注意事项" class="headerlink" title="课堂汇报(论文解读)的PPT注意事项"></a>课堂汇报(论文解读)的PPT注意事项</h1><p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
-<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
-<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
-<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
-<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
-<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
-<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
-<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
-<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>简并or退化？本征or掺杂？</title>
-    <url>/2024/11/16/2024.9.25/</url>
-    <content><![CDATA[<h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
-<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
-</blockquote>
-<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
-<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
-</blockquote>
-<p>其中费米狄拉克分布函数为:<br>$$<br>\begin{align*}<br>    f(E) &#x3D; \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}<br>\end{align*}<br>$$</p>
-<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：<br>$$<br>\begin{align*}<br>    f(E) &#x3D; \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})<br>\end{align*}<br>$$</p>
-<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：<br>$$<br>\begin{align*}<br>    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T<br>\end{align*}<br>$$</p>
-<p>因此<strong>对于非简并半导体</strong>，我们要求：<br>$$<br>\begin{align*}<br>    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T<br>\end{align*}<br>$$</p>
-<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：<br>$$<br>\begin{align*}<br>    n_{0} &amp;&#x3D; N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \<br>    p_{0} &amp;&#x3D; N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \<br>    n_{0}p_{0} &amp;&#x3D; N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})<br>\end{align*}<br>$$</p>
-<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
-<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
-</blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>半导体掺杂后可能带来简并或非简并。</li>
-<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
-<li>非简并的半导体可能是考虑了杂质补偿。</li>
-<li>非简并的半导体既有掺杂的也有本征的。</li>
-</ul>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2024/11/16/2024.9.5/</url>
-    <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
-</blockquote>
-<h2 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h2><ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<br>$$\begin{aligned}<br>  I &#x3D; g_{mb} V_{BS}<br>\end{aligned}$$</li>
-</ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
-]]></content>
+      <tags>
+        <tag>模集(拉扎维)</tag>
+      </tags>
   </entry>
   <entry>
     <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
@@ -171,26 +230,82 @@
 <h2 id="符号说明"><a href="#符号说明" class="headerlink" title="符号说明"></a>符号说明</h2><p>$\hbar$为约化普朗克常数</p>
 <p>$f$为载流子所受所有外力的合力</p>
 <p>$P$为载流子动量</p>
-<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：<br>$$\begin{align*}<br>    f &amp;&#x3D; \frac{dP}{dt} \<br>    P&amp;&#x3D; \hbar k<br>\end{align*}$$</p>
-<p>载流子速度$v$可表示为:<br>$$\begin{align*}<br>    v &amp;&#x3D; \frac{1}{\hbar} \frac{dE}{dk}<br>\end{align*}$$</p>
-<p>则加速度$a$可表示为:<br>$$\begin{align*}<br>    a &amp;&#x3D; \frac{dv}{dt} \notag\<br>    &amp;&#x3D;\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\<br>    &amp;&#x3D;\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt} \notag<br>\end{align*}$$</p>
-<p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:<br>$$\begin{align*}<br>    a &amp;&#x3D;  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot \frac{d\hbar k}{dt} \notag\<br>    &amp;&#x3D; \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f<br>\end{align*}$$</p>
-<p>因此将$a$除到右侧，将$f$的系数除到左侧得:<br>$$\begin{align*}<br>    \frac{f}{a} &#x3D; \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}<br>\end{align*}$$</p>
-<p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:<br>$$\begin{align*}<br>    m^{\ast} &amp;&#x3D; \frac{f}{a} &#x3D; \frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}<br>\end{align*}$$</p>
-<p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:<br>$$\begin{align*}<br>    E(k) - E(0) &#x3D; \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}<br>\end{align*}$$</p>
-<p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
+<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：</p>
+<script type="math/tex; mode=display">\begin{align*}
+    f &= \frac{dP}{dt} \\
+    P&= \hbar k 
+\end{align*}</script><p>载流子速度$v$可表示为:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    v &= \frac{1}{\hbar} \frac{dE}{dk} 
+\end{align*}</script><p>则加速度$a$可表示为:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    a &= \frac{dv}{dt} \notag\\
+    &=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
+    &=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt} \notag 
+\end{align*}</script><p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    a &=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot \frac{d\hbar k}{dt} \notag\\
+    &= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f 
+\end{align*}</script><p>因此将$a$除到右侧，将$f$的系数除到左侧得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}} 
+\end{align*}</script><p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    m^{\ast} &= \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}} 
+\end{align*}</script><p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    E(k) - E(0) = \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}
+\end{align*}</script><p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
 <hr>
 <h2 id="vec-a-times-vec-b-times-vec-c-的化简求解"><a href="#vec-a-times-vec-b-times-vec-c-的化简求解" class="headerlink" title="$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解"></a>$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</h2><p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
 <p>首先$\vec{b}\times\vec{c}$得到的向量方向为$\vec{b}$、$\vec{c}$所构成的平面的法向量方向。</p>
-<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:<br>$$\begin{align*}<br>   \vec{s} &#x3D; \vec{a}\times(\vec{b}\times\vec{c}) &#x3D; m\vec{b} + n \vec{c}<br>\end{align*}$$</p>
-<p>同时利用向量的叉乘关系:<br>$$\begin{align*}<br>    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}<br>\end{align*}$$</p>
-<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:<br>$$\begin{align*}<br>    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;&#x3D; 0 \<br>    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &amp;&#x3D;0<br>\end{align*}$$</p>
-<p><code>很自然地</code>对$m$，$n$取如下式所示的值:<br>$$\begin{aligned}<br>    m&amp;&#x3D; -\vec{c} \cdot \vec{a}  &amp; \<br>    n&amp;&#x3D;  \vec{b} \cdot \vec{a} &amp;<br>\end{aligned}$$</p>
-<p>所以:<br>$$\begin{align*}<br>    \vec{s} &#x3D; k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]<br>\end{align*}$$</p>
-<p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
-<p>若取<br>$$\begin{aligned}<br>    \vec{a}&amp;&#x3D; \left[1,0,0\right]  &amp; \<br>    \vec{b}&amp;&#x3D; \left[0,1,0\right]  &amp; \<br>    \vec{c}&amp;&#x3D; \left[1,0,0\right]  &amp;<br>\end{aligned}$$</p>
-<p>代入解得$k&#x3D;-1$，所以得:<br>$$\begin{align*}<br>    \vec{s} &#x3D;   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}<br>\end{align*}$$</p>
+<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   \vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}
+\end{align*}</script><p>同时利用向量的叉乘关系:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a} 
+\end{align*}</script><p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &= 0 \\
+    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &=0
+\end{align*}</script><p><code>很自然地</code>对$m$，$n$取如下式所示的值:</p>
+<script type="math/tex; mode=display">\begin{aligned}
+    m&= -\vec{c} \cdot \vec{a}  & \\
+    n&=  \vec{b} \cdot \vec{a} &
+\end{aligned}</script><p>所以:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]
+\end{align*}</script><p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
+<p>若取</p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \vec{a}&= \left[1,0,0\right]  & \\
+    \vec{b}&= \left[0,1,0\right]  & \\
+    \vec{c}&= \left[1,0,0\right]  & 
+\end{aligned}</script><p>代入解得$k=-1$，所以得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}
+\end{align*}</script>]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2024/11/16/2024.9.5/</url>
+    <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+</blockquote>
+<h2 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h2><ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<script type="math/tex; mode=display">\begin{aligned}
+  I = g_{mb} V_{BS}
+\end{aligned}</script></li>
+</ul>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
 ]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="模集(拉扎维)," />
 
 
 
@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！利用传输门做二选一选择器的CMOS电路分析灵感来源于今天的数字逻辑课程，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。 注：分析传输门的CMOS电路时，不需要关注MOS管是否工作在饱和区，&#96;只需关注导电沟道是否产生即可。 如图1所示为传输">
+<meta name="description" content="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！利用传输门做二选一选择器的CMOS电路分析灵感来源于今天的数字逻辑课程，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。 注：分析传输门的CMOS电路时，不需要关注MOS管是否工作在饱和区，&#96;只需关注导电沟道是否产生即可。 如图1所示为传输门的CM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用传输门做二选一选择器的CMOS电路分析">
 <meta property="og:url" content="https://love-learning-li.github.io/2024/11/16/2024.9.10/index.html">
 <meta property="og:site_name" content="MeiShao会认真沉淀">
-<meta property="og:description" content="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！利用传输门做二选一选择器的CMOS电路分析灵感来源于今天的数字逻辑课程，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。 注：分析传输门的CMOS电路时，不需要关注MOS管是否工作在饱和区，&#96;只需关注导电沟道是否产生即可。 如图1所示为传输">
+<meta property="og:description" content="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！利用传输门做二选一选择器的CMOS电路分析灵感来源于今天的数字逻辑课程，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。 注：分析传输门的CMOS电路时，不需要关注MOS管是否工作在饱和区，&#96;只需关注导电沟道是否产生即可。 如图1所示为传输门的CM">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-15T16:18:29.363Z">
-<meta property="article:modified_time" content="2024-11-15T16:45:32.477Z">
-<meta property="article:tag" content="Analog integrated circuit">
+<meta property="article:modified_time" content="2024-11-15T17:01:53.330Z">
+<meta property="article:tag" content="模集(拉扎维)">
 <meta name="twitter:card" content="summary">
 
 
@@ -327,7 +327,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  549
+                  507
                 </span>
               
 
@@ -365,26 +365,42 @@
 
       
         <h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，&#96;只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，`只需关注<strong>导电沟道是否产生</strong>即可。</p>
 <p>如图1所示为传输门的CMOS电路示意图</p>
 <ul>
-<li>当$C&#x3D;1$时，下面对MOS管的导通情况进行分析:</li>
+<li>当$C=1$时，下面对MOS管的导通情况进行分析:<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+  \because &C=1\\
+  \therefore &V_{GN} = V_{DD} \\
+  \because &V_{BN} = 0V\\
+\end{align*}</script></li>
 </ul>
-<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; V_{DD} \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; V_{GBN} -V_{SBN} &#x3D; V_{DD} - V_{i}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;0\<br>    \therefore &amp;V_{GP} &#x3D; 0V \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &#x3D; V_{GBP} - V_{SBP} &#x3D; V_{DD} - (V_{i} - V_{DD}) &#x3D; - V_{i}<br>\end{align*}$$</p>
-<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证$V_{GSN} &#x3D; V_{DD} - V_{i} \geq v_{TH} $，即NMOS产生导电沟道；</p>
-<p>当$V_{i} &gt;  V_{TH} $ ，可保证$V_{GSP} &#x3D; - V_{i} \leq -v_{TH} $，即PMOS产生导电沟道；</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都可保证至少有一个MOS管存在导电沟道，使得$V_{o}&#x3D;V_{i}$。</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i} 
+\end{align*}</script><h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &\overline{C}=0\\
+    \therefore &V_{GP} = 0V \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} - V_{DD}) = - V_{i}
+\end{align*}</script><p>当$V<em>{i} &lt; V</em>{DD} - V<em>{TH} $ ，可保证$V</em>{GSN} = V<em>{DD} - V</em>{i} \geq v_{TH} $，即NMOS产生导电沟道；</p>
+<p>当$V<em>{i} &gt;  V</em>{TH} $ ，可保证$V<em>{GSP} = - V</em>{i} \leq -v_{TH} $，即PMOS产生导电沟道；</p>
+<p>故$V<em>{i}$无论取任何值(但都必须保证小于$V</em>{DD}$)都可保证至少有一个MOS管存在导电沟道，使得$V<em>{o}=V</em>{i}$。</p>
 <ul>
-<li>当$C&#x3D;0$时，下面对MOS管的导通情况进行分析:</li>
+<li>当$C=0$时，下面对MOS管的导通情况进行分析:<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+  \because &C=1\\
+  \therefore &V_{GN} = 0V \\
+  \because &V_{BN} = 0V\\
+\end{align*}</script></li>
 </ul>
-<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; 0V \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; 0  &lt; V_{TH}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;1\<br>    \therefore &amp;V_{GP} &#x3D; V_{DD} \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &gt; - V_{TH}<br>\end{align*}$$</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSN} = 0  < V_{TH} 
+\end{align*}</script><h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &\overline{C}=1\\
+    \therefore &V_{GP} = V_{DD} \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSP} > - V_{TH}
+\end{align*}</script><p>故$V<em>{i}$无论取任何值(但都必须保证小于$V</em>{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
 <h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
 
       
@@ -400,6 +416,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%A8%A1%E9%9B%86-%E6%8B%89%E6%89%8E%E7%BB%B4/" rel="tag"># 模集(拉扎维)</a>
+          
+        </div>
       
 
       
@@ -508,6 +530,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
 
           </nav>
 
@@ -606,7 +637,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.7k</span>
+    <span title="Site words total count">3.5k</span>
   
 </div>
 
@@ -1118,6 +1149,28 @@ setInterval("createtime()",250);
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

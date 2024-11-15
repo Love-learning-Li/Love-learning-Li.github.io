@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="半导体物理," />
 
 
 
@@ -87,8 +87,8 @@
 <meta property="og:description" content="简并or退化？本征or掺杂？ 问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并) 故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故$\mathscr{MeiS">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-15T16:18:29.382Z">
-<meta property="article:modified_time" content="2024-11-15T16:45:45.477Z">
-<meta property="article:tag" content="Analog integrated circuit">
+<meta property="article:modified_time" content="2024-11-15T17:01:22.104Z">
+<meta property="article:tag" content="半导体物理">
 <meta name="twitter:card" content="summary">
 
 
@@ -327,7 +327,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  709
+                  698
                 </span>
               
 
@@ -370,12 +370,29 @@
 <h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
 <p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
 </blockquote>
-<p>其中费米狄拉克分布函数为:<br>$$<br>\begin{align*}<br>    f(E) &#x3D; \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}<br>\end{align*}<br>$$</p>
-<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：<br>$$<br>\begin{align*}<br>    f(E) &#x3D; \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})<br>\end{align*}<br>$$</p>
-<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：<br>$$<br>\begin{align*}<br>    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T<br>\end{align*}<br>$$</p>
-<p>因此<strong>对于非简并半导体</strong>，我们要求：<br>$$<br>\begin{align*}<br>    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T<br>\end{align*}<br>$$</p>
-<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：<br>$$<br>\begin{align*}<br>    n_{0} &amp;&#x3D; N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \<br>    p_{0} &amp;&#x3D; N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \<br>    n_{0}p_{0} &amp;&#x3D; N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})<br>\end{align*}<br>$$</p>
-<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<p>其中费米狄拉克分布函数为:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}</script><p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}</script><p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    \big\vert E - E_{F} \big\vert > 3k_{0} T
+\end{align*}</script><p>因此<strong>对于非简并半导体</strong>，我们要求：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    E_{v} + 3k_{0}T < E_{F} < E_{c} - 3k_{0}T
+\end{align*}</script><p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    n_{0} &= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) 
+\end{align*}</script><p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
 <h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
 <p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
 </blockquote>
@@ -403,6 +420,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/" rel="tag"># 半导体物理</a>
+          
+        </div>
       
 
       
@@ -511,6 +534,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
 
           </nav>
 
@@ -609,7 +641,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.7k</span>
+    <span title="Site words total count">3.5k</span>
   
 </div>
 
@@ -1121,6 +1153,28 @@ setInterval("createtime()",250);
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
