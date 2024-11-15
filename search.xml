@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <url>/2024/11/16/2024.9.10/</url>
+    <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，&#96;只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<p>如图1所示为传输门的CMOS电路示意图</p>
+<ul>
+<li>当$C&#x3D;1$时，下面对MOS管的导通情况进行分析:</li>
+</ul>
+<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; V_{DD} \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
+<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; V_{GBN} -V_{SBN} &#x3D; V_{DD} - V_{i}<br>\end{align*}$$</p>
+<h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;0\<br>    \therefore &amp;V_{GP} &#x3D; 0V \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
+<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &#x3D; V_{GBP} - V_{SBP} &#x3D; V_{DD} - (V_{i} - V_{DD}) &#x3D; - V_{i}<br>\end{align*}$$</p>
+<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证$V_{GSN} &#x3D; V_{DD} - V_{i} \geq v_{TH} $，即NMOS产生导电沟道；</p>
+<p>当$V_{i} &gt;  V_{TH} $ ，可保证$V_{GSP} &#x3D; - V_{i} \leq -v_{TH} $，即PMOS产生导电沟道；</p>
+<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都可保证至少有一个MOS管存在导电沟道，使得$V_{o}&#x3D;V_{i}$。</p>
+<ul>
+<li>当$C&#x3D;0$时，下面对MOS管的导通情况进行分析:</li>
+</ul>
+<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; 0V \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
+<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; 0  &lt; V_{TH}<br>\end{align*}$$</p>
+<h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;1\<br>    \therefore &amp;V_{GP} &#x3D; V_{DD} \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
+<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &gt; - V_{TH}<br>\end{align*}$$</p>
+<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
+<h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
+    <url>/2024/11/16/2024.9.12/</url>
+    <content><![CDATA[<h1 id="为什么MOS管常用-100-晶向的晶圆，BJT常用-111-晶向的晶圆？"><a href="#为什么MOS管常用-100-晶向的晶圆，BJT常用-111-晶向的晶圆？" class="headerlink" title="为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？"></a>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1><blockquote>
+<p><code>问题来源于半导体物理课程的第一章作业</code></p>
+</blockquote>
+<h1 id="为什么MOS管常用-100-晶向的晶圆来制作器件？"><a href="#为什么MOS管常用-100-晶向的晶圆来制作器件？" class="headerlink" title="为什么MOS管常用(100)晶向的晶圆来制作器件？"></a>为什么MOS管常用(100)晶向的晶圆来制作器件？</h1><ul>
+<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p>
+</li>
+<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压$V_{TH}$。</p>
+</li>
+<li><p>(100)晶向的缺陷密度最低，可以减小$V_{TH}$的漂移。</p>
+</li>
+<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p>
+</li>
+</ul>
+<h1 id="为什么BJT管常用-111-晶向的晶圆来制作器件？"><a href="#为什么BJT管常用-111-晶向的晶圆来制作器件？" class="headerlink" title="为什么BJT管常用(111)晶向的晶圆来制作器件？"></a>为什么BJT管常用(111)晶向的晶圆来制作器件？</h1><ul>
+<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p>
+</li>
+<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p>
+</li>
+<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的$V_{TH}$。</p>
+</li>
+<li><p>利用(111)晶向可以更精确的控制基区宽度。</p>
+</li>
+<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>氢原子模型和类氢原子模型</title>
+    <url>/2024/11/16/2024.9.17/</url>
+    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
+<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
+<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+</blockquote>
+<ul>
+<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态$E_{1}$、$E_{2}$、$E_{3}$……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
+<li>跃迁假设：电子从$E_{m}$能级跃迁到$E_{n}$能级所需的能量满足$h\nu&#x3D;E_{n}-E_{m}$。</li>
+<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足$2\pi r\cdot m_{e} v &#x3D; n h$，即电子只能在轨道角动量等于约化普朗克常数$\hbar$的整数倍的轨道上运动。</li>
+</ul>
+<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：<br>$$\begin{align*}<br>   &amp;m v r &#x3D; n \frac{h}{2\pi} \<br>   &amp;m\frac{v^{2}}{r} &#x3D; \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}<br>\end{align*}$$</p>
+<p>联立得:<br>$$\begin{align*}<br>   r_{n} &#x3D; \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}<br>\end{align*}$$</p>
+<p>考虑电子的总能量为动能与势能之和：<br>$$\begin{align*}<br>   E_{n} &amp;&#x3D; E_{k,n} + E_{p,n} \<br>   &amp;&#x3D; \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\<br>   &amp;&#x3D; -\frac{1}{2}mv^{2}<br>\end{align*}$$</p>
+<p>化简得:<br>$$\begin{align*}<br>   E_{n} &#x3D; -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
+<h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
+<p>考虑如下两条修正:</p>
+</blockquote>
+<ul>
+<li>考虑晶体内的杂质原子，即正负电荷处在介电常数$\epsilon&#x3D;\epsilon_{0}\epsilon_{r}$的介质中。</li>
+<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量$m_{0}$用有效质量$m^{\ast}$替代。</li>
+</ul>
+<p>即得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \<br>   E_{n} &amp;&#x3D; -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
+<p>当$n&#x3D;1$时为基态，此时<br>$$\begin{align*}<br>   r_{0} &amp;&#x3D; 0.053nm \<br>   E_{0} &amp;&#x3D; 13.6eV<br>\end{align*}$$</p>
+<p>则进一步化简得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \<br>   \triangle E_{n} &amp;&#x3D; \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}<br>\end{align*}$$</p>
+<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ADC参数总结</title>
+    <url>/2024/11/16/2024.9.19(%E6%9C%AA%E5%AE%8C%E6%88%90)/</url>
+    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
+<li><p>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ&#x2F;step$</p>
+</li>
+<li><p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>ADC参数总结</title>
     <url>/2024/11/16/2024.9.19/</url>
     <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
@@ -56,100 +153,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>ADC参数总结</title>
-    <url>/2024/11/16/2024.9.19(%E6%9C%AA%E5%AE%8C%E6%88%90)/</url>
-    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
-<li><p>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ&#x2F;step$</p>
-</li>
-<li><p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>氢原子模型和类氢原子模型</title>
-    <url>/2024/11/16/2024.9.17/</url>
-    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
-<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
-<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2024/11/16/2024.9.5/</url>
+    <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
 </blockquote>
-<ul>
-<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态$E_{1}$、$E_{2}$、$E_{3}$……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
-<li>跃迁假设：电子从$E_{m}$能级跃迁到$E_{n}$能级所需的能量满足$h\nu&#x3D;E_{n}-E_{m}$。</li>
-<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足$2\pi r\cdot m_{e} v &#x3D; n h$，即电子只能在轨道角动量等于约化普朗克常数$\hbar$的整数倍的轨道上运动。</li>
+<h2 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h2><ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<br>$$\begin{aligned}<br>  I &#x3D; g_{mb} V_{BS}<br>\end{aligned}$$</li>
 </ul>
-<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：<br>$$\begin{align*}<br>   &amp;m v r &#x3D; n \frac{h}{2\pi} \<br>   &amp;m\frac{v^{2}}{r} &#x3D; \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}<br>\end{align*}$$</p>
-<p>联立得:<br>$$\begin{align*}<br>   r_{n} &#x3D; \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}<br>\end{align*}$$</p>
-<p>考虑电子的总能量为动能与势能之和：<br>$$\begin{align*}<br>   E_{n} &amp;&#x3D; E_{k,n} + E_{p,n} \<br>   &amp;&#x3D; \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\<br>   &amp;&#x3D; -\frac{1}{2}mv^{2}<br>\end{align*}$$</p>
-<p>化简得:<br>$$\begin{align*}<br>   E_{n} &#x3D; -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
-<h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
-<p>考虑如下两条修正:</p>
-</blockquote>
-<ul>
-<li>考虑晶体内的杂质原子，即正负电荷处在介电常数$\epsilon&#x3D;\epsilon_{0}\epsilon_{r}$的介质中。</li>
-<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量$m_{0}$用有效质量$m^{\ast}$替代。</li>
-</ul>
-<p>即得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \<br>   E_{n} &amp;&#x3D; -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
-<p>当$n&#x3D;1$时为基态，此时<br>$$\begin{align*}<br>   r_{0} &amp;&#x3D; 0.053nm \<br>   E_{0} &amp;&#x3D; 13.6eV<br>\end{align*}$$</p>
-<p>则进一步化简得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \<br>   \triangle E_{n} &amp;&#x3D; \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}<br>\end{align*}$$</p>
-<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
-    <url>/2024/11/16/2024.9.12/</url>
-    <content><![CDATA[<h1 id="为什么MOS管常用-100-晶向的晶圆，BJT常用-111-晶向的晶圆？"><a href="#为什么MOS管常用-100-晶向的晶圆，BJT常用-111-晶向的晶圆？" class="headerlink" title="为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？"></a>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1><blockquote>
-<p><code>问题来源于半导体物理课程的第一章作业</code></p>
-</blockquote>
-<h1 id="为什么MOS管常用-100-晶向的晶圆来制作器件？"><a href="#为什么MOS管常用-100-晶向的晶圆来制作器件？" class="headerlink" title="为什么MOS管常用(100)晶向的晶圆来制作器件？"></a>为什么MOS管常用(100)晶向的晶圆来制作器件？</h1><ul>
-<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p>
-</li>
-<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压$V_{TH}$。</p>
-</li>
-<li><p>(100)晶向的缺陷密度最低，可以减小$V_{TH}$的漂移。</p>
-</li>
-<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p>
-</li>
-</ul>
-<h1 id="为什么BJT管常用-111-晶向的晶圆来制作器件？"><a href="#为什么BJT管常用-111-晶向的晶圆来制作器件？" class="headerlink" title="为什么BJT管常用(111)晶向的晶圆来制作器件？"></a>为什么BJT管常用(111)晶向的晶圆来制作器件？</h1><ul>
-<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p>
-</li>
-<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p>
-</li>
-<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的$V_{TH}$。</p>
-</li>
-<li><p>利用(111)晶向可以更精确的控制基区宽度。</p>
-</li>
-<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p>
-</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>利用传输门做二选一选择器的CMOS电路分析</title>
-    <url>/2024/11/16/2024.9.10/</url>
-    <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，&#96;只需关注<strong>导电沟道是否产生</strong>即可。</p>
-<p>如图1所示为传输门的CMOS电路示意图</p>
-<ul>
-<li>当$C&#x3D;1$时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; V_{DD} \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; V_{GBN} -V_{SBN} &#x3D; V_{DD} - V_{i}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;0\<br>    \therefore &amp;V_{GP} &#x3D; 0V \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &#x3D; V_{GBP} - V_{SBP} &#x3D; V_{DD} - (V_{i} - V_{DD}) &#x3D; - V_{i}<br>\end{align*}$$</p>
-<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证$V_{GSN} &#x3D; V_{DD} - V_{i} \geq v_{TH} $，即NMOS产生导电沟道；</p>
-<p>当$V_{i} &gt;  V_{TH} $ ，可保证$V_{GSP} &#x3D; - V_{i} \leq -v_{TH} $，即PMOS产生导电沟道；</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都可保证至少有一个MOS管存在导电沟道，使得$V_{o}&#x3D;V_{i}$。</p>
-<ul>
-<li>当$C&#x3D;0$时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; 0V \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; 0  &lt; V_{TH}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;1\<br>    \therefore &amp;V_{GP} &#x3D; V_{DD} \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &gt; - V_{TH}<br>\end{align*}$$</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
-<h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
 ]]></content>
   </entry>
   <entry>
@@ -178,18 +190,6 @@
 <p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
 <p>若取<br>$$\begin{aligned}<br>    \vec{a}&amp;&#x3D; \left[1,0,0\right]  &amp; \<br>    \vec{b}&amp;&#x3D; \left[0,1,0\right]  &amp; \<br>    \vec{c}&amp;&#x3D; \left[1,0,0\right]  &amp;<br>\end{aligned}$$</p>
 <p>代入解得$k&#x3D;-1$，所以得:<br>$$\begin{align*}<br>    \vec{s} &#x3D;   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}<br>\end{align*}$$</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2024/11/16/2024.9.5/</url>
-    <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
-</blockquote>
-<h2 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h2><ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<br>$$\begin{aligned}<br>  I &#x3D; g_{mb} V_{BS}<br>\end{aligned}$$</li>
-</ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
 ]]></content>
   </entry>
   <entry>
