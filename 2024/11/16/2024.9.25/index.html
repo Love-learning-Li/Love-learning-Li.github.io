@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"love-learning-li.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+    <meta name="description" content="简并or退化？本征or掺杂？  问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并)  故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故\(\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简并or退化？本征or掺杂？">
+<meta property="og:url" content="http://love-learning-li.github.io/2024/11/16/2024.9.25/index.html">
+<meta property="og:site_name" content="MeiShao会认真沉淀">
+<meta property="og:description" content="简并or退化？本征or掺杂？  问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并)  故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故\(\">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-15T16:18:29.382Z">
+<meta property="article:modified_time" content="2024-11-15T17:01:22.104Z">
+<meta property="article:tag" content="半导体物理">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://love-learning-li.github.io/2024/11/16/2024.9.25/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://love-learning-li.github.io/2024/11/16/2024.9.25/","path":"2024/11/16/2024.9.25/","title":"简并or退化？本征or掺杂？"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>简并or退化？本征or掺杂？ | MeiShao会认真沉淀</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">MeiShao会认真沉淀</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">MeiShao的博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%B9%B6or%E9%80%80%E5%8C%96%E6%9C%AC%E5%BE%81or%E6%8E%BA%E6%9D%82"><span class="nav-number">1.</span> <span class="nav-text">简并or退化？本征or掺杂？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#degeneration%E9%80%80%E5%8C%96%E5%9C%A8%E7%89%A9%E7%90%86%E5%AD%A6%E4%B8%AD%E5%B8%B8%E8%AF%91%E4%B8%BA%E7%AE%80%E5%B9%B6"><span class="nav-number">1.1.</span> <span class="nav-text">degeneration:退化(在物理学中常译为简并)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#explanation"><span class="nav-number">1.2.</span> <span class="nav-text">Explanation:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description">记录自己的学习和笔记</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://love-learning-li.github.io/2024/11/16/2024.9.25/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MeiShao会认真沉淀">
+      <meta itemprop="description" content="记录自己的学习和笔记">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="简并or退化？本征or掺杂？ | MeiShao会认真沉淀">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          简并or退化？本征or掺杂？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-11-16 00:18:29 / 修改时间：01:01:22" itemprop="dateCreated datePublished" datetime="2024-11-16T00:18:29+08:00">2024-11-16</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
+<blockquote>
+<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
+</blockquote>
+<h2
+id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
+<blockquote>
+<p>故 a degenerate
+semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
+impurity
+band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
+class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
+semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
+</blockquote>
+<p>其中费米狄拉克分布函数为: <span class="math display">\[
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}
+\]</span></p>
+<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
+<span class="math display">\[
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
+class="math display">\[
+\begin{align*}
+    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
+\end{align*}
+\]</span></p>
+<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
+class="math display">\[
+\begin{align*}
+    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
+\end{align*}
+\]</span></p>
+<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
+<span class="math display">\[
+\begin{align*}
+    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="explanation">Explanation:</h2>
+<blockquote>
+<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
+</blockquote>
+<h2 id="总结">总结</h2>
+<ul>
+<li>半导体掺杂后可能带来简并或非简并。</li>
+<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
+<li>非简并的半导体可能是考虑了杂质补偿。</li>
+<li>非简并的半导体既有掺杂的也有本征的。</li>
+</ul>
+<h1 id="参考资料">参考资料</h1>
+<ul>
+<li><a
+target="_blank" rel="noopener" href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/" rel="tag"># 半导体物理</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/16/2024.9.19(%E6%9C%AA%E5%AE%8C%E6%88%90)/" rel="prev" title="ADC参数总结">
+                  <i class="fa fa-angle-left"></i> ADC参数总结
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/11/16/2024.9.20/" rel="next" title="课堂汇报(论文解读)的PPT注意事项">
+                  课堂汇报(论文解读)的PPT注意事项 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder"></span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">22k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">40 分钟</span>
+  </span>
+</div>
+
+
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+<div style="font-size: 0.85rem">
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script src="/runtime.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '64px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+
+<script src="/live2d-widget/autoload.js"></script>
