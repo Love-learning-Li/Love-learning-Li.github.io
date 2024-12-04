@@ -825,21 +825,6 @@ class="math inline">\(\mathrm{N}\)</span> 型晶体硅费米能级的研究.
       </tags>
   </entry>
   <entry>
-    <title>ADC参数总结</title>
-    <url>/2024/11/16/2024.9.19/</url>
-    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
-<ul>
-<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
-class="math inline">\(nJ/step\)</span></li>
-</ul>
-<p><a
-href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>课堂汇报(论文解读)的PPT注意事项</title>
     <url>/2024/11/16/2024.9.20/</url>
     <content><![CDATA[<h1
@@ -859,6 +844,21 @@ id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT
       <tags>
         <tag>IC工艺</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>ADC参数总结</title>
+    <url>/2024/11/16/2024.9.19/</url>
+    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
+<ul>
+<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
+class="math inline">\(nJ/step\)</span></li>
+</ul>
+<p><a
+href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>简并or退化？本征or掺杂？</title>
