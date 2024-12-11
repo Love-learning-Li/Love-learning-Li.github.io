@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ADC参数总结</title>
+    <url>/2024/11/16/ADC_parameter/</url>
+    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
+<ul>
+<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
+class="math inline">\(nJ/step\)</span></li>
+</ul>
+<p><a
+href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>IC工艺课的10个问题总结-I</title>
     <url>/2024/12/10/IC_Manufacture_test_10problems/</url>
     <content><![CDATA[<h1 id="情况说明">情况说明</h1>
@@ -181,84 +196,302 @@ href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdupREhI1qHd6c8_aWkr
       </tags>
   </entry>
   <entry>
-    <title>关于势垒及衍生问题的一些思考</title>
-    <url>/2024/12/06/the_potential_barrier/</url>
-    <content><![CDATA[<h1 id="什么是势垒呢">什么是势垒呢？</h1>
-<h2 id="pn结">pn结</h2>
-<p>在pn结中记n区、p区的导带 <span class="math inline">\(E_{C}\)</span>
-之差为势垒。在形成pn结之前，n区的费米能级 <span
-class="math inline">\(E_{F}\)</span> 靠近导带 <span
-class="math inline">\(E_{C}\)</span> ；p区的费米能级靠近价带 <span
-class="math inline">\(E_{V}\)</span>
-，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
-<ul>
-<li><p>Q1:为什么pn结会形成统一的费米能级</p></li>
-<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从
-<span class="math inline">\(E_{F}\)</span> 高的n区流向 <span
-class="math inline">\(E_{F}\)</span> 低的p区，相应的空穴从 <span
-class="math inline">\(E_{F}\)</span> 低的p区流向 <span
-class="math inline">\(E_{F}\)</span>
-高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p></li>
-</ul>
-<p><span class="math display">\[
-\begin{equation}
-    \left\{
-    \begin{aligned}
-        n_{0} &amp; =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-        p_{0} &amp; =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T})
-    \end{aligned}
-    \right.
-\end{equation}
-\]</span></p>
-<p>故 <span class="math inline">\(E_{Fn}\)</span> 不断下移， <span
-class="math inline">\(E_{Fp}\)</span> 不断上移，直至 <span
-class="math inline">\(E_{Fn}=E_{Fp}\)</span>
-。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
-<ul>
-<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
-</ul>
-<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
-<h3 id="pn结加正向偏压">pn结加正向偏压</h3>
-<ul>
-<li>加正向偏压后，势垒由 <span class="math inline">\(V_{D}\)</span>
-下降为 <span class="math inline">\(V_{D}-V\)</span>
-，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为
-<span class="math inline">\(V_{D}-V\)</span> ；在 <span
-class="math inline">\(E_{out}\)</span>
-的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn'边界处空穴浓度增加，进而形成从nn'边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp'边界处电子浓度增加，进而形成从pp'边界到p区内部的电子扩散电流。</li>
-</ul>
-<p>由于nn'处电子减少，故从(1)式来看， <span
-class="math inline">\(E_{Fn}\)</span> 应远离 <span
-class="math inline">\(E_{C}\)</span>
-；同理由于pp'处空穴减少，故从(1)式来看， <span
-class="math inline">\(E_{Fp}\)</span> 应远离 <span
-class="math inline">\(E_{V}\)</span> 。</p>
-<h3 id="总结">总结</h3>
-<p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 <span
-class="math inline">\(E_{C}\)</span> 以分析方便，进而先确定 <span
-class="math inline">\(E_{C}\)</span> 、 <span
-class="math inline">\(E_{V}\)</span>
-的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
-<hr />
+    <title>简并or退化？本征or掺杂？</title>
+    <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
+    <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
+<blockquote>
+<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
+</blockquote>
 <h2
-id="金属半导体接触metal---semiconductor-contact">金属半导体接触(Metal -
-Semiconductor Contact)</h2>
-<p>这种情况下有两种势垒:</p>
-<ul>
-<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p></li>
-<li><p>在金属中存在金属的势垒高度 <span
-class="math inline">\(q\phi_{ns}\)</span> ，其满足:</p></li>
-</ul>
-<p><span class="math display">\[
-\begin{align}
-q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal}
-\end{align}
+id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
+<blockquote>
+<p>故 a degenerate
+semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
+impurity
+band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
+class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
+semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
+</blockquote>
+<p>其中费米狄拉克分布函数为: <span class="math display">\[
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}
 \]</span></p>
-<p>考虑到金属是<code>电子海</code>，故其 <span
-class="math inline">\((E_{C})_{metal}\)</span> 保持不动。 ·</p>
+<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
+<span class="math display">\[
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
+class="math display">\[
+\begin{align*}
+    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
+\end{align*}
+\]</span></p>
+<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
+class="math display">\[
+\begin{align*}
+    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
+\end{align*}
+\]</span></p>
+<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
+<span class="math display">\[
+\begin{align*}
+    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="explanation">Explanation:</h2>
+<blockquote>
+<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
+</blockquote>
+<h2 id="总结">总结</h2>
+<ul>
+<li>半导体掺杂后可能带来简并或非简并。</li>
+<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
+<li>非简并的半导体可能是考虑了杂质补偿。</li>
+<li>非简并的半导体既有掺杂的也有本征的。</li>
+</ul>
+<h1 id="参考资料">参考资料</h1>
+<ul>
+<li><a
+href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a
+href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+</ul>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>氢原子模型和类氢原子模型</title>
+    <url>/2024/11/16/Hydrogen_like_model/</url>
+    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型">氢原子模型和类氢原子模型</h1>
+<p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
+<h1 id="氢原子模型">氢原子模型</h1>
+<blockquote>
+<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+</blockquote>
+<ul>
+<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 <span
+class="math inline">\(E_{1}\)</span> 、 <span
+class="math inline">\(E_{2}\)</span> 、 <span
+class="math inline">\(E_{3}\)</span>
+......，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
+<li>跃迁假设：电子从 <span class="math inline">\(E_{m}\)</span>
+能级跃迁到 <span class="math inline">\(E_{n}\)</span> 能级所需的能量满足
+<span class="math inline">\(h\nu=E_{n}-E_{m}\)</span> 。</li>
+<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 <span
+class="math inline">\(2\pi r\cdot m_{e} v = n h\)</span>
+，即电子只能在轨道角动量等于约化普朗克常数 <span
+class="math inline">\(\hbar\)</span> 的整数倍的轨道上运动。</li>
+</ul>
+<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：
+<span class="math display">\[\begin{align*}
+   &amp;m v r = n \frac{h}{2\pi} \\
+   &amp;m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot
+\frac{e^{2}}{r^{2}}
+\end{align*}\]</span></p>
+<p>联立得: <span class="math display">\[\begin{align*}
+   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
+\end{align*}\]</span></p>
+<p>考虑电子的总能量为动能与势能之和： <span
+class="math display">\[\begin{align*}
+   E_{n} &amp;= E_{k,n} + E_{p,n} \\
+   &amp;= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}}
+\frac{e^{2}}{r})\\
+   &amp;= -\frac{1}{2}mv^{2}
+\end{align*}\]</span></p>
+<p>化简得: <span class="math display">\[\begin{align*}
+   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot
+\frac{1}{n^{2}}
+\end{align*}\]</span></p>
+<h2 id="类氢原子模型">类氢原子模型</h2>
+<blockquote>
+<p>考虑如下两条修正:</p>
+</blockquote>
+<ul>
+<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 <span
+class="math inline">\(\epsilon=\epsilon_{0}\epsilon_{r}\)</span>
+的介质中。</li>
+<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量
+<span class="math inline">\(m_{0}\)</span> 用有效质量 <span
+class="math inline">\(m^{\ast}\)</span> 替代。</li>
+</ul>
+<p>即得: <span class="math display">\[\begin{align*}
+   r_{n} &amp;= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}}
+n^{2} \\
+   E_{n} &amp;= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2}
+h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}\]</span></p>
+<p>当<span class="math inline">\(n=1\)</span>时为基态，此时 <span
+class="math display">\[\begin{align*}
+   r_{0} &amp;= 0.053nm \\
+   E_{0} &amp;= 13.6eV
+\end{align*}\]</span></p>
+<p>则进一步化简得: <span class="math display">\[\begin{align*}
+   r_{n} &amp;= \frac{m^{\ast}}{m_{0}} \cdot
+\frac{E_{0}}{\epsilon_{r}^{2}} \\
+   \triangle E_{n} &amp;= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
+\end{align*}\]</span></p>
+<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
+    <content><![CDATA[<h1
+id="祝老师教师节快乐暨利用传输门做二选一选择器的cmos电路分析">祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1>
+<h1
+id="祝天下的老师们教师节快乐祝老师工作顺利万事如意">祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1>
+<h1
+id="利用传输门做二选一选择器的cmos电路分析">利用传输门做二选一选择器的CMOS电路分析</h1>
+<p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，`只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<p>如图1所示为传输门的CMOS电路示意图</p>
+<ul>
+<li>当<span
+class="math inline">\(C=1\)</span>时，下面对MOS管的导通情况进行分析: ###
+NMOS导通情况 <span class="math display">\[\begin{align*}
+  \because &amp;C=1\\
+  \therefore &amp;V_{GN} = V_{DD} \\
+  \because &amp;V_{BN} = 0V\\
+\end{align*}\]</span></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i}
+\end{align*}\]</span></p>
+<h3 id="pmos导通情况">PMOS导通情况</h3>
+<p><span class="math display">\[\begin{align*}
+    \because &amp;\overline{C}=0\\
+    \therefore &amp;V_{GP} = 0V \\
+    \because &amp;V_{BP} = V_{DD}\\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} -
+V_{DD}) = - V_{i}
+\end{align*}\]</span></p>
+<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证 $V_{GSN} = V_{DD} - V_{i}
+v_{TH} $ ，即NMOS产生导电沟道；</p>
+<p>当 $V_{i} &gt; V_{TH} $ ，可保证$V_{GSP} = - V_{i} -v_{TH} $
+，即PMOS产生导电沟道；</p>
+<p>故 <span class="math inline">\(V_{i}\)</span>
+无论取任何值(但都必须保证小于 <span
+class="math inline">\(V_{DD}\)</span>
+)都可保证至少有一个MOS管存在导电沟道，使得 <span
+class="math inline">\(V_{o}=V_{i}\)</span> 。</p>
+<ul>
+<li>当 <span class="math inline">\(C=0\)</span>
+时，下面对MOS管的导通情况进行分析: ### NMOS导通情况 <span
+class="math display">\[\begin{align*}
+  \because &amp;C=1\\
+  \therefore &amp;V_{GN} = 0V \\
+  \because &amp;V_{BN} = 0V\\
+\end{align*}\]</span></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSN} = 0  &lt; V_{TH}
+\end{align*}\]</span></p>
+<h3 id="pmos导通情况-1">PMOS导通情况</h3>
+<p><span class="math display">\[\begin{align*}
+    \because &amp;\overline{C}=1\\
+    \therefore &amp;V_{GP} = V_{DD} \\
+    \because &amp;V_{BP} = V_{DD}\\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSP} &gt; - V_{TH}
+\end{align*}\]</span></p>
+<p>故<span
+class="math inline">\(V_{i}\)</span>无论取任何值(但都必须保证小于<span
+class="math inline">\(V_{DD}\)</span>)都无法使任意一个MOS管存在导电沟道。</p>
+<h1
+id="故根据传输门导通规律设计如下图所示的二选一数选器">故根据传输门导通规律设计如下图所示的二选一数选器</h1>
+<p>如图2所示。</p>
+]]></content>
+      <tags>
+        <tag>模集(拉扎维)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
+    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
+    <content><![CDATA[<h1
+id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
+<blockquote>
+<p><code>问题来源于半导体物理课程的第一章作业</code></p>
+</blockquote>
+<h1
+id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
+<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>(100)晶向的缺陷密度最低，可以减小<span
+class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
+<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
+</ul>
+<h1
+id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
+<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
+<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
+<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2024/11/16/body_effect_reduce_resistence/</url>
+    <content><![CDATA[<h1 id="提问">提问：</h1>
+<blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+</blockquote>
+<h2 id="我的思考">我的思考</h2>
+<ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
+class="math display">\[\begin{aligned}
+  I = g_{mb} V_{BS}
+\end{aligned}\]</span></li>
+</ul>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
+class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>课堂汇报(论文解读)的PPT注意事项</title>
+    <url>/2024/11/16/ppt_report/</url>
+    <content><![CDATA[<h1
+id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
+<p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
+<h1 id="注意事项">注意事项</h1>
+<ul>
+<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
+<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
+<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
+<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
+<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
+<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
+<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>IC工艺</tag>
       </tags>
   </entry>
   <entry>
@@ -1087,299 +1320,6 @@ class="math inline">\(\mathrm{N}\)</span> 型晶体硅费米能级的研究.
       </tags>
   </entry>
   <entry>
-    <title>ADC参数总结</title>
-    <url>/2024/11/16/ADC_parameter/</url>
-    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
-<ul>
-<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
-class="math inline">\(nJ/step\)</span></li>
-</ul>
-<p><a
-href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>简并or退化？本征or掺杂？</title>
-    <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
-    <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
-<blockquote>
-<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
-</blockquote>
-<h2
-id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
-<blockquote>
-<p>故 a degenerate
-semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
-impurity
-band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
-class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
-semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
-</blockquote>
-<p>其中费米狄拉克分布函数为: <span class="math display">\[
-\begin{align*}
-    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
-\end{align*}
-\]</span></p>
-<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
-<span class="math display">\[
-\begin{align*}
-    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
-\end{align*}
-\]</span></p>
-<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
-class="math display">\[
-\begin{align*}
-    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
-\end{align*}
-\]</span></p>
-<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
-class="math display">\[
-\begin{align*}
-    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
-\end{align*}
-\]</span></p>
-<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
-<span class="math display">\[
-\begin{align*}
-    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
-    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
-\end{align*}
-\]</span></p>
-<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="explanation">Explanation:</h2>
-<blockquote>
-<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
-</blockquote>
-<h2 id="总结">总结</h2>
-<ul>
-<li>半导体掺杂后可能带来简并或非简并。</li>
-<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
-<li>非简并的半导体可能是考虑了杂质补偿。</li>
-<li>非简并的半导体既有掺杂的也有本征的。</li>
-</ul>
-<h1 id="参考资料">参考资料</h1>
-<ul>
-<li><a
-href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a
-href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>课堂汇报(论文解读)的PPT注意事项</title>
-    <url>/2024/11/16/ppt_report/</url>
-    <content><![CDATA[<h1
-id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
-<p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
-<h1 id="注意事项">注意事项</h1>
-<ul>
-<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
-<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
-<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
-<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
-<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
-<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
-<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>IC工艺</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>氢原子模型和类氢原子模型</title>
-    <url>/2024/11/16/Hydrogen_like_model/</url>
-    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型">氢原子模型和类氢原子模型</h1>
-<p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
-<h1 id="氢原子模型">氢原子模型</h1>
-<blockquote>
-<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
-</blockquote>
-<ul>
-<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 <span
-class="math inline">\(E_{1}\)</span> 、 <span
-class="math inline">\(E_{2}\)</span> 、 <span
-class="math inline">\(E_{3}\)</span>
-......，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
-<li>跃迁假设：电子从 <span class="math inline">\(E_{m}\)</span>
-能级跃迁到 <span class="math inline">\(E_{n}\)</span> 能级所需的能量满足
-<span class="math inline">\(h\nu=E_{n}-E_{m}\)</span> 。</li>
-<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 <span
-class="math inline">\(2\pi r\cdot m_{e} v = n h\)</span>
-，即电子只能在轨道角动量等于约化普朗克常数 <span
-class="math inline">\(\hbar\)</span> 的整数倍的轨道上运动。</li>
-</ul>
-<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：
-<span class="math display">\[\begin{align*}
-   &amp;m v r = n \frac{h}{2\pi} \\
-   &amp;m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot
-\frac{e^{2}}{r^{2}}
-\end{align*}\]</span></p>
-<p>联立得: <span class="math display">\[\begin{align*}
-   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
-\end{align*}\]</span></p>
-<p>考虑电子的总能量为动能与势能之和： <span
-class="math display">\[\begin{align*}
-   E_{n} &amp;= E_{k,n} + E_{p,n} \\
-   &amp;= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}}
-\frac{e^{2}}{r})\\
-   &amp;= -\frac{1}{2}mv^{2}
-\end{align*}\]</span></p>
-<p>化简得: <span class="math display">\[\begin{align*}
-   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot
-\frac{1}{n^{2}}
-\end{align*}\]</span></p>
-<h2 id="类氢原子模型">类氢原子模型</h2>
-<blockquote>
-<p>考虑如下两条修正:</p>
-</blockquote>
-<ul>
-<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 <span
-class="math inline">\(\epsilon=\epsilon_{0}\epsilon_{r}\)</span>
-的介质中。</li>
-<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量
-<span class="math inline">\(m_{0}\)</span> 用有效质量 <span
-class="math inline">\(m^{\ast}\)</span> 替代。</li>
-</ul>
-<p>即得: <span class="math display">\[\begin{align*}
-   r_{n} &amp;= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}}
-n^{2} \\
-   E_{n} &amp;= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2}
-h^{2}} \cdot \frac{1}{n^{2}}
-\end{align*}\]</span></p>
-<p>当<span class="math inline">\(n=1\)</span>时为基态，此时 <span
-class="math display">\[\begin{align*}
-   r_{0} &amp;= 0.053nm \\
-   E_{0} &amp;= 13.6eV
-\end{align*}\]</span></p>
-<p>则进一步化简得: <span class="math display">\[\begin{align*}
-   r_{n} &amp;= \frac{m^{\ast}}{m_{0}} \cdot
-\frac{E_{0}}{\epsilon_{r}^{2}} \\
-   \triangle E_{n} &amp;= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
-\end{align*}\]</span></p>
-<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
-    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
-    <content><![CDATA[<h1
-id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
-<blockquote>
-<p><code>问题来源于半导体物理课程的第一章作业</code></p>
-</blockquote>
-<h1
-id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
-<ul>
-<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
-<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
-class="math inline">\(V_{TH}\)</span>。</p></li>
-<li><p>(100)晶向的缺陷密度最低，可以减小<span
-class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
-<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
-</ul>
-<h1
-id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
-<ul>
-<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
-<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
-<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
-class="math inline">\(V_{TH}\)</span>。</p></li>
-<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
-<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用传输门做二选一选择器的CMOS电路分析</title>
-    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
-    <content><![CDATA[<h1
-id="祝老师教师节快乐暨利用传输门做二选一选择器的cmos电路分析">祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1>
-<h1
-id="祝天下的老师们教师节快乐祝老师工作顺利万事如意">祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1>
-<h1
-id="利用传输门做二选一选择器的cmos电路分析">利用传输门做二选一选择器的CMOS电路分析</h1>
-<p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，`只需关注<strong>导电沟道是否产生</strong>即可。</p>
-<p>如图1所示为传输门的CMOS电路示意图</p>
-<ul>
-<li>当<span
-class="math inline">\(C=1\)</span>时，下面对MOS管的导通情况进行分析: ###
-NMOS导通情况 <span class="math display">\[\begin{align*}
-  \because &amp;C=1\\
-  \therefore &amp;V_{GN} = V_{DD} \\
-  \because &amp;V_{BN} = 0V\\
-\end{align*}\]</span></li>
-</ul>
-<p><span class="math display">\[\begin{align*}
-    \therefore &amp;V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i}
-\end{align*}\]</span></p>
-<h3 id="pmos导通情况">PMOS导通情况</h3>
-<p><span class="math display">\[\begin{align*}
-    \because &amp;\overline{C}=0\\
-    \therefore &amp;V_{GP} = 0V \\
-    \because &amp;V_{BP} = V_{DD}\\
-\end{align*}\]</span></p>
-<p><span class="math display">\[\begin{align*}
-    \therefore &amp;V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} -
-V_{DD}) = - V_{i}
-\end{align*}\]</span></p>
-<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证 $V_{GSN} = V_{DD} - V_{i}
-v_{TH} $ ，即NMOS产生导电沟道；</p>
-<p>当 $V_{i} &gt; V_{TH} $ ，可保证$V_{GSP} = - V_{i} -v_{TH} $
-，即PMOS产生导电沟道；</p>
-<p>故 <span class="math inline">\(V_{i}\)</span>
-无论取任何值(但都必须保证小于 <span
-class="math inline">\(V_{DD}\)</span>
-)都可保证至少有一个MOS管存在导电沟道，使得 <span
-class="math inline">\(V_{o}=V_{i}\)</span> 。</p>
-<ul>
-<li>当 <span class="math inline">\(C=0\)</span>
-时，下面对MOS管的导通情况进行分析: ### NMOS导通情况 <span
-class="math display">\[\begin{align*}
-  \because &amp;C=1\\
-  \therefore &amp;V_{GN} = 0V \\
-  \because &amp;V_{BN} = 0V\\
-\end{align*}\]</span></li>
-</ul>
-<p><span class="math display">\[\begin{align*}
-    \therefore &amp;V_{GSN} = 0  &lt; V_{TH}
-\end{align*}\]</span></p>
-<h3 id="pmos导通情况-1">PMOS导通情况</h3>
-<p><span class="math display">\[\begin{align*}
-    \because &amp;\overline{C}=1\\
-    \therefore &amp;V_{GP} = V_{DD} \\
-    \because &amp;V_{BP} = V_{DD}\\
-\end{align*}\]</span></p>
-<p><span class="math display">\[\begin{align*}
-    \therefore &amp;V_{GSP} &gt; - V_{TH}
-\end{align*}\]</span></p>
-<p>故<span
-class="math inline">\(V_{i}\)</span>无论取任何值(但都必须保证小于<span
-class="math inline">\(V_{DD}\)</span>)都无法使任意一个MOS管存在导电沟道。</p>
-<h1
-id="故根据传输门导通规律设计如下图所示的二选一数选器">故根据传输门导通规律设计如下图所示的二选一数选器</h1>
-<p>如图2所示。</p>
-]]></content>
-      <tags>
-        <tag>模集(拉扎维)</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
     <url>/2024/11/16/effect_mass_and_triple_cross_product/</url>
     <content><![CDATA[<h1 id="有效质量mast求解及vecatimesvecbtimesvecc求解">有效质量<span
@@ -1491,21 +1431,81 @@ class="math display">\[\begin{align*}
       </tags>
   </entry>
   <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2024/11/16/body_effect_reduce_resistence/</url>
-    <content><![CDATA[<h1 id="提问">提问：</h1>
-<blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
-</blockquote>
-<h2 id="我的思考">我的思考</h2>
+    <title>关于势垒及衍生问题的一些思考</title>
+    <url>/2024/12/06/the_potential_barrier/</url>
+    <content><![CDATA[<h1 id="什么是势垒呢">什么是势垒呢？</h1>
+<h2 id="pn结">pn结</h2>
+<p>在pn结中记n区、p区的导带 <span class="math inline">\(E_{C}\)</span>
+之差为势垒。在形成pn结之前，n区的费米能级 <span
+class="math inline">\(E_{F}\)</span> 靠近导带 <span
+class="math inline">\(E_{C}\)</span> ；p区的费米能级靠近价带 <span
+class="math inline">\(E_{V}\)</span>
+，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
 <ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
-class="math display">\[\begin{aligned}
-  I = g_{mb} V_{BS}
-\end{aligned}\]</span></li>
+<li><p>Q1:为什么pn结会形成统一的费米能级</p></li>
+<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从
+<span class="math inline">\(E_{F}\)</span> 高的n区流向 <span
+class="math inline">\(E_{F}\)</span> 低的p区，相应的空穴从 <span
+class="math inline">\(E_{F}\)</span> 低的p区流向 <span
+class="math inline">\(E_{F}\)</span>
+高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p></li>
 </ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
-class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
+<p><span class="math display">\[
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        n_{0} &amp; =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+        p_{0} &amp; =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T})
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>故 <span class="math inline">\(E_{Fn}\)</span> 不断下移， <span
+class="math inline">\(E_{Fp}\)</span> 不断上移，直至 <span
+class="math inline">\(E_{Fn}=E_{Fp}\)</span>
+。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
+<ul>
+<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
+</ul>
+<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
+<h3 id="pn结加正向偏压">pn结加正向偏压</h3>
+<ul>
+<li>加正向偏压后，势垒由 <span class="math inline">\(V_{D}\)</span>
+下降为 <span class="math inline">\(V_{D}-V\)</span>
+，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为
+<span class="math inline">\(V_{D}-V\)</span> ；在 <span
+class="math inline">\(E_{out}\)</span>
+的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn'边界处空穴浓度增加，进而形成从nn'边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp'边界处电子浓度增加，进而形成从pp'边界到p区内部的电子扩散电流。</li>
+</ul>
+<p>由于nn'处电子减少，故从(1)式来看， <span
+class="math inline">\(E_{Fn}\)</span> 应远离 <span
+class="math inline">\(E_{C}\)</span>
+；同理由于pp'处空穴减少，故从(1)式来看， <span
+class="math inline">\(E_{Fp}\)</span> 应远离 <span
+class="math inline">\(E_{V}\)</span> 。</p>
+<h3 id="总结">总结</h3>
+<p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 <span
+class="math inline">\(E_{C}\)</span> 以分析方便，进而先确定 <span
+class="math inline">\(E_{C}\)</span> 、 <span
+class="math inline">\(E_{V}\)</span>
+的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
+<hr />
+<h2
+id="金属半导体接触metal---semiconductor-contact">金属半导体接触(Metal -
+Semiconductor Contact)</h2>
+<p>这种情况下有两种势垒:</p>
+<ul>
+<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p></li>
+<li><p>在金属中存在金属的势垒高度 <span
+class="math inline">\(q\phi_{ns}\)</span> ，其满足:</p></li>
+</ul>
+<p><span class="math display">\[
+\begin{align}
+q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal}
+\end{align}
+\]</span></p>
+<p>考虑到金属是<code>电子海</code>，故其 <span
+class="math inline">\((E_{C})_{metal}\)</span> 保持不动。 ·</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
