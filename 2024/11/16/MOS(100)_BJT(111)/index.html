@@ -147,6 +147,8 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt=""
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name"></p>
   <div class="site-description" itemprop="description">记录自己的学习和笔记</div>
 </div>
@@ -189,7 +191,7 @@
     <link itemprop="mainEntityOfPage" href="http://love-learning-li.github.io/2024/11/16/MOS(100)_BJT(111)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="">
     </span>
 
@@ -310,6 +312,7 @@ class="math inline">\(V_{TH}\)</span>。</p></li>
 
 
 
+    <div class="comments gitalk-container"></div>
 </div>
   </main>
 
@@ -433,6 +436,10 @@ const darkmode = new Darkmode(options);
 window.darkmode = darkmode;
 darkmode.showWidget();
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Love-learning-Li","repo":"Love-learning-Li.github.io","client_id":"Ov23lilbyk3Z6EFaAmdo","client_secret":"685320e7b9bc89d81e81ded87a68a054dda1d514","admin_user":"Love-learning-Li","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"909b225fbfa00041f62915b5f11d0026"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
 </html>
