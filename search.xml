@@ -1,733 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>IC工艺课的10个问题总结-I</title>
-    <url>/2024/12/10/IC_Manufacture_test_10problems/</url>
-    <content><![CDATA[<h1>情况说明</h1>
-<p>参考教材<code>半导体制造技术导论(第二版)——萧宏</code>，课程<code>半导体材料及IC工艺原理</code>。</p>
-<p>该总结是课程期末作业的一部分，边复习边总结。</p>
-<h1>Chapter1-5</h1>
-<h2 id="1-为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？">1. 为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？</h2>
-<p><strong>解答</strong>:若假设晶圆的缺陷密度一样，那么越大的晶圆面积则会拥有更多的缺陷，进而会导致更低的成品率。</p>
-<p>$$<br>
-\begin{align}<br>
-Y \propto \frac{1}{ (1+DA)^{n} }<br>
-\end{align}<br>
-$$</p>
-<p>其中Y表示成品率，D表示缺陷密度，A表示晶圆面积，n表示该wafer所需要处理的工序数。</p>
-<p>同时更大的wafer在生产过程中也需要更大的设备相匹配，例如LPCVD机器、蚀刻机、离子注入机、高温炉管等等。适用于更大尺寸wafer的生产设备的制造难度及成本是具备挑战性的，同时更大的设备无疑会需要更大的无尘间体积，这将会为生产成本带来增加。</p>
-<p>并且当前12英寸的wafer生产过程成熟，市场反馈良好，当前其生产过程中仍具备诸多可优化的流程以提高成品率，其局限性和瓶颈暂不明显，市场目前并未表现出对更大尺寸wafer的强烈呼唤。</p>
-<h2 id="2-为什么测试结构全都做在晶粒的切割道上？">2. 为什么测试结构全都做在晶粒的切割道上？</h2>
-<p><strong>解答</strong>:为了节约硅晶圆的面积，<code>有待后续补充</code>。</p>
-<h2 id="3-为什么使用高k-高介电常数-和低k介质来取代二氧化硅做绝缘层？">3. 为什么使用高k(高介电常数)和低k介质来取代二氧化硅做绝缘层？</h2>
-<p><strong>解答</strong>:首先对于平行板电容器模型，其电容大小满足下式</p>
-<p>$$<br>
-\begin{align}<br>
-C = k \varepsilon_{0} \frac{hl}{d}<br>
-\end{align}<br>
-$$</p>
-<p>其中称k为介电常数(与电磁波课程中不同，电磁波课程中称$\varepsilon$为介电常数，k这种称法工业界常用)，故为了减小电容的尺寸，可以通过使用高k介质来保证在缩小电容尺寸的同时维持同样的电容值。</p>
-<h3 id="高k介质">高k介质</h3>
-<p>同时用高k介质替代 $ \mathrm{ SiO_{2} }$ 做为栅介质能大幅减小栅漏电流，在满足性能和功耗要求的同时允许器件尺寸进一步微缩。但是高k介质替代 $ \mathrm{ SiO_{2} }$ 又带来的两个问题[1]:</p>
-<ul>
-<li>
-<p>Poly silicon和高k介质之间的费米能级钉扎效应导致阈值电压增大，</p>
-</li>
-<li>
-<p>远程声子散射导致的载流子迁移率下降，这是因为高k介质与硅沟道之间的界面陷阱密度大，沟道中的载流子被俘获到陷阱中。</p>
-</li>
-</ul>
-<p>但是这些问题是可以解决的，通过利用金属替代Poly silicon做为栅电极，可以产生较少的界面缺陷、减弱硼穿透效应，还能有效降低高k介质层中的缺陷密度。以pMOS器件为例，金属栅极材料的选择有众多约束，其中最主要的是金属材料必须具有与Si的价带底相近的功函数(5.0-5.2eV)以获得合适的电压阈值，同时金属栅极需具有良好的热稳定性使其有效功函数不受高温退火的影响[2]。同时采用应变技术能够进一步提升迁移率，应变分为全局应变和局域应变两种，前者一般通过在 $Si_{1-x}Ge_{x} $ 渐变层上外延生长Si或Ge实现；后者针对NMOS和PMOS，分别通过沉积氮化硅帽层和漏区沉积SiGe实现。</p>
-<p><img src="https://www.helloimg.com/i/2024/12/09/6756fb1cd428a.png" alt="采用HKMG工艺的效果"></p>
-<p>同时定义有效氧化层厚度(Effective Oxide Thickness,EOT)满足下式:<br>
-$$<br>
-\begin{align}<br>
-\mathrm{EOT} = k \times T_{ox}<br>
-\end{align}<br>
-$$</p>
-<p>其中 $T_{ox}$ 为氧化层厚度，以高k介质氧化铪为例，它的k是20，是二氧化硅的6倍。故6nm厚的 $\mathrm{Hf O_{2} } $ 提供相当于1nm厚的 $\mathrm{Si O_{2} } $ 的EOT，故在维持栅极电容大小不变的基础上，栅极可以采用较厚的介质进而实现较小的漏极泄露电流。<a href="https://zhuanlan.zhihu.com/p/346851712">参考资料:HKMG(High-K栅氧化物层+Metal Gate)技术</a></p>
-<h3 id="低k介质">低k介质</h3>
-<p>当集成电路的特征尺寸减少至0.18 $\mu m$ 或更小时，互连寄生的电阻、电容引起的延迟、串扰和功耗已成为发展高速、高密度和多功能集成电路需解决的瓶颈问题。</p>
-<p>在芯片内互连技术节点迭代过程中，已有多种技术被用于减少互连线路的RC延迟。其中减少寄生电容较为直接的方法是采用更低介电常数(低k)的材料做层间及线间介质来实现，例如氟化硅玻璃($k\sim 3.6$)；通过PECVD实现有机硅酸盐SiCOH(K&lt;3)的沉积，以及实现多孔SiCOH($k\sim 2.5$)的应用[3]。</p>
-<p>介电常数低于 $\mathrm{Si O_{2} } $ 的低k介质材料的介电常数 $k_{low-k} $ 范围需满足:<br>
-$$<br>
-\begin{align}<br>
-k_{air} \leq k_{low-k} \leq k_{ \mathrm{Si O_{2} } }<br>
-\end{align}<br>
-$$</p>
-<p>其中 $k_{air}$ 是空气的介电常数，大小为1；$ k_{ \mathrm{Si O_{2} } }$ 是 $\mathrm{Si O_{2} }$ 的介电常数，大小为3.9-4.2，具体值取决于制作 $\mathrm{Si O_{2} }$ 时的工艺[4]。</p>
-<p>IC芯片多层立体布线，不同传导层之间必须相互绝缘，使用层间淀积绝缘介质(inter level dielectric, ILD)来实现层间绝缘。特别是当工艺进入0.13 $\mu m$ 以下的节点，更倾向于采用低k介质做为介质层材料取代传统的二氧化硅介质。例如多孔二氧化硅aerogel、有机聚合物聚酰亚胺等等。故现在较为成熟的互连工艺时在金属线间嵌入低k介质薄膜，在微通孔见嵌入等离子体增强淀积的二氧化硅电介质，即可实现RC延迟降低，也可实现热功耗降低和器件稳定性提高，同时兼容目前的刻蚀、CMP工艺，在生产成本方面是具有优势的。</p>
-<h3 id="总结">总结</h3>
-<p>在工艺特征尺寸持续减小的过程中，采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，实现厚度减小的情况下所提供的电容大小不同步减少，以保障栅极漏电流的减小。但其与ploy电极之间的费米钉扎效应等副效应仍有待解决，目前已经提出采用改换金属电极替代poly和使用应变技术提升迁移率等多种方案来缓解副效应。</p>
-<p>同时采用低k介质替代二氧化硅做为各传导层之间的绝缘介质，其拥有较少的寄生电容，可以实现较低的电路互连的RC延迟，但其生产与当前生产工艺流程的兼容性、成本经济性等仍受到挑战。</p>
-<h3 id="问题3参考文献">问题3参考文献</h3>
-<p>[1] <a href="https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.61.137701">黄力, 黄安平, 郑晓虎, 肖志松, 王玖. 高k介质再新型半导体器件中的应用[J]. 物理学报, 2012, 61(13): 137701.</a></p>
-<p>[2] <a href="http://www.wuli.ac.cn/cn/article/id/31655">杨智超, 黄安平, 肖志松. pMOS金属栅极材料的研究进展[J]. 物理, 2010, 39(02): 113-122.</a></p>
-<p>[3] <a href="http://www.wuli.ac.cn/cn/article/id/31655">张思勉, 邓晓楠, 王宇祺, 武逸飞, 刘佳宁, 李正操, 蔡坚, 王琛. 后摩尔时代芯片互连新材料及工艺革新[J]. 中国科学:化学, 2023, 53(10).</a></p>
-<p>[4] <a href="https://www.ejournal.org.cn/CN/Y2000/V28/I11/84">阮刚, 肖夏, 朱兆. 低介电常数(low-k)介质在ULSI中的应用前景[J]. 电子学报, 2000, 28(11): 84-87.</a></p>
-<h2 id="4-DRAM是怎么读取和存入数据的？">4. DRAM是怎么读取和存入数据的？</h2>
-<p>动态随机存储器(Drnamic random and memory)</p>
-<h2 id="5-为什么低速CMOS和DRAM均避免使用外延层-eoitaxy-？">5. 为什么低速CMOS和DRAM均避免使用外延层(eoitaxy)？</h2>
-<p><strong>解答</strong>:<code>暂未查到详细答案，有待后续补充</code>。</p>
-<h2 id="6-热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？">6. 热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？</h2>
-<p>热氧化时加入氯离子的目的如下：</p>
-<ul>
-<li>
-<p>1.增强氧化速度，能使氧化速率提升 10%~15%。</p>
-</li>
-<li>
-<p>2.钝化可动离子，特别是Na+，K+，钠，钾离子在电场作用下移动到硅片表面，影响电学特性，导致器件不稳定。而掺氯可固定可动离子，避免其移动。</p>
-</li>
-<li>
-<p>3.中和Si-SiO2界面处电荷，减少氧化层缺陷。</p>
-</li>
-</ul>
-<p>关于氯离子过多时器件性能下降，<code>暂未查到详细解答，等待后续补充</code>。</p>
-<h2 id="7-为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？">7. 为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？</h2>
-<p><strong>解答</strong>：CMOS器件的关键性能指标是驱动电流 $I_{d}$ ，其大小满足(5)式，与栅极电容大小成正相关。同时栅极电容大小满足(6)式，即与栅极表面积成正比，与栅介质厚度成反比。因此可以通过增加栅极表面积和降低栅介质厚度来提高栅极电容[1]。</p>
-<p>$$<br>
-\begin{align}<br>
-I_{D} = \frac{1}{2} \frac{W}{L} C_{ox} (V_{gs} - V_{th} )^{2}<br>
-\end{align}<br>
-$$</p>
-<p>$$<br>
-\begin{align}<br>
-C_{ox} \propto k\varepsilon \frac{A}{d}<br>
-\end{align}<br>
-$$</p>
-<p>随着半导体工艺技术的不断发展，集成电路的集成度不断提高，这对增加栅极表面积产生了极大的制约。因此在半导体技术的发展过程中，降低栅介质栅氧化层厚度变成了推进CMOS器件性能提高的主要手段。</p>
-<p>但随着MOSFET的沟道长度缩短，这就导致了MOSFET管中的Source和Drain（源和漏）的距离越来越短，因此栅极对沟道的控制能力变差，这就意味着栅极电压夹断（pinch off）沟道的难度变大，于是使得亚阈值漏电（subthreshold leakage）现象，即短沟道效应（short-channel effect）更加容易发生。</p>
-<p>短沟道效应指的是当晶体管体积缩小时，源漏耗尽层宽度在整个沟道中所占比重越来越大。开启电压在沟道很短时将随沟道变小而迅速下降，其详细的计算和I-V关系位于参考文献[2]中。基于BSIM4模型，亚阈值泄露电流$I_{sub}$满足下式:</p>
-<p>$$<br>
-\begin{align}<br>
-I_{sub} = I_{0} \exp\big(\frac{ V_{gs} - V_{th} }{ nkT/q }\big) \big( 1- \exp(\frac{ -V_{ds} }{ kT/q }) \big)<br>
-\end{align}<br>
-$$</p>
-<p>从上式可以看出随着阈值电压的减小，<code>亚阈值漏电电流</code>呈指数增加。</p>
-<p>同时随着栅极氧化层厚度的变薄，<code>栅极泄露电流</code>不容忽略。栅极氧化层厚度的变薄导致氧化层间的电场增加，较高的电场加上很薄的栅氧化层会导致在nMOS晶体管的沟道和栅极之间有电子隧道(对于pMOS是空穴隧道)产生，这将会带来栅氧化层隧道电流，其也是栅极泄露电流的最主要组成部分，其电流密度可简单表示为下式[3]:</p>
-<p>$$<br>
-\begin{align}<br>
-J_{T}=A(\frac{ V_{ox} }{ T_{ox} })^{2} \exp (-\frac{B\big(1-(1-\frac{V_{ox } }{\phi_{ox} })^{\frac{3}{2} } \big) }{V_{ox }/T_{ox } })<br>
-\end{align}<br>
-$$</p>
-<p>其中A、B是于工艺有关的参数；$T_{ox}$ 是栅氧化层厚度； $\phi_{ox}$ 是隧道粒子的势垒。可发现随着栅氧化层厚度的减小，隧道电流急剧增长。</p>
-<h3 id="总结-v2">总结</h3>
-<p>随着工艺的推进，为提高CMOS器件的驱动电流进而则需提高其栅极电容，由于小尺寸工艺下栅氧化层面积很难增大，故选择持续减小栅氧化层厚度来实现驱动电流增大的目的。这会带来栅极泄露电流的急剧增加。同时栅极中掺入的B等杂质会从栅极中扩散至硅衬底或固定在栅介质中，这会影响器件的阈值电压。</p>
-<p>目前通过采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，但这又引入了一些新的问题，具体可参考问题3。</p>
-<h3 id="问题7参考文献">问题7参考文献</h3>
-<p>[1] <a href="https://d.wanfangdata.com.cn/thesis/D446460">王蒙. 超大规模集成电路制造工艺中对消除1/f噪声影响的研究. 复旦大学硕士论文. 2011</a></p>
-<p>[2] <a href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdukdfnAPAQ4YfvbWpXBQErMz01Eb7-HbZLbKQFyGeDRTFVItEq0qKc7hUxN5-plTt2gpFwGOCiKWdoJHyoRIQ0Ho9Z32-_q0-zMmh6nBLn7svNYkiXqRdoYJpa3XfVEuZpEYI9CWqogeUVWW8Tf5KG25B2302ClcgL6s7RKMhqp0tDSPz87z-ra&amp;uniplatform=NZKPT&amp;language=CHS">T.L.周, H.N.高斯, 李松发. 具有短沟道的结栅场效应晶体管的特性. 半导体情报. 1973(11)</a></p>
-<p>[3] <a href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdupREhI1qHd6c8_aWkrHdFqCiWEOqJAeqcWeP70mMofL24gnKYC-ScUetc9n0HDpS-Ijau5R1l9bKWKqfIG4ZEo-WENIS7unufFE5BxOyEz_2kKQ_lLbfin5TCh71OzdgQSTEkZ_TKg3Njc79nMRN6QjKtWls0JuYuYHVki4o_CrZJvLHAjlOIq&amp;uniplatform=NZKPT&amp;language=CHS">杨松, 王宏, 杨志家. 45nm体硅工艺下使用双-栅氧化层厚度降低SRAM的泄漏功耗. 半导体学报. 2007(05)</a></p>
-<h2 id="8-为什么扩散掺杂drive-in的时候要通入氧气？">8. 为什么扩散掺杂drive-in的时候要通入氧气？</h2>
-]]></content>
-      <tags>
-        <tag>IC工艺</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于势垒及衍生问题的一些思考</title>
-    <url>/2024/12/06/the_potential_barrier/</url>
-    <content><![CDATA[<h1>什么是势垒呢？</h1>
-<h2 id="pn结">pn结</h2>
-<p>在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
-<ul>
-<li>
-<p>Q1:为什么pn结会形成统一的费米能级</p>
-</li>
-<li>
-<p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E_{F}$ 高的n区流向 $E_{F}$ 低的p区，相应的空穴从 $E_{F}$ 低的p区流向 $E_{F}$ 高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p>
-</li>
-</ul>
-<p>$$<br>
-\begin{equation}<br>
-\left{<br>
-\begin{aligned}<br>
-n_{0} &amp; =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \<br>
-p_{0} &amp; =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T})<br>
-\end{aligned}<br>
-\right.<br>
-\end{equation}<br>
-$$</p>
-<p>故 $E_{Fn}$ 不断下移， $E_{Fp}$ 不断上移，直至 $E_{Fn}=E_{Fp}$ 。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
-<ul>
-<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
-</ul>
-<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
-<h3 id="pn结加正向偏压">pn结加正向偏压</h3>
-<ul>
-<li>加正向偏压后，势垒由 $V_{D}$ 下降为 $V_{D}-V$ ，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为 $V_{D}-V$ ；在 $E_{out}$ 的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn’边界处空穴浓度增加，进而形成从nn’边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp’边界处电子浓度增加，进而形成从pp’边界到p区内部的电子扩散电流。</li>
-</ul>
-<p>由于nn’处电子减少，故从(1)式来看， $E_{Fn}$ 应远离 $E_{C}$ ；同理由于pp’处空穴减少，故从(1)式来看， $E_{Fp}$ 应远离 $E_{V}$ 。</p>
-<h3 id="总结">总结</h3>
-<p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 $E_{C}$ 以分析方便，进而先确定 $E_{C}$ 、 $E_{V}$ 的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
-<hr>
-<h2 id="金属半导体接触-Metal-Semiconductor-Contact">金属半导体接触(Metal - Semiconductor Contact)</h2>
-<p>这种情况下有两种势垒:</p>
-<ul>
-<li>
-<p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p>
-</li>
-<li>
-<p>在金属中存在金属的势垒高度 $q\phi_{ns}$ ，其满足:</p>
-</li>
-</ul>
-<p>$$<br>
-\begin{align}<br>
-q\phi_{ns} = qV_{D} + E_{n} = (E_{C})<em>{metal} - (E</em>{F})_{metal}<br>
-\end{align}<br>
-$$</p>
-<p>考虑到金属是<code>电子海</code>，故其 $(E_{C})_{metal}$ 保持不动。<br>
-·</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>半导体物理半期考试参考解析</title>
-    <url>/2024/11/28/semiconductor_physics_midterm_test/</url>
-    <content><![CDATA[<h1>四川大学期中考试试题(开卷) (2024 - 2025 学年第 1 学期) A 卷</h1>
-<p>课程名称：半导体物理 任课教师：杨治美</p>
-<p>2024 年 11 月 25 日</p>
-<h2 id="1-题目">1 题目</h2>
-<ol>
-<li>
-<p>${L}<em>{n}(E)  = ( )$ , ${L}</em>{D} =(   )$ 。</p>
-</li>
-<li>
-<p>半导体中过剩电子浓度为 ${\Delta n} = {10}<sup>{15}\mathrm{cm}</sup>{-3}$ ,过剩载流子的寿命为 ${\tau }_{n0} = {10}^{-6}s$ 。在 $t = 0$ 时, 产生过剩载流子的外部作用停止,因此 $t &gt; 0$ 时半导体恢复到平衡状态, $t = {4\mu s}$ 时的过剩载流子的复合率 (   )。</p>
-</li>
-<li>
-<p>假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 $1.0eV$ , B 的禁带宽度是 $1.2eV$,${300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是(   )。</p>
-</li>
-<li>
-<p>特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu_{1}=2000cm^{2}/(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu_{2}=1500cm^{2}/(V\cdot s)$ ，只存在第三种散射机制时的迁移率 $\mu_{1}=2000cm^{2}/(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu_{3}=500cm^{2}/(V\cdot s)$，总的迁移率为( $\quad$ )</p>
-</li>
-<li>
-<p>最有利效的复合中心能级位置在 (   ) 附近；最有利陷阱作用的能级位置在 (   ) 附近, 常见的是 (   ) 陷阱。</p>
-</li>
-</ol>
-<p>A. ${E}<em>{A}$ B. ${E}</em>{D}$ C. ${E}<em>{F}$ D. ${E}</em>{i}$ E. 少子 F. 多子</p>
-<ol start="6">
-<li>当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(   )。</li>
-</ol>
-<p>A. $\frac{1}{n_{0}}$ $\quad$ B. $\frac{1}{\Delta n}$ $\quad$  C. $\frac{1}{p_{0}}$ $\quad$  D. $\frac{1}{\Delta p}$</p>
-<ol start="7">
-<li>以下 4 种半导体最适合制作高温器件的是(   )。</li>
-</ol>
-<p><a href="http://A.Si">A.Si</a> $\quad$ <a href="http://B.Ge">B.Ge</a> $\quad$  C.GaAs $\quad$  D.GaN</p>
-<p>二、根据对 (Si) 晶体结构基本认识, 尝试回答以下问题: (10 分)</p>
-<ol>
-<li>
-<p>试画出 (Si) 的晶体结构图；</p>
-</li>
-<li>
-<p>试比较 (100)、(110) 和 (111) 面密度的大小, 要求写出详细计算过程;</p>
-</li>
-<li>
-<p>MOSFET 器件和 NPN 晶体管制造过程中, 会分别选用那种晶向的衬底, 为什么?</p>
-</li>
-</ol>
-<p>三、谈根据所学知识, 谈谈你对晶体中缺陷的认识。(10 分)</p>
-<p>四、讨论杂质浓度和温度分别对禁带宽度、迁移率、电阻率的影响。(10 分)</p>
-<p>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺Au后寿命为什么会明显下降?(10 分)</p>
-<p>六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法, 并简要说明基本测试原理(15 分)</p>
-<p>七、一 $\mathrm{n}$ 型半导体样品,复合能级 ${E}<em>{t}$ 在导带底之下三分之一 ${E}</em>{g}$ 处,设 ${\tau }<em>{n}$ 和 ${\tau }</em>{p}$ 为同一数量级, 并且与温度无关。试根据复合中心理论讨论寿命与温度的关系, 并根据得出的结果, 说明复合中心能级 ${E}_{t}$ 位置的方法。(25 分)</p>
-<h2 id="2-参考解析">2 参考解析</h2>
-<ol>
-<li>${L}<em>{n}\left( E\right)  =$ (电子牵引长度), ${L}</em>{D} =$ (德拜长度)。</li>
-</ol>
-<p>解: ${L}<em>{n}\left( E\right)$ 是电子牵引长度,其中下标 $\mathrm{n}$ 表示电子,要同 ${L}</em>{n}$ 电子扩散长度区分; ${L}_{D}$ 是德拜长度。</p>
-<ol start="2">
-<li>半导体中过剩电子浓度为 ${\Delta n} = {10}<sup>{15}{\mathrm{cm}}</sup>{-3}$ ,过剩载流子的寿命为 ${\tau }_{n0} = {10}^{-6}s$ 。在 $t = 0$ 时, 产生过剩载流子的外部作用停止,因此 $t &gt; 0$ 时半导体恢复到平衡状态, $t = {4\mu s}$ 时的过剩载流子的复合率 $( {1.83} \times  {10}<sup>{19}{\mathrm{cm}}</sup>{-3}{\mathrm{s}}^{-1})$ 。</li>
-</ol>
-<p>解: 首先考虑连续性方程:</p>
-<p>$$<br>
-\begin{align}<br>
-\frac{\partial \Delta n}{\partial t} = D_{n} \frac{\partial^{2} \Delta n}{\partial x^{2}} - \mu_{n}E\frac{\partial \Delta n}{\partial x} - \mu_{n} n \frac{\partial E}{\partial t} -\frac{\Delta n}{\tau} +g_{p}<br>
-\end{align}<br>
-$$</p>
-<p>其中 $t = 0$ 时外部作用停止,故 ${g}_{p} = 0$ ; 且 $t &gt; 0$ 时半导体恢复至平衡状态,故过剩载流子均匀分布,即 $\frac{\partial {\Delta n}}{\partial x} = 0$ ; 同时电场强度 $E = 0$ ,故上式化简为:</p>
-<p>$$<br>
-\begin{align}<br>
-\frac{\partial \Delta n}{\partial t} =  -\frac{\Delta n}{\tau}<br>
-\end{align}<br>
-$$</p>
-<p>解得:</p>
-<p>$$<br>
-\begin{align}<br>
-\Delta n = \Delta n(t=0) e^{-\frac{t}{\tau}}<br>
-\end{align}<br>
-$$</p>
-<p>故过剩载流子的复合率等于单位时间内过剩载流子数量的减少量, 即:</p>
-<p>$$<br>
-\begin{align}<br>
-U=-\frac{d \Delta n}{d t}= \frac{\Delta n(t=0)}{\tau} e^{-\frac{t}{\tau}}<br>
-\end{align}<br>
-$$</p>
-<p>代入$\Delta n=10<sup>{15}cm</sup>{-3}$，$\tau_{n0}=10^{-6}s$，$t=4\mu s$得:</p>
-<p>$$<br>
-\begin{align}<br>
-U=\frac{10^{15} cm^{-3} }{10^{-6}s}\cdot e^{-\frac{4\mu s}{1\mu s}}=1.83\times 10^{19} cm<sup>{-3}s</sup>{-1}<br>
-\end{align}<br>
-$$</p>
-<ol start="3">
-<li>假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 ${1.0}\mathrm{eV}$ , B 的禁带宽度是 ${1.2}\mathrm{eV},{300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是 (46.812)。</li>
-</ol>
-<p>解：考虑</p>
-<p>$$<br>
-\begin{align}<br>
-n_{i} = N_{C} N_{V} e^{-\frac{E_{g}}{2k_{0}T}}<br>
-\end{align}<br>
-$$</p>
-<p>故有:</p>
-<p>$$<br>
-\begin{equation}<br>
-\begin{aligned}<br>
-\frac{n_{iA}}{n_{iB}} &amp;= \frac{\exp(-\frac{E_{gA}}{2k_{0}T})}{\exp(-\frac{E_{gB}}{2k_{0}T})} \<br>
-&amp;=\exp(\frac{E_{gB}-E_{gA}}{2k_{0}T}) \<br>
-&amp;=\exp(\frac{0.2eV}{2 \times 0.026eV}) \<br>
-&amp;=46.812<br>
-\end{aligned}<br>
-\end{equation}\<br>
-$$</p>
-<ol start="4">
-<li>特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu_{1}=2000cm^{2}/(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu_{2}=1500cm^{2}/(V\cdot s)$ ，只存在第三种散射机制时的迁移率为 $\mu_{1}=2000cm^{2}/(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu_{3}=500cm^{2}/(V\cdot s)$ ，总的迁移率为( $\quad$ )</li>
-</ol>
-<p>解: 考虑载流子迁移率和散射概率之间满足:</p>
-<p>$$<br>
-\begin{align}<br>
-\mu = \frac{q\tau}{m^{\ast}} = \frac{q}{m^{\ast}P}<br>
-\end{align}<br>
-$$</p>
-<p>其中 $\tau$ 为相邻两次散射之间的平均自由时间, $p$ 为散射概率。其中载流子的散射总概率满足:</p>
-<p>$$<br>
-\begin{align}<br>
-&amp;{P}<em>{sum} = {P}</em>{I} + {P}<em>{II} + {P}</em>{III} + \ldots \<br>
-&amp;\frac{1}{\tau_{sum} } = \frac{1}{\tau_{I}} + \frac{1}{\tau_{II} } + \frac{1}{ \tau_{III} } + \ldots  \<br>
-&amp;\frac{1}{\mu_{sum} } = \frac{1}{\mu_{I} } + \frac{1}{\mu_{II} } + \frac{1}{\mu_{III} } + \ldots<br>
-\end{align}<br>
-$$</p>
-<p>其中 ${P}<em>{I},{P}</em>{II},{P}<em>{III}$ 分别表示不同散射机制的散射概率,对应的 ${\tau }</em>{I},{\tau }<em>{I},{\tau }</em>{I}$ 是对应散射机制的平均自由运动时间,对应的 ${\mu }<em>{I},{\mu }</em>{I},{\mu }_{I}$ 是对应散射机制的载流子迁移率。</p>
-<p>故代入本题数据得:</p>
-<p>$$<br>
-\begin{align}<br>
-\frac{1}{\mu_{sum} } &amp;= \frac{1}{\mu_{1} }  + \frac{1}{\mu_{2} } + \frac{1}{\mu_{3}} \notag\<br>
-&amp;= \frac{1}{2000} + \frac{1}{1500} + \frac{1}{1500} \<br>
-\Rightarrow \mu_{sum} &amp;= 316 cm^{2}/(V\cdot s)<br>
-\end{align}<br>
-$$</p>
-<ol start="5">
-<li>最有利效的复合中心能级位置在 (D) 附近; 最有利陷阱作用的能级位置在 © 附近, 常见的是 (E) 陷阱。</li>
-</ol>
-<p>A. ${E}<em>{A};$ B. ${E}</em>{D};$ C. ${E}<em>{F};$ D. ${E}</em>{i};$ E. 少子 F. 多子</p>
-<p>解:</p>
-<ul>
-<li>最有效的复合中心能级位于禁带中央附近即 ${E}<em>{i}$ 附近,若假设 ${r}</em>{n} = {r}_{p} = r$ ,则</li>
-</ul>
-<p>$$<br>
-\begin{align}<br>
-U = \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i} ch(\frac{E_{t}-E_{i}}{k_{0}T})}<br>
-\end{align}<br>
-$$</p>
-<p>当且仅当 ${E}<em>{t} = {E}</em>{i}$ 时上式的分母最小,即复合率最大,故此时复合中心最有效。</p>
-<ul>
-<li>
-<p>最有效的陷阱作用的能级位于费米能级附近即 ${E}<em>{F}$ 附近,因为费米能级以下的能级已经被填充满, 起不到俘获电子的作用; 若能级费米能级以上, 则其上的电子容易在热激发的作用下回到导带,起不到俘获电子的作用,故最有效的陷阱作用的能级位于费米能级附近即 ${E}</em>{F}$ 附近。其中常俘获少子。</p>
-</li>
-<li>
-<p>杂质能级的这种积累非平衡载流子的作用就称为陷阱效应, 故陷阱能级主要俘获非平衡少数载流子, 即主要为少子能级。</p>
-</li>
-</ul>
-<ol start="6">
-<li>当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(A)。</li>
-</ol>
-<p>A. $\frac{1}{ {n}<em>{0} };$ B. $\frac{1}{\Delta n};$ C. $\frac{1}{ {p}</em>{0} };$ D. $\frac{1}{\Delta p}$</p>
-<p>解: 考虑直接复合的少子寿命满足:</p>
-<p>$$<br>
-\begin{align}<br>
-\tau = \frac{1}{r(n_{0} + p_{0} + \Delta p )}<br>
-\end{align}<br>
-$$</p>
-<p>对于 $\mathrm{n}$ 型半导体在小注入条件下有:</p>
-<p>$$<br>
-\begin{align}<br>
-n_{0} \gg  p_{0} , n_{0} \gg \Delta p<br>
-\end{align}<br>
-$$</p>
-<p>故有:</p>
-<p>$$<br>
-\begin{align}<br>
-\tau \sim \frac{1}{rn_{0} }<br>
-\end{align}<br>
-$$</p>
-<p>故少子寿命正比于 $\frac{1}{ {n}_{0} }$ 。</p>
-<ol start="7">
-<li>以下 4 种半导体最适合制作高温器件的是 (D)。</li>
-</ol>
-<p><a href="http://A.Si">A.Si</a> <a href="http://B.Ge">B.Ge</a> C.GaAs D.GaN</p>
-<p>解: 若半导体器件的禁带宽度越宽,则该器件的极限工作温度越高; 本征载流子浓度 ${n}_{i}$ 满足下式:</p>
-<p>$$<br>
-\begin{align}<br>
-n_{i} = \left[ \frac{2(2\pi k_{0} T)^{\frac{2}{3}} (m_{n}^{\ast} m_{p}^{\ast} )^{\frac{3}{4}} }{\hbar^{3}} \right] exp(-\frac{E_{g} }{2k_{0}T})<br>
-\end{align}<br>
-$$</p>
-<p>半导体器件正常工作指的是本征载流子浓度至少比杂质浓度第一个数量级,故 ${n}<em>{i}$ 越小,则器件的极限工作温度越高; 从上式可以发现 ${E}</em>{g}$ 越大就可以实现越小的 ${n}_{i}$ ,即可以实现更高的极限工作温度。</p>
-<p>其中 Si、Ge、GaAs、GaN 的禁带宽度分别为:1.12eV、0.6643eV、1.42eV、3.44eV；故 GaN 最适合做高温器件。</p>
-<p>二、根据对 (Si) 晶体结构基本认识, 尝试回答以下问题: (10 分)</p>
-<ol>
-<li>试画出 $\mathrm{Si}$ 的晶体结构图；</li>
-</ol>
-<p>解: $\mathrm{Si}$ 的晶体结构图如下图所示</p>
-<p><img src="https://cdn.noedgeai.com/01936330-0b9b-7db3-8b9a-15a10c545236_4.jpg?x=636&amp;y=659&amp;w=390&amp;h=366" alt="图 1: $athrm{Si}$ 的晶体结构图"></p>
-<ol start="2">
-<li>试比较 (100)、(110) 和 (111) 面密度的大小, 要求写出详细计算过程; 解: 其中各晶向如下图所示:</li>
-</ol>
-<p><img src="https://cdn.noedgeai.com/01936330-0b9b-7db3-8b9a-15a10c545236_4.jpg?x=611&amp;y=1254&amp;w=438&amp;h=395" alt="图 2: 金刚石晶胞的各个晶向"></p>
-<ul>
-<li>(100) 晶面</li>
-</ul>
-<p>(100) 晶面上的原子分布情况如下: 4 个顶点各有一个原子, 面心一个原子, 所以 (100) 晶面上的原子数为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{原子数}=1+4\times \frac{1}{4} = 2<br>
-\end{align}<br>
-$$</p>
-<p>乘积因子的解释：其中面心的原子为该晶面独占；顶点的四个原子分别同另外三个 **其他晶胞的 (100) 晶面 **共用,所以算原子数时需要乘 $\frac{1}{4}$ 。</p>
-<p>同时 (100) 晶面的面积为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{(100)晶面面积} = a^{2} =(5.43\times 10<sup>{-8}\mathrm{cm})</sup>{2}<br>
-\end{align}<br>
-$$</p>
-<p>(100)</p>
-<p>所以 (100) 晶面的原子面密度为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{(100)晶面原子面密度} &amp;= \frac{2}{(5.43\times 10<sup>{-8}\mathrm{cm})</sup>{2}} \<br>
-&amp;= 6.78\times 10^{14} \mathrm{cm}^{-2}<br>
-\end{align}<br>
-$$</p>
-<ul>
-<li>(110) 晶面</li>
-</ul>
-<p>(110) 晶面上的原子分布情况如下：4 个顶点各有一个原子；上下棱的棱心各有一个原子；面上有原晶胞的体对角线上的两个原子, 所以 (110) 晶面上的原子数为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{原子数}=2+4\times \frac{1}{4} +2\times \frac{1}{2} = 4<br>
-\end{align}<br>
-$$</p>
-<p>乘积因子的解释：其中面上的 2 个原子为该晶面独占；顶点的四个原子分别同另外三个 <strong>其他晶胞的(110)晶面</strong> 共用,所以算原子数时需要乘 $\frac{1}{4}$ ;上(下) 棱的棱心的原子分别与正上 (下) 方的一个 <strong>晶胞的 (110) 晶面</strong>共用,所以算原子数时需要乘 $\frac{1}{2}$ 。</p>
-<p>同时 (110) 晶面的面积为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{(110)晶面面积} = a\times \sqrt{2}a =\sqrt{2}(5.43\times 10<sup>{-8}\mathrm{cm})</sup>{2}<br>
-\end{align}<br>
-$$</p>
-<p>所以 (110) 晶面的原子面密度为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{(110)晶面原子面密度} &amp;= \frac{4}{\sqrt{2}(5.43\times 10<sup>{-8}\mathrm{cm})</sup>{2}} \<br>
-&amp;= 9.62\times 10^{14} \mathrm{cm}^{-2}<br>
-\end{align}<br>
-$$</p>
-<ul>
-<li>(111) 晶面</li>
-</ul>
-<p>(111) 晶面上的原子分布情况如下: 三角形的 3 个顶点各有一个原子, 三角形的三条边分别有一个原子 (原晶胞的三个面心上的原子):</p>
-<p>$$<br>
-\begin{align}<br>
-\text{原子数}=3\times \frac{1}{6}+3\times \frac{1}{2} = 2<br>
-\end{align}<br>
-$$</p>
-<p>乘积因子的解释: 三角形的 3 个顶点的原子如下图所示分别同另外六个其他晶胞的 (111) 晶面共用,所以算原子数时需要乘 $\frac{1}{6}$ ; 边上的原子分别同另外一个晶胞的 (111) 晶面共用,所以算原子数时需要乘 $\frac{1}{2}$ 。</p>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_0.jpg?x=683&amp;y=1681&amp;w=292&amp;h=262" alt="图 3: 111 晶面的六分之一图示"></p>
-<p>同时 (111) 晶面的面积为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{(111)晶面面积} = \frac{\sqrt{3}}{4} (\sqrt{2}a)^{2} =\frac{\sqrt{3}}{2}(5.43\times 10<sup>{-8}\mathrm{cm})</sup>{2}<br>
-\end{align}<br>
-$$</p>
-<p>所以 (111) 晶面的原子面密度为:</p>
-<p>$$<br>
-\begin{align}<br>
-\text{(111)晶面原子面密度} &amp;= \frac{2}{\frac{\sqrt{3}}{2}(5.43\times 10<sup>{-8}\mathrm{cm})</sup>{2}} \<br>
-&amp;= 7.84\times 10^{14} \mathrm{cm}^{-2}<br>
-\end{align}<br>
-$$</p>
-<p>3.MOSFET 器件和 NPN 晶体管制造过程中, 会分别选用那种晶向的衬底, 为什么?</p>
-<p>解:</p>
-<ul>
-<li>MOS 管常用 (100) 晶向的晶圆来制作器件。</li>
-</ul>
-<ol>
-<li>
-<p>MOSFET 的工作电流为表面多子的漂移电流, 其大小与载流子的表面迁移率 (mobility) 有关, 其中 (100) 晶向的界面态密度最低, 表面迁移率最高, 可以使 MOSFET 有较高的工作电流。</p>
-</li>
-<li>
-<p>(100) 晶向的较低的界面态和悬挂键可以减小 MOSFET 的阈值电压 ${V}_{TH}$ 。</p>
-</li>
-<li>
-<p>(100) 晶向的缺陷密度最低,可以减小 ${V}_{TH}$ 的漂移。</p>
-</li>
-<li>
-<p>(100) 晶向粒子扩散速度慢, 有利于 MOSFET 较小氧化层厚度的生长。</p>
-</li>
-</ol>
-<ul>
-<li>BJT 管常用 (111) 晶向的晶圆来制作器件。</li>
-</ul>
-<ol>
-<li>
-<p>BJT 的工作电流是少子体扩散电流, 与表面迁移率关系较小。</p>
-</li>
-<li>
-<p>(111) 晶向的原子最多 (原子面密度最大), 可以增大场阈电压, 为 BJT 提供较好的纵向载流子迁移率。</p>
-</li>
-<li>
-<p>(111) 晶向的缺陷密度高,适合用来提高 BJT 中的寄生 PMOS 管的 ${V}_{TH}$ 。</p>
-</li>
-<li>
-<p>利用 (111) 晶向可以更精确的控制基区宽度。</p>
-</li>
-<li>
-<p>(111) 晶向的粒子扩散速度快, 考虑到 BJT 中的高掺杂特性, 扩散速度快可以减少 BJT 的制作时间。</p>
-</li>
-</ol>
-<p>三、谈根据所学知识, 谈谈你对晶体中缺陷的认识。(10 分)</p>
-<p>解: 晶体缺陷即是实际晶体偏离理想结构的不完整区域, 其分为如下三类:</p>
-<p>i) 点缺陷：空位、间隙</p>
-<p>晶格原子由于热振动脱离平衡位置获得足够的能量而离开周围原子的束缚, 挤入晶格原子的间隙,形成间隙原子；同时原位置成为空位；这种间隙和空位成对出现的缺陷称为弗仑克尔缺陷。 当只在晶体中形成空位时, 称为肖特基缺陷。</p>
-<p>ii) 线缺陷：位错</p>
-<p>位错包括刃位错和螺位错两种, 前者位错线垂直于滑移方向 (伯氏矢量), 而后者位错线平行于滑移方向。特别地, 刃位错包含 Glide 和 Climb 两种。</p>
-<p>iii) 面缺陷：晶界、亚晶界、相界</p>
-<p>晶界是多晶材料中, 两种晶体或晶粒之间的交界面。通常在腐蚀开始处或新相在母相的出溶处形成, 并使得材料的电学性能和热学性能降低。</p>
-<p>缺陷的存在会使严格按周期性排列的原子所产生的周期性势场受到破坏, 有可能在近代中引入能级,进而对半导体的性质产生决定性影响。</p>
-<p>四、讨论杂质浓度和温度分别对禁带宽度、迁移率、电阻率的影响。(10 分) 解:</p>
-<ul>
-<li>杂质浓度和温度对半导体禁带宽度的影响:</li>
-</ul>
-<p>随着杂质浓度的升高, 杂质原子之间靠得更近, 导致杂质原子之间的电子波函数发生重叠, 使孤立的杂质能级扩展为能带, 常称为杂质能带, 特别的若杂质能带进入了导带或价带, 并与导带或价带相连, 则形成了新的简并能带, 使能带的状态密度发生了变化, 简并能带的尾部伸入禁带,形成带尾。导致禁带宽度由 $\mathrm{E}\mathrm{g}$ 减小为 $\mathrm{E}$ ’ $\mathrm{g}$ ,禁带宽度变窄。</p>
-<p>考虑 Varshni 模型, 温度与禁带宽度之间满足:</p>
-<p>$$<br>
-\begin{align}<br>
-E_{g}(T) = E_{g}(0) - \frac{\alpha T^{2}}{\beta + T}<br>
-\end{align}<br>
-$$</p>
-<p>常见的半导体如 $\mathrm{Si}$ 和 $\mathrm{Ge}$ 的禁带宽度具有负温度系数,但特别地锑化铟的 ${E}_{g}$ 具有正温度系数。</p>
-<ul>
-<li>杂质浓度和温度对半导体迁移率的影响:</li>
-</ul>
-<p>硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系如下图所示：</p>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_2.jpg?x=472&amp;y=1174&amp;w=683&amp;h=613" alt="图 4: 硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系"></p>
-<p>若只考虑电离杂质散射和声学波散射,则载流子迁移率 $\mu$ 服从:</p>
-<p>$$<br>
-\begin{align}<br>
-\mu = \frac{q}{m^{\ast}} \cdot \frac{1}{A T^{\frac{2}{3}} + \frac{BN_{i}}{T^{\frac{2}{3}}}}<br>
-\end{align}<br>
-$$</p>
-<p>故从图 4 和式 (2.30) 中均可得到如下结论：随着温度的升高, 载流子迁移率降低; 同时随着杂质浓度的升高, 载流子迁移率降低。但当杂质浓度较大时, 低温区域内载流子迁移率会随着温度升高有小幅度的增加, 而后随着温度的升高而降低。</p>
-<p>杂质浓度很高的 $\mathrm{n}$ 型硅,由于施主能级扩展成杂质能带,导致禁带变窄,导带中运动的电子除受到电离杂质的散射外, 还会被施主能级所俘获, 这些被俘获的电子经过一定的时间还会被释放到导带中参与导电, 这些电子在导带中做漂移运动时, 不断地被施主能级俘获, 再释放, 再俘获, 使得电子的漂移运动减慢, 此外一些杂质带中的电子由于杂质原子轨道重叠, 也可能在施主原子间运动, 而不参与导电, 因此导带中有相当一部分电子在杂质带上运动, 从而迁移率有所降低。</p>
-<ul>
-<li>杂质浓度和温度对半导体电阻率的影响:</li>
-</ul>
-<p>若只考虑电离杂质散射和声学波散射, 则半导体电阻率、电导率与载流子迁移率存在如下关系 (以 $\mathrm{n}$ 型半导体为例):</p>
-<p>$$<br>
-\begin{equation}<br>
-\begin{aligned}<br>
-\rho &amp;= \frac{1}{\sigma} \<br>
-\sigma &amp;= n \mu_{n} q\<br>
-\Rightarrow \rho &amp;=  \frac{m^{\ast}}{q} \frac{A T^{\frac{2}{3}} + \frac{BN_{i}}{T^{\frac{2}{3}}}}{ nq  }<br>
-\end{aligned}<br>
-\end{equation}<br>
-$$</p>
-<p>故硅的杂质浓度、温度随电阻率的变化如下图所示:</p>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_3.jpg?x=443&amp;y=1116&amp;w=748&amp;h=379" alt="图 5: 硅的杂质浓度、温度随电阻率的变化"></p>
-<p>故随着杂质浓度的升高, 器件电阻率降低; 随着温度的升高, 器件电阻率先下降再升高再下降。</p>
-<p>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺 $\mathrm{Au}$ 后寿命为什么会明显下降?(10 分) 解:</p>
-<p>直接复合即导带中的电子直接落入价带与空穴复合。间接复合即非平衡载流子通过复合中心的复合。若假设 ${r}<em>{n} = {r}</em>{p} = r$ ,则</p>
-<p>$$<br>
-\begin{align}<br>
-U = \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i} ch(\frac{E_{t}-E_{i}}{k_{0}T})}<br>
-\end{align}<br>
-$$</p>
-<p>故从上式得到如下结论: 当且仅当 ${E}<em>{t} = {E}</em>{i}$ 时上式的分母最小,即复合率最大,故位于禁带中央附近的复合中心能级最有效。</p>
-<p>掺入金后,在 $\mathrm{Si}$ 中形成了深能级的复合能级,是有效的复合中心。其中 $\mathrm{n}$ 型硅的少子寿命满足:</p>
-<p>$$<br>
-\begin{align}<br>
-\tau_{p}  = \frac{1}{N_{t}r_{p}}<br>
-\end{align}<br>
-$$</p>
-<p>故随着金浓度 ${N}_{t}$ 的增大,少子寿命等比例的减小,故少量的有效复合中心就能大大缩短少子寿命。</p>
-<p>六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法, 并简要说明基本测试原理 (15 分) 解:</p>
-<p>少子寿命即载流子两次相邻散射之间的平均自由运动时间,或者是载流子复合率的倒数。</p>
-<p>影响半导体少子寿命的主要有：复合能级位置、复合中心浓度、俘获系数、温度、器件的杂质浓度。</p>
-<p>少子寿命检测方法:</p>
-<ol>
-<li>直流光电导衰减法</li>
-</ol>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_4.jpg?x=574&amp;y=1011&amp;w=485&amp;h=317" alt="图 6: 直流光电导衰减法测少子寿命"></p>
-<p>基于下式</p>
-<p>$$<br>
-\begin{align}<br>
-\Delta p(t) = \Delta p(0)\cdot e^{-\frac{t}{\tau}}<br>
-\end{align}<br>
-$$</p>
-<p>测量电导率衰减为峰值的 $\frac{1}{e}$ 时的时间即可测得少子寿命</p>
-<ol start="2">
-<li>霍尔效应法</li>
-</ol>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_4.jpg?x=566&amp;y=1699&amp;w=512&amp;h=266" alt="图 7: 霍尔效应法测少子寿命"></p>
-<p>基于下式：</p>
-<p>$$<br>
-\begin{equation}<br>
-\begin{aligned}<br>
-E_{H} &amp;= \frac{R_{H}IB}{A}\<br>
-R_{H} &amp;= -\frac{1}{nq} \<br>
-\mu_{H} &amp;= \sigma R_{H}<br>
-\end{aligned}<br>
-\end{equation}<br>
-$$</p>
-<p>通过测量电导率衰减为峰值的 $\frac{1}{e}$ 时的时间即可测得少子寿命</p>
-<ol start="3">
-<li>微波光电导衰减法 参考资料</li>
-</ol>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_5.jpg?x=494&amp;y=639&amp;w=628&amp;h=364" alt="图 8: 微波光电导衰减法"></p>
-<p>由于微波信号的变化量正比于电导率的变化量, 从而可以通过探测微波反射信号来探测电导率的变化, 得到样品的载流子寿命。</p>
-<p>七、一 $\mathrm{n}$ 型半导体样品,复合能级 ${E}<em>{t}$ 在导带底之下三分之一 ${E}</em>{g}$ 处,设 ${\tau }<em>{n}$ 和 ${\tau }</em>{p}$ 为同一数量级, 并且与温度无关。试根据复合中心理论讨论寿命与温度的关系, 并根据得出的结果, 说明复合中心能级 ${E}_{t}$ 位置的方法。(25 分)</p>
-<p>解:</p>
-<p>则根据直接复合理论,非平衡载流子的复合率 $\mathrm{U}$ 可以表示为:</p>
-<p>$$<br>
-\begin{align}<br>
-U = \frac{ r_{n}(n_{0}+n_{1}) + r_{p}(p_{0}+p_{1})  }{ N_{t} r_{p}r_{n}(n_{0}+p_{0})  }<br>
-\end{align}<br>
-$$</p>
-<p>其中</p>
-<p>$$<br>
-\begin{equation}<br>
-\left{<br>
-\begin{aligned}<br>
-n_{0} &amp;=N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) ,   &amp;n_{1}=N_{C} \mathrm{exp}(\frac{E_{t}-E_{C}}{k_{0}T})\<br>
-p_{0} &amp;=N_{V} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}),    &amp;p_{1}=N_{V} \mathrm{exp}(\frac{E_{V}-E_{t}}{k_{0}T})<br>
-\end{aligned}<br>
-\right.<br>
-\end{equation}<br>
-$$</p>
-<p>其中硅中金的空穴俘获截面的典型值满足下式：<a href="%7Bhttps://kns.cnki.net/kcms2/article/abstract?v=At0rObma_qMOynZbg_rKnty9IOGve9tMSHhOV72TG4QoMl8W3aQC60XOf_Bnh2O2WXS2wDPwP6nto8KpV1iVKIp2oKyJV_SAJ_JminOY5txmhMijmPkmiYGm8CA4H4MX4Lnjc3UEO8uGVoPd8WspAB878D_qkkOj62xE3zs9t_I_lVBJ_410bwGEBHjmQV2T&amp;uniplatform=NZKPT&amp;language=CHS">数据出处</a></p>
-<p>$$<br>
-\begin{equation}<br>
-\left{<br>
-\begin{aligned}<br>
-\sigma_{P} &amp;=(3.7\pm 0.7)\times 10^{-15} (\frac{300}{T})^{2.9\pm 0.3} \mathrm{cm}^{2},   &amp;T\in (150K,200K) \<br>
-\sigma_{P} &amp;=(1.4\pm 0.3)\times 10^{-15} (\frac{300}{T})^{2} \mathrm{exp} (-\frac{19 meV}{k_{0}T}) \mathrm{cm}^{2},   &amp;T\in (160K,318K)\<br>
-\sigma_{P} &amp;=(2.3\pm 0.3)\times 10^{-15} (\frac{300}{T})^{1.2\pm 0.2}  \mathrm{cm}^{2},   &amp;T\in (77K,180K)<br>
-\end{aligned}<br>
-\right.<br>
-\end{equation}<br>
-$$</p>
-<p>故电子俘获截面 ${\sigma }<em>{ - }$ 和空穴俘获截面 ${\sigma }</em>{ + }$ 与温度之间的关系近似满足:</p>
-<p>$$<br>
-\begin{align}<br>
-\sigma \sim T^{-n} , n \in(2,4)<br>
-\end{align}<br>
-$$</p>
-<p>若考虑电子俘获率和空穴俘获率满足下式:</p>
-<p>$$<br>
-\begin{equation}<br>
-\left{<br>
-\begin{aligned}<br>
-r_{p} &amp;=\sigma_{P} V_{T}   &amp;\<br>
-r_{n} &amp;=\sigma_{n} V_{T}   &amp;\<br>
-V_{T} &amp;=\sqrt{\frac{3k_{0}T}{m^{\ast}}}   &amp;<br>
-\end{aligned}<br>
-\right.<br>
-\end{equation}<br>
-$$</p>
-<p>则式 (2.39) 可变换成下式:</p>
-<p>$$<br>
-\begin{align}<br>
-U = \frac{\sigma_{+}\sigma_{-}V_{T}N_{t}(np-N_{c}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}))}{\sigma_{-}\left[ n + (N_{c}N_{v})^{\frac{1}{2}} \mathrm{exp}(-\frac{5E_{g}}{6k_{0}T})  \right] + \sigma_{+}\left[ p + (N_{c}N_{v})^{\frac{1}{2}} \mathrm{exp}(-\frac{7E_{g}}{6k_{0}T})  \right] }<br>
-\end{align}<br>
-$$</p>
-<p>其中 ${N}<em>{c}$、${N}</em>{v}$ 满足:</p>
-<p>$$<br>
-\begin{equation}<br>
-\left{<br>
-\begin{aligned}<br>
-N_{c} &amp;=2(\frac{m_{n}^{\ast} k_{0} T }{2\pi \hbar<sup>{2}})</sup>{\frac{3}{2}}  &amp;\<br>
-N_{v} &amp;=2(\frac{m_{p}^{\ast} k_{0} T }{2\pi \hbar<sup>{2}})</sup>{\frac{3}{2}}  &amp;<br>
-\end{aligned}<br>
-\right.<br>
-\end{equation}<br>
-$$</p>
-<p>则 (2.40) 可近似等价为:</p>
-<p>$$<br>
-\begin{align}<br>
-U \sim \frac{T^{\alpha-\frac{3}{2}} ( np - T^{3}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})) }{n+T^{\frac{3}{2}} \mathrm{exp}(-\frac{E_{g}}{k_{0}T}) \mathrm{ch}(\frac{E_{g}}{6k_{0}T}) } , \alpha\in (0,1)<br>
-\end{align}<br>
-$$</p>
-<p>但该式子 $U$ 与 $T$ 的关系图较难绘制,故通过如下方式考虑简化式子来讨论。</p>
-<p>根据<a href="https://kns.cnki.net/kcms2/article/abstract?v=J38Mj5ylEu88tQBJNFw5h1IwWRjtcf_dazc2fmWHJqQx4i96YpQofdjMrRyTwOQEhUz_gRjk3J8olPV2CUyyPpMytd1c6H-dLLm8kGaFSclYiNLVGkP2TgxA-MNFS6JTU1yvBp2Z61w3KWg45T6K5sBH5kA97s6ntFxcDiWvHkM0RjAd08gQLGcqsUdFXL_b&amp;uniplatform=NZKPT&amp;language=CHS">参考资料</a>我们有全温度范围内的硅的费米能级变化, 同时该图像考虑了禁带宽度随温度增加的变化的 varish 模型, 是较为准确的数据。</p>
-<p><img src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_6.jpg?x=585&amp;y=1396&amp;w=470&amp;h=300" alt="图 9: 全温度范围内的硅的费米能级变化"></p>
-<p>故从较大的温度范围内来看, 硅的费米能级随温度的变化满足下述规律:</p>
-<ol>
-<li>
-<p>在温度 ${0K} &lt; T &lt; {100K}$ 的低温弱电离区间, 费米能级随温度的升高而逐渐增大。温度约为 ${100}\mathrm{K}$ 时,最大费米能级位于导带底以下 ${0.059}\mathrm{eV}$ 处。</p>
-</li>
-<li>
-<p>在温度 ${100K} &lt; T &lt; {700K}$ 范围内,费米能级几乎呈线性下降。</p>
-</li>
-<li>
-<p>温度大于 ${700}\mathrm{K}$ 时,费米能级逐渐趋于平缓,接近带隙中间,即本征半导体的费米能级。</p>
-</li>
-</ol>
-<p>同时由于 ${E}<em>{t} - {E}</em>{i} = \frac{ {E}_{g} }{6} = {0.187}\mathrm{ {eV} }$ ,故我们按温度从低到高的顺序来分析,来简化少子寿命的表达式:</p>
-<ol>
-<li>较低温时, 根据电中性条件推的费米能级的位置满足:</li>
-</ol>
-<p>$$<br>
-\begin{equation}<br>
-\begin{aligned}<br>
-E_{F} &amp;= \frac{E_{c}+E_{D} }{2} + (\frac{k_{0}T}{2} ) \ln (\frac{N_{D}}{N_{c}})<br>
-\end{aligned}<br>
-\end{equation}<br>
-$$</p>
-<p>且随着温度的升高, ${E}<em>{F}$ 先升高后先将,当且仅当 ${N}</em>{c} = {0.11}{N}<em>{D}$ 时, ${E}</em>{F}$ 距离导带最近。同时注意到,杂质的电离能较小,即杂质能级与导带的距离之间较小,同时注意到 ${E}<em>{F}$ 在 ${E}</em>{D}$ 之上,故此时费米能级 ${E}<em>{F}$ 远在 ${E}</em>{t}$ 之上,故可将少子寿命式子化简为:</p>
-<p>$$<br>
-\begin{align}<br>
-\tau = \frac{1}{U} =  \frac{1}{N_{t}\sigma_{+}V_{T} } \sim T^{\beta}, \beta \in (\frac{3}{2},\frac{7}{2})<br>
-\end{align}<br>
-$$</p>
-<ol start="2">
-<li>温度较高时, ${E}<em>{F} &lt; {E}</em>{t}$ 时,少数载流子浓度存在如下近似:</li>
-</ol>
-<p>$$<br>
-\begin{equation}<br>
-\left{<br>
-\begin{aligned}<br>
-&amp;\tau = \frac{1}{N_{t}\sigma_{+}V_{T}} \frac{n_{1}}{n_{0}} \sim T^{\beta} \mathrm{exp}(\frac{E_{i}-E_{F}}{k_{0}T})\mathrm{exp}(\frac{0.187eV}{k_{0}T}) \<br>
-&amp;n_{1} \gg n_{0}&gt;p_{0} &gt; p_{1}<br>
-\end{aligned}<br>
-\right.<br>
-\end{equation}<br>
-$$</p>
-<p>故可根据图 9 所示的 ${E}_{F}$ 变化曲线近似估计少子寿命 $\tau$ 的变化。</p>
-<h2 id="参考文献">参考文献</h2>
-<p>[1] 陈开茅,毛晋昌,晏懋洵,吴恩,曾奇勇. 硅中金的空穴俘获截面的研究. 北京大学物理系, 1983.</p>
-<p>[2] 王惠,杨伟强,严金梅,魏红军. 关于 $\mathrm{N}$ 型晶体硅费米能级的研究. 晶澳太阳能有限公司,2015.</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ADC参数总结</title>
     <url>/2024/11/16/ADC_parameter/</url>
-    <content><![CDATA[<h1>ADC参数总结</h1>
+    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
 <ul>
-<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ/step$</li>
+<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
+class="math inline">\(nJ/step\)</span></li>
 </ul>
-<p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+<p><a
+href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
 <ul>
 <li></li>
 </ul>
@@ -736,48 +18,53 @@ $$</p>
   <entry>
     <title>简并or退化？本征or掺杂？</title>
     <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
-    <content><![CDATA[<h1>简并or退化？本征or掺杂？</h1>
+    <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
 <blockquote>
 <p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
 </blockquote>
-<h2 id="degeneration-退化-在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
+<h2
+id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
 <blockquote>
-<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
+<p>故 a degenerate
+semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
+impurity
+band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
+class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
+semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
 </blockquote>
-<p>其中费米狄拉克分布函数为:<br>
-$$<br>
-\begin{align*}<br>
-f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}<br>
-\end{align*}<br>
-$$</p>
-<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：<br>
-$$<br>
-\begin{align*}<br>
-f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})<br>
-\end{align*}<br>
-$$</p>
-<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：<br>
-$$<br>
-\begin{align*}<br>
-\big\vert E - E_{F} \big\vert &gt; 3k_{0} T<br>
-\end{align*}<br>
-$$</p>
-<p>因此<strong>对于非简并半导体</strong>，我们要求：<br>
-$$<br>
-\begin{align*}<br>
-E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T<br>
-\end{align*}<br>
-$$</p>
-<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：<br>
-$$<br>
-\begin{align*}<br>
-n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \<br>
-p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \<br>
-n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})<br>
-\end{align*}<br>
-$$</p>
+<p>其中费米狄拉克分布函数为: <span class="math display">\[
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}
+\]</span></p>
+<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
+<span class="math display">\[
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
+class="math display">\[
+\begin{align*}
+    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
+\end{align*}
+\]</span></p>
+<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
+class="math display">\[
+\begin{align*}
+    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
+\end{align*}
+\]</span></p>
+<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
+<span class="math display">\[
+\begin{align*}
+    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
+\end{align*}
+\]</span></p>
 <p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="Explanation">Explanation:</h2>
+<h2 id="explanation">Explanation:</h2>
 <blockquote>
 <p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
 </blockquote>
@@ -788,11 +75,510 @@ $$</p>
 <li>非简并的半导体可能是考虑了杂质补偿。</li>
 <li>非简并的半导体既有掺杂的也有本征的。</li>
 </ul>
-<h1>参考资料</h1>
+<h1 id="参考资料">参考资料</h1>
 <ul>
-<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+<li><a
+href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a
+href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
 </ul>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>氢原子模型和类氢原子模型</title>
+    <url>/2024/11/16/Hydrogen_like_model/</url>
+    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型">氢原子模型和类氢原子模型</h1>
+<p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
+<h1 id="氢原子模型">氢原子模型</h1>
+<blockquote>
+<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+</blockquote>
+<ul>
+<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 <span
+class="math inline">\(E_{1}\)</span> 、 <span
+class="math inline">\(E_{2}\)</span> 、 <span
+class="math inline">\(E_{3}\)</span>
+......，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
+<li>跃迁假设：电子从 <span class="math inline">\(E_{m}\)</span>
+能级跃迁到 <span class="math inline">\(E_{n}\)</span> 能级所需的能量满足
+<span class="math inline">\(h\nu=E_{n}-E_{m}\)</span> 。</li>
+<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 <span
+class="math inline">\(2\pi r\cdot m_{e} v = n h\)</span>
+，即电子只能在轨道角动量等于约化普朗克常数 <span
+class="math inline">\(\hbar\)</span> 的整数倍的轨道上运动。</li>
+</ul>
+<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：
+<span class="math display">\[\begin{align*}
+   &amp;m v r = n \frac{h}{2\pi} \\
+   &amp;m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot
+\frac{e^{2}}{r^{2}}
+\end{align*}\]</span></p>
+<p>联立得: <span class="math display">\[\begin{align*}
+   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
+\end{align*}\]</span></p>
+<p>考虑电子的总能量为动能与势能之和： <span
+class="math display">\[\begin{align*}
+   E_{n} &amp;= E_{k,n} + E_{p,n} \\
+   &amp;= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}}
+\frac{e^{2}}{r})\\
+   &amp;= -\frac{1}{2}mv^{2}
+\end{align*}\]</span></p>
+<p>化简得: <span class="math display">\[\begin{align*}
+   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot
+\frac{1}{n^{2}}
+\end{align*}\]</span></p>
+<h2 id="类氢原子模型">类氢原子模型</h2>
+<blockquote>
+<p>考虑如下两条修正:</p>
+</blockquote>
+<ul>
+<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 <span
+class="math inline">\(\epsilon=\epsilon_{0}\epsilon_{r}\)</span>
+的介质中。</li>
+<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量
+<span class="math inline">\(m_{0}\)</span> 用有效质量 <span
+class="math inline">\(m^{\ast}\)</span> 替代。</li>
+</ul>
+<p>即得: <span class="math display">\[\begin{align*}
+   r_{n} &amp;= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}}
+n^{2} \\
+   E_{n} &amp;= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2}
+h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}\]</span></p>
+<p>当<span class="math inline">\(n=1\)</span>时为基态，此时 <span
+class="math display">\[\begin{align*}
+   r_{0} &amp;= 0.053nm \\
+   E_{0} &amp;= 13.6eV
+\end{align*}\]</span></p>
+<p>则进一步化简得: <span class="math display">\[\begin{align*}
+   r_{n} &amp;= \frac{m^{\ast}}{m_{0}} \cdot
+\frac{E_{0}}{\epsilon_{r}^{2}} \\
+   \triangle E_{n} &amp;= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
+\end{align*}\]</span></p>
+<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IC工艺课的10个问题总结-I</title>
+    <url>/2024/12/10/IC_Manufacture_test_10problems/</url>
+    <content><![CDATA[<h1 id="情况说明">情况说明</h1>
+<p>参考教材<code>半导体制造技术导论(第二版)——萧宏</code>，课程<code>半导体材料及IC工艺原理</code>。</p>
+<p>该总结是课程期末作业的一部分，边复习边总结。</p>
+<h1 id="chapter1-5">Chapter1-5</h1>
+<h2
+id="为什么目前市场上主流的最大晶圆的大小均为12英寸为什么没有1314英寸的wafer投入生产">1.
+为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？</h2>
+<p><strong>解答</strong>:若假设晶圆的缺陷密度一样，那么越大的晶圆面积则会拥有更多的缺陷，进而会导致更低的成品率。</p>
+<p><span class="math display">\[
+\begin{align}
+    Y \propto \frac{1}{ (1+DA)^{n} }
+\end{align}
+\]</span></p>
+<p>其中Y表示成品率，D表示缺陷密度，A表示晶圆面积，n表示该wafer所需要处理的工序数。</p>
+<p>同时更大的wafer在生产过程中也需要更大的设备相匹配，例如LPCVD机器、蚀刻机、离子注入机、高温炉管等等。适用于更大尺寸wafer的生产设备的制造难度及成本是具备挑战性的，同时更大的设备无疑会需要更大的无尘间体积，这将会为生产成本带来增加。</p>
+<p>并且当前12英寸的wafer生产过程成熟，市场反馈良好，当前其生产过程中仍具备诸多可优化的流程以提高成品率，其局限性和瓶颈暂不明显，市场目前并未表现出对更大尺寸wafer的强烈呼唤。</p>
+<h2 id="为什么测试结构全都做在晶粒的切割道上">2.
+为什么测试结构全都做在晶粒的切割道上？</h2>
+<p><strong>解答</strong>:为了节约硅晶圆的面积，<code>有待后续补充</code>。</p>
+<h2 id="为什么使用高k高介电常数和低k介质来取代二氧化硅做绝缘层">3.
+为什么使用高k(高介电常数)和低k介质来取代二氧化硅做绝缘层？</h2>
+<p><strong>解答</strong>:首先对于平行板电容器模型，其电容大小满足下式</p>
+<p><span class="math display">\[
+\begin{align}
+    C = k \varepsilon_{0} \frac{hl}{d}
+\end{align}
+\]</span></p>
+<p>其中称k为介电常数(与电磁波课程中不同，电磁波课程中称<span
+class="math inline">\(\varepsilon\)</span>为介电常数，k这种称法工业界常用)，故为了减小电容的尺寸，可以通过使用高k介质来保证在缩小电容尺寸的同时维持同样的电容值。</p>
+<h3 id="高k介质">高k介质</h3>
+<p>同时用高k介质替代 $ $
+做为栅介质能大幅减小栅漏电流，在满足性能和功耗要求的同时允许器件尺寸进一步微缩。但是高k介质替代
+$ $ 又带来的两个问题[1]:</p>
+<ul>
+<li><p>Poly
+silicon和高k介质之间的费米能级钉扎效应导致阈值电压增大，</p></li>
+<li><p>远程声子散射导致的载流子迁移率下降，这是因为高k介质与硅沟道之间的界面陷阱密度大，沟道中的载流子被俘获到陷阱中。</p></li>
+</ul>
+<p>但是这些问题是可以解决的，通过利用金属替代Poly
+silicon做为栅电极，可以产生较少的界面缺陷、减弱硼穿透效应，还能有效降低高k介质层中的缺陷密度。以pMOS器件为例，金属栅极材料的选择有众多约束，其中最主要的是金属材料必须具有与Si的价带底相近的功函数(5.0-5.2eV)以获得合适的电压阈值，同时金属栅极需具有良好的热稳定性使其有效功函数不受高温退火的影响[2]。同时采用应变技术能够进一步提升迁移率，应变分为全局应变和局域应变两种，前者一般通过在
+$Si_{1-x}Ge_{x} $
+渐变层上外延生长Si或Ge实现；后者针对NMOS和PMOS，分别通过沉积氮化硅帽层和漏区沉积SiGe实现。</p>
+<figure>
+<img src="https://www.helloimg.com/i/2024/12/09/6756fb1cd428a.png"
+alt="采用HKMG工艺的效果" />
+<figcaption aria-hidden="true">采用HKMG工艺的效果</figcaption>
+</figure>
+<p>同时定义有效氧化层厚度(Effective Oxide Thickness,EOT)满足下式: <span
+class="math display">\[
+\begin{align}
+    \mathrm{EOT} = k \times T_{ox}
+\end{align}
+\]</span></p>
+<p>其中 <span class="math inline">\(T_{ox}\)</span>
+为氧化层厚度，以高k介质氧化铪为例，它的k是20，是二氧化硅的6倍。故6nm厚的
+$ $ 提供相当于1nm厚的 $ $
+的EOT，故在维持栅极电容大小不变的基础上，栅极可以采用较厚的介质进而实现较小的漏极泄露电流。<a
+href="https://zhuanlan.zhihu.com/p/346851712">参考资料:HKMG(High-K栅氧化物层+Metal
+Gate)技术</a></p>
+<h3 id="低k介质">低k介质</h3>
+<p>当集成电路的特征尺寸减少至0.18 <span class="math inline">\(\mu
+m\)</span>
+或更小时，互连寄生的电阻、电容引起的延迟、串扰和功耗已成为发展高速、高密度和多功能集成电路需解决的瓶颈问题。</p>
+<p>在芯片内互连技术节点迭代过程中，已有多种技术被用于减少互连线路的RC延迟。其中减少寄生电容较为直接的方法是采用更低介电常数(低k)的材料做层间及线间介质来实现，例如氟化硅玻璃(<span
+class="math inline">\(k\sim
+3.6\)</span>)；通过PECVD实现有机硅酸盐SiCOH(K&lt;3)的沉积，以及实现多孔SiCOH(<span
+class="math inline">\(k\sim 2.5\)</span>)的应用[3]。</p>
+<p>介电常数低于 $ $ 的低k介质材料的介电常数 $k_{low-k} $ 范围需满足:
+<span class="math display">\[
+\begin{align}
+    k_{air} \leq k_{low-k} \leq k_{ \mathrm{Si O_{2} } }
+\end{align}
+\]</span></p>
+<p>其中 <span class="math inline">\(k_{air}\)</span>
+是空气的介电常数，大小为1；$ k_{ }$ 是 <span
+class="math inline">\(\mathrm{Si O_{2} }\)</span>
+的介电常数，大小为3.9-4.2，具体值取决于制作 <span
+class="math inline">\(\mathrm{Si O_{2} }\)</span> 时的工艺[4]。</p>
+<p>IC芯片多层立体布线，不同传导层之间必须相互绝缘，使用层间淀积绝缘介质(inter
+level dielectric, ILD)来实现层间绝缘。特别是当工艺进入0.13 <span
+class="math inline">\(\mu m\)</span>
+以下的节点，更倾向于采用低k介质做为介质层材料取代传统的二氧化硅介质。例如多孔二氧化硅aerogel、有机聚合物聚酰亚胺等等。故现在较为成熟的互连工艺时在金属线间嵌入低k介质薄膜，在微通孔见嵌入等离子体增强淀积的二氧化硅电介质，即可实现RC延迟降低，也可实现热功耗降低和器件稳定性提高，同时兼容目前的刻蚀、CMP工艺，在生产成本方面是具有优势的。</p>
+<h3 id="总结">总结</h3>
+<p>在工艺特征尺寸持续减小的过程中，采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，实现厚度减小的情况下所提供的电容大小不同步减少，以保障栅极漏电流的减小。但其与ploy电极之间的费米钉扎效应等副效应仍有待解决，目前已经提出采用改换金属电极替代poly和使用应变技术提升迁移率等多种方案来缓解副效应。</p>
+<p>同时采用低k介质替代二氧化硅做为各传导层之间的绝缘介质，其拥有较少的寄生电容，可以实现较低的电路互连的RC延迟，但其生产与当前生产工艺流程的兼容性、成本经济性等仍受到挑战。</p>
+<h3 id="问题3参考文献">问题3参考文献</h3>
+<p>[1] <a
+href="https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.61.137701">黄力,
+黄安平, 郑晓虎, 肖志松, 王玖. 高k介质再新型半导体器件中的应用[J].
+物理学报, 2012, 61(13): 137701.</a></p>
+<p>[2] <a href="http://www.wuli.ac.cn/cn/article/id/31655">杨智超,
+黄安平, 肖志松. pMOS金属栅极材料的研究进展[J]. 物理, 2010, 39(02):
+113-122.</a></p>
+<p>[3] <a href="http://www.wuli.ac.cn/cn/article/id/31655">张思勉,
+邓晓楠, 王宇祺, 武逸飞, 刘佳宁, 李正操, 蔡坚, 王琛.
+后摩尔时代芯片互连新材料及工艺革新[J]. 中国科学:化学, 2023,
+53(10).</a></p>
+<p>[4] <a href="https://www.ejournal.org.cn/CN/Y2000/V28/I11/84">阮刚,
+肖夏, 朱兆. 低介电常数(low-k)介质在ULSI中的应用前景[J]. 电子学报, 2000,
+28(11): 84-87.</a></p>
+<h2 id="dram是怎么读取和存入数据的">4. DRAM是怎么读取和存入数据的？</h2>
+<p>动态随机存储器(Drnamic random and memory)</p>
+<h2 id="为什么低速cmos和dram均避免使用外延层eoitaxy">5.
+为什么低速CMOS和DRAM均避免使用外延层(eoitaxy)？</h2>
+<p><strong>解答</strong>:<code>暂未查到详细答案，有待后续补充</code>。</p>
+<h2
+id="热氧化时为什么加入氯离子可以改善界面态又为什么氯离子过多时器件性能下降">6.
+热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？</h2>
+<p>热氧化时加入氯离子的目的如下：</p>
+<ul>
+<li><p>1.增强氧化速度，能使氧化速率提升 10%~15%。</p></li>
+<li><p>2.钝化可动离子，特别是Na+，K+，钠，钾离子在电场作用下移动到硅片表面，影响电学特性，导致器件不稳定。而掺氯可固定可动离子，避免其移动。</p></li>
+<li><p>3.中和Si-SiO2界面处电荷，减少氧化层缺陷。</p></li>
+</ul>
+<p>关于氯离子过多时器件性能下降，<code>暂未查到详细解答，等待后续补充</code>。</p>
+<h2 id="为什么深亚微米工艺中要持续做薄栅氧化层如何实现">7.
+为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？</h2>
+<p><strong>解答</strong>：CMOS器件的关键性能指标是驱动电流 <span
+class="math inline">\(I_{d}\)</span>
+，其大小满足(5)式，与栅极电容大小成正相关。同时栅极电容大小满足(6)式，即与栅极表面积成正比，与栅介质厚度成反比。因此可以通过增加栅极表面积和降低栅介质厚度来提高栅极电容[1]。</p>
+<p><span class="math display">\[
+\begin{align}
+    I_{D} = \frac{1}{2} \frac{W}{L} C_{ox} (V_{gs} - V_{th} )^{2}
+\end{align}
+\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+    C_{ox} \propto k\varepsilon \frac{A}{d}
+\end{align}
+\]</span></p>
+<p>随着半导体工艺技术的不断发展，集成电路的集成度不断提高，这对增加栅极表面积产生了极大的制约。因此在半导体技术的发展过程中，降低栅介质栅氧化层厚度变成了推进CMOS器件性能提高的主要手段。</p>
+<p>但随着MOSFET的沟道长度缩短，这就导致了MOSFET管中的Source和Drain（源和漏）的距离越来越短，因此栅极对沟道的控制能力变差，这就意味着栅极电压夹断（pinch
+off）沟道的难度变大，于是使得亚阈值漏电（subthreshold
+leakage）现象，即短沟道效应（short-channel effect）更加容易发生。</p>
+<p>短沟道效应指的是当晶体管体积缩小时，源漏耗尽层宽度在整个沟道中所占比重越来越大。开启电压在沟道很短时将随沟道变小而迅速下降，其详细的计算和I-V关系位于参考文献[2]中。基于BSIM4模型，亚阈值泄露电流<span
+class="math inline">\(I_{sub}\)</span>满足下式:</p>
+<p><span class="math display">\[
+\begin{align}
+    I_{sub} = I_{0} \exp\big(\frac{ V_{gs} - V_{th} }{ nkT/q }\big)
+\big( 1- \exp(\frac{ -V_{ds} }{ kT/q }) \big)
+\end{align}
+\]</span></p>
+<p>从上式可以看出随着阈值电压的减小，<code>亚阈值漏电电流</code>呈指数增加。</p>
+<p>同时随着栅极氧化层厚度的变薄，<code>栅极泄露电流</code>不容忽略。栅极氧化层厚度的变薄导致氧化层间的电场增加，较高的电场加上很薄的栅氧化层会导致在nMOS晶体管的沟道和栅极之间有电子隧道(对于pMOS是空穴隧道)产生，这将会带来栅氧化层隧道电流，其也是栅极泄露电流的最主要组成部分，其电流密度可简单表示为下式[3]:</p>
+<p><span class="math display">\[
+\begin{align}
+    J_{T}=A(\frac{ V_{ox} }{ T_{ox} })^{2} \exp
+(-\frac{B\big(1-(1-\frac{V_{ox } }{\phi_{ox} })^{\frac{3}{2} } \big)
+}{V_{ox }/T_{ox } })
+\end{align}
+\]</span></p>
+<p>其中A、B是于工艺有关的参数；<span
+class="math inline">\(T_{ox}\)</span> 是栅氧化层厚度； <span
+class="math inline">\(\phi_{ox}\)</span>
+是隧道粒子的势垒。可发现随着栅氧化层厚度的减小，隧道电流急剧增长。</p>
+<h3 id="总结-1">总结</h3>
+<p>随着工艺的推进，为提高CMOS器件的驱动电流进而则需提高其栅极电容，由于小尺寸工艺下栅氧化层面积很难增大，故选择持续减小栅氧化层厚度来实现驱动电流增大的目的。这会带来栅极泄露电流的急剧增加。同时栅极中掺入的B等杂质会从栅极中扩散至硅衬底或固定在栅介质中，这会影响器件的阈值电压。</p>
+<p>目前通过采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，但这又引入了一些新的问题，具体可参考问题3。</p>
+<h3 id="问题7参考文献">问题7参考文献</h3>
+<p>[1] <a href="https://d.wanfangdata.com.cn/thesis/D446460">王蒙.
+超大规模集成电路制造工艺中对消除1/f噪声影响的研究. 复旦大学硕士论文.
+2011</a></p>
+<p>[2] <a
+href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdukdfnAPAQ4YfvbWpXBQErMz01Eb7-HbZLbKQFyGeDRTFVItEq0qKc7hUxN5-plTt2gpFwGOCiKWdoJHyoRIQ0Ho9Z32-_q0-zMmh6nBLn7svNYkiXqRdoYJpa3XfVEuZpEYI9CWqogeUVWW8Tf5KG25B2302ClcgL6s7RKMhqp0tDSPz87z-ra&amp;uniplatform=NZKPT&amp;language=CHS">T.L.周,
+H.N.高斯, 李松发. 具有短沟道的结栅场效应晶体管的特性. 半导体情报.
+1973(11)</a></p>
+<p>[3] <a
+href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdupREhI1qHd6c8_aWkrHdFqCiWEOqJAeqcWeP70mMofL24gnKYC-ScUetc9n0HDpS-Ijau5R1l9bKWKqfIG4ZEo-WENIS7unufFE5BxOyEz_2kKQ_lLbfin5TCh71OzdgQSTEkZ_TKg3Njc79nMRN6QjKtWls0JuYuYHVki4o_CrZJvLHAjlOIq&amp;uniplatform=NZKPT&amp;language=CHS">杨松,
+王宏, 杨志家. 45nm体硅工艺下使用双-栅氧化层厚度降低SRAM的泄漏功耗.
+半导体学报. 2007(05)</a></p>
+<h2 id="为什么扩散掺杂drive-in的时候要通入氧气">8.
+为什么扩散掺杂drive-in的时候要通入氧气？</h2>
+]]></content>
+      <tags>
+        <tag>IC工艺</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
+    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
+    <content><![CDATA[<h1
+id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
+<blockquote>
+<p><code>问题来源于半导体物理课程的第一章作业</code></p>
+</blockquote>
+<h1
+id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
+<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>(100)晶向的缺陷密度最低，可以减小<span
+class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
+<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
+</ul>
+<h1
+id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
+<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
+<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
+<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
+    <content><![CDATA[<h1
+id="祝老师教师节快乐暨利用传输门做二选一选择器的cmos电路分析">祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1>
+<h1
+id="祝天下的老师们教师节快乐祝老师工作顺利万事如意">祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1>
+<h1
+id="利用传输门做二选一选择器的cmos电路分析">利用传输门做二选一选择器的CMOS电路分析</h1>
+<p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，`只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<p>如图1所示为传输门的CMOS电路示意图</p>
+<ul>
+<li>当<span
+class="math inline">\(C=1\)</span>时，下面对MOS管的导通情况进行分析: ###
+NMOS导通情况 <span class="math display">\[\begin{align*}
+  \because &amp;C=1\\
+  \therefore &amp;V_{GN} = V_{DD} \\
+  \because &amp;V_{BN} = 0V\\
+\end{align*}\]</span></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i}
+\end{align*}\]</span></p>
+<h3 id="pmos导通情况">PMOS导通情况</h3>
+<p><span class="math display">\[\begin{align*}
+    \because &amp;\overline{C}=0\\
+    \therefore &amp;V_{GP} = 0V \\
+    \because &amp;V_{BP} = V_{DD}\\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} -
+V_{DD}) = - V_{i}
+\end{align*}\]</span></p>
+<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证 $V_{GSN} = V_{DD} - V_{i}
+v_{TH} $ ，即NMOS产生导电沟道；</p>
+<p>当 $V_{i} &gt; V_{TH} $ ，可保证$V_{GSP} = - V_{i} -v_{TH} $
+，即PMOS产生导电沟道；</p>
+<p>故 <span class="math inline">\(V_{i}\)</span>
+无论取任何值(但都必须保证小于 <span
+class="math inline">\(V_{DD}\)</span>
+)都可保证至少有一个MOS管存在导电沟道，使得 <span
+class="math inline">\(V_{o}=V_{i}\)</span> 。</p>
+<ul>
+<li>当 <span class="math inline">\(C=0\)</span>
+时，下面对MOS管的导通情况进行分析: ### NMOS导通情况 <span
+class="math display">\[\begin{align*}
+  \because &amp;C=1\\
+  \therefore &amp;V_{GN} = 0V \\
+  \because &amp;V_{BN} = 0V\\
+\end{align*}\]</span></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSN} = 0  &lt; V_{TH}
+\end{align*}\]</span></p>
+<h3 id="pmos导通情况-1">PMOS导通情况</h3>
+<p><span class="math display">\[\begin{align*}
+    \because &amp;\overline{C}=1\\
+    \therefore &amp;V_{GP} = V_{DD} \\
+    \because &amp;V_{BP} = V_{DD}\\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSP} &gt; - V_{TH}
+\end{align*}\]</span></p>
+<p>故<span
+class="math inline">\(V_{i}\)</span>无论取任何值(但都必须保证小于<span
+class="math inline">\(V_{DD}\)</span>)都无法使任意一个MOS管存在导电沟道。</p>
+<h1
+id="故根据传输门导通规律设计如下图所示的二选一数选器">故根据传输门导通规律设计如下图所示的二选一数选器</h1>
+<p>如图2所示。</p>
+]]></content>
+      <tags>
+        <tag>模集(拉扎维)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2024/11/16/body_effect_reduce_resistence/</url>
+    <content><![CDATA[<h1 id="提问">提问：</h1>
+<blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+</blockquote>
+<h2 id="我的思考">我的思考</h2>
+<ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
+class="math display">\[\begin{aligned}
+  I = g_{mb} V_{BS}
+\end{aligned}\]</span></li>
+</ul>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
+class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
+    <url>/2024/11/16/effect_mass_and_triple_cross_product/</url>
+    <content><![CDATA[<h1 id="有效质量mast求解及vecatimesvecbtimesvecc求解">有效质量<span
+class="math inline">\(m^{\ast}\)</span>求解及<span
+class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>求解</h1>
+<h2 id="有效质量mast求解">有效质量<span
+class="math inline">\(m^{\ast}\)</span>求解</h2>
+<p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个<span
+class="math inline">\(\hbar\)</span>凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
+<h2 id="符号说明">符号说明</h2>
+<p><span class="math inline">\(\hbar\)</span>为约化普朗克常数</p>
+<p><span class="math inline">\(f\)</span>为载流子所受所有外力的合力</p>
+<p><span class="math inline">\(P\)</span>为载流子动量</p>
+<p>首先我们需要给出牛顿第二定律的原始(非常见)形式： <span
+class="math display">\[\begin{align*}
+    f &amp;= \frac{dP}{dt} \\
+    P&amp;= \hbar k
+\end{align*}\]</span></p>
+<p>载流子速度<span class="math inline">\(v\)</span>可表示为: <span
+class="math display">\[\begin{align*}
+    v &amp;= \frac{1}{\hbar} \frac{dE}{dk}
+\end{align*}\]</span></p>
+<p>则加速度<span class="math inline">\(a\)</span>可表示为: <span
+class="math display">\[\begin{align*}
+    a &amp;= \frac{dv}{dt} \notag\\
+    &amp;=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
+    &amp;=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt}
+\notag
+\end{align*}\]</span></p>
+<p>注意到<span
+class="math inline">\(\frac{dk}{dt}\)</span>我们是不知道怎么直接处理的，因此我们将其转化为<span
+class="math inline">\(\frac{d\hbar
+k}{dt}\)</span>，然后就可以利用牛顿第二定律来进行转化了: <span
+class="math display">\[\begin{align*}
+    a &amp;=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot
+\frac{d\hbar k}{dt} \notag\\
+    &amp;= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f
+\end{align*}\]</span></p>
+<p>因此将<span class="math inline">\(a\)</span>除到右侧，将<span
+class="math inline">\(f\)</span>的系数除到左侧得: <span
+class="math display">\[\begin{align*}
+    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}
+\end{align*}\]</span></p>
+<p>注意到<span
+class="math inline">\(\frac{f}{a}\)</span>表示的是载流子所受到的所有外力，且<span
+class="math inline">\(a\)</span>表示的是载流子的加速度，因此有: <span
+class="math display">\[\begin{align*}
+    m^{\ast} &amp;= \frac{f}{a} =
+\frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}
+\end{align*}\]</span></p>
+<p>实际中常根据<code>回旋共振实验</code>测定<span
+class="math inline">\(m^{\ast}\)</span>，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:
+<span class="math display">\[\begin{align*}
+    E(k) - E(0) = \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}
+\end{align*}\]</span></p>
+<p>故可通过实验测定有效值量进而得到半导体中的能带<span
+class="math inline">\(E(k)\)</span>。</p>
+<hr />
+<h2 id="vecatimesvecbtimesvecc的化简求解"><span
+class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>的化简求解</h2>
+<p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
+<p>首先<span
+class="math inline">\(\vec{b}\times\vec{c}\)</span>得到的向量方向为<span
+class="math inline">\(\vec{b}\)</span>、<span
+class="math inline">\(\vec{c}\)</span>所构成的平面的法向量方向。</p>
+<p>所以<span
+class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>得到的向量平行于<span
+class="math inline">\(\vec{b}\)</span>、<span
+class="math inline">\(\vec{c}\)</span>所构成的平面，故有下式: <span
+class="math display">\[\begin{align*}
+   \vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}
+\end{align*}\]</span></p>
+<p>同时利用向量的叉乘关系: <span class="math display">\[\begin{align*}
+    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}
+\end{align*}\]</span></p>
+<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:
+<span class="math display">\[\begin{align*}
+    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;= 0 \\
+    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a}
+&amp;=0
+\end{align*}\]</span></p>
+<p><code>很自然地</code>对<span class="math inline">\(m\)</span>，<span
+class="math inline">\(n\)</span>取如下式所示的值: <span
+class="math display">\[\begin{aligned}
+    m&amp;= -\vec{c} \cdot \vec{a}  &amp; \\
+    n&amp;=  \vec{b} \cdot \vec{a} &amp;
+\end{aligned}\]</span></p>
+<p>所以: <span class="math display">\[\begin{align*}
+    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot
+\vec{a})\vec{c} \right]
+\end{align*}\]</span></p>
+<p>因为<span
+class="math inline">\(k\)</span>的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的<span
+class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span>求解出<span
+class="math inline">\(k\)</span>即可。</p>
+<p>若取 <span class="math display">\[\begin{aligned}
+    \vec{a}&amp;= \left[1,0,0\right]  &amp; \\
+    \vec{b}&amp;= \left[0,1,0\right]  &amp; \\
+    \vec{c}&amp;= \left[1,0,0\right]  &amp;
+\end{aligned}\]</span></p>
+<p>代入解得<span class="math inline">\(k=-1\)</span>，所以得: <span
+class="math display">\[\begin{align*}
+    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot
+\vec{a})\vec{c}
+\end{align*}\]</span></p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
@@ -801,9 +587,10 @@ $$</p>
   <entry>
     <title>课堂汇报(论文解读)的PPT注意事项</title>
     <url>/2024/11/16/ppt_report/</url>
-    <content><![CDATA[<h1>课堂汇报(论文解读)的PPT注意事项</h1>
+    <content><![CDATA[<h1
+id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
 <p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
-<h1>注意事项</h1>
+<h1 id="注意事项">注意事项</h1>
 <ul>
 <li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
 <li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
@@ -819,274 +606,932 @@ $$</p>
       </tags>
   </entry>
   <entry>
-    <title>氢原子模型和类氢原子模型</title>
-    <url>/2024/11/16/Hydrogen_like_model/</url>
-    <content><![CDATA[<h1>氢原子模型和类氢原子模型</h1>
-<p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
-<h1>氢原子模型</h1>
-<blockquote>
-<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
-</blockquote>
+    <title>半导体物理半期考试参考解析</title>
+    <url>/2024/11/28/semiconductor_physics_midterm_test/</url>
+    <content><![CDATA[<h1
+id="四川大学期中考试试题开卷-2024---2025-学年第-1-学期-a-卷">四川大学期中考试试题(开卷)
+(2024 - 2025 学年第 1 学期) A 卷</h1>
+<p>课程名称：半导体物理 任课教师：杨治美</p>
+<p>2024 年 11 月 25 日</p>
+<h2 id="题目">1 题目</h2>
+<ol type="1">
+<li><p><span class="math inline">\({L}_{n}(E)  = ( )\)</span> , <span
+class="math inline">\({L}_{D} =(   )\)</span> 。</p></li>
+<li><p>半导体中过剩电子浓度为 <span class="math inline">\({\Delta n} =
+{10}^{15}\mathrm{cm}^{-3}\)</span> ,过剩载流子的寿命为 <span
+class="math inline">\({\tau }_{n0} = {10}^{-6}s\)</span> 。在 <span
+class="math inline">\(t = 0\)</span> 时,
+产生过剩载流子的外部作用停止,因此 <span class="math inline">\(t &gt;
+0\)</span> 时半导体恢复到平衡状态, <span class="math inline">\(t = {4\mu
+s}\)</span> 时的过剩载流子的复合率 ( )。</p></li>
+<li><p>假设两块半导体材料 <span
+class="math inline">\(\mathrm{A}\)</span> 和 <span
+class="math inline">\(\mathrm{B}\)</span>
+除了禁带宽度不同,其它参数完全相同。 <span
+class="math inline">\(\mathrm{A}\)</span> 的禁带宽度是 <span
+class="math inline">\(1.0eV\)</span> , B 的禁带宽度是 <span
+class="math inline">\(1.2eV\)</span>,<span
+class="math inline">\({300}\mathrm{K}\)</span> 时两种材料的 <span
+class="math inline">\({n}_{i}\)</span> 的比值是( )。</p></li>
+<li><p>特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为
+<span class="math inline">\(\mu_{1}=2000cm^{2}/(V\cdot s)\)</span>
+，只存在第二种散射机制时的迁移率为 <span
+class="math inline">\(\mu_{2}=1500cm^{2}/(V\cdot s)\)</span>
+，只存在第三种散射机制时的迁移率 <span
+class="math inline">\(\mu_{1}=2000cm^{2}/(V\cdot s)\)</span>
+，只存在二种散射机制时的迁移率为 <span
+class="math inline">\(\mu_{3}=500cm^{2}/(V\cdot
+s)\)</span>，总的迁移率为( <span class="math inline">\(\quad\)</span>
+)</p></li>
+<li><p>最有利效的复合中心能级位置在 ( ) 附近；最有利陷阱作用的能级位置在
+( ) 附近, 常见的是 ( ) 陷阱。</p></li>
+</ol>
+<p>A. <span class="math inline">\({E}_{A}\)</span> B. <span
+class="math inline">\({E}_{D}\)</span> C. <span
+class="math inline">\({E}_{F}\)</span> D. <span
+class="math inline">\({E}_{i}\)</span> E. 少子 F. 多子</p>
+<ol start="6" type="1">
+<li>当一种 <span class="math inline">\(\mathrm{n}\)</span>
+型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(
+)。</li>
+</ol>
+<p>A. <span class="math inline">\(\frac{1}{n_{0}}\)</span> <span
+class="math inline">\(\quad\)</span> B. <span
+class="math inline">\(\frac{1}{\Delta n}\)</span> <span
+class="math inline">\(\quad\)</span> C. <span
+class="math inline">\(\frac{1}{p_{0}}\)</span> <span
+class="math inline">\(\quad\)</span> D. <span
+class="math inline">\(\frac{1}{\Delta p}\)</span></p>
+<ol start="7" type="1">
+<li>以下 4 种半导体最适合制作高温器件的是( )。</li>
+</ol>
+<p>A.Si <span class="math inline">\(\quad\)</span> B.Ge <span
+class="math inline">\(\quad\)</span> C.GaAs <span
+class="math inline">\(\quad\)</span> D.GaN</p>
+<p>二、根据对 (Si) 晶体结构基本认识, 尝试回答以下问题: (10 分)</p>
+<ol type="1">
+<li><p>试画出 (Si) 的晶体结构图；</p></li>
+<li><p>试比较 (100)、(110) 和 (111) 面密度的大小,
+要求写出详细计算过程;</p></li>
+<li><p>MOSFET 器件和 NPN 晶体管制造过程中, 会分别选用那种晶向的衬底,
+为什么?</p></li>
+</ol>
+<p>三、谈根据所学知识, 谈谈你对晶体中缺陷的认识。(10 分)</p>
+<p>四、讨论杂质浓度和温度分别对禁带宽度、迁移率、电阻率的影响。(10
+分)</p>
+<p>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？
+说明掺Au后寿命为什么会明显下降?(10 分)</p>
+<p>六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法,
+并简要说明基本测试原理(15 分)</p>
+<p>七、一 <span class="math inline">\(\mathrm{n}\)</span>
+型半导体样品,复合能级 <span class="math inline">\({E}_{t}\)</span>
+在导带底之下三分之一 <span class="math inline">\({E}_{g}\)</span> 处,设
+<span class="math inline">\({\tau }_{n}\)</span> 和 <span
+class="math inline">\({\tau }_{p}\)</span> 为同一数量级,
+并且与温度无关。试根据复合中心理论讨论寿命与温度的关系,
+并根据得出的结果, 说明复合中心能级 <span
+class="math inline">\({E}_{t}\)</span> 位置的方法。(25 分)</p>
+<h2 id="参考解析">2 参考解析</h2>
+<ol type="1">
+<li><span class="math inline">\({L}_{n}\left( E\right)  =\)</span>
+(电子牵引长度), <span class="math inline">\({L}_{D} =\)</span>
+(德拜长度)。</li>
+</ol>
+<p>解: <span class="math inline">\({L}_{n}\left( E\right)\)</span>
+是电子牵引长度,其中下标 <span class="math inline">\(\mathrm{n}\)</span>
+表示电子,要同 <span class="math inline">\({L}_{n}\)</span>
+电子扩散长度区分; <span class="math inline">\({L}_{D}\)</span>
+是德拜长度。</p>
+<ol start="2" type="1">
+<li>半导体中过剩电子浓度为 <span class="math inline">\({\Delta n} =
+{10}^{15}{\mathrm{cm}}^{-3}\)</span> ,过剩载流子的寿命为 <span
+class="math inline">\({\tau }_{n0} = {10}^{-6}s\)</span> 。在 <span
+class="math inline">\(t = 0\)</span> 时,
+产生过剩载流子的外部作用停止,因此 <span class="math inline">\(t &gt;
+0\)</span> 时半导体恢复到平衡状态, <span class="math inline">\(t = {4\mu
+s}\)</span> 时的过剩载流子的复合率 <span class="math inline">\(( {1.83}
+\times  {10}^{19}{\mathrm{cm}}^{-3}{\mathrm{s}}^{-1})\)</span> 。</li>
+</ol>
+<p>解: 首先考虑连续性方程:</p>
+<p><span class="math display">\[
+\begin{align}
+\frac{\partial \Delta n}{\partial t} = D_{n} \frac{\partial^{2} \Delta
+n}{\partial x^{2}} - \mu_{n}E\frac{\partial \Delta n}{\partial x} -
+\mu_{n} n \frac{\partial E}{\partial t} -\frac{\Delta n}{\tau} +g_{p}
+\end{align}
+\]</span></p>
+<p>其中 <span class="math inline">\(t = 0\)</span> 时外部作用停止,故
+<span class="math inline">\({g}_{p} = 0\)</span> ; 且 <span
+class="math inline">\(t &gt; 0\)</span>
+时半导体恢复至平衡状态,故过剩载流子均匀分布,即 <span
+class="math inline">\(\frac{\partial {\Delta n}}{\partial x} =
+0\)</span> ; 同时电场强度 <span class="math inline">\(E = 0\)</span>
+,故上式化简为:</p>
+<p><span class="math display">\[
+\begin{align}
+\frac{\partial \Delta n}{\partial t} =  -\frac{\Delta n}{\tau}
+\end{align}
+\]</span></p>
+<p>解得:</p>
+<p><span class="math display">\[
+\begin{align}
+\Delta n = \Delta n(t=0) e^{-\frac{t}{\tau}}
+\end{align}
+\]</span></p>
+<p>故过剩载流子的复合率等于单位时间内过剩载流子数量的减少量, 即:</p>
+<p><span class="math display">\[
+\begin{align}
+U=-\frac{d \Delta n}{d t}= \frac{\Delta n(t=0)}{\tau}
+e^{-\frac{t}{\tau}}
+\end{align}
+\]</span></p>
+<p>代入<span class="math inline">\(\Delta
+n=10^{15}cm^{-3}\)</span>，<span
+class="math inline">\(\tau_{n0}=10^{-6}s\)</span>，<span
+class="math inline">\(t=4\mu s\)</span>得:</p>
+<p><span class="math display">\[
+\begin{align}
+U=\frac{10^{15} cm^{-3} }{10^{-6}s}\cdot e^{-\frac{4\mu s}{1\mu
+s}}=1.83\times 10^{19} cm^{-3}s^{-1}
+\end{align}
+\]</span></p>
+<ol start="3" type="1">
+<li>假设两块半导体材料 <span class="math inline">\(\mathrm{A}\)</span>
+和 <span class="math inline">\(\mathrm{B}\)</span>
+除了禁带宽度不同,其它参数完全相同。 <span
+class="math inline">\(\mathrm{A}\)</span> 的禁带宽度是 <span
+class="math inline">\({1.0}\mathrm{eV}\)</span> , B 的禁带宽度是 <span
+class="math inline">\({1.2}\mathrm{eV},{300}\mathrm{K}\)</span>
+时两种材料的 <span class="math inline">\({n}_{i}\)</span> 的比值是
+(46.812)。</li>
+</ol>
+<p>解：考虑</p>
+<p><span class="math display">\[
+\begin{align}
+n_{i} = N_{C} N_{V} e^{-\frac{E_{g}}{2k_{0}T}}
+\end{align}
+\]</span></p>
+<p>故有:</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+\frac{n_{iA}}{n_{iB}} &amp;=
+\frac{\exp(-\frac{E_{gA}}{2k_{0}T})}{\exp(-\frac{E_{gB}}{2k_{0}T})} \\
+&amp;=\exp(\frac{E_{gB}-E_{gA}}{2k_{0}T}) \\
+&amp;=\exp(\frac{0.2eV}{2 \times 0.026eV}) \\
+&amp;=46.812
+\end{aligned}
+\end{equation}\\
+\]</span></p>
+<ol start="4" type="1">
+<li>特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 <span
+class="math inline">\(\mu_{1}=2000cm^{2}/(V\cdot s)\)</span>
+，只存在第二种散射机制时的迁移率为 <span
+class="math inline">\(\mu_{2}=1500cm^{2}/(V\cdot s)\)</span>
+，只存在第三种散射机制时的迁移率为 <span
+class="math inline">\(\mu_{1}=2000cm^{2}/(V\cdot s)\)</span>
+，只存在二种散射机制时的迁移率为 <span
+class="math inline">\(\mu_{3}=500cm^{2}/(V\cdot s)\)</span>
+，总的迁移率为( <span class="math inline">\(\quad\)</span> )</li>
+</ol>
+<p>解: 考虑载流子迁移率和散射概率之间满足:</p>
+<p><span class="math display">\[
+\begin{align}
+\mu = \frac{q\tau}{m^{\ast}} = \frac{q}{m^{\ast}P}
+\end{align}
+\]</span></p>
+<p>其中 <span class="math inline">\(\tau\)</span>
+为相邻两次散射之间的平均自由时间, <span class="math inline">\(p\)</span>
+为散射概率。其中载流子的散射总概率满足:</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;{P}_{sum} = {P}_{I} + {P}_{II} + {P}_{III} + \ldots \\
+&amp;\frac{1}{\tau_{sum} } = \frac{1}{\tau_{I}} + \frac{1}{\tau_{II} } +
+\frac{1}{ \tau_{III} } + \ldots  \\
+&amp;\frac{1}{\mu_{sum} } = \frac{1}{\mu_{I} } + \frac{1}{\mu_{II} } +
+\frac{1}{\mu_{III} } + \ldots
+\end{align}
+\]</span></p>
+<p>其中 <span class="math inline">\({P}_{I},{P}_{II},{P}_{III}\)</span>
+分别表示不同散射机制的散射概率,对应的 <span class="math inline">\({\tau
+}_{I},{\tau }_{I},{\tau }_{I}\)</span>
+是对应散射机制的平均自由运动时间,对应的 <span class="math inline">\({\mu
+}_{I},{\mu }_{I},{\mu }_{I}\)</span> 是对应散射机制的载流子迁移率。</p>
+<p>故代入本题数据得:</p>
+<p><span class="math display">\[
+\begin{align}
+\frac{1}{\mu_{sum} } &amp;= \frac{1}{\mu_{1} }  + \frac{1}{\mu_{2} } +
+\frac{1}{\mu_{3}} \notag\\
+&amp;= \frac{1}{2000} + \frac{1}{1500} + \frac{1}{1500} \\
+\Rightarrow \mu_{sum} &amp;= 316 cm^{2}/(V\cdot s)
+\end{align}
+\]</span></p>
+<ol start="5" type="1">
+<li>最有利效的复合中心能级位置在 (D) 附近; 最有利陷阱作用的能级位置在
+(C) 附近, 常见的是 (E) 陷阱。</li>
+</ol>
+<p>A. <span class="math inline">\({E}_{A}\;\)</span> B. <span
+class="math inline">\({E}_{D}\;\)</span> C. <span
+class="math inline">\({E}_{F}\;\)</span> D. <span
+class="math inline">\({E}_{i}\;\)</span> E. 少子 F. 多子</p>
+<p>解:</p>
 <ul>
-<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 $E_{1}$ 、 $E_{2}$ 、 $E_{3}$ …，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
-<li>跃迁假设：电子从 $E_{m}$ 能级跃迁到 $E_{n}$ 能级所需的能量满足 $h\nu=E_{n}-E_{m}$ 。</li>
-<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 $2\pi r\cdot m_{e} v = n h$ ，即电子只能在轨道角动量等于约化普朗克常数 $\hbar$ 的整数倍的轨道上运动。</li>
+<li>最有效的复合中心能级位于禁带中央附近即 <span
+class="math inline">\({E}_{i}\)</span> 附近,若假设 <span
+class="math inline">\({r}_{n} = {r}_{p} = r\)</span> ,则</li>
 </ul>
-<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：<br>
-$$\begin{align*}<br>
-&amp;m v r = n \frac{h}{2\pi} \<br>
-&amp;m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e<sup>{2}}{r</sup>{2}}<br>
-\end{align*}$$</p>
-<p>联立得:<br>
-$$\begin{align*}<br>
-r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}<br>
-\end{align*}$$</p>
-<p>考虑电子的总能量为动能与势能之和：<br>
-$$\begin{align*}<br>
-E_{n} &amp;= E_{k,n} + E_{p,n} \<br>
-&amp;= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\<br>
-&amp;= -\frac{1}{2}mv^{2}<br>
-\end{align*}$$</p>
-<p>化简得:<br>
-$$\begin{align*}<br>
-E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>
-\end{align*}$$</p>
-<h2 id="类氢原子模型">类氢原子模型</h2>
-<blockquote>
-<p>考虑如下两条修正:</p>
-</blockquote>
+<p><span class="math display">\[
+\begin{align}
+U = \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i}
+ch(\frac{E_{t}-E_{i}}{k_{0}T})}
+\end{align}
+\]</span></p>
+<p>当且仅当 <span class="math inline">\({E}_{t} = {E}_{i}\)</span>
+时上式的分母最小,即复合率最大,故此时复合中心最有效。</p>
 <ul>
-<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 $\epsilon=\epsilon_{0}\epsilon_{r}$ 的介质中。</li>
-<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量 $m_{0}$ 用有效质量 $m^{\ast}$ 替代。</li>
+<li><p>最有效的陷阱作用的能级位于费米能级附近即 <span
+class="math inline">\({E}_{F}\)</span>
+附近,因为费米能级以下的能级已经被填充满, 起不到俘获电子的作用;
+若能级费米能级以上,
+则其上的电子容易在热激发的作用下回到导带,起不到俘获电子的作用,故最有效的陷阱作用的能级位于费米能级附近即
+<span class="math inline">\({E}_{F}\)</span>
+附近。其中常俘获少子。</p></li>
+<li><p>杂质能级的这种积累非平衡载流子的作用就称为陷阱效应,
+故陷阱能级主要俘获非平衡少数载流子, 即主要为少子能级。</p></li>
 </ul>
-<p>即得:<br>
-$$\begin{align*}<br>
-r_{n} &amp;= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \<br>
-E_{n} &amp;= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>
-\end{align*}$$</p>
-<p>当$n=1$时为基态，此时<br>
-$$\begin{align*}<br>
-r_{0} &amp;= 0.053nm \<br>
-E_{0} &amp;= 13.6eV<br>
-\end{align*}$$</p>
-<p>则进一步化简得:<br>
-$$\begin{align*}<br>
-r_{n} &amp;= \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \<br>
-\triangle E_{n} &amp;= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}<br>
-\end{align*}$$</p>
-<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+<ol start="6" type="1">
+<li>当一种 <span class="math inline">\(\mathrm{n}\)</span>
+型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(A)。</li>
+</ol>
+<p>A. <span class="math inline">\(\frac{1}{ {n}_{0} }\;\)</span> B.
+<span class="math inline">\(\frac{1}{\Delta n}\;\)</span> C. <span
+class="math inline">\(\frac{1}{ {p}_{0} }\;\)</span> D. <span
+class="math inline">\(\frac{1}{\Delta p}\)</span></p>
+<p>解: 考虑直接复合的少子寿命满足:</p>
+<p><span class="math display">\[
+\begin{align}
+\tau = \frac{1}{r(n_{0} + p_{0} + \Delta p )}
+\end{align}
+\]</span></p>
+<p>对于 <span class="math inline">\(\mathrm{n}\)</span>
+型半导体在小注入条件下有:</p>
+<p><span class="math display">\[
+\begin{align}
+n_{0} \gg  p_{0} , n_{0} \gg \Delta p
+\end{align}
+\]</span></p>
+<p>故有:</p>
+<p><span class="math display">\[
+\begin{align}
+\tau \sim \frac{1}{rn_{0} }
+\end{align}
+\]</span></p>
+<p>故少子寿命正比于 <span class="math inline">\(\frac{1}{ {n}_{0}
+}\)</span> 。</p>
+<ol start="7" type="1">
+<li>以下 4 种半导体最适合制作高温器件的是 (D)。</li>
+</ol>
+<p>A.Si B.Ge C.GaAs D.GaN</p>
+<p>解: 若半导体器件的禁带宽度越宽,则该器件的极限工作温度越高;
+本征载流子浓度 <span class="math inline">\({n}_{i}\)</span>
+满足下式:</p>
+<p><span class="math display">\[
+\begin{align}
+n_{i} = \left[ \frac{2(2\pi k_{0} T)^{\frac{2}{3}} (m_{n}^{\ast}
+m_{p}^{\ast} )^{\frac{3}{4}} }{\hbar^{3}} \right] exp(-\frac{E_{g}
+}{2k_{0}T})
+\end{align}
+\]</span></p>
+<p>半导体器件正常工作指的是本征载流子浓度至少比杂质浓度第一个数量级,故
+<span class="math inline">\({n}_{i}\)</span>
+越小,则器件的极限工作温度越高; 从上式可以发现 <span
+class="math inline">\({E}_{g}\)</span> 越大就可以实现越小的 <span
+class="math inline">\({n}_{i}\)</span>
+,即可以实现更高的极限工作温度。</p>
+<p>其中 Si、Ge、GaAs、GaN
+的禁带宽度分别为:1.12eV、0.6643eV、1.42eV、3.44eV；故 GaN
+最适合做高温器件。</p>
+<p>二、根据对 (Si) 晶体结构基本认识, 尝试回答以下问题: (10 分)</p>
+<ol type="1">
+<li>试画出 <span class="math inline">\(\mathrm{Si}\)</span>
+的晶体结构图；</li>
+</ol>
+<p>解: <span class="math inline">\(\mathrm{Si}\)</span>
+的晶体结构图如下图所示</p>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-0b9b-7db3-8b9a-15a10c545236_4.jpg?x=636&amp;y=659&amp;w=390&amp;h=366"
+alt="图 1: \mathrm{Si} 的晶体结构图" />
+<figcaption aria-hidden="true">图 1: <span
+class="math inline">\(\mathrm{Si}\)</span> 的晶体结构图</figcaption>
+</figure>
+<ol start="2" type="1">
+<li>试比较 (100)、(110) 和 (111) 面密度的大小, 要求写出详细计算过程; 解:
+其中各晶向如下图所示:</li>
+</ol>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-0b9b-7db3-8b9a-15a10c545236_4.jpg?x=611&amp;y=1254&amp;w=438&amp;h=395"
+alt="图 2: 金刚石晶胞的各个晶向" />
+<figcaption aria-hidden="true">图 2: 金刚石晶胞的各个晶向</figcaption>
+</figure>
+<ul>
+<li><ol start="100" type="1">
+<li>晶面</li>
+</ol></li>
+</ul>
+<ol start="100" type="1">
+<li>晶面上的原子分布情况如下: 4 个顶点各有一个原子, 面心一个原子, 所以
+(100) 晶面上的原子数为:</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+   \text{原子数}=1+4\times \frac{1}{4} = 2
+\end{align}
+\]</span></p>
+<p>乘积因子的解释：其中面心的原子为该晶面独占；顶点的四个原子分别同另外三个
+<strong>其他晶胞的 (100) 晶面 </strong>共用,所以算原子数时需要乘 <span
+class="math inline">\(\frac{1}{4}\)</span> 。</p>
+<p>同时 (100) 晶面的面积为:</p>
+<p><span class="math display">\[
+\begin{align}
+   \text{(100)晶面面积} = a^{2} =(5.43\times 10^{-8}\mathrm{cm})^{2}
+\end{align}
+\]</span></p>
+<p>所以 (100) 晶面的原子面密度为:</p>
+<p><span class="math display">\[
+\begin{align}
+   \text{(100)晶面原子面密度} &amp;= \frac{2}{(5.43\times
+10^{-8}\mathrm{cm})^{2}} \\
+   &amp;= 6.78\times 10^{14} \mathrm{cm}^{-2}
+\end{align}
+\]</span></p>
+<ul>
+<li><ol start="110" type="1">
+<li>晶面</li>
+</ol></li>
+</ul>
+<ol start="110" type="1">
+<li>晶面上的原子分布情况如下：4
+个顶点各有一个原子；上下棱的棱心各有一个原子；面上有原晶胞的体对角线上的两个原子,
+所以 (110) 晶面上的原子数为:</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+   \text{原子数}=2+4\times \frac{1}{4} +2\times \frac{1}{2} = 4
+\end{align}
+\]</span></p>
+<p>乘积因子的解释：其中面上的 2
+个原子为该晶面独占；顶点的四个原子分别同另外三个
+<strong>其他晶胞的(110)晶面</strong> 共用,所以算原子数时需要乘 <span
+class="math inline">\(\frac{1}{4}\)</span> ;上(下)
+棱的棱心的原子分别与正上 (下) 方的一个 <strong>晶胞的 (110)
+晶面</strong>共用,所以算原子数时需要乘 <span
+class="math inline">\(\frac{1}{2}\)</span> 。</p>
+<p>同时 (110) 晶面的面积为:</p>
+<p><span class="math display">\[
+\begin{align}
+   \text{(110)晶面面积} = a\times \sqrt{2}a =\sqrt{2}(5.43\times
+10^{-8}\mathrm{cm})^{2}
+\end{align}
+\]</span></p>
+<p>所以 (110) 晶面的原子面密度为:</p>
+<p><span class="math display">\[
+\begin{align}
+   \text{(110)晶面原子面密度} &amp;= \frac{4}{\sqrt{2}(5.43\times
+10^{-8}\mathrm{cm})^{2}} \\
+   &amp;= 9.62\times 10^{14} \mathrm{cm}^{-2}
+\end{align}
+\]</span></p>
+<ul>
+<li><ol start="111" type="1">
+<li>晶面</li>
+</ol></li>
+</ul>
+<ol start="111" type="1">
+<li>晶面上的原子分布情况如下: 三角形的 3 个顶点各有一个原子,
+三角形的三条边分别有一个原子 (原晶胞的三个面心上的原子):</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+   \text{原子数}=3\times \frac{1}{6}+3\times \frac{1}{2} = 2
+\end{align}
+\]</span></p>
+<p>乘积因子的解释: 三角形的 3
+个顶点的原子如下图所示分别同另外六个其他晶胞的 (111)
+晶面共用,所以算原子数时需要乘 <span
+class="math inline">\(\frac{1}{6}\)</span> ;
+边上的原子分别同另外一个晶胞的 (111) 晶面共用,所以算原子数时需要乘 <span
+class="math inline">\(\frac{1}{2}\)</span> 。</p>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_0.jpg?x=683&amp;y=1681&amp;w=292&amp;h=262"
+alt="图 3: 111 晶面的六分之一图示" />
+<figcaption aria-hidden="true">图 3: 111 晶面的六分之一图示</figcaption>
+</figure>
+<p>同时 (111) 晶面的面积为:</p>
+<p><span class="math display">\[
+\begin{align}
+   \text{(111)晶面面积} = \frac{\sqrt{3}}{4} (\sqrt{2}a)^{2}
+=\frac{\sqrt{3}}{2}(5.43\times 10^{-8}\mathrm{cm})^{2}
+\end{align}
+\]</span></p>
+<p>所以 (111) 晶面的原子面密度为:</p>
+<p><span class="math display">\[
+\begin{align}
+   \text{(111)晶面原子面密度} &amp;=
+\frac{2}{\frac{\sqrt{3}}{2}(5.43\times 10^{-8}\mathrm{cm})^{2}} \\
+   &amp;= 7.84\times 10^{14} \mathrm{cm}^{-2}
+\end{align}
+\]</span></p>
+<p>3.MOSFET 器件和 NPN 晶体管制造过程中, 会分别选用那种晶向的衬底,
+为什么?</p>
+<p>解:</p>
+<ul>
+<li>MOS 管常用 (100) 晶向的晶圆来制作器件。</li>
+</ul>
+<ol type="1">
+<li><p>MOSFET 的工作电流为表面多子的漂移电流, 其大小与载流子的表面迁移率
+(mobility) 有关, 其中 (100) 晶向的界面态密度最低, 表面迁移率最高, 可以使
+MOSFET 有较高的工作电流。</p></li>
+<li><ol start="100" type="1">
+<li>晶向的较低的界面态和悬挂键可以减小 MOSFET 的阈值电压 <span
+class="math inline">\({V}_{TH}\)</span> 。</li>
+</ol></li>
+<li><ol start="100" type="1">
+<li>晶向的缺陷密度最低,可以减小 <span
+class="math inline">\({V}_{TH}\)</span> 的漂移。</li>
+</ol></li>
+<li><ol start="100" type="1">
+<li>晶向粒子扩散速度慢, 有利于 MOSFET 较小氧化层厚度的生长。</li>
+</ol></li>
+</ol>
+<ul>
+<li>BJT 管常用 (111) 晶向的晶圆来制作器件。</li>
+</ul>
+<ol type="1">
+<li><p>BJT 的工作电流是少子体扩散电流, 与表面迁移率关系较小。</p></li>
+<li><ol start="111" type="1">
+<li>晶向的原子最多 (原子面密度最大), 可以增大场阈电压, 为 BJT
+提供较好的纵向载流子迁移率。</li>
+</ol></li>
+<li><ol start="111" type="1">
+<li>晶向的缺陷密度高,适合用来提高 BJT 中的寄生 PMOS 管的 <span
+class="math inline">\({V}_{TH}\)</span> 。</li>
+</ol></li>
+<li><p>利用 (111) 晶向可以更精确的控制基区宽度。</p></li>
+<li><ol start="111" type="1">
+<li>晶向的粒子扩散速度快, 考虑到 BJT 中的高掺杂特性, 扩散速度快可以减少
+BJT 的制作时间。</li>
+</ol></li>
+</ol>
+<p>三、谈根据所学知识, 谈谈你对晶体中缺陷的认识。(10 分)</p>
+<p>解: 晶体缺陷即是实际晶体偏离理想结构的不完整区域, 其分为如下三类:</p>
+<ol type="i">
+<li>点缺陷：空位、间隙</li>
+</ol>
+<p>晶格原子由于热振动脱离平衡位置获得足够的能量而离开周围原子的束缚,
+挤入晶格原子的间隙,形成间隙原子；同时原位置成为空位；这种间隙和空位成对出现的缺陷称为弗仑克尔缺陷。
+当只在晶体中形成空位时, 称为肖特基缺陷。</p>
+<ol start="2" type="i">
+<li>线缺陷：位错</li>
+</ol>
+<p>位错包括刃位错和螺位错两种, 前者位错线垂直于滑移方向 (伯氏矢量),
+而后者位错线平行于滑移方向。特别地, 刃位错包含 Glide 和 Climb 两种。</p>
+<ol start="3" type="i">
+<li>面缺陷：晶界、亚晶界、相界</li>
+</ol>
+<p>晶界是多晶材料中,
+两种晶体或晶粒之间的交界面。通常在腐蚀开始处或新相在母相的出溶处形成,
+并使得材料的电学性能和热学性能降低。</p>
+<p>缺陷的存在会使严格按周期性排列的原子所产生的周期性势场受到破坏,
+有可能在近代中引入能级,进而对半导体的性质产生决定性影响。</p>
+<p>四、讨论杂质浓度和温度分别对禁带宽度、迁移率、电阻率的影响。(10 分)
+解:</p>
+<ul>
+<li>杂质浓度和温度对半导体禁带宽度的影响:</li>
+</ul>
+<p>随着杂质浓度的升高, 杂质原子之间靠得更近,
+导致杂质原子之间的电子波函数发生重叠, 使孤立的杂质能级扩展为能带,
+常称为杂质能带, 特别的若杂质能带进入了导带或价带, 并与导带或价带相连,
+则形成了新的简并能带, 使能带的状态密度发生了变化,
+简并能带的尾部伸入禁带,形成带尾。导致禁带宽度由 <span
+class="math inline">\(\mathrm{E}\mathrm{g}\)</span> 减小为 <span
+class="math inline">\(\mathrm{E}\)</span> ’ <span
+class="math inline">\(\mathrm{g}\)</span> ,禁带宽度变窄。</p>
+<p>考虑 Varshni 模型, 温度与禁带宽度之间满足:</p>
+<p><span class="math display">\[
+\begin{align}
+E_{g}(T) = E_{g}(0) - \frac{\alpha T^{2}}{\beta + T}
+\end{align}
+\]</span></p>
+<p>常见的半导体如 <span class="math inline">\(\mathrm{Si}\)</span> 和
+<span class="math inline">\(\mathrm{Ge}\)</span>
+的禁带宽度具有负温度系数,但特别地锑化铟的 <span
+class="math inline">\({E}_{g}\)</span> 具有正温度系数。</p>
+<ul>
+<li>杂质浓度和温度对半导体迁移率的影响:</li>
+</ul>
+<p>硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系如下图所示：</p>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_2.jpg?x=472&amp;y=1174&amp;w=683&amp;h=613"
+alt="图 4: 硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系" />
+<figcaption aria-hidden="true">图 4:
+硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系</figcaption>
+</figure>
+<p>若只考虑电离杂质散射和声学波散射,则载流子迁移率 <span
+class="math inline">\(\mu\)</span> 服从:</p>
+<p><span class="math display">\[
+\begin{align}
+\mu = \frac{q}{m^{\ast}} \cdot \frac{1}{A T^{\frac{2}{3}} +
+\frac{BN_{i}}{T^{\frac{2}{3}}}}
+\end{align}
+\]</span></p>
+<p>故从图 4 和式 (2.30) 中均可得到如下结论：随着温度的升高,
+载流子迁移率降低; 同时随着杂质浓度的升高,
+载流子迁移率降低。但当杂质浓度较大时,
+低温区域内载流子迁移率会随着温度升高有小幅度的增加,
+而后随着温度的升高而降低。</p>
+<p>杂质浓度很高的 <span class="math inline">\(\mathrm{n}\)</span>
+型硅,由于施主能级扩展成杂质能带,导致禁带变窄,导带中运动的电子除受到电离杂质的散射外,
+还会被施主能级所俘获,
+这些被俘获的电子经过一定的时间还会被释放到导带中参与导电,
+这些电子在导带中做漂移运动时, 不断地被施主能级俘获, 再释放, 再俘获,
+使得电子的漂移运动减慢, 此外一些杂质带中的电子由于杂质原子轨道重叠,
+也可能在施主原子间运动, 而不参与导电,
+因此导带中有相当一部分电子在杂质带上运动, 从而迁移率有所降低。</p>
+<ul>
+<li>杂质浓度和温度对半导体电阻率的影响:</li>
+</ul>
+<p>若只考虑电离杂质散射和声学波散射,
+则半导体电阻率、电导率与载流子迁移率存在如下关系 (以 <span
+class="math inline">\(\mathrm{n}\)</span> 型半导体为例):</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+\rho &amp;= \frac{1}{\sigma} \\
+\sigma &amp;= n \mu_{n} q\\
+\Rightarrow \rho &amp;=  \frac{m^{\ast}}{q} \frac{A T^{\frac{2}{3}} +
+\frac{BN_{i}}{T^{\frac{2}{3}}}}{ nq  }
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>故硅的杂质浓度、温度随电阻率的变化如下图所示:</p>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_3.jpg?x=443&amp;y=1116&amp;w=748&amp;h=379"
+alt="图 5: 硅的杂质浓度、温度随电阻率的变化" />
+<figcaption aria-hidden="true">图 5:
+硅的杂质浓度、温度随电阻率的变化</figcaption>
+</figure>
+<p>故随着杂质浓度的升高, 器件电阻率降低; 随着温度的升高,
+器件电阻率先下降再升高再下降。</p>
+<p>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？
+说明掺 <span class="math inline">\(\mathrm{Au}\)</span>
+后寿命为什么会明显下降?(10 分) 解:</p>
+<p>直接复合即导带中的电子直接落入价带与空穴复合。间接复合即非平衡载流子通过复合中心的复合。若假设
+<span class="math inline">\({r}_{n} = {r}_{p} = r\)</span> ,则</p>
+<p><span class="math display">\[
+\begin{align}
+U = \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i}
+ch(\frac{E_{t}-E_{i}}{k_{0}T})}
+\end{align}
+\]</span></p>
+<p>故从上式得到如下结论: 当且仅当 <span class="math inline">\({E}_{t} =
+{E}_{i}\)</span>
+时上式的分母最小,即复合率最大,故位于禁带中央附近的复合中心能级最有效。</p>
+<p>掺入金后,在 <span class="math inline">\(\mathrm{Si}\)</span>
+中形成了深能级的复合能级,是有效的复合中心。其中 <span
+class="math inline">\(\mathrm{n}\)</span> 型硅的少子寿命满足:</p>
+<p><span class="math display">\[
+\begin{align}
+\tau_{p}  = \frac{1}{N_{t}r_{p}}
+\end{align}
+\]</span></p>
+<p>故随着金浓度 <span class="math inline">\({N}_{t}\)</span>
+的增大,少子寿命等比例的减小,故少量的有效复合中心就能大大缩短少子寿命。</p>
+<p>六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法,
+并简要说明基本测试原理 (15 分) 解:</p>
+<p>少子寿命即载流子两次相邻散射之间的平均自由运动时间,或者是载流子复合率的倒数。</p>
+<p>影响半导体少子寿命的主要有：复合能级位置、复合中心浓度、俘获系数、温度、器件的杂质浓度。</p>
+<p>少子寿命检测方法:</p>
+<ol type="1">
+<li>直流光电导衰减法</li>
+</ol>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_4.jpg?x=574&amp;y=1011&amp;w=485&amp;h=317"
+alt="图 6: 直流光电导衰减法测少子寿命" />
+<figcaption aria-hidden="true">图 6:
+直流光电导衰减法测少子寿命</figcaption>
+</figure>
+<p>基于下式</p>
+<p><span class="math display">\[
+\begin{align}
+\Delta p(t) = \Delta p(0)\cdot e^{-\frac{t}{\tau}}
+\end{align}
+\]</span></p>
+<p>测量电导率衰减为峰值的 <span
+class="math inline">\(\frac{1}{e}\)</span> 时的时间即可测得少子寿命</p>
+<ol start="2" type="1">
+<li>霍尔效应法</li>
+</ol>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_4.jpg?x=566&amp;y=1699&amp;w=512&amp;h=266"
+alt="图 7: 霍尔效应法测少子寿命" />
+<figcaption aria-hidden="true">图 7: 霍尔效应法测少子寿命</figcaption>
+</figure>
+<p>基于下式：</p>
+<p><span class="math display">\[
+\begin{equation}
+\begin{aligned}
+E_{H} &amp;= \frac{R_{H}IB}{A}\\
+R_{H} &amp;= -\frac{1}{nq} \\
+\mu_{H} &amp;= \sigma R_{H}
+\end{aligned}
+\end{equation}
+\]</span></p>
+<p>通过测量电导率衰减为峰值的 <span
+class="math inline">\(\frac{1}{e}\)</span> 时的时间即可测得少子寿命</p>
+<ol start="3" type="1">
+<li>微波光电导衰减法 参考资料</li>
+</ol>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_5.jpg?x=494&amp;y=639&amp;w=628&amp;h=364"
+alt="图 8: 微波光电导衰减法" />
+<figcaption aria-hidden="true">图 8: 微波光电导衰减法</figcaption>
+</figure>
+<p>由于微波信号的变化量正比于电导率的变化量,
+从而可以通过探测微波反射信号来探测电导率的变化,
+得到样品的载流子寿命。</p>
+<p>七、一 <span class="math inline">\(\mathrm{n}\)</span>
+型半导体样品,复合能级 <span class="math inline">\({E}_{t}\)</span>
+在导带底之下三分之一 <span class="math inline">\({E}_{g}\)</span> 处,设
+<span class="math inline">\({\tau }_{n}\)</span> 和 <span
+class="math inline">\({\tau }_{p}\)</span> 为同一数量级,
+并且与温度无关。试根据复合中心理论讨论寿命与温度的关系,
+并根据得出的结果, 说明复合中心能级 <span
+class="math inline">\({E}_{t}\)</span> 位置的方法。(25 分)</p>
+<p>解:</p>
+<p>则根据直接复合理论,非平衡载流子的复合率 <span
+class="math inline">\(\mathrm{U}\)</span> 可以表示为:</p>
+<p><span class="math display">\[
+\begin{align}
+U = \frac{ r_{n}(n_{0}+n_{1}) + r_{p}(p_{0}+p_{1})  }{ N_{t}
+r_{p}r_{n}(n_{0}+p_{0})  }
+\end{align}
+\]</span></p>
+<p>其中</p>
+<p><span class="math display">\[
+\begin{equation}
+\left\{
+    \begin{aligned}
+        n_{0} &amp;=N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T})
+,   &amp;n_{1}=N_{C} \mathrm{exp}(\frac{E_{t}-E_{C}}{k_{0}T})\\
+        p_{0} &amp;=N_{V}
+\mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}),    &amp;p_{1}=N_{V}
+\mathrm{exp}(\frac{E_{V}-E_{t}}{k_{0}T})
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>其中硅中金的空穴俘获截面的典型值满足下式：<a
+href="%7Bhttps://kns.cnki.net/kcms2/article/abstract?v=At0rObma_qMOynZbg_rKnty9IOGve9tMSHhOV72TG4QoMl8W3aQC60XOf_Bnh2O2WXS2wDPwP6nto8KpV1iVKIp2oKyJV_SAJ_JminOY5txmhMijmPkmiYGm8CA4H4MX4Lnjc3UEO8uGVoPd8WspAB878D_qkkOj62xE3zs9t_I_lVBJ_410bwGEBHjmQV2T&amp;uniplatform=NZKPT&amp;language=CHS">数据出处</a></p>
+<p><span class="math display">\[
+\begin{equation}
+\left\{
+    \begin{aligned}
+        \sigma_{P} &amp;=(3.7\pm 0.7)\times 10^{-15}
+(\frac{300}{T})^{2.9\pm 0.3} \mathrm{cm}^{2},   &amp;T\in (150K,200K) \\
+        \sigma_{P} &amp;=(1.4\pm 0.3)\times 10^{-15} (\frac{300}{T})^{2}
+\mathrm{exp} (-\frac{19 meV}{k_{0}T}) \mathrm{cm}^{2},   &amp;T\in
+(160K,318K)\\
+        \sigma_{P} &amp;=(2.3\pm 0.3)\times 10^{-15}
+(\frac{300}{T})^{1.2\pm 0.2}  \mathrm{cm}^{2},   &amp;T\in (77K,180K)
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>故电子俘获截面 <span class="math inline">\({\sigma }_{ - }\)</span>
+和空穴俘获截面 <span class="math inline">\({\sigma }_{ + }\)</span>
+与温度之间的关系近似满足:</p>
+<p><span class="math display">\[
+\begin{align}
+\sigma \sim T^{-n} , n \in(2,4)
+\end{align}
+\]</span></p>
+<p>若考虑电子俘获率和空穴俘获率满足下式:</p>
+<p><span class="math display">\[
+\begin{equation}
+\left\{
+    \begin{aligned}
+        r_{p} &amp;=\sigma_{P} V_{T}   &amp;\\
+        r_{n} &amp;=\sigma_{n} V_{T}   &amp;\\
+        V_{T} &amp;=\sqrt{\frac{3k_{0}T}{m^{\ast}}}   &amp;
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>则式 (2.39) 可变换成下式:</p>
+<p><span class="math display">\[
+\begin{align}
+U =
+\frac{\sigma_{+}\sigma_{-}V_{T}N_{t}(np-N_{c}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}))}{\sigma_{-}\left[
+n + (N_{c}N_{v})^{\frac{1}{2}}
+\mathrm{exp}(-\frac{5E_{g}}{6k_{0}T})  \right] + \sigma_{+}\left[ p +
+(N_{c}N_{v})^{\frac{1}{2}}
+\mathrm{exp}(-\frac{7E_{g}}{6k_{0}T})  \right] }
+\end{align}
+\]</span></p>
+<p>其中 <span class="math inline">\({N}_{c}\)</span>、<span
+class="math inline">\({N}_{v}\)</span> 满足:</p>
+<p><span class="math display">\[
+\begin{equation}
+\left\{
+    \begin{aligned}
+        N_{c} &amp;=2(\frac{m_{n}^{\ast} k_{0} T }{2\pi
+\hbar^{2}})^{\frac{3}{2}}  &amp;\\
+        N_{v} &amp;=2(\frac{m_{p}^{\ast} k_{0} T }{2\pi
+\hbar^{2}})^{\frac{3}{2}}  &amp;
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>则 (2.40) 可近似等价为:</p>
+<p><span class="math display">\[
+\begin{align}
+U \sim \frac{T^{\alpha-\frac{3}{2}} ( np -
+T^{3}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})) }{n+T^{\frac{3}{2}}
+\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) \mathrm{ch}(\frac{E_{g}}{6k_{0}T}) }
+, \alpha\in (0,1)
+\end{align}
+\]</span></p>
+<p>但该式子 <span class="math inline">\(U\)</span> 与 <span
+class="math inline">\(T\)</span>
+的关系图较难绘制,故通过如下方式考虑简化式子来讨论。</p>
+<p>根据<a
+href="https://kns.cnki.net/kcms2/article/abstract?v=J38Mj5ylEu88tQBJNFw5h1IwWRjtcf_dazc2fmWHJqQx4i96YpQofdjMrRyTwOQEhUz_gRjk3J8olPV2CUyyPpMytd1c6H-dLLm8kGaFSclYiNLVGkP2TgxA-MNFS6JTU1yvBp2Z61w3KWg45T6K5sBH5kA97s6ntFxcDiWvHkM0RjAd08gQLGcqsUdFXL_b&amp;uniplatform=NZKPT&amp;language=CHS">参考资料</a>我们有全温度范围内的硅的费米能级变化,
+同时该图像考虑了禁带宽度随温度增加的变化的 varish 模型,
+是较为准确的数据。</p>
+<figure>
+<img
+src="https://cdn.noedgeai.com/01936330-3b64-7e5f-8e7d-dec6abb5e0ab_6.jpg?x=585&amp;y=1396&amp;w=470&amp;h=300"
+alt="图 9: 全温度范围内的硅的费米能级变化" />
+<figcaption aria-hidden="true">图 9:
+全温度范围内的硅的费米能级变化</figcaption>
+</figure>
+<p>故从较大的温度范围内来看, 硅的费米能级随温度的变化满足下述规律:</p>
+<ol type="1">
+<li><p>在温度 <span class="math inline">\({0K} &lt; T &lt;
+{100K}\)</span> 的低温弱电离区间,
+费米能级随温度的升高而逐渐增大。温度约为 <span
+class="math inline">\({100}\mathrm{K}\)</span>
+时,最大费米能级位于导带底以下 <span
+class="math inline">\({0.059}\mathrm{eV}\)</span> 处。</p></li>
+<li><p>在温度 <span class="math inline">\({100K} &lt; T &lt;
+{700K}\)</span> 范围内,费米能级几乎呈线性下降。</p></li>
+<li><p>温度大于 <span class="math inline">\({700}\mathrm{K}\)</span>
+时,费米能级逐渐趋于平缓,接近带隙中间,即本征半导体的费米能级。</p></li>
+</ol>
+<p>同时由于 <span class="math inline">\({E}_{t} - {E}_{i} = \frac{
+{E}_{g} }{6} = {0.187}\mathrm{ {eV} }\)</span>
+,故我们按温度从低到高的顺序来分析,来简化少子寿命的表达式:</p>
+<ol type="1">
+<li>较低温时, 根据电中性条件推的费米能级的位置满足:</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+    \begin{aligned}
+    E_{F} &amp;= \frac{E_{c}+E_{D} }{2} + (\frac{k_{0}T}{2} ) \ln
+(\frac{N_{D}}{N_{c}})
+    \end{aligned}
+\end{equation}
+\]</span></p>
+<p>且随着温度的升高, <span class="math inline">\({E}_{F}\)</span>
+先升高后先将,当且仅当 <span class="math inline">\({N}_{c} =
+{0.11}{N}_{D}\)</span> 时, <span class="math inline">\({E}_{F}\)</span>
+距离导带最近。同时注意到,杂质的电离能较小,即杂质能级与导带的距离之间较小,同时注意到
+<span class="math inline">\({E}_{F}\)</span> 在 <span
+class="math inline">\({E}_{D}\)</span> 之上,故此时费米能级 <span
+class="math inline">\({E}_{F}\)</span> 远在 <span
+class="math inline">\({E}_{t}\)</span>
+之上,故可将少子寿命式子化简为:</p>
+<p><span class="math display">\[
+\begin{align}
+\tau = \frac{1}{U} =  \frac{1}{N_{t}\sigma_{+}V_{T} } \sim T^{\beta},
+\beta \in (\frac{3}{2},\frac{7}{2})
+\end{align}
+\]</span></p>
+<ol start="2" type="1">
+<li>温度较高时, <span class="math inline">\({E}_{F} &lt;
+{E}_{t}\)</span> 时,少数载流子浓度存在如下近似:</li>
+</ol>
+<p><span class="math display">\[
+\begin{equation}
+\left\{
+    \begin{aligned}
+        &amp;\tau = \frac{1}{N_{t}\sigma_{+}V_{T}} \frac{n_{1}}{n_{0}}
+\sim T^{\beta}
+\mathrm{exp}(\frac{E_{i}-E_{F}}{k_{0}T})\mathrm{exp}(\frac{0.187eV}{k_{0}T})
+\\
+        &amp;n_{1} \gg n_{0}&gt;p_{0} &gt; p_{1}
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>故可根据图 9 所示的 <span class="math inline">\({E}_{F}\)</span>
+变化曲线近似估计少子寿命 <span class="math inline">\(\tau\)</span>
+的变化。</p>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] 陈开茅,毛晋昌,晏懋洵,吴恩,曾奇勇. 硅中金的空穴俘获截面的研究.
+北京大学物理系, 1983.</p>
+<p>[2] 王惠,杨伟强,严金梅,魏红军. 关于 <span
+class="math inline">\(\mathrm{N}\)</span> 型晶体硅费米能级的研究.
+晶澳太阳能有限公司,2015.</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
       </tags>
   </entry>
   <entry>
-    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
-    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
-    <content><![CDATA[<h1>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
-<blockquote>
-<p><code>问题来源于半导体物理课程的第一章作业</code></p>
-</blockquote>
-<h1>为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
+    <title>关于势垒及衍生问题的一些思考</title>
+    <url>/2024/12/06/the_potential_barrier/</url>
+    <content><![CDATA[<h1 id="什么是势垒呢">什么是势垒呢？</h1>
+<h2 id="pn结">pn结</h2>
+<p>在pn结中记n区、p区的导带 <span class="math inline">\(E_{C}\)</span>
+之差为势垒。在形成pn结之前，n区的费米能级 <span
+class="math inline">\(E_{F}\)</span> 靠近导带 <span
+class="math inline">\(E_{C}\)</span> ；p区的费米能级靠近价带 <span
+class="math inline">\(E_{V}\)</span>
+，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
 <ul>
-<li>
-<p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p>
-</li>
-<li>
-<p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压$V_{TH}$。</p>
-</li>
-<li>
-<p>(100)晶向的缺陷密度最低，可以减小$V_{TH}$的漂移。</p>
-</li>
-<li>
-<p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p>
-</li>
+<li><p>Q1:为什么pn结会形成统一的费米能级</p></li>
+<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从
+<span class="math inline">\(E_{F}\)</span> 高的n区流向 <span
+class="math inline">\(E_{F}\)</span> 低的p区，相应的空穴从 <span
+class="math inline">\(E_{F}\)</span> 低的p区流向 <span
+class="math inline">\(E_{F}\)</span>
+高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p></li>
 </ul>
-<h1>为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
+<p><span class="math display">\[
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        n_{0} &amp; =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+        p_{0} &amp; =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T})
+    \end{aligned}
+    \right.
+\end{equation}
+\]</span></p>
+<p>故 <span class="math inline">\(E_{Fn}\)</span> 不断下移， <span
+class="math inline">\(E_{Fp}\)</span> 不断上移，直至 <span
+class="math inline">\(E_{Fn}=E_{Fp}\)</span>
+。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
 <ul>
-<li>
-<p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p>
-</li>
-<li>
-<p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p>
-</li>
-<li>
-<p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的$V_{TH}$。</p>
-</li>
-<li>
-<p>利用(111)晶向可以更精确的控制基区宽度。</p>
-</li>
-<li>
-<p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p>
-</li>
+<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
 </ul>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用传输门做二选一选择器的CMOS电路分析</title>
-    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
-    <content><![CDATA[<h1>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1>
-<h1>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1>
-<h1>利用传输门做二选一选择器的CMOS电路分析</h1>
-<p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，`只需关注<strong>导电沟道是否产生</strong>即可。</p>
-<p>如图1所示为传输门的CMOS电路示意图</p>
+<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
+<h3 id="pn结加正向偏压">pn结加正向偏压</h3>
 <ul>
-<li>当$C=1$时，下面对MOS管的导通情况进行分析:</li>
+<li>加正向偏压后，势垒由 <span class="math inline">\(V_{D}\)</span>
+下降为 <span class="math inline">\(V_{D}-V\)</span>
+，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为
+<span class="math inline">\(V_{D}-V\)</span> ；在 <span
+class="math inline">\(E_{out}\)</span>
+的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn'边界处空穴浓度增加，进而形成从nn'边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp'边界处电子浓度增加，进而形成从pp'边界到p区内部的电子扩散电流。</li>
 </ul>
-<h3 id="NMOS导通情况">NMOS导通情况</h3>
-<p>$$\begin{align*}<br>
-\because &amp;C=1\<br>
-\therefore &amp;V_{GN} = V_{DD} \<br>
-\because &amp;V_{BN} = 0V\<br>
-\end{align*}$$</p>
-<p>$$\begin{align*}<br>
-\therefore &amp;V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i}<br>
-\end{align*}$$</p>
-<h3 id="PMOS导通情况">PMOS导通情况</h3>
-<p>$$\begin{align*}<br>
-\because &amp;\overline{C}=0\<br>
-\therefore &amp;V_{GP} = 0V \<br>
-\because &amp;V_{BP} = V_{DD}\<br>
-\end{align*}$$</p>
-<p>$$\begin{align*}<br>
-\therefore &amp;V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} - V_{DD}) = - V_{i}<br>
-\end{align*}$$</p>
-<p>当$V_{i} &lt; V_{DD} - V_{TH} $ ，可保证 $V_{GSN} = V_{DD} - V_{i} \geq v_{TH} $ ，即NMOS产生导电沟道；</p>
-<p>当 $V_{i} &gt;  V_{TH} $ ，可保证$V_{GSP} = - V_{i} \leq -v_{TH} $ ，即PMOS产生导电沟道；</p>
-<p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都可保证至少有一个MOS管存在导电沟道，使得 $V_{o}=V_{i}$ 。</p>
+<p>由于nn'处电子减少，故从(1)式来看， <span
+class="math inline">\(E_{Fn}\)</span> 应远离 <span
+class="math inline">\(E_{C}\)</span>
+；同理由于pp'处空穴减少，故从(1)式来看， <span
+class="math inline">\(E_{Fp}\)</span> 应远离 <span
+class="math inline">\(E_{V}\)</span> 。</p>
+<h3 id="总结">总结</h3>
+<p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 <span
+class="math inline">\(E_{C}\)</span> 以分析方便，进而先确定 <span
+class="math inline">\(E_{C}\)</span> 、 <span
+class="math inline">\(E_{V}\)</span>
+的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
+<hr />
+<h2
+id="金属半导体接触metal---semiconductor-contact">金属半导体接触(Metal -
+Semiconductor Contact)</h2>
+<p>这种情况下有两种势垒:</p>
 <ul>
-<li>当 $C=0$ 时，下面对MOS管的导通情况进行分析:</li>
+<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p></li>
+<li><p>在金属中存在金属的势垒高度 <span
+class="math inline">\(q\phi_{ns}\)</span> ，其满足:</p></li>
 </ul>
-<h3 id="NMOS导通情况-v2">NMOS导通情况</h3>
-<p>$$\begin{align*}<br>
-\because &amp;C=1\<br>
-\therefore &amp;V_{GN} = 0V \<br>
-\because &amp;V_{BN} = 0V\<br>
-\end{align*}$$</p>
-<p>$$\begin{align*}<br>
-\therefore &amp;V_{GSN} = 0  &lt; V_{TH}<br>
-\end{align*}$$</p>
-<h3 id="PMOS导通情况-v2">PMOS导通情况</h3>
-<p>$$\begin{align*}<br>
-\because &amp;\overline{C}=1\<br>
-\therefore &amp;V_{GP} = V_{DD} \<br>
-\because &amp;V_{BP} = V_{DD}\<br>
-\end{align*}$$</p>
-<p>$$\begin{align*}<br>
-\therefore &amp;V_{GSP} &gt; - V_{TH}<br>
-\end{align*}$$</p>
-<p>故$V_{i}$无论取任何值(但都必须保证小于$V_{DD}$)都无法使任意一个MOS管存在导电沟道。</p>
-<h1>故根据传输门导通规律设计如下图所示的二选一数选器</h1>
-<p>如图2所示。</p>
-]]></content>
-      <tags>
-        <tag>模集(拉扎维)</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
-    <url>/2024/11/16/effect_mass_and_triple_cross_product/</url>
-    <content><![CDATA[<h1>有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</h1>
-<h2 id="有效质量-m-ast-求解">有效质量$m^{\ast}$求解</h2>
-<p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
-<h2 id="符号说明">符号说明</h2>
-<p>$\hbar$为约化普朗克常数</p>
-<p>$f$为载流子所受所有外力的合力</p>
-<p>$P$为载流子动量</p>
-<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：<br>
-$$\begin{align*}<br>
-f &amp;= \frac{dP}{dt} \<br>
-P&amp;= \hbar k<br>
-\end{align*}$$</p>
-<p>载流子速度$v$可表示为:<br>
-$$\begin{align*}<br>
-v &amp;= \frac{1}{\hbar} \frac{dE}{dk}<br>
-\end{align*}$$</p>
-<p>则加速度$a$可表示为:<br>
-$$\begin{align*}<br>
-a &amp;= \frac{dv}{dt} \notag\<br>
-&amp;=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\<br>
-&amp;=\frac{1}{\hbar} \frac{d<sup>{2}E}{dk</sup>{2}} \cdot \frac{dk}{dt} \notag<br>
-\end{align*}$$</p>
-<p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:<br>
-$$\begin{align*}<br>
-a &amp;=  \frac{1}{\hbar^{2}} \frac{d<sup>{2}E}{dt</sup>{2}} \cdot \frac{d\hbar k}{dt} \notag\<br>
-&amp;= \frac{1}{\hbar^{2}} \frac{d<sup>{2}E}{dk</sup>{2}} \cdot f<br>
-\end{align*}$$</p>
-<p>因此将$a$除到右侧，将$f$的系数除到左侧得:<br>
-$$\begin{align*}<br>
-\frac{f}{a} = \frac{\hbar<sup>{2}}{\frac{d</sup>{2}E}{dkt^{2}}}<br>
-\end{align*}$$</p>
-<p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:<br>
-$$\begin{align*}<br>
-m^{\ast} &amp;= \frac{f}{a} = \frac{\hbar<sup>{2}}{\frac{d</sup>{2}E}{dk^{2}}}<br>
-\end{align*}$$</p>
-<p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:<br>
-$$\begin{align*}<br>
-E(k) - E(0) = \frac{\hbar^{2} k<sup>{2}}{2m_{n}</sup>{\ast}}<br>
-\end{align*}$$</p>
-<p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
-<hr>
-<h2 id="vec-a-times-vec-b-times-vec-c-的化简求解">$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</h2>
-<p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
-<p>首先$\vec{b}\times\vec{c}$得到的向量方向为$\vec{b}$、$\vec{c}$所构成的平面的法向量方向。</p>
-<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:<br>
-$$\begin{align*}<br>
-\vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}<br>
-\end{align*}$$</p>
-<p>同时利用向量的叉乘关系:<br>
-$$\begin{align*}<br>
-\vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}<br>
-\end{align*}$$</p>
-<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:<br>
-$$\begin{align*}<br>
-(m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;= 0 \<br>
-\Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &amp;=0<br>
-\end{align*}$$</p>
-<p><code>很自然地</code>对$m$，$n$取如下式所示的值:<br>
-$$\begin{aligned}<br>
-m&amp;= -\vec{c} \cdot \vec{a}  &amp; \<br>
-n&amp;=  \vec{b} \cdot \vec{a} &amp;<br>
-\end{aligned}$$</p>
-<p>所以:<br>
-$$\begin{align*}<br>
-\vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]<br>
-\end{align*}$$</p>
-<p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
-<p>若取<br>
-$$\begin{aligned}<br>
-\vec{a}&amp;= \left[1,0,0\right]  &amp; \<br>
-\vec{b}&amp;= \left[0,1,0\right]  &amp; \<br>
-\vec{c}&amp;= \left[1,0,0\right]  &amp;<br>
-\end{aligned}$$</p>
-<p>代入解得$k=-1$，所以得:<br>
-$$\begin{align*}<br>
-\vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}<br>
-\end{align*}$$</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2024/11/16/body_effect_reduce_resistence/</url>
-    <content><![CDATA[<h1>提问：</h1>
-<blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
-</blockquote>
-<h2 id="我的思考">我的思考</h2>
-<ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<br>
-$$\begin{aligned}<br>
-I = g_{mb} V_{BS}<br>
-\end{aligned}$$</li>
-</ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
+<p><span class="math display">\[
+\begin{align}
+q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal}
+\end{align}
+\]</span></p>
+<p>考虑到金属是<code>电子海</code>，故其 <span
+class="math inline">\((E_{C})_{metal}\)</span> 保持不动。 ·</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
