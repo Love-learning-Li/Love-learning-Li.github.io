@@ -1087,6 +1087,21 @@ class="math inline">\(\mathrm{N}\)</span> 型晶体硅费米能级的研究.
       </tags>
   </entry>
   <entry>
+    <title>ADC参数总结</title>
+    <url>/2024/11/16/ADC_parameter/</url>
+    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
+<ul>
+<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
+class="math inline">\(nJ/step\)</span></li>
+</ul>
+<p><a
+href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+<ul>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>简并or退化？本征or掺杂？</title>
     <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
     <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
@@ -1157,21 +1172,6 @@ href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
       <tags>
         <tag>半导体物理</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>ADC参数总结</title>
-    <url>/2024/11/16/ADC_parameter/</url>
-    <content><![CDATA[<h1 id="adc参数总结">ADC参数总结</h1>
-<ul>
-<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: <span
-class="math inline">\(nJ/step\)</span></li>
-</ul>
-<p><a
-href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-<ul>
-<li></li>
-</ul>
-]]></content>
   </entry>
   <entry>
     <title>课堂汇报(论文解读)的PPT注意事项</title>
