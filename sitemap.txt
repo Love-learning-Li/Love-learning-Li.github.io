@@ -1,3 +1,4 @@
+http://love-learning-li.github.io/2024/11/16/Transmission_gate_CMOS_circuit/
 http://love-learning-li.github.io/2024/11/28/semiconductor_physics_midterm_test/
 http://love-learning-li.github.io/about/index.html
 http://love-learning-li.github.io/2024/11/16/effect_mass_and_triple_cross_product/
@@ -6,7 +7,6 @@ http://love-learning-li.github.io/2024/12/06/the_potential_barrier/
 http://love-learning-li.github.io/2024/12/10/IC_Manufacture_test_10problems/
 http://love-learning-li.github.io/lib/pace/README.html
 http://love-learning-li.github.io/tags/index.html
-http://love-learning-li.github.io/2024/11/16/Transmission_gate_CMOS_circuit/
 http://love-learning-li.github.io/2024/11/16/body_effect_reduce_resistence/
 http://love-learning-li.github.io/2024/11/16/MOS(100)_BJT(111)/
 http://love-learning-li.github.io/2024/11/16/ppt_report/
