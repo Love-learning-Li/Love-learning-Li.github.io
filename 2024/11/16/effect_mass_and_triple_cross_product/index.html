@@ -22,12 +22,12 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"love-learning-li.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-    <meta name="description" content="有效质量\(m^{\ast}\)求解及\(\vec{a}\times(\vec{b}\times\vec{c})\)求解 有效质量\(m^{\ast}\)求解 今天上半导体物理课程时，忘记了有效质量的推导过程，主要是除一个\(\hbar\)凑牛顿第二定理表达式那一步忘记了，回看固体物理笔记复习后做此记录，与大家分享。 符号说明 \(\hbar\)为约化普朗克常数">
+    <meta name="description" content="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解有效质量$m^{\ast}$求解今天上半导体物理课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看固体物理笔记复习后做此记录，与大家分享。 符号说明$\hbar$为约化普朗克常数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解">
 <meta property="og:url" content="http://love-learning-li.github.io/2024/11/16/effect_mass_and_triple_cross_product/index.html">
 <meta property="og:site_name" content="MeiShao会认真沉淀">
-<meta property="og:description" content="有效质量\(m^{\ast}\)求解及\(\vec{a}\times(\vec{b}\times\vec{c})\)求解 有效质量\(m^{\ast}\)求解 今天上半导体物理课程时，忘记了有效质量的推导过程，主要是除一个\(\hbar\)凑牛顿第二定理表达式那一步忘记了，回看固体物理笔记复习后做此记录，与大家分享。 符号说明 \(\hbar\)为约化普朗克常数">
+<meta property="og:description" content="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解有效质量$m^{\ast}$求解今天上半导体物理课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看固体物理笔记复习后做此记录，与大家分享。 符号说明$\hbar$为约化普朗克常数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-15T16:18:29.360Z">
 <meta property="article:modified_time" content="2024-12-11T12:01:48.175Z">
@@ -142,7 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E8%B4%A8%E9%87%8Fmast%E6%B1%82%E8%A7%A3%E5%8F%8Avecatimesvecbtimesvecc%E6%B1%82%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">有效质量\(m^{\ast}\)求解及\(\vec{a}\times(\vec{b}\times\vec{c})\)求解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E8%B4%A8%E9%87%8Fmast%E6%B1%82%E8%A7%A3"><span class="nav-number">1.1.</span> <span class="nav-text">有效质量\(m^{\ast}\)求解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%A6%E5%8F%B7%E8%AF%B4%E6%98%8E"><span class="nav-number">1.2.</span> <span class="nav-text">符号说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vecatimesvecbtimesvecc%E7%9A%84%E5%8C%96%E7%AE%80%E6%B1%82%E8%A7%A3"><span class="nav-number">1.3.</span> <span class="nav-text">\(\vec{a}\times(\vec{b}\times\vec{c})\)的化简求解</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E8%B4%A8%E9%87%8F-m-ast-%E6%B1%82%E8%A7%A3%E5%8F%8A-vec-a-times-vec-b-times-vec-c-%E6%B1%82%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E6%95%88%E8%B4%A8%E9%87%8F-m-ast-%E6%B1%82%E8%A7%A3"><span class="nav-number">1.1.</span> <span class="nav-text">有效质量$m^{\ast}$求解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%A6%E5%8F%B7%E8%AF%B4%E6%98%8E"><span class="nav-number">1.2.</span> <span class="nav-text">符号说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vec-a-times-vec-b-times-vec-c-%E7%9A%84%E5%8C%96%E7%AE%80%E6%B1%82%E8%A7%A3"><span class="nav-number">1.3.</span> <span class="nav-text">$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -250,7 +250,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.4k</span>
+      <span>2.2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -267,110 +267,66 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="有效质量mast求解及vecatimesvecbtimesvecc求解">有效质量<span
-class="math inline">\(m^{\ast}\)</span>求解及<span
-class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>求解</h1>
-<h2 id="有效质量mast求解">有效质量<span
-class="math inline">\(m^{\ast}\)</span>求解</h2>
-<p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个<span
-class="math inline">\(\hbar\)</span>凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
-<h2 id="符号说明">符号说明</h2>
-<p><span class="math inline">\(\hbar\)</span>为约化普朗克常数</p>
-<p><span class="math inline">\(f\)</span>为载流子所受所有外力的合力</p>
-<p><span class="math inline">\(P\)</span>为载流子动量</p>
-<p>首先我们需要给出牛顿第二定律的原始(非常见)形式： <span
-class="math display">\[\begin{align*}
-    f &amp;= \frac{dP}{dt} \\
-    P&amp;= \hbar k
-\end{align*}\]</span></p>
-<p>载流子速度<span class="math inline">\(v\)</span>可表示为: <span
-class="math display">\[\begin{align*}
-    v &amp;= \frac{1}{\hbar} \frac{dE}{dk}
-\end{align*}\]</span></p>
-<p>则加速度<span class="math inline">\(a\)</span>可表示为: <span
-class="math display">\[\begin{align*}
-    a &amp;= \frac{dv}{dt} \notag\\
-    &amp;=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
-    &amp;=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt}
-\notag
-\end{align*}\]</span></p>
-<p>注意到<span
-class="math inline">\(\frac{dk}{dt}\)</span>我们是不知道怎么直接处理的，因此我们将其转化为<span
-class="math inline">\(\frac{d\hbar
-k}{dt}\)</span>，然后就可以利用牛顿第二定律来进行转化了: <span
-class="math display">\[\begin{align*}
-    a &amp;=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot
-\frac{d\hbar k}{dt} \notag\\
-    &amp;= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f
-\end{align*}\]</span></p>
-<p>因此将<span class="math inline">\(a\)</span>除到右侧，将<span
-class="math inline">\(f\)</span>的系数除到左侧得: <span
-class="math display">\[\begin{align*}
-    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}
-\end{align*}\]</span></p>
-<p>注意到<span
-class="math inline">\(\frac{f}{a}\)</span>表示的是载流子所受到的所有外力，且<span
-class="math inline">\(a\)</span>表示的是载流子的加速度，因此有: <span
-class="math display">\[\begin{align*}
-    m^{\ast} &amp;= \frac{f}{a} =
-\frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}
-\end{align*}\]</span></p>
-<p>实际中常根据<code>回旋共振实验</code>测定<span
-class="math inline">\(m^{\ast}\)</span>，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:
-<span class="math display">\[\begin{align*}
+    <div class="post-body" itemprop="articleBody"><h1 id="有效质量-m-ast-求解及-vec-a-times-vec-b-times-vec-c-求解"><a href="#有效质量-m-ast-求解及-vec-a-times-vec-b-times-vec-c-求解" class="headerlink" title="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解"></a>有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</h1><h2 id="有效质量-m-ast-求解"><a href="#有效质量-m-ast-求解" class="headerlink" title="有效质量$m^{\ast}$求解"></a>有效质量$m^{\ast}$求解</h2><p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
+<h2 id="符号说明"><a href="#符号说明" class="headerlink" title="符号说明"></a>符号说明</h2><p>$\hbar$为约化普朗克常数</p>
+<p>$f$为载流子所受所有外力的合力</p>
+<p>$P$为载流子动量</p>
+<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：</p>
+<script type="math/tex; mode=display">\begin{align*}
+    f &= \frac{dP}{dt} \\
+    P&= \hbar k 
+\end{align*}</script><p>载流子速度$v$可表示为:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    v &= \frac{1}{\hbar} \frac{dE}{dk} 
+\end{align*}</script><p>则加速度$a$可表示为:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    a &= \frac{dv}{dt} \notag\\
+    &=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
+    &=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt} \notag 
+\end{align*}</script><p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    a &=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot \frac{d\hbar k}{dt} \notag\\
+    &= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f 
+\end{align*}</script><p>因此将$a$除到右侧，将$f$的系数除到左侧得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}} 
+\end{align*}</script><p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    m^{\ast} &= \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}} 
+\end{align*}</script><p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:</p>
+<script type="math/tex; mode=display">\begin{align*}
     E(k) - E(0) = \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}
-\end{align*}\]</span></p>
-<p>故可通过实验测定有效值量进而得到半导体中的能带<span
-class="math inline">\(E(k)\)</span>。</p>
-<hr />
-<h2 id="vecatimesvecbtimesvecc的化简求解"><span
-class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>的化简求解</h2>
-<p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
-<p>首先<span
-class="math inline">\(\vec{b}\times\vec{c}\)</span>得到的向量方向为<span
-class="math inline">\(\vec{b}\)</span>、<span
-class="math inline">\(\vec{c}\)</span>所构成的平面的法向量方向。</p>
-<p>所以<span
-class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>得到的向量平行于<span
-class="math inline">\(\vec{b}\)</span>、<span
-class="math inline">\(\vec{c}\)</span>所构成的平面，故有下式: <span
-class="math display">\[\begin{align*}
+\end{align*}</script><p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
+<hr>
+<h2 id="vec-a-times-vec-b-times-vec-c-的化简求解"><a href="#vec-a-times-vec-b-times-vec-c-的化简求解" class="headerlink" title="$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解"></a>$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</h2><p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
+<p>首先$\vec{b}\times\vec{c}$得到的向量方向为$\vec{b}$、$\vec{c}$所构成的平面的法向量方向。</p>
+<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:</p>
+<script type="math/tex; mode=display">\begin{align*}
    \vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}
-\end{align*}\]</span></p>
-<p>同时利用向量的叉乘关系: <span class="math display">\[\begin{align*}
-    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}
-\end{align*}\]</span></p>
-<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:
-<span class="math display">\[\begin{align*}
-    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;= 0 \\
-    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a}
-&amp;=0
-\end{align*}\]</span></p>
-<p><code>很自然地</code>对<span class="math inline">\(m\)</span>，<span
-class="math inline">\(n\)</span>取如下式所示的值: <span
-class="math display">\[\begin{aligned}
-    m&amp;= -\vec{c} \cdot \vec{a}  &amp; \\
-    n&amp;=  \vec{b} \cdot \vec{a} &amp;
-\end{aligned}\]</span></p>
-<p>所以: <span class="math display">\[\begin{align*}
-    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot
-\vec{a})\vec{c} \right]
-\end{align*}\]</span></p>
-<p>因为<span
-class="math inline">\(k\)</span>的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的<span
-class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span>求解出<span
-class="math inline">\(k\)</span>即可。</p>
-<p>若取 <span class="math display">\[\begin{aligned}
-    \vec{a}&amp;= \left[1,0,0\right]  &amp; \\
-    \vec{b}&amp;= \left[0,1,0\right]  &amp; \\
-    \vec{c}&amp;= \left[1,0,0\right]  &amp;
-\end{aligned}\]</span></p>
-<p>代入解得<span class="math inline">\(k=-1\)</span>，所以得: <span
-class="math display">\[\begin{align*}
-    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot
-\vec{a})\vec{c}
-\end{align*}\]</span></p>
-
+\end{align*}</script><p>同时利用向量的叉乘关系:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a} 
+\end{align*}</script><p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &= 0 \\
+    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &=0
+\end{align*}</script><p><code>很自然地</code>对$m$，$n$取如下式所示的值:</p>
+<script type="math/tex; mode=display">\begin{aligned}
+    m&= -\vec{c} \cdot \vec{a}  & \\
+    n&=  \vec{b} \cdot \vec{a} &
+\end{aligned}</script><p>所以:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]
+\end{align*}</script><p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
+<p>若取</p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \vec{a}&= \left[1,0,0\right]  & \\
+    \vec{b}&= \left[0,1,0\right]  & \\
+    \vec{c}&= \left[1,0,0\right]  & 
+\end{aligned}</script><p>代入解得$k=-1$，所以得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}
+\end{align*}</script>
     </div>
 
     
@@ -425,13 +381,13 @@ class="math display">\[\begin{align*}
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">28k</span>
+    <span title="站点总字数">27k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">51 分钟</span>
+    <span title="站点阅读时长">48 分钟</span>
   </span>
 </div>
 
