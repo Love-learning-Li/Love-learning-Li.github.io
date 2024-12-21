@@ -16,60 +16,6 @@ href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_
 ]]></content>
   </entry>
   <entry>
-    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
-    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
-    <content><![CDATA[<h1
-id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
-<blockquote>
-<p><code>问题来源于半导体物理课程的第一章作业</code></p>
-</blockquote>
-<h1
-id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
-<ul>
-<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
-<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
-class="math inline">\(V_{TH}\)</span>。</p></li>
-<li><p>(100)晶向的缺陷密度最低，可以减小<span
-class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
-<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
-</ul>
-<h1
-id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
-<ul>
-<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
-<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
-<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
-class="math inline">\(V_{TH}\)</span>。</p></li>
-<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
-<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客版本迭代汇总</title>
-    <url>/2024/12/21/Blog_version_update/</url>
-    <content><![CDATA[<p>版本更新信息如下：</p>
-<ul>
-<li>V0.2.1 2024.12.21</li>
-</ul>
-<p>增加links页面，推荐优秀的博客和网站</p>
-<ul>
-<li>V0.2 2024.12.15</li>
-</ul>
-<p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
-<ul>
-<li>V0.1 2024.11.14</li>
-</ul>
-<p>博客正式上线，基于GitHubpages搭建</p>
-]]></content>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简并or退化？本征or掺杂？</title>
     <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
     <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
@@ -216,6 +162,28 @@ class="math display">\[\begin{align*}
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客版本迭代汇总</title>
+    <url>/2024/12/21/Blog_version_update/</url>
+    <content><![CDATA[<p>版本更新信息如下：</p>
+<ul>
+<li>V0.2.1 2024.12.21</li>
+</ul>
+<p>增加links页面，推荐优秀的博客和网站；同时增加文章置顶功能，<a
+href="https://blog.csdn.net/nineya_com/article/details/103394315">参考文章</a></p>
+<ul>
+<li>V0.2 2024.12.15</li>
+</ul>
+<p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
+<ul>
+<li>V0.1 2024.11.14</li>
+</ul>
+<p>博客正式上线，基于GitHubpages搭建</p>
+]]></content>
+      <tags>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -405,6 +373,39 @@ href="https://wenku.baidu.com/view/1e6dc74126c52cc58bd63186bceb19e8b8f6ec68.html
       </tags>
   </entry>
   <entry>
+    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
+    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
+    <content><![CDATA[<h1
+id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
+<blockquote>
+<p><code>问题来源于半导体物理课程的第一章作业</code></p>
+</blockquote>
+<h1
+id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
+<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>(100)晶向的缺陷密度最低，可以减小<span
+class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
+<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
+</ul>
+<h1
+id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
+<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
+<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
+<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用传输门做二选一选择器的CMOS电路分析</title>
     <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
     <content><![CDATA[<h1
@@ -503,138 +504,6 @@ alt="图2传输门实现二选一选择器" />
       </tags>
   </entry>
   <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2024/11/16/body_effect_reduce_resistence/</url>
-    <content><![CDATA[<h1 id="提问">提问：</h1>
-<blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
-</blockquote>
-<h2 id="我的思考">我的思考</h2>
-<ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
-class="math display">\[\begin{aligned}
-  I = g_{mb} V_{BS}
-\end{aligned}\]</span></li>
-</ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
-class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
-    <url>/2024/11/16/effect_mass_and_triple_cross_product/</url>
-    <content><![CDATA[<h1 id="有效质量mast求解及vecatimesvecbtimesvecc求解">有效质量<span
-class="math inline">\(m^{\ast}\)</span>求解及<span
-class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>求解</h1>
-<h2 id="有效质量mast求解">有效质量<span
-class="math inline">\(m^{\ast}\)</span>求解</h2>
-<p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个<span
-class="math inline">\(\hbar\)</span>凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
-<h2 id="符号说明">符号说明</h2>
-<p><span class="math inline">\(\hbar\)</span>为约化普朗克常数</p>
-<p><span class="math inline">\(f\)</span>为载流子所受所有外力的合力</p>
-<p><span class="math inline">\(P\)</span>为载流子动量</p>
-<p>首先我们需要给出牛顿第二定律的原始(非常见)形式： <span
-class="math display">\[\begin{align*}
-    f &amp;= \frac{dP}{dt} \\
-    P&amp;= \hbar k
-\end{align*}\]</span></p>
-<p>载流子速度<span class="math inline">\(v\)</span>可表示为: <span
-class="math display">\[\begin{align*}
-    v &amp;= \frac{1}{\hbar} \frac{dE}{dk}
-\end{align*}\]</span></p>
-<p>则加速度<span class="math inline">\(a\)</span>可表示为: <span
-class="math display">\[\begin{align*}
-    a &amp;= \frac{dv}{dt} \notag\\
-    &amp;=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
-    &amp;=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt}
-\notag
-\end{align*}\]</span></p>
-<p>注意到<span
-class="math inline">\(\frac{dk}{dt}\)</span>我们是不知道怎么直接处理的，因此我们将其转化为<span
-class="math inline">\(\frac{d\hbar
-k}{dt}\)</span>，然后就可以利用牛顿第二定律来进行转化了: <span
-class="math display">\[\begin{align*}
-    a &amp;=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot
-\frac{d\hbar k}{dt} \notag\\
-    &amp;= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f
-\end{align*}\]</span></p>
-<p>因此将<span class="math inline">\(a\)</span>除到右侧，将<span
-class="math inline">\(f\)</span>的系数除到左侧得: <span
-class="math display">\[\begin{align*}
-    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}
-\end{align*}\]</span></p>
-<p>注意到<span
-class="math inline">\(\frac{f}{a}\)</span>表示的是载流子所受到的所有外力，且<span
-class="math inline">\(a\)</span>表示的是载流子的加速度，因此有: <span
-class="math display">\[\begin{align*}
-    m^{\ast} &amp;= \frac{f}{a} =
-\frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}
-\end{align*}\]</span></p>
-<p>实际中常根据<code>回旋共振实验</code>测定<span
-class="math inline">\(m^{\ast}\)</span>，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:
-<span class="math display">\[\begin{align*}
-    E(k) - E(0) = \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}
-\end{align*}\]</span></p>
-<p>故可通过实验测定有效值量进而得到半导体中的能带<span
-class="math inline">\(E(k)\)</span>。</p>
-<hr />
-<h2 id="vecatimesvecbtimesvecc的化简求解"><span
-class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>的化简求解</h2>
-<p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
-<p>首先<span
-class="math inline">\(\vec{b}\times\vec{c}\)</span>得到的向量方向为<span
-class="math inline">\(\vec{b}\)</span>、<span
-class="math inline">\(\vec{c}\)</span>所构成的平面的法向量方向。</p>
-<p>所以<span
-class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>得到的向量平行于<span
-class="math inline">\(\vec{b}\)</span>、<span
-class="math inline">\(\vec{c}\)</span>所构成的平面，故有下式: <span
-class="math display">\[\begin{align*}
-   \vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}
-\end{align*}\]</span></p>
-<p>同时利用向量的叉乘关系: <span class="math display">\[\begin{align*}
-    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}
-\end{align*}\]</span></p>
-<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:
-<span class="math display">\[\begin{align*}
-    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;= 0 \\
-    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a}
-&amp;=0
-\end{align*}\]</span></p>
-<p><code>很自然地</code>对<span class="math inline">\(m\)</span>，<span
-class="math inline">\(n\)</span>取如下式所示的值: <span
-class="math display">\[\begin{aligned}
-    m&amp;= -\vec{c} \cdot \vec{a}  &amp; \\
-    n&amp;=  \vec{b} \cdot \vec{a} &amp;
-\end{aligned}\]</span></p>
-<p>所以: <span class="math display">\[\begin{align*}
-    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot
-\vec{a})\vec{c} \right]
-\end{align*}\]</span></p>
-<p>因为<span
-class="math inline">\(k\)</span>的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的<span
-class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span>求解出<span
-class="math inline">\(k\)</span>即可。</p>
-<p>若取 <span class="math display">\[\begin{aligned}
-    \vec{a}&amp;= \left[1,0,0\right]  &amp; \\
-    \vec{b}&amp;= \left[0,1,0\right]  &amp; \\
-    \vec{c}&amp;= \left[1,0,0\right]  &amp;
-\end{aligned}\]</span></p>
-<p>代入解得<span class="math inline">\(k=-1\)</span>，所以得: <span
-class="math display">\[\begin{align*}
-    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot
-\vec{a})\vec{c}
-\end{align*}\]</span></p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>课堂汇报(论文解读)的PPT注意事项</title>
     <url>/2024/11/16/ppt_report/</url>
     <content><![CDATA[<h1
@@ -653,6 +522,27 @@ id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT
 ]]></content>
       <tags>
         <tag>IC工艺</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2024/11/16/body_effect_reduce_resistence/</url>
+    <content><![CDATA[<h1 id="提问">提问：</h1>
+<blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+</blockquote>
+<h2 id="我的思考">我的思考</h2>
+<ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
+class="math display">\[\begin{aligned}
+  I = g_{mb} V_{BS}
+\end{aligned}\]</span></li>
+</ul>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
+class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
       </tags>
   </entry>
   <entry>
@@ -1586,6 +1476,117 @@ class="math inline">\({E}_{t}\)</span>
 <p>[2] 王惠,杨伟强,严金梅,魏红军. 关于 <span
 class="math inline">\(\mathrm{N}\)</span> 型晶体硅费米能级的研究.
 晶澳太阳能有限公司,2015.</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
+    <url>/2024/11/16/effect_mass_and_triple_cross_product/</url>
+    <content><![CDATA[<h1 id="有效质量mast求解及vecatimesvecbtimesvecc求解">有效质量<span
+class="math inline">\(m^{\ast}\)</span>求解及<span
+class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>求解</h1>
+<h2 id="有效质量mast求解">有效质量<span
+class="math inline">\(m^{\ast}\)</span>求解</h2>
+<p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个<span
+class="math inline">\(\hbar\)</span>凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
+<h2 id="符号说明">符号说明</h2>
+<p><span class="math inline">\(\hbar\)</span>为约化普朗克常数</p>
+<p><span class="math inline">\(f\)</span>为载流子所受所有外力的合力</p>
+<p><span class="math inline">\(P\)</span>为载流子动量</p>
+<p>首先我们需要给出牛顿第二定律的原始(非常见)形式： <span
+class="math display">\[\begin{align*}
+    f &amp;= \frac{dP}{dt} \\
+    P&amp;= \hbar k
+\end{align*}\]</span></p>
+<p>载流子速度<span class="math inline">\(v\)</span>可表示为: <span
+class="math display">\[\begin{align*}
+    v &amp;= \frac{1}{\hbar} \frac{dE}{dk}
+\end{align*}\]</span></p>
+<p>则加速度<span class="math inline">\(a\)</span>可表示为: <span
+class="math display">\[\begin{align*}
+    a &amp;= \frac{dv}{dt} \notag\\
+    &amp;=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
+    &amp;=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt}
+\notag
+\end{align*}\]</span></p>
+<p>注意到<span
+class="math inline">\(\frac{dk}{dt}\)</span>我们是不知道怎么直接处理的，因此我们将其转化为<span
+class="math inline">\(\frac{d\hbar
+k}{dt}\)</span>，然后就可以利用牛顿第二定律来进行转化了: <span
+class="math display">\[\begin{align*}
+    a &amp;=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot
+\frac{d\hbar k}{dt} \notag\\
+    &amp;= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f
+\end{align*}\]</span></p>
+<p>因此将<span class="math inline">\(a\)</span>除到右侧，将<span
+class="math inline">\(f\)</span>的系数除到左侧得: <span
+class="math display">\[\begin{align*}
+    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}
+\end{align*}\]</span></p>
+<p>注意到<span
+class="math inline">\(\frac{f}{a}\)</span>表示的是载流子所受到的所有外力，且<span
+class="math inline">\(a\)</span>表示的是载流子的加速度，因此有: <span
+class="math display">\[\begin{align*}
+    m^{\ast} &amp;= \frac{f}{a} =
+\frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}
+\end{align*}\]</span></p>
+<p>实际中常根据<code>回旋共振实验</code>测定<span
+class="math inline">\(m^{\ast}\)</span>，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:
+<span class="math display">\[\begin{align*}
+    E(k) - E(0) = \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}
+\end{align*}\]</span></p>
+<p>故可通过实验测定有效值量进而得到半导体中的能带<span
+class="math inline">\(E(k)\)</span>。</p>
+<hr />
+<h2 id="vecatimesvecbtimesvecc的化简求解"><span
+class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>的化简求解</h2>
+<p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
+<p>首先<span
+class="math inline">\(\vec{b}\times\vec{c}\)</span>得到的向量方向为<span
+class="math inline">\(\vec{b}\)</span>、<span
+class="math inline">\(\vec{c}\)</span>所构成的平面的法向量方向。</p>
+<p>所以<span
+class="math inline">\(\vec{a}\times(\vec{b}\times\vec{c})\)</span>得到的向量平行于<span
+class="math inline">\(\vec{b}\)</span>、<span
+class="math inline">\(\vec{c}\)</span>所构成的平面，故有下式: <span
+class="math display">\[\begin{align*}
+   \vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}
+\end{align*}\]</span></p>
+<p>同时利用向量的叉乘关系: <span class="math display">\[\begin{align*}
+    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}
+\end{align*}\]</span></p>
+<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:
+<span class="math display">\[\begin{align*}
+    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;= 0 \\
+    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a}
+&amp;=0
+\end{align*}\]</span></p>
+<p><code>很自然地</code>对<span class="math inline">\(m\)</span>，<span
+class="math inline">\(n\)</span>取如下式所示的值: <span
+class="math display">\[\begin{aligned}
+    m&amp;= -\vec{c} \cdot \vec{a}  &amp; \\
+    n&amp;=  \vec{b} \cdot \vec{a} &amp;
+\end{aligned}\]</span></p>
+<p>所以: <span class="math display">\[\begin{align*}
+    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot
+\vec{a})\vec{c} \right]
+\end{align*}\]</span></p>
+<p>因为<span
+class="math inline">\(k\)</span>的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的<span
+class="math inline">\(\vec{a},\vec{b},\vec{c}\)</span>求解出<span
+class="math inline">\(k\)</span>即可。</p>
+<p>若取 <span class="math display">\[\begin{aligned}
+    \vec{a}&amp;= \left[1,0,0\right]  &amp; \\
+    \vec{b}&amp;= \left[0,1,0\right]  &amp; \\
+    \vec{c}&amp;= \left[1,0,0\right]  &amp;
+\end{aligned}\]</span></p>
+<p>代入解得<span class="math inline">\(k=-1\)</span>，所以得: <span
+class="math display">\[\begin{align*}
+    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot
+\vec{a})\vec{c}
+\end{align*}\]</span></p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
