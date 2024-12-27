@@ -525,6 +525,27 @@ class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
       </tags>
   </entry>
   <entry>
+    <title>课堂汇报(论文解读)的PPT注意事项</title>
+    <url>/2024/11/16/ppt_report/</url>
+    <content><![CDATA[<h1
+id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
+<p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
+<h1 id="注意事项">注意事项</h1>
+<ul>
+<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
+<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
+<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
+<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
+<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
+<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
+<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>IC工艺</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>有效质量$m^{&#92;ast}$求解及$&#92;vec{a}&#92;times(&#92;vec{b}&#92;times&#92;vec{c})$求解</title>
     <url>/2024/11/16/effect_mass_and_triple_cross_product/</url>
     <content><![CDATA[<h1 id="有效质量mast求解及vecatimesvecbtimesvecc求解">有效质量<span
@@ -633,27 +654,6 @@ class="math display">\[\begin{align*}
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>课堂汇报(论文解读)的PPT注意事项</title>
-    <url>/2024/11/16/ppt_report/</url>
-    <content><![CDATA[<h1
-id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
-<p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
-<h1 id="注意事项">注意事项</h1>
-<ul>
-<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
-<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
-<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
-<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
-<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
-<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
-<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>IC工艺</tag>
       </tags>
   </entry>
   <entry>
