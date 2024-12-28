@@ -1,5 +1,6 @@
-http://love-learning-li.github.io/links/index.html
+http://love-learning-li.github.io/2024/12/27/2024_Fall_final_exam_review/
 http://love-learning-li.github.io/2024/11/28/semiconductor_physics_midterm_test/
+http://love-learning-li.github.io/links/index.html
 http://love-learning-li.github.io/2024/12/21/Blog_version_update/
 http://love-learning-li.github.io/2024/12/10/IC_Manufacture_test_10problems/
 http://love-learning-li.github.io/about/index.html
@@ -15,6 +16,7 @@ http://love-learning-li.github.io/2024/11/16/ppt_report/
 http://love-learning-li.github.io/2024/11/16/Degenerate_degenerate_intrinsic_doping/
 http://love-learning-li.github.io/2024/11/16/ADC_parameter/
 http://love-learning-li.github.io/
+http://love-learning-li.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/
 http://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/
 http://love-learning-li.github.io/tags/%E5%8D%9A%E5%AE%A2/
 http://love-learning-li.github.io/tags/IC%E5%B7%A5%E8%89%BA/

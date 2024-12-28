@@ -16,97 +16,255 @@ href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_
 ]]></content>
   </entry>
   <entry>
-    <title>简并or退化？本征or掺杂？</title>
-    <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
-    <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
-<blockquote>
-<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
-</blockquote>
-<h2
-id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
-<blockquote>
-<p>故 a degenerate
-semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
-impurity
-band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
-class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
-semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
-</blockquote>
-<p>其中费米狄拉克分布函数为: <span class="math display">\[
-\begin{align*}
-    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
-\end{align*}
-\]</span></p>
-<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
-<span class="math display">\[
-\begin{align*}
-    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
-\end{align*}
-\]</span></p>
-<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
-class="math display">\[
-\begin{align*}
-    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
-\end{align*}
-\]</span></p>
-<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
-class="math display">\[
-\begin{align*}
-    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
-\end{align*}
-\]</span></p>
-<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
-<span class="math display">\[
-\begin{align*}
-    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
-    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
-\end{align*}
-\]</span></p>
-<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="explanation">Explanation:</h2>
-<blockquote>
-<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
-</blockquote>
-<h2 id="总结">总结</h2>
-<ul>
-<li>半导体掺杂后可能带来简并或非简并。</li>
-<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
-<li>非简并的半导体可能是考虑了杂质补偿。</li>
-<li>非简并的半导体既有掺杂的也有本征的。</li>
-</ul>
-<h1 id="参考资料">参考资料</h1>
-<ul>
-<li><a
-href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a
-href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
-</ul>
+    <title>四川大学微电子2022级大三上期末考试植树</title>
+    <url>/2024/12/27/2024_Fall_final_exam_review/</url>
+    <content><![CDATA[<h2 id="模拟集成电路期末复盘">模拟集成电路期末复盘</h2>
+<h3 id="ppt中的一些英文单词12分">ppt中的一些英文单词(12分)</h3>
+<h3 id="简答题">简答题</h3>
+<p>二、对于半导体物理、半导体器件、半导体工艺、模拟集成电路四门课程之间的思考(8分)</p>
+<p>三(每个6分，共48分)</p>
+<p>1.nmos和pmos的区别，请画出结构示意图</p>
+<p>2.有源极负反馈的共源极放大电路与源跟随器之间的对比</p>
+<p>3.共源极放大电路中二极管连接型负载和电流源负载的对比</p>
+<p>4.差分对和单端工作模式之间的比较，为何尾部要采用尾管电流源</p>
+<p>5.电流镜的工作原理及任意倍数参考电流复制在版图中的实现</p>
+<p>6.沟道噪声、热噪声，闪烁噪声及其大小</p>
+<p>7.我们能从传输函数获得哪些信息？</p>
+<p>8.负反馈的缺点，为什么要引入负反馈</p>
+<h3
+id="三考虑沟道长度调制效应体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解">三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解</h3>
+<h3 id="四小测最后一题变形">四、小测最后一题变形</h3>
+<h3 id="所需要认识和了解的单词举例">所需要认识和了解的单词举例:</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>英文术语</th>
+<th>中文翻译</th>
+<th>英文术语</th>
+<th>中文翻译</th>
+<th>英文术语</th>
+<th>中文翻译</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aspect ratio</td>
+<td>宽长比</td>
+<td>back-gate effect</td>
+<td>背栅效应</td>
+<td>capacitive coupling</td>
+<td>电容耦合</td>
+</tr>
+<tr>
+<td>a "single-ended" signal</td>
+<td>单端信号</td>
+<td>bootstrap</td>
+<td>自举</td>
+<td>Cascode Stage</td>
+<td>共源共棚级</td>
+</tr>
+<tr>
+<td>a differential signal</td>
+<td>差动信号</td>
+<td>body effect</td>
+<td>体效应</td>
+<td>clipping</td>
+<td>失真</td>
+</tr>
+<tr>
+<td>a feed through path</td>
+<td>直流通路</td>
+<td>bulk</td>
+<td>衬底</td>
+<td>common-mode rejection ratio</td>
+<td>共模抑制比</td>
+</tr>
+<tr>
+<td>Depletion region</td>
+<td>耗尽区</td>
+<td>dependent current source</td>
+<td>独立电流源</td>
+<td>Complementary MOS</td>
+<td>互补MOS</td>
+</tr>
+<tr>
+<td>drain</td>
+<td>漏端</td>
+<td>effective channel length</td>
+<td>有效沟道长度</td>
+<td>Diode-Connected</td>
+<td>二极管连接型</td>
+</tr>
+<tr>
+<td>intrinsic gain</td>
+<td>本征增益</td>
+<td>excursion</td>
+<td>偏移</td>
+<td>equilibrium</td>
+<td>平衡态</td>
+</tr>
+<tr>
+<td>immunity</td>
+<td>抗干扰</td>
+<td>Inversion layer</td>
+<td>反型层</td>
+<td>half-width</td>
+<td>半栅宽</td>
+</tr>
+<tr>
+<td>gate capacitance</td>
+<td>栅电容</td>
+<td>Gate Oxide</td>
+<td>栅氧</td>
+<td>gain-bandwidth trade-offs</td>
+<td>增益-带宽折中</td>
+</tr>
+<tr>
+<td>liner region</td>
+<td>线性区</td>
+<td>low-pass filter</td>
+<td>低通滤波器</td>
+<td>Miller's approximation</td>
+<td>密勒近似</td>
+</tr>
+<tr>
+<td>overdrive voltage</td>
+<td>过驱动电压</td>
+<td>peak-to-peak swing</td>
+<td>峰峰摆幅</td>
+<td>power dissipation</td>
+<td>功耗</td>
+</tr>
+<tr>
+<td>parallel</td>
+<td>并联</td>
+<td>series</td>
+<td>串联</td>
+<td>Source Degeneration</td>
+<td>源极负反馈</td>
+</tr>
+<tr>
+<td>supply noise rejection</td>
+<td>电源噪声抑制</td>
+<td>Subthreshold conduction</td>
+<td>亚阈区导电</td>
+<td>substrate bias effect</td>
+<td>衬底偏置效应</td>
+</tr>
+<tr>
+<td>saturation region</td>
+<td>饱和区</td>
+<td>shields</td>
+<td>屏蔽</td>
+<td>threshold voltage</td>
+<td>阈值电压</td>
+</tr>
+<tr>
+<td>topology</td>
+<td>拓扑</td>
+<td>transfer function</td>
+<td>传递函数</td>
+<td>transconductance</td>
+<td>跨导</td>
+</tr>
+<tr>
+<td>transistor</td>
+<td>晶体管</td>
+<td>triode region</td>
+<td>三极管区</td>
+<td>thevenin equivalent</td>
+<td>戴维南等效</td>
+</tr>
+<tr>
+<td>voltage buffer</td>
+<td>电压缓冲器</td>
+<td>voltage headroom</td>
+<td>电压余度</td>
+<td>voltage swings</td>
+<td>电压摆幅</td>
+</tr>
+</tbody>
+</table>
+<h2 id="半导体物理期末">半导体物理期末</h2>
+<h3 id="填空10分">填空10分</h3>
+<p>1.硅的本征载流子浓度；硅的禁带宽度</p>
+<p>2.发生杂质补偿时且有 <span
+class="math inline">\(N_{D}&gt;N_{A}\)</span>
+，那么有效杂质浓度是()，是()导电，迁移率取决于()</p>
+<p>3.GaAs的散射机构有哪三个？</p>
+<p>4.pn结中的势垒电容是()联，扩散电容是()联。(串or并)</p>
+<h3 id="名词解释20分">名词解释20分</h3>
+<p>回旋共振</p>
+<p>深能级</p>
+<p>玻尔兹曼分布</p>
+<p>俄歇复合</p>
+<h3 id="简答20分">简答20分</h3>
+<p>1.理想pn结的4个假设</p>
+<p>2.算p型半导体功函数，判断与金属Al、Au、Pt是形成阻挡层还是非阻挡层</p>
+<h3 id="材料分析50分">材料分析50分</h3>
+<p>背景是SBD和JBS</p>
+<p>1.理想金半接触的能带图及关键参数标注</p>
+<p>2.画出该器件MIS的正偏、反偏、零偏的能带图</p>
+<p>3.和pn结I-V特性不同的原因(该器件I-V曲线表现出双势垒)</p>
+<p>4.判断击穿类型，及其击穿电压的温度系数正负判断</p>
+<h3 id="选作5分">选作5分</h3>
+<p>分析高反向偏压下SBD势垒降低的原因</p>
+<h2 id="数字逻辑与系统设计期末复盘">数字逻辑与系统设计期末复盘</h2>
+<h3 id="填空题24分">填空题24分</h3>
+<p>1.二进制、十六进制转化</p>
+<p>2.正负8位二进制数补码的计算</p>
+<p>3.System verilog中terior是什么信号</p>
+<p>4.写出检测边沿信号的verilog代码；写出带异步复位功能+边沿信号检测的verilog代码</p>
+<p>5.2个16位无符号数的最大乘积是多少</p>
+<p>6.流水线处理器的好处</p>
+<h3 id="设计题40分">设计题40分</h3>
+<p>1.利用多路选择器设计函数</p>
+<p>2.画出Y=not(AB+BC)的mos管级电路写出</p>
+<p>3.利用与非门实现异或逻辑</p>
+<p>4.画出检测11010序列的状态机转换</p>
+<p>5.3位格雷码转换的代码</p>
+<p>6.Y=BC+A存储器ROM的点画线方式描绘函数真值表Y=BC+A存储器ROM的点画线方式描绘函数真值表</p>
+<p>7.设计一个输入信号由0变1时输出信号变为1并持续一周期，否则为0的verilog代码。</p>
+<p>8.8位计数器的verilog代码设计</p>
+<h3 id="计算题36分">计算题36分</h3>
+<p>1.电路功能判断+关键路径和最小路径的延迟时间</p>
+<p>2.字节寻址的存储器的第26个字的存储地址；第26个字在内存中的存储地址；绘制其在内存中的数据及地址图样(大端或小端序)</p>
+<p>3.8级流水线处理器顺序处理100个指令需要多少个周期才能完成</p>
+<h2 id="ic工艺制造期末复盘">IC工艺制造期末复盘</h2>
+<h3 id="填空">填空</h3>
+<ol type="1">
+<li><p>各种CVD的中英文对应</p></li>
+<li><p>同质外延和异质外延</p></li>
+<li><p>CMP是平坦化技术、需要利用研磨浆、目的是抛光</p></li>
+<li><p>热氧化分哪两种</p></li>
+<li><p>二氧化硅层的应用</p></li>
+</ol>
+<h3 id="判断5个5分">判断(5个，5分)</h3>
+<ol type="1">
+<li><p>SC-2溶液的配比及RCA清洗注意事项；</p></li>
+<li><p>CVD生长比热氧化好，因为它不消耗硅；</p></li>
+<li><p>其他记不得了</p></li>
+</ol>
+<h2 id="简答若干">简答若干</h2>
+<ol type="1">
+<li><p>光刻掩膜版的绘制及光刻胶的选择</p></li>
+<li><p>通道效应</p></li>
+<li><p>离子轰击的应用及特点</p></li>
+<li><p>离子注入和热扩散的区别及其原理</p></li>
+<li><p>为什么采用硅作为原材料，干法刻蚀和湿法刻蚀的区别及优缺点</p></li>
+<li><p>自对准工艺应用举例及图示</p></li>
+</ol>
 ]]></content>
       <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客版本迭代汇总</title>
-    <url>/2024/12/21/Blog_version_update/</url>
-    <content><![CDATA[<p>版本更新信息如下：</p>
-<ul>
-<li>V0.2.1 2024.12.21</li>
-</ul>
-<p>增加links页面，推荐优秀的博客和网站；同时增加文章置顶功能，<a
-href="https://blog.csdn.net/nineya_com/article/details/103394315">参考文章</a></p>
-<ul>
-<li>V0.2 2024.12.15</li>
-</ul>
-<p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
-<ul>
-<li>V0.1 2024.11.14</li>
-</ul>
-<p>博客正式上线，基于GitHubpages搭建</p>
-]]></content>
-      <tags>
-        <tag>博客</tag>
+        <tag>大学生活</tag>
       </tags>
   </entry>
   <entry>
@@ -187,32 +345,93 @@ class="math display">\[\begin{align*}
       </tags>
   </entry>
   <entry>
-    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
-    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
-    <content><![CDATA[<h1
-id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
-<blockquote>
-<p><code>问题来源于半导体物理课程的第一章作业</code></p>
-</blockquote>
-<h1
-id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
+    <title>博客版本迭代汇总</title>
+    <url>/2024/12/21/Blog_version_update/</url>
+    <content><![CDATA[<p>版本更新信息如下：</p>
 <ul>
-<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
-<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
-class="math inline">\(V_{TH}\)</span>。</p></li>
-<li><p>(100)晶向的缺陷密度最低，可以减小<span
-class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
-<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
+<li>V0.2.1 2024.12.21</li>
 </ul>
-<h1
-id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
+<p>增加links页面，推荐优秀的博客和网站；同时增加文章置顶功能，<a
+href="https://blog.csdn.net/nineya_com/article/details/103394315">参考文章</a></p>
 <ul>
-<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
-<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
-<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
-class="math inline">\(V_{TH}\)</span>。</p></li>
-<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
-<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
+<li>V0.2 2024.12.15</li>
+</ul>
+<p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
+<ul>
+<li>V0.1 2024.11.14</li>
+</ul>
+<p>博客正式上线，基于GitHubpages搭建</p>
+]]></content>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简并or退化？本征or掺杂？</title>
+    <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
+    <content><![CDATA[<h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
+<blockquote>
+<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
+</blockquote>
+<h2
+id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
+<blockquote>
+<p>故 a degenerate
+semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
+impurity
+band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
+class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
+semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
+</blockquote>
+<p>其中费米狄拉克分布函数为: <span class="math display">\[
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}
+\]</span></p>
+<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
+<span class="math display">\[
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
+class="math display">\[
+\begin{align*}
+    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
+\end{align*}
+\]</span></p>
+<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
+class="math display">\[
+\begin{align*}
+    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
+\end{align*}
+\]</span></p>
+<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
+<span class="math display">\[
+\begin{align*}
+    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="explanation">Explanation:</h2>
+<blockquote>
+<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
+</blockquote>
+<h2 id="总结">总结</h2>
+<ul>
+<li>半导体掺杂后可能带来简并或非简并。</li>
+<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
+<li>非简并的半导体可能是考虑了杂质补偿。</li>
+<li>非简并的半导体既有掺杂的也有本征的。</li>
+</ul>
+<h1 id="参考资料">参考资料</h1>
+<ul>
+<li><a
+href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a
+href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
 </ul>
 ]]></content>
       <tags>
@@ -406,143 +625,36 @@ href="https://wenku.baidu.com/view/1e6dc74126c52cc58bd63186bceb19e8b8f6ec68.html
       </tags>
   </entry>
   <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2024/11/16/body_effect_reduce_resistence/</url>
-    <content><![CDATA[<h1 id="提问">提问：</h1>
+    <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
+    <url>/2024/11/16/MOS(100)_BJT(111)/</url>
+    <content><![CDATA[<h1
+id="为什么mos管常用100晶向的晶圆bjt常用111晶向的晶圆">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1>
 <blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+<p><code>问题来源于半导体物理课程的第一章作业</code></p>
 </blockquote>
-<h2 id="我的思考">我的思考</h2>
+<h1
+id="为什么mos管常用100晶向的晶圆来制作器件">为什么MOS管常用(100)晶向的晶圆来制作器件？</h1>
 <ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
-class="math display">\[\begin{aligned}
-  I = g_{mb} V_{BS}
-\end{aligned}\]</span></li>
+<li><p>MOSFET的工作电流为表面多子的漂移电流，其大小与载流子的表面迁移率(mobility)有关，其中(100)晶向的界面态密度最低，表面迁移率最高，可以使MOSFET有较高的工作电流。</p></li>
+<li><p>(100)晶向的较低的界面态和悬挂键可以减小MOSFET的阈值电压<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>(100)晶向的缺陷密度最低，可以减小<span
+class="math inline">\(V_{TH}\)</span>的漂移。</p></li>
+<li><p>(100)晶向粒子扩散速度慢，有利于MOSFET较小氧化层厚度的生长。</p></li>
 </ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
-class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
+<h1
+id="为什么bjt管常用111晶向的晶圆来制作器件">为什么BJT管常用(111)晶向的晶圆来制作器件？</h1>
+<ul>
+<li><p>BJT的工作电流是少子体扩散电流，与表面迁移率关系较小。</p></li>
+<li><p>(111)晶向的原子最多(原子面密度最大)，可以增大场阈电压，为BJT提供较好的纵向载流子迁移率。</p></li>
+<li><p>(111)晶向的缺陷密度高，适合用来提高BJT中的寄生PMOS管的<span
+class="math inline">\(V_{TH}\)</span>。</p></li>
+<li><p>利用(111)晶向可以更精确的控制基区宽度。</p></li>
+<li><p>(111)晶向的粒子扩散速度快，考虑到BJT中的高掺杂特性，扩散速度快可以减少BJT的制作时间。</p></li>
+</ul>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>课堂汇报(论文解读)的PPT注意事项</title>
-    <url>/2024/11/16/ppt_report/</url>
-    <content><![CDATA[<h1
-id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
-<p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
-<h1 id="注意事项">注意事项</h1>
-<ul>
-<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
-<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
-<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
-<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
-<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
-<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
-<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>IC工艺</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用传输门做二选一选择器的CMOS电路分析</title>
-    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
-    <content><![CDATA[<h1
-id="祝老师教师节快乐暨利用传输门做二选一选择器的cmos电路分析">祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1>
-<h1
-id="祝天下的老师们教师节快乐祝老师工作顺利万事如意">祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1>
-<h1
-id="利用传输门做二选一选择器的cmos电路分析">利用传输门做二选一选择器的CMOS电路分析</h1>
-<p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，只需关注<strong>导电沟道是否产生</strong>即可。</p>
-<figure>
-<img src="https://www.helloimg.com/i/2024/12/17/67613d69eaf82.png"
-alt="图1传输门CMOS电路" />
-<figcaption aria-hidden="true">图1传输门CMOS电路</figcaption>
-</figure>
-<p>如图1所示为传输门的CMOS电路示意图</p>
-<ul>
-<li>当 <span class="math inline">\(C=1\)</span>
-时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="nmos导通情况">NMOS导通情况</h3>
-<p><span class="math display">\[
-\begin{align*}
-    \because &amp;C=1\\
-    \therefore &amp;V_{GN} = V_{DD} \\
-    \because &amp;V_{BN} = 0V\\
-\end{align*}
-\]</span></p>
-<p><span class="math display">\[
-\begin{align*}
-    \therefore &amp;V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i}
-\end{align*}
-\]</span></p>
-<h3 id="pmos导通情况">PMOS导通情况</h3>
-<p><span class="math display">\[
-\begin{align*}
-    \because &amp;\overline{C}=0\\
-    \therefore &amp;V_{GP} = 0V \\
-    \because &amp;V_{BP} = V_{DD}\\
-\end{align*}
-\]</span></p>
-<p><span class="math display">\[
-\begin{align*}
-    \therefore &amp;V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} -
-V_{DD}) = - V_{i}
-\end{align*}
-\]</span></p>
-<p>当 <span class="math inline">\(V_{i}&lt;V_{DD}-V_{TH}\)</span>
-，可保证 <span class="math inline">\(V_{GSN}=V_{DD}-V_{i}\geq
-v_{TH}\)</span> ，即NMOS产生导电沟道；</p>
-<p>当 $V_{i} &gt; V_{TH} $ ，可保证 <span
-class="math inline">\(V_{GSP}=-V_{i}\leq-v_{TH}\)</span>
-，即PMOS产生导电沟道；</p>
-<p>故 <span class="math inline">\(V_{i}\)</span>
-无论取任何值(但都必须保证小于 <span
-class="math inline">\(V_{DD}\)</span>
-)都可保证至少有一个MOS管存在导电沟道，使得 <span
-class="math inline">\(V_{o}=V_{i}\)</span> 。</p>
-<ul>
-<li>当 <span class="math inline">\(C=0\)</span>
-时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="nmos导通情况-1">NMOS导通情况</h3>
-<p><span class="math display">\[\begin{align*}
-    \because &amp;C=1\\
-    \therefore &amp;V_{GN} = 0V \\
-    \because &amp;V_{BN} = 0V\\
-\end{align*}\]</span></p>
-<p><span class="math display">\[\begin{align*}
-    \therefore &amp;V_{GSN} = 0  &lt; V_{TH}
-\end{align*}\]</span></p>
-<h3 id="pmos导通情况-1">PMOS导通情况</h3>
-<p><span class="math display">\[\begin{align*}
-    \because &amp;\overline{C}=1\\
-    \therefore &amp;V_{GP} = V_{DD} \\
-    \because &amp;V_{BP} = V_{DD}\\
-\end{align*}\]</span></p>
-<p><span class="math display">\[\begin{align*}
-    \therefore &amp;V_{GSP} &gt; - V_{TH}
-\end{align*}\]</span></p>
-<p>故 <span class="math inline">\(V_{i}\)</span>
-无论取任何值(但都必须保证小于 <span
-class="math inline">\(V_{DD}\)</span>
-)都无法使任意一个MOS管存在导电沟道。</p>
-<h1
-id="故根据传输门导通规律设计如下图所示的二选一数选器">故根据传输门导通规律设计如下图所示的二选一数选器</h1>
-<p>如图2所示。</p>
-<figure>
-<img src="https://www.helloimg.com/i/2024/12/17/67613d6a1873b.png"
-alt="图2传输门实现二选一选择器" />
-<figcaption aria-hidden="true">图2传输门实现二选一选择器</figcaption>
-</figure>
-]]></content>
-      <tags>
-        <tag>模集(拉扎维)</tag>
       </tags>
   </entry>
   <entry>
@@ -654,6 +766,146 @@ class="math display">\[\begin{align*}
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2024/11/16/body_effect_reduce_resistence/</url>
+    <content><![CDATA[<h1 id="提问">提问：</h1>
+<blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+</blockquote>
+<h2 id="我的思考">我的思考</h2>
+<ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为: <span
+class="math display">\[\begin{aligned}
+  I = g_{mb} V_{BS}
+\end{aligned}\]</span></li>
+</ul>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的<span
+class="math inline">\(R_{eq}\)</span>形成并联结构，对外</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
+    <content><![CDATA[<h1
+id="祝老师教师节快乐暨利用传输门做二选一选择器的cmos电路分析">祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1>
+<h1
+id="祝天下的老师们教师节快乐祝老师工作顺利万事如意">祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1>
+<h1
+id="利用传输门做二选一选择器的cmos电路分析">利用传输门做二选一选择器的CMOS电路分析</h1>
+<p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<figure>
+<img src="https://www.helloimg.com/i/2024/12/17/67613d69eaf82.png"
+alt="图1传输门CMOS电路" />
+<figcaption aria-hidden="true">图1传输门CMOS电路</figcaption>
+</figure>
+<p>如图1所示为传输门的CMOS电路示意图</p>
+<ul>
+<li>当 <span class="math inline">\(C=1\)</span>
+时，下面对MOS管的导通情况进行分析:</li>
+</ul>
+<h3 id="nmos导通情况">NMOS导通情况</h3>
+<p><span class="math display">\[
+\begin{align*}
+    \because &amp;C=1\\
+    \therefore &amp;V_{GN} = V_{DD} \\
+    \because &amp;V_{BN} = 0V\\
+\end{align*}
+\]</span></p>
+<p><span class="math display">\[
+\begin{align*}
+    \therefore &amp;V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i}
+\end{align*}
+\]</span></p>
+<h3 id="pmos导通情况">PMOS导通情况</h3>
+<p><span class="math display">\[
+\begin{align*}
+    \because &amp;\overline{C}=0\\
+    \therefore &amp;V_{GP} = 0V \\
+    \because &amp;V_{BP} = V_{DD}\\
+\end{align*}
+\]</span></p>
+<p><span class="math display">\[
+\begin{align*}
+    \therefore &amp;V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} -
+V_{DD}) = - V_{i}
+\end{align*}
+\]</span></p>
+<p>当 <span class="math inline">\(V_{i}&lt;V_{DD}-V_{TH}\)</span>
+，可保证 <span class="math inline">\(V_{GSN}=V_{DD}-V_{i}\geq
+v_{TH}\)</span> ，即NMOS产生导电沟道；</p>
+<p>当 $V_{i} &gt; V_{TH} $ ，可保证 <span
+class="math inline">\(V_{GSP}=-V_{i}\leq-v_{TH}\)</span>
+，即PMOS产生导电沟道；</p>
+<p>故 <span class="math inline">\(V_{i}\)</span>
+无论取任何值(但都必须保证小于 <span
+class="math inline">\(V_{DD}\)</span>
+)都可保证至少有一个MOS管存在导电沟道，使得 <span
+class="math inline">\(V_{o}=V_{i}\)</span> 。</p>
+<ul>
+<li>当 <span class="math inline">\(C=0\)</span>
+时，下面对MOS管的导通情况进行分析:</li>
+</ul>
+<h3 id="nmos导通情况-1">NMOS导通情况</h3>
+<p><span class="math display">\[\begin{align*}
+    \because &amp;C=1\\
+    \therefore &amp;V_{GN} = 0V \\
+    \because &amp;V_{BN} = 0V\\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSN} = 0  &lt; V_{TH}
+\end{align*}\]</span></p>
+<h3 id="pmos导通情况-1">PMOS导通情况</h3>
+<p><span class="math display">\[\begin{align*}
+    \because &amp;\overline{C}=1\\
+    \therefore &amp;V_{GP} = V_{DD} \\
+    \because &amp;V_{BP} = V_{DD}\\
+\end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*}
+    \therefore &amp;V_{GSP} &gt; - V_{TH}
+\end{align*}\]</span></p>
+<p>故 <span class="math inline">\(V_{i}\)</span>
+无论取任何值(但都必须保证小于 <span
+class="math inline">\(V_{DD}\)</span>
+)都无法使任意一个MOS管存在导电沟道。</p>
+<h1
+id="故根据传输门导通规律设计如下图所示的二选一数选器">故根据传输门导通规律设计如下图所示的二选一数选器</h1>
+<p>如图2所示。</p>
+<figure>
+<img src="https://www.helloimg.com/i/2024/12/17/67613d6a1873b.png"
+alt="图2传输门实现二选一选择器" />
+<figcaption aria-hidden="true">图2传输门实现二选一选择器</figcaption>
+</figure>
+]]></content>
+      <tags>
+        <tag>模集(拉扎维)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>课堂汇报(论文解读)的PPT注意事项</title>
+    <url>/2024/11/16/ppt_report/</url>
+    <content><![CDATA[<h1
+id="课堂汇报论文解读的ppt注意事项">课堂汇报(论文解读)的PPT注意事项</h1>
+<p>素材和思路来源于之前<code>大创项目</code>的收获的<code>IC工艺</code>课的总结。</p>
+<h1 id="注意事项">注意事项</h1>
+<ul>
+<li>PPT每页最下方给出参考文献，字体要区别于PPT内容的字体。但若参考文献总量不高，可以将参考文献最后总结为一页PPT展示。</li>
+<li>PPT中所用到的图、表、数据等均需给出出处(非自制的图和表)。</li>
+<li>考虑到PPT展示效果，引用的图和表和通过<code>圈圈或箭头指向</code>来强调指定数据或特征。</li>
+<li>一般会在开始的第一页进行国内外研究现状的分析，不需要过分考虑时间，可以留给观众观看，但是<code>汇报的必要组成部分</code>。</li>
+<li>每一页PPT不要有过多的文字，要<strong>文图兼备</strong>，注意PPT是<code>演示文稿</code>不是汇报的<code>稿子</code>！</li>
+<li>不要<code>念</code>PPT而要<code>讲</code>PPT，因此PPT上要做好思路的引导和逻辑的理顺。</li>
+<li>描述时要注意整体逻辑:提出问题，解决思路，实验结果(新方案效果)。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>IC工艺</tag>
       </tags>
   </entry>
   <entry>
@@ -1530,60 +1782,38 @@ class="math inline">\({0.059}\mathrm{eV}\)</span> 处。</p></li>
 时,费米能级逐渐趋于平缓,接近带隙中间,即本征半导体的费米能级。</p></li>
 </ol>
 <p>同时由于 <span class="math inline">\({E}_{t} - {E}_{i} = \frac{
-{E}_{g} }{6} = {0.187}\mathrm{ {eV} }\)</span>
-,故我们按温度从低到高的顺序来分析,来简化少子寿命的表达式:</p>
-<ol type="1">
-<li>较低温时, 根据电中性条件推的费米能级的位置满足:</li>
-</ol>
-<p><span class="math display">\[
-\begin{equation}
-    \begin{aligned}
-    E_{F} &amp;= \frac{E_{c}+E_{D} }{2} + (\frac{k_{0}T}{2} ) \ln
-(\frac{N_{D}}{N_{c}})
-    \end{aligned}
-\end{equation}
-\]</span></p>
-<p>且随着温度的升高, <span class="math inline">\({E}_{F}\)</span>
-先升高后先将,当且仅当 <span class="math inline">\({N}_{c} =
-{0.11}{N}_{D}\)</span> 时, <span class="math inline">\({E}_{F}\)</span>
-距离导带最近。同时注意到,杂质的电离能较小,即杂质能级与导带的距离之间较小,同时注意到
-<span class="math inline">\({E}_{F}\)</span> 在 <span
-class="math inline">\({E}_{D}\)</span> 之上,故此时费米能级 <span
-class="math inline">\({E}_{F}\)</span> 远在 <span
-class="math inline">\({E}_{t}\)</span>
-之上,故可将少子寿命式子化简为:</p>
-<p><span class="math display">\[
-\begin{align}
-\tau = \frac{1}{U} =  \frac{1}{N_{t}\sigma_{+}V_{T} } \sim T^{\beta},
-\beta \in (\frac{3}{2},\frac{7}{2})
-\end{align}
-\]</span></p>
-<ol start="2" type="1">
-<li>温度较高时, <span class="math inline">\({E}_{F} &lt;
-{E}_{t}\)</span> 时,少数载流子浓度存在如下近似:</li>
-</ol>
-<p><span class="math display">\[
-\begin{equation}
-\left\{
-    \begin{aligned}
-        &amp;\tau = \frac{1}{N_{t}\sigma_{+}V_{T}} \frac{n_{1}}{n_{0}}
-\sim T^{\beta}
-\mathrm{exp}(\frac{E_{i}-E_{F}}{k_{0}T})\mathrm{exp}(\frac{0.187eV}{k_{0}T})
-\\
-        &amp;n_{1} \gg n_{0}&gt;p_{0} &gt; p_{1}
-    \end{aligned}
-    \right.
-\end{equation}
-\]</span></p>
-<p>故可根据图 9 所示的 <span class="math inline">\({E}_{F}\)</span>
-变化曲线近似估计少子寿命 <span class="math inline">\(\tau\)</span>
-的变化。</p>
+{E}_{g} }{6} = {0.187}\mathrm{ {eV} }\)</span> ,故可根据图 9 所示的
+<span class="math inline">\({E}_{F}\)</span> 变化曲线近似估计少子寿命
+<span class="math inline">\(\tau\)</span> 的变化。</p>
+<p>新文献结果补充:</p>
+<figure>
+<img src="https://www.helloimg.com/i/2024/12/27/676e8251dca9c.png"
+alt="用SRH复合模拟Si样品过量载流子衰变[3]" />
+<figcaption
+aria-hidden="true">用SRH复合模拟Si样品过量载流子衰变[3]</figcaption>
+</figure>
+<p>可利用载流子浓度衰减为峰值的 <span
+class="math inline">\(\frac{1}{e}\)</span>
+所需的时间来估计少子寿命。</p>
+<figure>
+<img src="https://www.helloimg.com/i/2024/12/27/676e8252a177a.png"
+alt="p型硅样品的高、低注入寿命值和高、低注入寿命之比随温度的变化曲线[4]" />
+<figcaption
+aria-hidden="true">p型硅样品的高、低注入寿命值和高、低注入寿命之比随温度的变化曲线[4]</figcaption>
+</figure>
 <h2 id="参考文献">参考文献</h2>
 <p>[1] 陈开茅,毛晋昌,晏懋洵,吴恩,曾奇勇. 硅中金的空穴俘获截面的研究.
 北京大学物理系, 1983.</p>
 <p>[2] 王惠,杨伟强,严金梅,魏红军. 关于 <span
 class="math inline">\(\mathrm{N}\)</span> 型晶体硅费米能级的研究.
 晶澳太阳能有限公司,2015.</p>
+<p>[3] Johnston S, Ahrenkiel R K. Measurement of the temperature
+dependence of silicon recombination lifetimes[J]. MRS Online Proceedings
+Library (OPL), 1998, 510: 607.</p>
+<p>[4] Johnston S W, Ahrenkiel R K. Measurement of the
+temperature-dependent recombination lifetimes in photovoltaic
+materials[C]//AIP Conference Proceedings. American Institute of Physics,
+1999, 462(1): 505-510.</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
