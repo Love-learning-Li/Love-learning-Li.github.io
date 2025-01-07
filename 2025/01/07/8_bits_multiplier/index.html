@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"love-learning-li.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+    <meta name="description" content="数字逻辑与系统设计设计报告 项目内容  题目：8位乘法器 实现的功能: + 输入为两个8位有符号数或无符号数，输出16位相乘结果 + 采用Booth算法对乘法转化为部分和求和 + 采用Wallace算法减少部分和求和时所使用的全加器数量  编译器及测试仿真环境  win11系统，EDA环境为Quartus，EDA软件版本为18.0，验证板卡为DE10Lite，波形仿真软件为Mo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FPGA中乘法器的加速运算">
+<meta property="og:url" content="http://love-learning-li.github.io/2025/01/07/8_bits_multiplier/index.html">
+<meta property="og:site_name" content="李鸣翔会认真沉淀">
+<meta property="og:description" content="数字逻辑与系统设计设计报告 项目内容  题目：8位乘法器 实现的功能: + 输入为两个8位有符号数或无符号数，输出16位相乘结果 + 采用Booth算法对乘法转化为部分和求和 + 采用Wallace算法减少部分和求和时所使用的全加器数量  编译器及测试仿真环境  win11系统，EDA环境为Quartus，EDA软件版本为18.0，验证板卡为DE10Lite，波形仿真软件为Mo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/07/677d16e644c82.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/07/677d16e728300.png">
+<meta property="og:image" content="https://www.helloimg.com/i/2025/01/07/677d16e536bf9.png">
+<meta property="article:published_time" content="2025-01-07T11:50:57.876Z">
+<meta property="article:modified_time" content="2025-01-07T12:02:43.877Z">
+<meta property="article:tag" content="verilog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/i/2025/01/07/677d16e644c82.png">
+
+
+<link rel="canonical" href="http://love-learning-li.github.io/2025/01/07/8_bits_multiplier/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://love-learning-li.github.io/2025/01/07/8_bits_multiplier/","path":"2025/01/07/8_bits_multiplier/","title":"FPGA中乘法器的加速运算"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>FPGA中乘法器的加速运算 | 李鸣翔会认真沉淀</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+  <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">李鸣翔会认真沉淀</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">李鸣翔的博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>links</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A"><span class="nav-number">1.</span> <span class="nav-text">数字逻辑与系统设计设计报告</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%86%85%E5%AE%B9"><span class="nav-number">1.1.</span> <span class="nav-text">项目内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E5%99%A8%E5%8F%8A%E6%B5%8B%E8%AF%95%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83"><span class="nav-number">1.1.1.</span> <span class="nav-text">编译器及测试仿真环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%A58%E4%BD%8D%E4%B9%98%E6%B3%95%E5%99%A8%E8%AE%BE%E8%AE%A1%E7%89%B9%E7%82%B9"><span class="nav-number">1.1.2.</span> <span class="nav-text">该8位乘法器设计特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#radix-4-booth%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.3.</span> <span class="nav-text">Radix-4 Booth算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%BF%E7%9C%9F%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%B3%A2%E5%BD%A2%E6%9F%A5%E7%9C%8B"><span class="nav-number">1.1.4.</span> <span class="nav-text">仿真测试与波形查看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wallace%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.5.</span> <span class="nav-text">Wallace算法</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt=""
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description">记录自己的学习和笔记</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://love-learning-li.github.io/2025/01/07/8_bits_multiplier/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李鸣翔会认真沉淀">
+      <meta itemprop="description" content="记录自己的学习和笔记">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="FPGA中乘法器的加速运算 | 李鸣翔会认真沉淀">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          FPGA中乘法器的加速运算
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-01-07 19:50:57 / 修改时间：20:02:43" itemprop="dateCreated datePublished" datetime="2025-01-07T19:50:57+08:00">2025-01-07</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span id="/2025/01/07/8_bits_multiplier/" class="post-meta-item twikoo_visitors" data-flag-title="FPGA中乘法器的加速运算" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="twikoo_visitors"></span>
+    </span>
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>16 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="数字逻辑与系统设计设计报告">数字逻辑与系统设计设计报告</h1>
+<h2 id="项目内容">项目内容</h2>
+<blockquote>
+<p>题目：8位乘法器<br />
+实现的功能: + 输入为两个8位有符号数或无符号数，输出16位相乘结果 +
+采用Booth算法对乘法转化为部分和求和 +
+采用Wallace算法减少部分和求和时所使用的全加器数量</p>
+</blockquote>
+<h3 id="编译器及测试仿真环境">编译器及测试仿真环境</h3>
+<blockquote>
+<p>win11系统，EDA环境为<code>Quartus</code>，EDA软件版本为<code>18.0</code>，验证板卡为<code>DE10Lite</code>，波形仿真软件为<code>Modelsim</code>，软件版本为<code>SE-64 2020.4</code></p>
+</blockquote>
+<h3 id="该8位乘法器设计特点">该8位乘法器设计特点</h3>
+<blockquote>
+<p>本文采用<code>Radix-4 Booth乘法器</code>对乘法运算化简为<code>4个部分和</code>求和；同时对化简后的部分和采用<code>Wallace树</code>算法进行加速运算，减少全加器和半加器数量的使用。</p>
+</blockquote>
+<h3 id="radix-4-booth算法">Radix-4 Booth算法</h3>
+<p><strong>Booth算法原理:</strong></p>
+<p>对于8位有符号数A可以表示为如(1)式所示，其中用<span
+class="math inline">\(A_{i}\)</span>表示A的第<span
+class="math inline">\(i\)</span>位: <span class="math display">\[
+\begin{align}
+    A = -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i}
+\end{align}
+\]</span></p>
+<p>同时考虑对<span class="math inline">\(A_{i}\)</span>进行如下分解:
+<span class="math display">\[
+\begin{align}
+    A_{i} = A_{i} \times ( 2^{i+1} - 2\times 2^{i } )
+\end{align}
+\]</span></p>
+<p>进而可以对8位有符号数A进行如下分解，补充定义<span
+class="math inline">\(A_{-1}=0\)</span>得: <span class="math display">\[
+\begin{align}
+    A =&amp; -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i}
+\notag\\
+    =&amp; -A_{7} \cdot 2^{7} + A_{6} \cdot 2^{6} +  A_{5} \cdot ( 2^{6}
+- 2 2^{4} ) \notag\\
+     &amp;  + A_{4} \cdot ( 2^{5} - 2\times 2^{3} ) + ... + A_{0}
+\cdot  2^{0} \notag\\
+    =&amp; (-2A_{7} + A_{6} + A_{5})\cdot 2^{6} + (-2A_{5} + A_{4} +
+A_{3})\cdot 2^{4} \notag\\
+    &amp;+ (-2A_{3} + A_{2} + A_{1})\cdot 2^{2} + (-2A_{1} + A_{0} +
+A_{-1})\cdot 2^{0} \notag\\
+    =&amp; Coef_{3}\cdot 2^{6} + Coef_{2}\cdot 2^{4} + Coef_{1}\cdot
+2^{2} + Coef_{0}\cdot 2^{0} \\
+\end{align}
+\]</span></p>
+<p>因此<span class="math inline">\(A\times B\)</span>可表示如下式所示:
+<span class="math display">\[
+\begin{align}
+    A\times B=&amp;Coef_{3}\cdot 2^{6}\times B + Coef_{2}\cdot
+2^{4}\times B \notag\\
+     &amp;+ Coef_{1}\cdot 2^{2}\times B + Coef_{0}\cdot 2^{0}\times B
+\end{align}
+\]</span></p>
+<p>可以发现<span
+class="math inline">\(2^{i},i=0,2,4,6\)</span>前的系数是由<span
+class="math inline">\(A_{i},A_{i+1},A_{i+1}\)</span>构成的形式相近的式子，不妨记为<span
+class="math inline">\(Coef\)</span>，故<span
+class="math inline">\(Coef\)</span>与<span
+class="math inline">\(A_{i}\)</span>,<span
+class="math inline">\(A_{i+1}\)</span>,<span
+class="math inline">\(A_{i+1}\)</span>满足的关系如下表所示:</p>
+<table>
+<thead>
+<tr>
+<th><span class="math inline">\(A_{i+1}\)</span></th>
+<th><span class="math inline">\(A_{i}\)</span></th>
+<th><span class="math inline">\(A_{i-1}\)</span></th>
+<th><span class="math inline">\(Coef\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>故可以将两个8位有符号数A,B的乘积<span class="math inline">\(A\times
+B\)</span>转变为4个部分和的形式，实现计算量和资源使用量的减少。同时<span
+class="math inline">\(Coef\)</span>的系数是有限的，故我们可以将<span
+class="math inline">\(Coef\)</span>对应的操作按如下方式使用寄存器提前存储。</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">p &lt;= <span class="number">16&#x27;d0</span>;</span><br><span class="line"><span class="comment">// 完成 M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;,multiplicand&#125;;</span><br><span class="line"><span class="comment">// 完成 -M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;,~multiplicand+<span class="number">1&#x27;b1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 2M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2 &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;, multiplicand &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 -2M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;, (~multiplicand+<span class="number">1&#x27;b1</span>) &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// N 来选择 booth 的操作，因此用来寄存乘数的值，最后补一个 0，相当于y_&#123;-1&#125;</span></span><br><span class="line">N &lt;= &#123;multiplier,<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line">shift_num &lt;= <span class="number">4&#x27;d0</span>;</span><br><span class="line">i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br></pre></td></tr></table></figure>
+<p>同时定义RSTn和done信号用于表征乘法运算的开始和结束，同时利用case语句实现对4个部分和的逐次表征，并利用多个<span
+class="math inline">\(if\)</span>语句实现对<span
+class="math inline">\(Coef\)</span>的判断进而实现对部分和形式的确定。</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> booth_multiply#(</span><br><span class="line">    <span class="keyword">parameter</span> DATAWIDTH = <span class="number">8</span><span class="comment">//定义符号数宽度为8bit</span></span><br><span class="line">)</span><br><span class="line">(</span><br><span class="line">    <span class="keyword">input</span>                            CLK,<span class="comment">//定义系统时钟</span></span><br><span class="line">    <span class="keyword">input</span>                            RSTn,<span class="comment">//定义复位信号RSTn</span></span><br><span class="line">    <span class="keyword">input</span>                            START,<span class="comment">//定义乘法器工作开启信号，拉低时有效</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     A,<span class="comment">//定义multiplier</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     B,<span class="comment">//定义multiplicand</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">output</span> [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] RESULT,<span class="comment">//定义product</span></span><br><span class="line">    <span class="keyword">output</span>                           Done<span class="comment">//定义乘法器工作结束信号，拉高时有效</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] i;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] P;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_reg;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_bm;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] N;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] result_reg;</span><br><span class="line"><span class="keyword">reg</span>                       isDone;</span><br><span class="line"></span><br><span class="line"><span class="keyword">always</span> @ ( <span class="keyword">posedge</span> CLK <span class="keyword">or</span> <span class="keyword">negedge</span> RSTn )</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (!RSTn)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        i &lt;= <span class="number">0</span>;</span><br><span class="line">        P &lt;= <span class="number">0</span>;</span><br><span class="line">        A_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        A_bm &lt;= <span class="number">0</span>;</span><br><span class="line">        result_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        N &lt;=<span class="number">0</span>;</span><br><span class="line">        isDone &lt;= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (START)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">case</span> (i)</span><br><span class="line"></span><br><span class="line">        <span class="number">0</span>:<span class="keyword">begin</span></span><br><span class="line">          A_reg &lt;= A;<span class="comment">//计算A的补码,方便后面的+-操作</span></span><br><span class="line">          A_bm &lt;= ~A + <span class="number">1&#x27;b1</span>;    </span><br><span class="line">          P &lt;= &#123; <span class="number">8&#x27;d0</span>, B, <span class="number">1&#x27;b0</span> &#125;;  <span class="comment">//B add to last 8bit of P</span></span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          N &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span><span class="comment">//operating 这一个状态用来判断最低两位，然后决定执行什么操作</span></span><br><span class="line">        <span class="number">1</span>:<span class="keyword">begin</span></span><br><span class="line">          <span class="keyword">if</span> (N == DATAWIDTH)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            N &lt;= <span class="number">0</span>;</span><br><span class="line">            i &lt;= i + <span class="number">2&#x27;b10</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b00</span> | P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b11</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= P;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b01</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_reg,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b10</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_bm,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">            <span class="comment">//shift 这是无论最低两位是什么，最后都要执行的移位操作</span></span><br><span class="line">        <span class="number">2</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          P &lt;= &#123;P[<span class="number">16</span>],P[<span class="number">16</span>:<span class="number">1</span>]&#125;;</span><br><span class="line">          N &lt;= N + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          i &lt;= i - <span class="number">1&#x27;b1</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">        <span class="number">3</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">1</span>;</span><br><span class="line">          result_reg &lt;= P;</span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">        <span class="number">4</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">0</span>;</span><br><span class="line">          i &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">endcase</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> Done = isDone;</span><br><span class="line"><span class="keyword">assign</span> RESULT = result_reg[<span class="number">16</span>:<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<h3 id="仿真测试与波形查看">仿真测试与波形查看</h3>
+<ul>
+<li>testbench代码撰写如下:</li>
+</ul>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注若要完整运行所有结果，至少运行1400ns</span></span><br><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;</span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<p>同时仿真波形如下图1所示:</p>
+<figure>
+<img src="https://www.helloimg.com/i/2025/01/07/677d16e644c82.png"
+alt="图1 非随机数仿真波形" />
+<figcaption aria-hidden="true">图1 非随机数仿真波形</figcaption>
+</figure>
+<p>同时如果检测该乘法器对所有8位有符号数相乘的可行性，则上述在testbench中手动设置乘数和被乘数的方法则会过于麻烦，因此也可以考虑如下方法来设置随机数仿真。</p>
+<ul>
+<li>随机数型乘法器仿真testbench代码可补充如下:</li>
+</ul>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;<span class="comment">//random版</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<p>但verilog中的随机数生成依赖于其中的<code>种子seed</code>，故我们可以直接<code>利用乘数A的值做为下一次random生成所需的种子</code>，这样我们就可以不用每次仿真调整随机数了，为我们测试乘法器的可靠性和鲁棒性带来方便。即将<strong>initial
+begin里的语句</strong>改成如下所示即可:</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">initial</span> <span class="keyword">begin</span></span><br><span class="line">	A = <span class="number">0</span>;</span><br><span class="line">	B = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">repeat</span>(<span class="number">10</span>) <span class="keyword">begin</span></span><br><span class="line">		#<span class="number">200</span> A = &#123;<span class="built_in">$random</span>(A)&#125;%<span class="number">100</span>;</span><br><span class="line">		B = &#123;<span class="built_in">$random</span>(A-<span class="number">1</span>)&#125;%<span class="number">100</span>;</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	#<span class="number">5</span> <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span>	</span><br></pre></td></tr></table></figure>
+<p>同时仿真波形如下图2-图3所示:</p>
+<figure>
+<img src="https://www.helloimg.com/i/2025/01/07/677d16e728300.png"
+alt="图2 随机数seed=1时仿真波形" />
+<figcaption aria-hidden="true">图2 随机数seed=1时仿真波形</figcaption>
+</figure>
+<figure>
+<img src="https://www.helloimg.com/i/2025/01/07/677d16e536bf9.png"
+alt="图3 随机数seed=A时仿真波形" />
+<figcaption aria-hidden="true">图3 随机数seed=A时仿真波形</figcaption>
+</figure>
+<h3 id="wallace算法">Wallace算法</h3>
+<p>本文采用<code>Wallace算法</code>实现对8位无符号数乘法器的加速，实现了部分和求和时所使用的全加器数量的减少。</p>
+<p><strong>全加器与半加器</strong>：全加器是一个三输入两输出的逻辑单元，它可以同时处理两个数据输入位以及一个来自前一级的进位输入，并产生一个本级的和输出以及一个向后一级传递的进位输出。而半加器仅处理两个数据输入位而不考虑前一级的进位，因此它的结构相对简单。</p>
+<p>对于8位无符号数相乘，会出现8个部分积，故我们采用4:2压缩器，将其先压缩为4个部分积，再压缩为2个部分积</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义16位部分积的4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> wallace(x, y, out);</span><br><span class="line"><span class="keyword">parameter</span> size = <span class="number">8</span>; <span class="comment">// 定义参数，乘法器的位数(8位无符号数)</span></span><br><span class="line"><span class="keyword">input</span> [size-<span class="number">1</span>:<span class="number">0</span>] x, y; <span class="comment">// 输入y是乘数，x是被乘数</span></span><br><span class="line"><span class="keyword">output</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [size*size-<span class="number">1</span>:<span class="number">0</span>] a; <span class="comment">// a为部分积</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] b0, b1; <span class="comment">// 第一级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] c0, c1, c2, c3; <span class="comment">// 第二级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">5</span>:<span class="number">0</span>] add_a, add_b; <span class="comment">// 第三级的输入</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">6</span>:<span class="number">0</span>] add_out; <span class="comment">// 第三级的输出</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out; <span class="comment">// 乘法器的输出（组合逻辑）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> a = &#123;x[<span class="number">3</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>],x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">0</span>]&#125;</span><br><span class="line">&amp; &#123;y[<span class="number">3</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">3</span>], y[<span class="number">2</span>],y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">0</span>]&#125;; <span class="comment">// 部分积</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> compressor4_2(i1,i2,i3,i4,cin,c_out,C,S)</span><br><span class="line"><span class="keyword">input</span> i1,i2,i3,i4,cin;</span><br><span class="line"><span class="keyword">output</span> C,S;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> s_temp;</span><br><span class="line"><span class="keyword">assign</span> &#123;cout,s_temp&#125; = i1+i2+i3;<span class="comment">//4:2压缩器中的第一级全加器</span></span><br><span class="line"><span class="keyword">assign</span> &#123;C,S&#125; = cin+s_temp+i4;<span class="comment">//4:2压缩器中的第二级全加器</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> pp_compressor4_2(</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in1,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in2,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in3,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in4,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] C,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_temp;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">16</span>:<span class="number">0</span>] C_temp_append_0;</span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> C_temp_append_0 = &#123;C_temp,<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//[0]位的进位Cin为1&#x27;b0;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">genvar</span> i;</span><br><span class="line"><span class="keyword">generate</span> </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">16</span>;i=i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">begin</span>:compressor4_2_inst</span><br><span class="line">        compressor4_2 u_compressor4_2(</span><br><span class="line">            <span class="variable">.i1</span>(pp_in1[i]),</span><br><span class="line">            <span class="variable">.i2</span>(pp_in2[i]),</span><br><span class="line">            <span class="variable">.i3</span>(pp_in3[i]),</span><br><span class="line">            <span class="variable">.i4</span>(pp_in4[i]),</span><br><span class="line">            <span class="variable">.cin</span>(C_temp_append_0[i]),</span><br><span class="line">            <span class="variable">.cout</span>(C_temp_append_0[i+<span class="number">1</span>]),</span><br><span class="line">            <span class="variable">.C</span>(C_comb[i]),</span><br><span class="line">            <span class="variable">.S</span>(S_comb[i])</span><br><span class="line">        );</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">endgenerate</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> S=S_comb;</span><br><span class="line"><span class="keyword">assign</span> C=&#123;C_comb[<span class="number">14</span>:<span class="number">0</span>],<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//进位C比Sum高一位，故左移一位</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span>(</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] a,</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] b,</span><br><span class="line"><span class="keyword">output</span>[<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res0;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res4;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res5;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res6;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res7;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S3;</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算8个16位部分积</span></span><br><span class="line"><span class="keyword">assign</span> partial_res0=&#123;<span class="number">8&#x27;b0</span>,b*a[<span class="number">0</span>]&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res1=&#123;<span class="number">7&#x27;b0</span>,b*a[<span class="number">1</span>],<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res2=&#123;<span class="number">6&#x27;b0</span>,b*a[<span class="number">2</span>],<span class="number">2&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res3=&#123;<span class="number">5&#x27;b0</span>,b*a[<span class="number">3</span>],<span class="number">3&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res4=&#123;<span class="number">4&#x27;b0</span>,b*a[<span class="number">4</span>],<span class="number">4&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res5=&#123;<span class="number">3&#x27;b0</span>,b*a[<span class="number">5</span>],<span class="number">5&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res6=&#123;<span class="number">2&#x27;b0</span>,b*a[<span class="number">6</span>],<span class="number">6&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res7=&#123;<span class="number">1&#x27;b0</span>,b*a[<span class="number">7</span>],<span class="number">7&#x27;b0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第一次压缩，将8个部分积压缩为4个部分积</span></span><br><span class="line">pp_compressor4_2 u1(partial_res0,partial_res1,partial_res2,partial_res3,C1,S1);</span><br><span class="line">pp_compressor4_2 u2(partial_res4,partial_res5,partial_res6,partial_res7,C2,S2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二次压缩，将4个部分积压缩为2个部分积</span></span><br><span class="line">pp_compressor4_2 u3(C1,S1,C2,S2,C3,S3);</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算最终结果</span></span><br><span class="line"><span class="keyword">assign</span> S = C3+S3;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/verilog/" rel="tag"># verilog</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/01/02/50questions_review_IC_manufacture/" rel="prev" title="50个问题回顾IC制造">
+                  <i class="fa fa-angle-left"></i> 50个问题回顾IC制造
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments"><div id="twikoo-comments"></div></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder"></span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">60k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:48</span>
+  </span>
+</div>
+
+
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+<div style="font-size: 0.85rem">
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script src="/runtime.js"></script>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '64px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+<script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"https://comment.meishao.top/","el":"#twikoo-comments"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.twikoo.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.twikoo.jsUrl || 'https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js',
+      { condition: window.twikoo }
+    ))
+    .then(() => {
+      twikoo.init(CONFIG.twikoo);
+    });
+});
+</script>
+<style>
+.post-block, .comments {
+  overflow: visible;
+}
+.tk-owo-emotion {
+  display: inline-block;
+}
+</style>
+
+</body>
+</html>
