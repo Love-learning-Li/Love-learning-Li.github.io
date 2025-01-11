@@ -22,12 +22,12 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"love-learning-li.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-    <meta name="description" content="什么是势垒呢？pn结在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。  Q1:为什么pn结会形成统一的费米能级  A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn">
+    <meta name="description" content="什么是势垒呢？ pn结 在pn结中记n区、p区的导带 \(E_{C}\) 之差为势垒。在形成pn结之前，n区的费米能级 \(E_{F}\) 靠近导带 \(E_{C}\) ；p区的费米能级靠近价带 \(E_{V}\) ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。  Q1:为什么pn结会形成统一的费米能级 A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于势垒及衍生问题的一些思考">
 <meta property="og:url" content="http://love-learning-li.github.io/2024/12/06/the_potential_barrier/index.html">
 <meta property="og:site_name" content="李鸣翔会认真沉淀">
-<meta property="og:description" content="什么是势垒呢？pn结在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。  Q1:为什么pn结会形成统一的费米能级  A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn">
+<meta property="og:description" content="什么是势垒呢？ pn结 在pn结中记n区、p区的导带 \(E_{C}\) 之差为势垒。在形成pn结之前，n区的费米能级 \(E_{F}\) 靠近导带 \(E_{C}\) ；p区的费米能级靠近价带 \(E_{V}\) ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。  Q1:为什么pn结会形成统一的费米能级 A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-12-06T11:20:10.040Z">
 <meta property="article:modified_time" content="2024-12-11T11:55:27.112Z">
@@ -142,7 +142,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%BF%E5%9E%92%E5%91%A2%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">什么是势垒呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pn%E7%BB%93"><span class="nav-number">1.1.</span> <span class="nav-text">pn结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pn%E7%BB%93%E5%8A%A0%E6%AD%A3%E5%90%91%E5%81%8F%E5%8E%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">pn结加正向偏压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.1.2.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6-Metal-Semiconductor-Contact"><span class="nav-number">1.2.</span> <span class="nav-text">金属半导体接触(Metal - Semiconductor Contact)</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%BF%E5%9E%92%E5%91%A2"><span class="nav-number">1.</span> <span class="nav-text">什么是势垒呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pn%E7%BB%93"><span class="nav-number">1.1.</span> <span class="nav-text">pn结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pn%E7%BB%93%E5%8A%A0%E6%AD%A3%E5%90%91%E5%81%8F%E5%8E%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">pn结加正向偏压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.1.2.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6metal---semiconductor-contact"><span class="nav-number">1.2.</span> <span class="nav-text">金属半导体接触(Metal -
+Semiconductor Contact)</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -250,7 +251,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.4k</span>
+      <span>1.5k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -267,43 +268,79 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="什么是势垒呢？"><a href="#什么是势垒呢？" class="headerlink" title="什么是势垒呢？"></a>什么是势垒呢？</h1><h2 id="pn结"><a href="#pn结" class="headerlink" title="pn结"></a>pn结</h2><p>在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="什么是势垒呢">什么是势垒呢？</h1>
+<h2 id="pn结">pn结</h2>
+<p>在pn结中记n区、p区的导带 <span class="math inline">\(E_{C}\)</span>
+之差为势垒。在形成pn结之前，n区的费米能级 <span
+class="math inline">\(E_{F}\)</span> 靠近导带 <span
+class="math inline">\(E_{C}\)</span> ；p区的费米能级靠近价带 <span
+class="math inline">\(E_{V}\)</span>
+，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
 <ul>
-<li><p>Q1:为什么pn结会形成统一的费米能级</p>
-</li>
-<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E_{F}$ 高的n区流向 $E_{F}$ 低的p区，相应的空穴从 $E_{F}$ 低的p区流向 $E_{F}$ 高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p>
-</li>
+<li><p>Q1:为什么pn结会形成统一的费米能级</p></li>
+<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从
+<span class="math inline">\(E_{F}\)</span> 高的n区流向 <span
+class="math inline">\(E_{F}\)</span> 低的p区，相应的空穴从 <span
+class="math inline">\(E_{F}\)</span> 低的p区流向 <span
+class="math inline">\(E_{F}\)</span>
+高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p></li>
 </ul>
-<script type="math/tex; mode=display">
+<p><span class="math display">\[
 \begin{equation}
     \left\{
     \begin{aligned}
-        n_{0} & =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-        p_{0} & =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T}) 
+        n_{0} &amp; =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+        p_{0} &amp; =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T})
     \end{aligned}
     \right.
-\end{equation}</script><p>故 $E_{Fn}$ 不断下移， $E_{Fp}$ 不断上移，直至 $E_{Fn}=E_{Fp}$ 。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
+\end{equation}
+\]</span></p>
+<p>故 <span class="math inline">\(E_{Fn}\)</span> 不断下移， <span
+class="math inline">\(E_{Fp}\)</span> 不断上移，直至 <span
+class="math inline">\(E_{Fn}=E_{Fp}\)</span>
+。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
 <ul>
 <li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
 </ul>
 <p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
-<h3 id="pn结加正向偏压"><a href="#pn结加正向偏压" class="headerlink" title="pn结加正向偏压"></a>pn结加正向偏压</h3><ul>
-<li>加正向偏压后，势垒由 $V_{D}$ 下降为 $V_{D}-V$ ，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为 $V_{D}-V$ ；在 $E_{out}$ 的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn’边界处空穴浓度增加，进而形成从nn’边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp’边界处电子浓度增加，进而形成从pp’边界到p区内部的电子扩散电流。</li>
-</ul>
-<p>由于nn’处电子减少，故从(1)式来看， $E_{Fn}$ 应远离 $E_{C}$ ；同理由于pp’处空穴减少，故从(1)式来看， $E_{Fp}$ 应远离 $E_{V}$ 。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 $E_{C}$ 以分析方便，进而先确定 $E_{C}$ 、 $E_{V}$ 的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
-<hr>
-<h2 id="金属半导体接触-Metal-Semiconductor-Contact"><a href="#金属半导体接触-Metal-Semiconductor-Contact" class="headerlink" title="金属半导体接触(Metal - Semiconductor Contact)"></a>金属半导体接触(Metal - Semiconductor Contact)</h2><p>这种情况下有两种势垒:</p>
+<h3 id="pn结加正向偏压">pn结加正向偏压</h3>
 <ul>
-<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p>
-</li>
-<li><p>在金属中存在金属的势垒高度 $q\phi_{ns}$ ，其满足:</p>
-</li>
+<li>加正向偏压后，势垒由 <span class="math inline">\(V_{D}\)</span>
+下降为 <span class="math inline">\(V_{D}-V\)</span>
+，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为
+<span class="math inline">\(V_{D}-V\)</span> ；在 <span
+class="math inline">\(E_{out}\)</span>
+的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn'边界处空穴浓度增加，进而形成从nn'边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp'边界处电子浓度增加，进而形成从pp'边界到p区内部的电子扩散电流。</li>
 </ul>
-<script type="math/tex; mode=display">
+<p>由于nn'处电子减少，故从(1)式来看， <span
+class="math inline">\(E_{Fn}\)</span> 应远离 <span
+class="math inline">\(E_{C}\)</span>
+；同理由于pp'处空穴减少，故从(1)式来看， <span
+class="math inline">\(E_{Fp}\)</span> 应远离 <span
+class="math inline">\(E_{V}\)</span> 。</p>
+<h3 id="总结">总结</h3>
+<p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 <span
+class="math inline">\(E_{C}\)</span> 以分析方便，进而先确定 <span
+class="math inline">\(E_{C}\)</span> 、 <span
+class="math inline">\(E_{V}\)</span>
+的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
+<hr />
+<h2
+id="金属半导体接触metal---semiconductor-contact">金属半导体接触(Metal -
+Semiconductor Contact)</h2>
+<p>这种情况下有两种势垒:</p>
+<ul>
+<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p></li>
+<li><p>在金属中存在金属的势垒高度 <span
+class="math inline">\(q\phi_{ns}\)</span> ，其满足:</p></li>
+</ul>
+<p><span class="math display">\[
 \begin{align}
-q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal} 
-\end{align}</script><p>考虑到金属是<code>电子海</code>，故其 $(E_{C})_{metal}$ 保持不动。<br>·</p>
+q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal}
+\end{align}
+\]</span></p>
+<p>考虑到金属是<code>电子海</code>，故其 <span
+class="math inline">\((E_{C})_{metal}\)</span> 保持不动。 ·</p>
 
     </div>
 
@@ -359,13 +396,13 @@ q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal}
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">58k</span>
+    <span title="站点总字数">60k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:45</span>
+    <span title="站点阅读时长">1:50</span>
   </span>
 </div>
 
