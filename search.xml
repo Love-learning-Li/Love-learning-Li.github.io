@@ -1,420 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>四川大学微电子2022级大三上期末考试植树</title>
-    <url>/2024/12/27/2024_Fall_final_exam_review/</url>
-    <content><![CDATA[<h2 id="模拟集成电路期末复盘"><a href="#模拟集成电路期末复盘" class="headerlink" title="模拟集成电路期末复盘"></a>模拟集成电路期末复盘</h2><h3 id="ppt中的一些英文单词-12分"><a href="#ppt中的一些英文单词-12分" class="headerlink" title="ppt中的一些英文单词(12分)"></a>ppt中的一些英文单词(12分)</h3><h3 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h3><p>二、对于半导体物理、半导体器件、半导体工艺、模拟集成电路四门课程之间的思考(8分)</p>
-<p>三(每个6分，共48分)</p>
-<p>1.nmos和pmos的区别，请画出结构示意图</p>
-<p>2.有源极负反馈的共源极放大电路与源跟随器之间的对比</p>
-<p>3.共源极放大电路中二极管连接型负载和电流源负载的对比</p>
-<p>4.差分对和单端工作模式之间的比较，为何尾部要采用尾管电流源</p>
-<p>5.电流镜的工作原理及任意倍数参考电流复制在版图中的实现</p>
-<p>6.沟道噪声、热噪声，闪烁噪声及其大小</p>
-<p>7.我们能从传输函数获得哪些信息？</p>
-<p>8.负反馈的缺点，为什么要引入负反馈</p>
-<h3 id="三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解"><a href="#三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解" class="headerlink" title="三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解"></a>三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解</h3><h3 id="四、小测最后一题变形"><a href="#四、小测最后一题变形" class="headerlink" title="四、小测最后一题变形"></a>四、小测最后一题变形</h3><p><img src="https://www.helloimg.com/i/2025/01/11/67824be5a0605.png" alt="模集小测最后一题电路图"></p>
-<center>模集小测最后一题解析by MeiShao</center>
-
-<div class="pdf-container">
-  <iframe src="/lib/pdf/last_question_of_analog_IC_quiz.pdf" width="100%" height="800" frameborder="0"></iframe>
-</div>
-
-
-
-
-
-
-<h3 id="所需要认识和了解的单词举例"><a href="#所需要认识和了解的单词举例" class="headerlink" title="所需要认识和了解的单词举例:"></a>所需要认识和了解的单词举例:</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>英文术语</th>
-<th>中文翻译</th>
-<th>英文术语</th>
-<th>中文翻译</th>
-<th>英文术语</th>
-<th>中文翻译</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>aspect ratio</td>
-<td>宽长比</td>
-<td>back-gate effect</td>
-<td>背栅效应</td>
-<td>capacitive coupling</td>
-<td>电容耦合</td>
-</tr>
-<tr>
-<td>a “single-ended” signal</td>
-<td>单端信号</td>
-<td>bootstrap</td>
-<td>自举</td>
-<td>Cascode Stage</td>
-<td>共源共棚级</td>
-</tr>
-<tr>
-<td>a differential signal</td>
-<td>差动信号</td>
-<td>body effect</td>
-<td>体效应</td>
-<td>clipping</td>
-<td>失真</td>
-</tr>
-<tr>
-<td>a feed through path</td>
-<td>直流通路</td>
-<td>bulk</td>
-<td>衬底</td>
-<td>common-mode rejection ratio</td>
-<td>共模抑制比</td>
-</tr>
-<tr>
-<td>Depletion region</td>
-<td>耗尽区</td>
-<td>dependent current source</td>
-<td>独立电流源</td>
-<td>Complementary MOS</td>
-<td>互补MOS</td>
-</tr>
-<tr>
-<td>drain</td>
-<td>漏端</td>
-<td>effective channel length</td>
-<td>有效沟道长度</td>
-<td>Diode-Connected</td>
-<td>二极管连接型</td>
-</tr>
-<tr>
-<td>intrinsic gain</td>
-<td>本征增益</td>
-<td>excursion</td>
-<td>偏移</td>
-<td>equilibrium</td>
-<td>平衡态</td>
-</tr>
-<tr>
-<td>immunity</td>
-<td>抗干扰</td>
-<td>Inversion layer</td>
-<td>反型层</td>
-<td>half-width</td>
-<td>半栅宽</td>
-</tr>
-<tr>
-<td>gate capacitance</td>
-<td>栅电容</td>
-<td>Gate Oxide</td>
-<td>栅氧</td>
-<td>gain-bandwidth trade-offs</td>
-<td>增益-带宽折中</td>
-</tr>
-<tr>
-<td>liner region</td>
-<td>线性区</td>
-<td>low-pass filter</td>
-<td>低通滤波器</td>
-<td>Miller’s approximation</td>
-<td>密勒近似</td>
-</tr>
-<tr>
-<td>overdrive voltage</td>
-<td>过驱动电压</td>
-<td>peak-to-peak swing</td>
-<td>峰峰摆幅</td>
-<td>power dissipation</td>
-<td>功耗</td>
-</tr>
-<tr>
-<td>parallel</td>
-<td>并联</td>
-<td>series</td>
-<td>串联</td>
-<td>Source Degeneration</td>
-<td>源极负反馈</td>
-</tr>
-<tr>
-<td>supply noise rejection</td>
-<td>电源噪声抑制</td>
-<td>Subthreshold conduction</td>
-<td>亚阈区导电</td>
-<td>substrate bias effect</td>
-<td>衬底偏置效应</td>
-</tr>
-<tr>
-<td>saturation region</td>
-<td>饱和区</td>
-<td>shields</td>
-<td>屏蔽</td>
-<td>threshold voltage</td>
-<td>阈值电压</td>
-</tr>
-<tr>
-<td>topology</td>
-<td>拓扑</td>
-<td>transfer function</td>
-<td>传递函数</td>
-<td>transconductance</td>
-<td>跨导</td>
-</tr>
-<tr>
-<td>transistor</td>
-<td>晶体管</td>
-<td>triode region</td>
-<td>三极管区</td>
-<td>thevenin equivalent</td>
-<td>戴维南等效</td>
-</tr>
-<tr>
-<td>voltage buffer</td>
-<td>电压缓冲器</td>
-<td>voltage headroom</td>
-<td>电压余度</td>
-<td>voltage swings</td>
-<td>电压摆幅</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="半导体物理期末"><a href="#半导体物理期末" class="headerlink" title="半导体物理期末"></a>半导体物理期末</h2><h3 id="填空10分"><a href="#填空10分" class="headerlink" title="填空10分"></a>填空10分</h3><p>1.硅的本征载流子浓度；硅的禁带宽度</p>
-<p>2.发生杂质补偿时且有 $N_{D}&gt;N_{A}$ ，那么有效杂质浓度是()，是()导电，迁移率取决于()</p>
-<p>3.GaAs的散射机构有哪三个？</p>
-<p>4.pn结中的势垒电容是()联，扩散电容是()联。(串or并)</p>
-<h3 id="名词解释20分"><a href="#名词解释20分" class="headerlink" title="名词解释20分"></a>名词解释20分</h3><p>回旋共振</p>
-<p>深能级</p>
-<p>玻尔兹曼分布</p>
-<p>俄歇复合</p>
-<h3 id="简答20分"><a href="#简答20分" class="headerlink" title="简答20分"></a>简答20分</h3><p>1.理想pn结的4个假设</p>
-<p>2.算p型半导体功函数，判断与金属Al、Au、Pt是形成阻挡层还是非阻挡层</p>
-<h3 id="材料分析50分"><a href="#材料分析50分" class="headerlink" title="材料分析50分"></a>材料分析50分</h3><p>背景是SBD和JBS</p>
-<p>1.理想金半接触的能带图及关键参数标注</p>
-<p>2.画出该器件MIS的正偏、反偏、零偏的能带图</p>
-<p>3.和pn结I-V特性不同的原因(该器件I-V曲线表现出双势垒)</p>
-<p>4.判断击穿类型，及其击穿电压的温度系数正负判断</p>
-<h3 id="选作5分"><a href="#选作5分" class="headerlink" title="选作5分"></a>选作5分</h3><p>分析高反向偏压下SBD势垒降低的原因</p>
-<h2 id="数字逻辑与系统设计期末复盘-开卷"><a href="#数字逻辑与系统设计期末复盘-开卷" class="headerlink" title="数字逻辑与系统设计期末复盘(开卷)"></a>数字逻辑与系统设计期末复盘(开卷)</h2><h3 id="填空题24分"><a href="#填空题24分" class="headerlink" title="填空题24分"></a>填空题24分</h3><p>1.二进制、十六进制转化</p>
-<p>2.正负8位二进制数补码的计算</p>
-<p>3.System verilog中terior是什么信号</p>
-<p>4.写出检测边沿信号的verilog代码；写出带异步复位功能+边沿信号检测的verilog代码</p>
-<p>5.2个16位无符号数的最大乘积是多少</p>
-<p>6.流水线处理器的好处</p>
-<h3 id="设计题40分"><a href="#设计题40分" class="headerlink" title="设计题40分"></a>设计题40分</h3><ol>
-<li><p>利用多路选择器设计函数</p>
-</li>
-<li><p>画出Y=not(AB+BC)的mos管级电路，要求利用最少的mos管数量</p>
-</li>
-<li><p>利用与非门实现异或逻辑</p>
-</li>
-<li><p>画出检测<code>11010</code>序列的状态机转换</p>
-</li>
-<li><p>3位格雷码转换的verilog代码</p>
-</li>
-<li><p>Y=BC+A存储器ROM利用点画线的方式描绘函数真值表</p>
-</li>
-<li><p>设计功能如下的<code>一个输入信号由0变1时输出信号变为1并持续一周期，否则为0</code>verilog代码。</p>
-</li>
-<li><p>8位计数器的verilog代码设计</p>
-</li>
-</ol>
-<h3 id="计算题36分"><a href="#计算题36分" class="headerlink" title="计算题36分"></a>计算题36分</h3><ol>
-<li><p>给定电路图的电路功能判断+关键路径和最小路径的延迟时间计算</p>
-</li>
-<li><p>字节寻址的存储器的第26个字的存储地址；第26个字在内存中的存储地址；绘制其在内存中的数据及地址图样(大端或小端序)</p>
-</li>
-<li><p>8级流水线处理器顺序处理100个指令需要多少个周期才能完成</p>
-</li>
-</ol>
-<h2 id="IC工艺制造期末复盘"><a href="#IC工艺制造期末复盘" class="headerlink" title="IC工艺制造期末复盘"></a>IC工艺制造期末复盘</h2><h3 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h3><ol>
-<li><p>各种CVD的中英文对应</p>
-</li>
-<li><p>同质外延和异质外延的定义及举例</p>
-</li>
-<li><p>CMP是<code>平坦化技术</code>或者说是<code>去除工艺</code>、需要利用<code>研磨浆</code>、目的是<code>抛光</code></p>
-</li>
-<li><p>热氧化分哪两种</p>
-</li>
-<li><p>二氧化硅层的应用</p>
-</li>
-</ol>
-<h3 id="判断-5个，5分"><a href="#判断-5个，5分" class="headerlink" title="判断(5个，5分)"></a>判断(5个，5分)</h3><ol>
-<li><p>SC-2溶液的配比及RCA清洗注意事项；</p>
-</li>
-<li><p>CVD生长比热氧化好，因为它不消耗硅；</p>
-</li>
-<li><p>其他记不得了</p>
-</li>
-</ol>
-<h3 id="简答若干"><a href="#简答若干" class="headerlink" title="简答若干"></a>简答若干</h3><ol>
-<li><p>给定显影后图案下，光刻胶的选择与对应光刻掩膜版的绘制</p>
-</li>
-<li><p>通道效应的定义及解决办法</p>
-</li>
-<li><p>离子轰击的应用及特点</p>
-</li>
-<li><p>离子注入和热扩散的区别及其原理</p>
-</li>
-<li><p>为什么采用硅作为原材料，干法刻蚀和湿法刻蚀的区别及优缺点</p>
-</li>
-<li><p>自对准工艺应用举例及图示</p>
-</li>
-</ol>
-<hr>
-<p>2025年1月11日笔者寒假回家的路上闲来无事，故对该文进行补充和修订</p>
-<h2 id="电磁场与微波技术期末复盘"><a href="#电磁场与微波技术期末复盘" class="headerlink" title="电磁场与微波技术期末复盘"></a>电磁场与微波技术期末复盘</h2><h3 id="填空-24个，48分"><a href="#填空-24个，48分" class="headerlink" title="填空(24个，48分)"></a>填空(24个，48分)</h3><p>考点很细，部分罗列如下：</p>
-<p>麦克斯韦方程组的微分形式及其边界条件(常规情况、有限电导率的介质、理想介质、理想导体都建议熟悉)；电流连续性方程的微分形式(导体情况)；平行双导线、同轴导线情况的电容、电感求解；静电比拟法的应用；镜像法的运用，具体考的是球壳不接地且外部有电荷等等</p>
-<p>注：有些笔者记不太清了，电磁场的传播及其后面的内容考的相对较少(<strong>仅以2024年电磁波期末正考为例，样本数较少，不具备统计价值，建议大家都学习掌握好</strong>)</p>
-<h3 id="计算题-47分"><a href="#计算题-47分" class="headerlink" title="计算题(47分)"></a>计算题(47分)</h3><h4 id="一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分"><a href="#一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分" class="headerlink" title="一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)"></a>一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)</h4><p>从麦克斯韦方程组出发，利用洛伦兹规范消元即可；可从单位的角度出发来检验是否推导正确，比如笔者就推出来了 $\frac{\mu_{0}}{\epsilon_{0}}$ 的因子，这肯定是有问题的，一般都是二者相乘出现类似光速的单位 :cry:</p>
-<p>洛伦兹规范即下式:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-    \Delta \cdot A + \mu \epsilon \frac{\partial \phi }{ \partial t } = 0
-\end{align}</script><p>具体方程形式如下:</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-    \left\{
-    \begin{aligned}
-        \Delta^{2} \phi &- \mu \epsilon \frac{\partial^{2} \phi }{ \partial t^{2} } = - \frac{ \rho }{ \epsilon }& \\
-        \Delta^{2} A &- \mu \epsilon \frac{\partial^{2} A }{ \partial t^{2} } = - \mu J&
-    \end{aligned}    
-    \right.
-\end{equation}</script><h4 id="二、垂直入射的电磁波的反射波、合成波的计算-10分"><a href="#二、垂直入射的电磁波的反射波、合成波的计算-10分" class="headerlink" title="二、垂直入射的电磁波的反射波、合成波的计算(10分)"></a>二、垂直入射的电磁波的反射波、合成波的计算(10分)</h4><p>根据波阻抗算透射系数和反射系数即可。</p>
-<h4 id="三、笔者忘了，期待读者补充-10分"><a href="#三、笔者忘了，期待读者补充-10分" class="headerlink" title="三、笔者忘了，期待读者补充(10分)"></a>三、笔者忘了，期待读者补充(10分)</h4><h4 id="四、笔者忘了，期待读者补充-10分"><a href="#四、笔者忘了，期待读者补充-10分" class="headerlink" title="四、笔者忘了，期待读者补充(10分)"></a>四、笔者忘了，期待读者补充(10分)</h4><h3 id="附加题：笔者忘了，期待读者补充-5分"><a href="#附加题：笔者忘了，期待读者补充-5分" class="headerlink" title="附加题：笔者忘了，期待读者补充  (5分)"></a>附加题：笔者忘了，期待读者补充  (5分)</h3>]]></content>
-      <tags>
-        <tag>大学生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>FPGA中乘法器的加速运算</title>
-    <url>/2025/01/07/8_bits_multiplier/</url>
-    <content><![CDATA[<h1 id="数字逻辑与系统设计设计报告"><a href="#数字逻辑与系统设计设计报告" class="headerlink" title="数字逻辑与系统设计设计报告"></a>数字逻辑与系统设计设计报告</h1><h2 id="项目内容"><a href="#项目内容" class="headerlink" title="项目内容"></a>项目内容</h2><blockquote>
-<p>题目：8位乘法器\<br>实现的功能:</p>
+    <title>博客版本迭代汇总</title>
+    <url>/2024/12/21/0_Blog_version_update/</url>
+    <content><![CDATA[<p>版本更新信息如下：</p>
 <ul>
-<li>输入为两个8位有符号数或无符号数，输出16位相乘结果</li>
-<li>采用Booth算法对乘法转化为部分和求和</li>
-<li>采用Wallace算法减少部分和求和时所使用的全加器数量</li>
+<li>V0.1 2024.11.14 </li>
 </ul>
-</blockquote>
-<h3 id="编译器及测试仿真环境"><a href="#编译器及测试仿真环境" class="headerlink" title="编译器及测试仿真环境"></a>编译器及测试仿真环境</h3><blockquote>
-<p>win11系统，EDA环境为<code>Quartus</code>，EDA软件版本为<code>18.0</code>，验证板卡为<code>DE10Lite</code>，波形仿真软件为<code>Modelsim</code>，软件版本为<code>SE-64 2020.4</code></p>
-</blockquote>
-<h3 id="该8位乘法器设计特点"><a href="#该8位乘法器设计特点" class="headerlink" title="该8位乘法器设计特点"></a>该8位乘法器设计特点</h3><blockquote>
-<p>本文采用<code>Radix-4 Booth乘法器</code>对乘法运算化简为<code>4个部分和</code>求和；同时对化简后的部分和采用<code>Wallace树</code>算法进行加速运算，减少全加器和半加器数量的使用。</p>
-</blockquote>
-<h3 id="Radix-4-Booth算法"><a href="#Radix-4-Booth算法" class="headerlink" title="Radix-4 Booth算法"></a>Radix-4 Booth算法</h3><p><strong>Booth算法原理:</strong></p>
-<p>对于8位有符号数A可以表示为如(1)式所示，其中用$A_{i}$表示A的第$i$位:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-    A = -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i}
-\end{align}</script><p>同时考虑对$A_{i}$进行如下分解:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-    A_{i} = A_{i} \times ( 2^{i+1} - 2\times 2^{i } )
-\end{align}</script><p>进而可以对8位有符号数A进行如下分解，补充定义$A_{-1}=0$得:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-    A =& -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i} \notag\\
-    =& -A_{7} \cdot 2^{7} + A_{6} \cdot 2^{6} +  A_{5} \cdot ( 2^{6} - 2 2^{4} ) \notag\\
-     &  + A_{4} \cdot ( 2^{5} - 2\times 2^{3} ) + ... + A_{0} \cdot  2^{0} \notag\\
-    =& (-2A_{7} + A_{6} + A_{5})\cdot 2^{6} + (-2A_{5} + A_{4} + A_{3})\cdot 2^{4} \notag\\
-    &+ (-2A_{3} + A_{2} + A_{1})\cdot 2^{2} + (-2A_{1} + A_{0} + A_{-1})\cdot 2^{0} \notag\\
-    =& Coef_{3}\cdot 2^{6} + Coef_{2}\cdot 2^{4} + Coef_{1}\cdot 2^{2} + Coef_{0}\cdot 2^{0} \\
-\end{align}</script><p>因此$A\times B$可表示如下式所示:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-    A\times B=&Coef_{3}\cdot 2^{6}\times B + Coef_{2}\cdot 2^{4}\times B \notag\\
-     &+ Coef_{1}\cdot 2^{2}\times B + Coef_{0}\cdot 2^{0}\times B
-\end{align}</script><p>可以发现$2^{i},i=0,2,4,6$前的系数是由$A_{i},A_{i+1},A_{i+1}$构成的形式相近的式子，不妨记为$Coef$，故$Coef$与$A_{i}$,$A_{i+1}$,$A_{i+1}$满足的关系如下表所示:</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>$A_{i+1}$</th>
-<th>$A_{i}$</th>
-<th>$A_{i-1}$</th>
-<th>$Coef$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>-2</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>-1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>故可以将两个8位有符号数A,B的乘积$A\times B$转变为4个部分和的形式，实现计算量和资源使用量的减少。同时$Coef$的系数是有限的，故我们可以将$Coef$对应的操作按如下方式使用寄存器提前存储。</p>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line">p &lt;= <span class="number">16&#x27;d0</span>;</span><br><span class="line"><span class="comment">// 完成 M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;,multiplicand&#125;;</span><br><span class="line"><span class="comment">// 完成 -M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;,~multiplicand+<span class="number">1&#x27;b1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 2M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2 &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;, multiplicand &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 -2M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;, (~multiplicand+<span class="number">1&#x27;b1</span>) &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// N 来选择 booth 的操作，因此用来寄存乘数的值，最后补一个 0，相当于y_&#123;-1&#125;</span></span><br><span class="line">N &lt;= &#123;multiplier,<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line">shift_num &lt;= <span class="number">4&#x27;d0</span>;</span><br><span class="line">i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br></pre></td></tr></table></figure>
-<p>同时定义RSTn和done信号用于表征乘法运算的开始和结束，同时利用case语句实现对4个部分和的逐次表征，并利用多个$if$语句实现对$Coef$的判断进而实现对部分和形式的确定。</p>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> booth_multiply#(</span><br><span class="line">    <span class="keyword">parameter</span> DATAWIDTH = <span class="number">8</span><span class="comment">//定义符号数宽度为8bit</span></span><br><span class="line">)</span><br><span class="line">(</span><br><span class="line">    <span class="keyword">input</span>                            CLK,<span class="comment">//定义系统时钟</span></span><br><span class="line">    <span class="keyword">input</span>                            RSTn,<span class="comment">//定义复位信号RSTn</span></span><br><span class="line">    <span class="keyword">input</span>                            START,<span class="comment">//定义乘法器工作开启信号，拉低时有效</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     A,<span class="comment">//定义multiplier</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     B,<span class="comment">//定义multiplicand</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">output</span> [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] RESULT,<span class="comment">//定义product</span></span><br><span class="line">    <span class="keyword">output</span>                           Done<span class="comment">//定义乘法器工作结束信号，拉高时有效</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] i;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] P;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_reg;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_bm;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] N;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] result_reg;</span><br><span class="line"><span class="keyword">reg</span>                       isDone;</span><br><span class="line"></span><br><span class="line"><span class="keyword">always</span> @ ( <span class="keyword">posedge</span> CLK <span class="keyword">or</span> <span class="keyword">negedge</span> RSTn )</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (!RSTn)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        i &lt;= <span class="number">0</span>;</span><br><span class="line">        P &lt;= <span class="number">0</span>;</span><br><span class="line">        A_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        A_bm &lt;= <span class="number">0</span>;</span><br><span class="line">        result_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        N &lt;=<span class="number">0</span>;</span><br><span class="line">        isDone &lt;= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (START)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">case</span> (i)</span><br><span class="line"></span><br><span class="line">        <span class="number">0</span>:<span class="keyword">begin</span></span><br><span class="line">          A_reg &lt;= A;<span class="comment">//计算A的补码,方便后面的+-操作</span></span><br><span class="line">          A_bm &lt;= ~A + <span class="number">1&#x27;b1</span>;    </span><br><span class="line">          P &lt;= &#123; <span class="number">8&#x27;d0</span>, B, <span class="number">1&#x27;b0</span> &#125;;  <span class="comment">//B add to last 8bit of P</span></span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          N &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span><span class="comment">//operating 这一个状态用来判断最低两位，然后决定执行什么操作</span></span><br><span class="line">        <span class="number">1</span>:<span class="keyword">begin</span></span><br><span class="line">          <span class="keyword">if</span> (N == DATAWIDTH)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            N &lt;= <span class="number">0</span>;</span><br><span class="line">            i &lt;= i + <span class="number">2&#x27;b10</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b00</span> | P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b11</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= P;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b01</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_reg,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b10</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_bm,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">            <span class="comment">//shift 这是无论最低两位是什么，最后都要执行的移位操作</span></span><br><span class="line">        <span class="number">2</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          P &lt;= &#123;P[<span class="number">16</span>],P[<span class="number">16</span>:<span class="number">1</span>]&#125;;</span><br><span class="line">          N &lt;= N + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          i &lt;= i - <span class="number">1&#x27;b1</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">        <span class="number">3</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">1</span>;</span><br><span class="line">          result_reg &lt;= P;</span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">        <span class="number">4</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">0</span>;</span><br><span class="line">          i &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">endcase</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> Done = isDone;</span><br><span class="line"><span class="keyword">assign</span> RESULT = result_reg[<span class="number">16</span>:<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
-<h3 id="仿真测试与波形查看"><a href="#仿真测试与波形查看" class="headerlink" title="仿真测试与波形查看"></a>仿真测试与波形查看</h3><ul>
-<li>testbench代码撰写如下:</li>
-</ul>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="comment">//注若要完整运行所有结果，至少运行1400ns</span></span><br><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;</span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
-<p>同时仿真波形如下图1所示:</p>
-<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e644c82.png" alt="图1 非随机数仿真波形"></p>
-<p>同时如果检测该乘法器对所有8位有符号数相乘的可行性，则上述在testbench中手动设置乘数和被乘数的方法则会过于麻烦，因此也可以考虑如下方法来设置随机数仿真。</p>
+<p>博客正式上线，基于GitHubpages搭建 </p>
 <ul>
-<li>随机数型乘法器仿真testbench代码可补充如下:</li>
+<li>V0.2 2024.12.15 </li>
 </ul>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;<span class="comment">//random版</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
-<p>但verilog中的随机数生成依赖于其中的<code>种子seed</code>，故我们可以直接<code>利用乘数A的值做为下一次random生成所需的种子</code>，这样我们就可以不用每次仿真调整随机数了，为我们测试乘法器的可靠性和鲁棒性带来方便。即将<strong>initial begin里的语句</strong>改成如下所示即可:</p>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">initial</span> <span class="keyword">begin</span></span><br><span class="line">	A = <span class="number">0</span>;</span><br><span class="line">	B = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">repeat</span>(<span class="number">10</span>) <span class="keyword">begin</span></span><br><span class="line">		#<span class="number">200</span> A = &#123;<span class="built_in">$random</span>(A)&#125;%<span class="number">100</span>;</span><br><span class="line">		B = &#123;<span class="built_in">$random</span>(A-<span class="number">1</span>)&#125;%<span class="number">100</span>;</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	#<span class="number">5</span> <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span>	</span><br></pre></td></tr></table></figure>
-<p>同时仿真波形如下图2-图3所示:</p>
-<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e728300.png" alt="图2 随机数seed=1时仿真波形"></p>
-<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e536bf9.png" alt="图3 随机数seed=A时仿真波形"></p>
-<h3 id="Wallace算法"><a href="#Wallace算法" class="headerlink" title="Wallace算法"></a>Wallace算法</h3><p>本文采用<code>Wallace算法</code>实现对8位无符号数乘法器的加速，实现了部分和求和时所使用的全加器数量的减少。</p>
-<p><strong>全加器与半加器</strong>：全加器是一个三输入两输出的逻辑单元，它可以同时处理两个数据输入位以及一个来自前一级的进位输入，并产生一个本级的和输出以及一个向后一级传递的进位输出。而半加器仅处理两个数据输入位而不考虑前一级的进位，因此它的结构相对简单。</p>
-<p>对于8位无符号数相乘，会出现8个部分积，故我们采用4:2压缩器，将其先压缩为4个部分积，再压缩为2个部分积</p>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义16位部分积的4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> wallace(x, y, out);</span><br><span class="line"><span class="keyword">parameter</span> size = <span class="number">8</span>; <span class="comment">// 定义参数，乘法器的位数(8位无符号数)</span></span><br><span class="line"><span class="keyword">input</span> [size-<span class="number">1</span>:<span class="number">0</span>] x, y; <span class="comment">// 输入y是乘数，x是被乘数</span></span><br><span class="line"><span class="keyword">output</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [size*size-<span class="number">1</span>:<span class="number">0</span>] a; <span class="comment">// a为部分积</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] b0, b1; <span class="comment">// 第一级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] c0, c1, c2, c3; <span class="comment">// 第二级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">5</span>:<span class="number">0</span>] add_a, add_b; <span class="comment">// 第三级的输入</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">6</span>:<span class="number">0</span>] add_out; <span class="comment">// 第三级的输出</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out; <span class="comment">// 乘法器的输出（组合逻辑）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> a = &#123;x[<span class="number">3</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>],x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">0</span>]&#125;</span><br><span class="line">&amp; &#123;y[<span class="number">3</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">3</span>], y[<span class="number">2</span>],y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">0</span>]&#125;; <span class="comment">// 部分积</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> compressor4_2(i1,i2,i3,i4,cin,c_out,C,S)</span><br><span class="line"><span class="keyword">input</span> i1,i2,i3,i4,cin;</span><br><span class="line"><span class="keyword">output</span> C,S;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> s_temp;</span><br><span class="line"><span class="keyword">assign</span> &#123;cout,s_temp&#125; = i1+i2+i3;<span class="comment">//4:2压缩器中的第一级全加器</span></span><br><span class="line"><span class="keyword">assign</span> &#123;C,S&#125; = cin+s_temp+i4;<span class="comment">//4:2压缩器中的第二级全加器</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> pp_compressor4_2(</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in1,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in2,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in3,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in4,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] C,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_temp;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">16</span>:<span class="number">0</span>] C_temp_append_0;</span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> C_temp_append_0 = &#123;C_temp,<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//[0]位的进位Cin为1&#x27;b0;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">genvar</span> i;</span><br><span class="line"><span class="keyword">generate</span> </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">16</span>;i=i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">begin</span>:compressor4_2_inst</span><br><span class="line">        compressor4_2 u_compressor4_2(</span><br><span class="line">            <span class="variable">.i1</span>(pp_in1[i]),</span><br><span class="line">            <span class="variable">.i2</span>(pp_in2[i]),</span><br><span class="line">            <span class="variable">.i3</span>(pp_in3[i]),</span><br><span class="line">            <span class="variable">.i4</span>(pp_in4[i]),</span><br><span class="line">            <span class="variable">.cin</span>(C_temp_append_0[i]),</span><br><span class="line">            <span class="variable">.cout</span>(C_temp_append_0[i+<span class="number">1</span>]),</span><br><span class="line">            <span class="variable">.C</span>(C_comb[i]),</span><br><span class="line">            <span class="variable">.S</span>(S_comb[i])</span><br><span class="line">        );</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">endgenerate</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> S=S_comb;</span><br><span class="line"><span class="keyword">assign</span> C=&#123;C_comb[<span class="number">14</span>:<span class="number">0</span>],<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//进位C比Sum高一位，故左移一位</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span>(</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] a,</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] b,</span><br><span class="line"><span class="keyword">output</span>[<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res0;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res4;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res5;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res6;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res7;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S3;</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算8个16位部分积</span></span><br><span class="line"><span class="keyword">assign</span> partial_res0=&#123;<span class="number">8&#x27;b0</span>,b*a[<span class="number">0</span>]&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res1=&#123;<span class="number">7&#x27;b0</span>,b*a[<span class="number">1</span>],<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res2=&#123;<span class="number">6&#x27;b0</span>,b*a[<span class="number">2</span>],<span class="number">2&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res3=&#123;<span class="number">5&#x27;b0</span>,b*a[<span class="number">3</span>],<span class="number">3&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res4=&#123;<span class="number">4&#x27;b0</span>,b*a[<span class="number">4</span>],<span class="number">4&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res5=&#123;<span class="number">3&#x27;b0</span>,b*a[<span class="number">5</span>],<span class="number">5&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res6=&#123;<span class="number">2&#x27;b0</span>,b*a[<span class="number">6</span>],<span class="number">6&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res7=&#123;<span class="number">1&#x27;b0</span>,b*a[<span class="number">7</span>],<span class="number">7&#x27;b0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第一次压缩，将8个部分积压缩为4个部分积</span></span><br><span class="line">pp_compressor4_2 u1(partial_res0,partial_res1,partial_res2,partial_res3,C1,S1);</span><br><span class="line">pp_compressor4_2 u2(partial_res4,partial_res5,partial_res6,partial_res7,C2,S2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二次压缩，将4个部分积压缩为2个部分积</span></span><br><span class="line">pp_compressor4_2 u3(C1,S1,C2,S2,C3,S3);</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算最终结果</span></span><br><span class="line"><span class="keyword">assign</span> S = C3+S3;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
+<ul>
+<li>V0.2.1 2024.12.21</li>
+</ul>
+<p>增加links页面，推荐优秀的博客和网站；同时增加文章置顶功能，<a href="https://blog.csdn.net/nineya_com/article/details/103394315">参考文章</a></p>
+<ul>
+<li>2025年1月11日</li>
+</ul>
+<p>增加pdf插入功能，next主题自带的pdf插入功能在about界面效果良好，但在博客文章界面效果一般，故根据<a href="https://blog.zhilu.cyou/">纸鹿哥</a>的建议，我采用iframe方式实现pdf嵌入功能:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;pdf-container&quot;</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;/lib/pdf/last_question_of_analog_IC_quiz.pdf&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;800&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span></span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>PDFjs的方式我未能成功实现pdf嵌入，iframe方案对我来说实现起来较为简单，值得推荐，感谢纸鹿哥！</p>
 ]]></content>
       <tags>
-        <tag>verilog</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -489,7 +99,7 @@
 <p>(ii) 同时多晶硅取代铝成为栅材料和局部连线。</p>
 <p>(iii) 掺磷硅玻璃PSG是金属沉积前的电介质(PMD)，能俘获移动离子的如 $ Na^{+} $ ，以防止他们扩散到栅极而损害晶体管的特性。</p>
 <h2 id="10-LOCOS替代整面全区氧化、BPSG"><a href="#10-LOCOS替代整面全区氧化、BPSG" class="headerlink" title="10: LOCOS替代整面全区氧化、BPSG"></a>10: LOCOS替代整面全区氧化、BPSG</h2><p>(i) CMOS中用LOCOS替代整面全区式氧化; 但由于氧的热扩散是各向同性故导致鸟喙效应的出现;</p>
-<p>(ii) 利用BPSG作为金属器沉积前的电介质是(PMD)，中间隔离层(ILD0)，以降低 reflow 的温度.</p>
+<p>(ii) 利用BPSG作为金属器沉积前的电介质层(PMD)，中间隔离层(ILD0)，以降低 reflow 的温度.</p>
 <h2 id="11-STI、金属硅化物、USG"><a href="#11-STI、金属硅化物、USG" class="headerlink" title="11. STI、金属硅化物、USG"></a>11. STI、金属硅化物、USG</h2><p>(i)图形尺寸进一步减少后，鸟喙效应对特征尺寸的影响难以解决，故引入浅沟槽隔离技术(STI)取代硅的局部氧化技术(LOCOS)；</p>
 <p>(ii)金属硅化物被广泛用于栅极和局部连线，钨被用不同金属之间的连线，即栓塞Plug；</p>
 <p>(iii) 有时也在 Source、Dain与PSG之间用一层很薄的未掺杂硅玻璃USG做阻挡层。</p>
@@ -538,7 +148,7 @@
 <li><p>表面湿法刻蚀：去除 wafer 表面缺陷</p>
 </li>
 </ul>
-<p>利用 ${HN} {O}_{3}$ 将 ${Si}$ 氧化成 ${Si} {O}_{2}$ ，再利用HF去除 ${Si} {O}_{2} $ ，用 $C{H}_{3} COOH $ 调控刻蚀速率。</p>
+<p>利用 $ HN O_{3}$ 将 ${Si}$ 氧化成 ${Si} O_{2}$ ，再利用HF去除 ${Si} O_{2} $ ，用 $CH_{3} COOH $ 调控刻蚀速率。</p>
 <ul>
 <li>化学机械研磨： 平坦化+减少缺陷</li>
 </ul>
@@ -559,14 +169,15 @@
 </ul>
 <p>对于BJT 即在 ${n}^{ + }$ buried layer上长一层外延层(对于MOS而言即在 substrate 上长一层外延层)；</p>
 <ul>
-<li>advantage: (i) 对BJT而言在低阻衬底上形成一个高电阻层，可提高BJT性能；</li>
+<li>advantage: </li>
 </ul>
+<p>(i) 对BJT而言在低阻衬底上形成一个高电阻层，可提高BJT性能；</p>
 <p>(ii) BJT需要从外延硅在硅深部形成重掺杂掩埋层，通过其他方法很难实现；</p>
 <p>(iii) 外延硅可能提供与衬底不同的物理特性；</p>
 <p>(iv) 外延硅中不含碳、氧等杂质，可克服 ${CZ}$ 法生长出的wafer的缺点；</p>
 <p>但对低速 CMOS 和 DRAM 常避免使用外延层；</p>
 <ul>
-<li>fabricate: 1000°C高温化学气相爱把外延硅:</li>
+<li>fabricate: 1000°C高温化学气相淀积外延硅:</li>
 </ul>
 <p>利用下式生成外延硅:</p>
 <script type="math/tex; mode=display">
@@ -578,7 +189,7 @@
         SiH {cl}_{3} + H_{2}    & \xrightarrow[] { \text{1100°C加热 } }   & {Si}  + 3{Hcl}  
     \end{aligned}
     \right.
-\end{equation}</script><p>利用下式实现外延转掺杂(气相掺杂):</p>
+\end{equation}</script><p>利用下式实现外延硅掺杂(气相掺杂):</p>
 <script type="math/tex; mode=display">
 \begin{equation}
     \left\{
@@ -592,8 +203,9 @@
 <p>按温度从低到高反应区域分为：表面反应控制区(低温区间、生长速率对温度<strong>敏感</strong>)、质量传输控制区(高温区间、生长速率对温度<strong>不敏感</strong>)和气相成核区(更高温区间、<strong>应当避免</strong>)</p>
 <p>以 $ Si H_{4} $ 为例，其表面反应控制区和质量传输控制区的分界点是900°C</p>
 <ul>
-<li>instrument: (i)桶状式反应器: 均匀性好; 但反应器超过 1200°C 后变得不稳定;</li>
+<li>instrument: </li>
 </ul>
+<p>(i)桶状式反应器: 均匀性好; 但反应器超过 1200°C 后变得不稳定;</p>
 <p>(ii)水平式反应器：简单成本低；均匀性差；</p>
 <p>(iii)平板式垂直反向器：均匀性好，机械复杂度高；</p>
 <h3 id="Q-为什么水平式反应器会有一定倾角？"><a href="#Q-为什么水平式反应器会有一定倾角？" class="headerlink" title="Q. 为什么水平式反应器会有一定倾角？"></a>Q. 为什么水平式反应器会有一定倾角？</h3><p>A: 为了让气态反应物在表面均匀分布，以使生长出来的硅厚度均匀，掺杂均匀。</p>
@@ -631,7 +243,7 @@
 </ul>
 <p><img src="https://cdn.noedgeai.com/01940ce7-d138-78d4-aa98-e4baa448f962_4.jpg?x=65&amp;y=1395&amp;w=703&amp;h=241&amp;r=0" alt="分凝效应——二氧化硅吸硼吐磷后表面附近杂质的重新分布"></p>
 <h2 id="22-Si-表面淀积-Si-O-2-时的界面态、该过程加入-Hcl-的作用"><a href="#22-Si-表面淀积-Si-O-2-时的界面态、该过程加入-Hcl-的作用" class="headerlink" title="22: $Si$ 表面淀积 $Si{O}_{2}$ 时的界面态、该过程加入 $Hcl$ 的作用"></a>22: $Si$ 表面淀积 $Si{O}_{2}$ 时的界面态、该过程加入 $Hcl$ 的作用</h2><p>由于 $Si-Si{O}_{2}$ 的界面不匹配，会带来悬浮键并产生界面电荷进而影响芯片性能，故使用氯原子融入 $Si{O}_{2}$ 薄膜在 $Si-Si{O}_{2}$ 界面相互连接在一起，以减少悬浮键数量，但若 $cl^{-}$ 偏多则会影响器件的稳定性。</p>
-<p>故 $Hcl$ 作用总结如下：</p>
+<p>故 $HCl$ 作用总结如下：</p>
 <p>(i) 减少氧化物中的移动离子，降低界面电荷数量；</p>
 <p>(ii) 捕捉移动的金属离子，避免引起MOS管故障；</p>
 <p>(iii) 减少悬浮键，提升界面质量；</p>
@@ -647,7 +259,7 @@
 <ul>
 <li>因为 $ H_{2} $ 在高温下易发爆炸，则常将 ${H}_{2}$ : ${O}_{2}$ 比定为 ${1.8} : 1 \sim  {1.9} : 1$ ，即处于氧过量的状态，以减少爆炸的风险。</li>
 </ul>
-<h3 id="Q-为什么湿氧氧化不用-Hcl"><a href="#Q-为什么湿氧氧化不用-Hcl" class="headerlink" title="Q:为什么湿氧氧化不用 $ Hcl $ ?"></a>Q:为什么湿氧氧化不用 $ Hcl $ ?</h3><p>A:因为湿氧氧化反应速率以及足够快，无需额外加速；同时 $ Hcl $ + 水会产生腐蚀性物质可能会腐蚀金属连线等；并且湿氧氧化对界面态要求较低，无需处理悬浮键。</p>
+<h3 id="Q-为什么湿氧氧化不用-HCl"><a href="#Q-为什么湿氧氧化不用-HCl" class="headerlink" title="Q:为什么湿氧氧化不用 $ HCl $ ?"></a>Q:为什么湿氧氧化不用 $ HCl $ ?</h3><p>A:因为湿氧氧化反应速率以及足够快，无需额外加速；同时 $ HCl $ + 水会产生腐蚀性物质可能会腐蚀金属连线等；并且湿氧氧化对界面态要求较低，无需处理悬浮键。</p>
 <ul>
 <li>目前常采用干湿干工艺生长氧化层，既保证了界面的氧化层质量也保障了氧化层的生长速度。</li>
 </ul>
@@ -655,7 +267,7 @@
 <h2 id="25-栅氧化层厚度及性能的测定——椭圆光谱仪-C-V-特性曲线"><a href="#25-栅氧化层厚度及性能的测定——椭圆光谱仪-C-V-特性曲线" class="headerlink" title="25. 栅氧化层厚度及性能的测定——椭圆光谱仪+ ${C-V}$ 特性曲线"></a>25. 栅氧化层厚度及性能的测定——椭圆光谱仪+ ${C-V}$ 特性曲线</h2><ul>
 <li><p>可通过使用椭圆光谱仪通过晶圆的表面颜色测量(粗略估计)氧化层的厚度和均匀性。</p>
 </li>
-<li><p>特别地，对于栅氧层常通过测量 ${C-V}$ 特性[电容-电压]和击穿电压来测量栅氧化层的厚度。</p>
+<li><p>特别地，对于栅氧层常通过测量 ${C-V}$ 特性(电容-电压特性)和击穿电压来测量栅氧化层的厚度。</p>
 </li>
 </ul>
 <h2 id="26-热扩散和结深定义"><a href="#26-热扩散和结深定义" class="headerlink" title="26. 热扩散和结深定义"></a>26. 热扩散和结深定义</h2><ul>
@@ -672,7 +284,7 @@
 <p>首先在晶圆表面淀积一层掺杂氧化层如 $ B_{2} O_{3} $ 、 $ P_{2} O_{5} $ ，再用热氧化工艺消耗掉残余的掺杂物气体，并且在硅晶圆上生长。</p>
 <p>(注：一层 $ Si O_{2} $ 覆盖掺杂物，避免掺杂物的外扩散。)</p>
 <p>接着在<code>氧气环境</code>下升温，使掺杂物快速扩散至硅衬底。</p>
-<h3 id="Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？"><a href="#Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？" class="headerlink" title="Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？"></a>Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？</h3><p>A: 硼、磷在 $O_{2}$ 环境比在 $N_{2}$ 环境下扩散得更快：[ $Si O_{2}$ 界面有较多间隙 $Si$ ，B、P替换间隙 $Si$ 使部分B、P在间隙中扩散进而增强扩散速度]</p>
+<h3 id="Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？"><a href="#Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？" class="headerlink" title="Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？"></a>Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？</h3><p>A: 硼、磷在 $O_{2}$ 环境比在 $N_{2}$ 环境下扩散得更快：( $Si O_{2}$ 界面有较多间隙 $Si$ ，B、P替换间隙 $Si$ 使部分B、P在间隙中扩散进而增强扩散速度)</p>
 <ul>
 <li><p>由于扩散是各向同性的，故有：横向扩散通常是纵向扩撒结深的 75% - 85%。</p>
 </li>
@@ -704,24 +316,24 @@
 \begin{equation}
     \left\{
     \begin{aligned}
-        Si {H}_{4}  & \xrightarrow[]{ \text{高温 } }  & {Si} + 2{H}_{2} \\
-        Si {H}_{2} C{l}_{2}  & \xrightarrow[] { \text{高温 } } &  {Si} + 2{Hcl}  
+        Si {H}_{4}  & \xrightarrow[]{ \text{高温 } }   {Si} + 2{H}_{2} &\\
+        Si {H}_{2} C{l}_{2}  & \xrightarrow[] { \text{高温 } }   {Si} + 2{Hcl} & 
     \end{aligned}
     \right.
-\end{equation}</script><p>同时输入 $A{H}_{3}$， $P{H}_{3}$ 或 ${B}_{2}{H}_{6}$ 与 $ Si{H}_{4}$ 或 $ Si{H}_{2} {cl}_{2}$ 。可实现 $LPCVD$ 淀积掺杂后的Poly-Silion。</p>
-<h3 id="氮化硅-Si-3-N-4-的作用："><a href="#氮化硅-Si-3-N-4-的作用：" class="headerlink" title="氮化硅 ${Si}_{3}{N}_{4}$ 的作用："></a>氮化硅 ${Si}_{3}{N}_{4}$ 的作用：</h3><p>(i)  $Si$ 的 $LOCOS$ 工艺时用氮化硅作为阻挡氧气扩散的遮蔽层;</p>
-<p>(ii) 用手的照片用于 $STI$ 形成中 $CMP$ 的停止层(因为 ${S}_{i0}{N}_{4}$ 的研磨速率比 ${USG}$ 低);</p>
+\end{equation}</script><p>同时输入 $AH_{3}$， $PH_{3}$ 或 $B_{2} H_{6}$ 与 $ SiH_{4}$ 或 $ SiH_{2} Cl_{2}$ 。可实现 $LPCVD$ 淀积掺杂后的Poly-Silion。</p>
+<h3 id="氮化硅-Si-3-N-4-的作用："><a href="#氮化硅-Si-3-N-4-的作用：" class="headerlink" title="氮化硅 $ Si_{3}N_{4} $ 的作用："></a>氮化硅 $ Si_{3}N_{4} $ 的作用：</h3><p>(i)  $Si$ 的 $LOCOS$ 工艺时用氮化硅作为阻挡氧气扩散的遮蔽层;</p>
+<p>(ii) 用手的照片用于 $STI$ 形成中 $CMP$ 的停止层(因为 $Si_{3}N_{4}$ 的研磨速率比 ${USG}$ 低);</p>
 <p>(iii) 所形成侧壁空间层的刻蚀停止层或空间层;</p>
-<p>在金属沉积前的电介质层 $PSG$ 、 $BPSG$ 淀积过程中，首先淀积 ${S}_{i0}{N}_{4}$ 做为掺杂物的扩散阻挡层，从而防止硼或磷穿过超薄栅氧层进入硅衬底;</p>
+<p>在金属沉积前的电介质层 $PSG$ 、 $BPSG$ 淀积过程中，首先淀积 $Si_{3}N_{4}$ 做为掺杂物的扩散阻挡层，从而防止硼或磷穿过超薄栅氧层进入硅衬底;</p>
 <p>(iv) 自对准工艺的刻蚀停止层;</p>
-<p>(v) 铜的金属化时， $S{i}_{3}{N}_{4}$ 薄层常用作金属层间由电介质层的密封层和刻蚀停止层;</p>
+<p>(v) 铜的金属化时， $Si_{3}N_{4}$ 薄层常用作金属层间由电介质层的密封层和刻蚀停止层;</p>
 <p>厚的 ${Si}_{3}{N}_{4}$ 用于芯片的钝化保护电介质层。</p>
 <p>(vi)最后的钝化保护层PD层(阻挡水汽与可移动离子的扩散);</p>
 <ul>
 <li>与 $PECVD$ 相比，LPCVD生长的 $S{i}_{3}{N}_{4}$ 薄膜具有很好的质量及较少的含氢量，</li>
 </ul>
-<p>同时以 ${SiH}_{2} {cl}_{2}$ 为主的氮化硅 $ LPCVD $ 过程可能形成固体氧化铵，这将带来微粒污染同时损伤真空泵。</p>
-<h2 id="31-快速加热工艺-Rapid-thermal-process"><a href="#31-快速加热工艺-Rapid-thermal-process" class="headerlink" title="31: 快速加热工艺 (Rapid-thermal-process)."></a>31: 快速加热工艺 (Rapid-thermal-process).</h2><p>Advantage: &gt;成少热预算的消耗; 更好地控制相氧化层的厚度。</p>
+<p>同时以 ${SiH}_{2} {Cl}_{2}$ 为主的氮化硅 $ LPCVD $ 过程可能形成固体氧化铵，这将带来微粒污染同时损伤真空泵。</p>
+<h2 id="31-快速加热工艺-Rapid-thermal-process"><a href="#31-快速加热工艺-Rapid-thermal-process" class="headerlink" title="31: 快速加热工艺 (Rapid-thermal-process)."></a>31: 快速加热工艺 (Rapid-thermal-process).</h2><p>Advantage: 减少热预算的消耗; 更好地控制相氧化层的厚度。</p>
 <p>其有如下两种常用的系统结构:</p>
 <p>(i) 石英反应室+钨卤素灯加热。</p>
 <p>(ii) 将加热灯管放在蜂巢式结构的镀金灯室中。</p>
@@ -758,20 +370,26 @@
 <p>(ii) 感光剂能控制并调整光刻胶在曝光过程中的光化学反应，即破坏或形成交联。</p>
 <p>(iii) 溶剂用于溶解聚合物和感光剂，以使光刻胶在晶圆表面形成薄膜；溶剂通过稀释光刻胶的转移+自旋涂敷来形成薄膜层。</p>
 <p>(iv) 添加剂用于控制和调整曝光时的光化学反应。以达到最佳分辨率</p>
-<h2 id="34：对于深紫外线光刻技术-Deep-ultraviolet-，-DUV-化学增强式光刻胶-chemically-Amplified-Photoresists"><a href="#34：对于深紫外线光刻技术-Deep-ultraviolet-，-DUV-化学增强式光刻胶-chemically-Amplified-Photoresists" class="headerlink" title="34：对于深紫外线光刻技术( $Deep-ultraviolet$ ， DUV)+化学增强式光刻胶($chemically-Amplified-Photoresists$)."></a>34：对于深紫外线光刻技术( $Deep-ultraviolet$ ， DUV)+化学增强式光刻胶($chemically-Amplified-Photoresists$).</h2><ul>
-<li><p>由于DUV是利用准分子激光，强度远低于水银灯的G线或I线。故需利用化学增强式光刻胶(即CAPR);</p>
-</li>
-<li><p>当PR受到DUV光照射时，光刻胶就生成光酸。曝光后烘烤技术将wafer加热，在催化作用中，热将驱使光酸扩散并增强感光度。酸移除了保护基，暴露的部分将会被显影液移除。</p>
-</li>
+<h2 id="34：光刻技术"><a href="#34：光刻技术" class="headerlink" title="34：光刻技术"></a>34：光刻技术</h2><ul>
+<li>目前常用的光刻技术及其英文对应：</li>
 </ul>
-<p>光刻后常进行如下工艺：</p>
+<p>深紫外线光刻技术( $Deep-ultraviolet$ ) ，</p>
+<p>DUV+化学增强式光刻胶($chemically-Amplified-Photoresists$).</p>
+<ul>
+<li>特点如下:</li>
+</ul>
+<p>(i)由于DUV是利用准分子激光，强度远低于水银灯的G线或I线。故需利用化学增强式光刻胶(即CAPR);</p>
+<p>(ii)当PR受到DUV光照射时，光刻胶就生成光酸。曝光后烘烤技术将wafer加热，在催化作用中，热将驱使光酸扩散并增强感光度。酸移除了保护基，暴露的部分将会被显影液移除。</p>
+<ul>
+<li>光刻后常进行如下工艺：</li>
+</ul>
 <p>(i) 离子注入</p>
 <p>(ii) 刻蚀</p>
 <h2 id="35-旧式手动技术下的光刻技术流程"><a href="#35-旧式手动技术下的光刻技术流程" class="headerlink" title="35.旧式手动技术下的光刻技术流程"></a>35.旧式手动技术下的光刻技术流程</h2><ul>
 <li>旧式手动技术下的光刻技术流程分为如下几步：晶圆清洗，预燃烤，底漆层涂敷，光刻壁自旋涂敷，煎烘、对准、曝光、曝光后烘烤、显影、后烘、图形检测。</li>
 </ul>
 <h3 id="I-晶圆清洗：目的是去除污染物和微粒；"><a href="#I-晶圆清洗：目的是去除污染物和微粒；" class="headerlink" title="(I)晶圆清洗：目的是去除污染物和微粒；"></a>(I)晶圆清洗：目的是去除污染物和微粒；</h3><p>因为微粒会在光刻胶上造成针孔降低成品率，污染物，会阻碍光刻胶的正常附着。</p>
-<p>方法：先进行RCA清洗：SCⅠ溶液( $H_{2}SO_{4}:H_{2}O_{2}:H_{2}O=1:2:7$ )、 SCⅡ溶液( $NH_{4}OH:H_{2}O_{2}:H_{2}O=1:2:8$ ) + 超纯去离子水(DI water)</p>
+<p>方法：先进行RCA清洗：SC-I溶液( $H_{2}SO_{4}:H_{2}O_{2}:H_{2}O=1:2:7$ )、 SC-II溶液( $NH_{4}OH:H_{2}O_{2}:H_{2}O=1:2:8$ ) + 超纯去离子水(DI water)</p>
 <h3 id="II-预处理"><a href="#II-预处理" class="headerlink" title="(II)预处理"></a>(II)预处理</h3><ul>
 <li>加热（预热）：去除吸附在晶圆表面的湿气，以增强光刻取在晶圆表面的附着能力；</li>
 </ul>
@@ -886,9 +504,9 @@
 </ul>
 <h3 id="Q-鞘层电位产生原因"><a href="#Q-鞘层电位产生原因" class="headerlink" title="Q:鞘层电位产生原因"></a>Q:鞘层电位产生原因</h3><p>A:等离子体带正电，任何靠近等离子体的电极均会被感应出负电。同时带负电的电极排斥带负电的电子，吸引带正电的离子。所以电极附近离子比电子多。由于正负电荷的差值在电极附近形成的电场叫做鞘层电位。鞘层电位将加速离子向电极移动并造成离子轰击。</p>
 <p>由于靠近电极处电子少，故激发-松弛碰撞少，发光没有大量电子处剧烈，即产生暗区。</p>
-<p><img src="https://www.helloimg.com/i/2025/01/02/6775fad5bfcb6.png" alt="鞘层电位"></p>
+<p><img src="https://www.helloimg.com/i/2025/01/02/6775fad5bfcb6.png" alt="鞘层电位图示"></p>
 <p>同时若两块极板面积不同，则会产生自偏压。进而加速离子形成轰击。</p>
-<p><img src="https://www.helloimg.com/i/2025/01/02/6775fad4e3c6d.png" alt="非对称电极"></p>
+<p><img src="https://www.helloimg.com/i/2025/01/02/6775fad4e3c6d.png" alt="非对称电极及形成的自偏压图示"></p>
 <p>故刻蚀反应室采用非对称电极，将 wafer放在较小的射频电极侧，以获得更高能量的离子表击。</p>
 <p><code>但PECVD时，两电极面积基本相同，自偏压较小。</code></p>
 <h2 id="38-Plasma-的-Application"><a href="#38-Plasma-的-Application" class="headerlink" title="38: Plasma 的 Application :"></a>38: Plasma 的 Application :</h2><p>(i)通过电子离化分子产生的自由基，大大提高CVD的反应速率：</p>
@@ -906,7 +524,7 @@
 <p>(vi)无论是晶格损伤机制或侧壁保护机制，plasma etch 均能形成非等向性的刻蚀轮廓。同时降低反应压力可增大离子自由程以获得更好的轮廓控制。</p>
 <p>增加射频功率可显著提高刻蚀速率。</p>
 <p>通过监测刻蚀副产物的发光颜色来监测刻蚀终点，相对时间、目测等更准确。</p>
-<p>Plasma etch compare to chemistry etch 减少了化学药品的使用量。</p>
+<p>Plasma etch compare to chemistry etch : 减少了化学药品的使用量。</p>
 <div class="table-container">
 <table>
 <thead>
@@ -1173,134 +791,337 @@
 ]]></content>
   </entry>
   <entry>
-    <title>博客版本迭代汇总</title>
-    <url>/2024/12/21/0_Blog_version_update/</url>
-    <content><![CDATA[<p>版本更新信息如下：</p>
-<ul>
-<li>V0.1 2024.11.14 </li>
-</ul>
-<p>博客正式上线，基于GitHubpages搭建 </p>
-<ul>
-<li>V0.2 2024.12.15 </li>
-</ul>
-<p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
-<ul>
-<li>V0.2.1 2024.12.21</li>
-</ul>
-<p>增加links页面，推荐优秀的博客和网站；同时增加文章置顶功能，<a href="https://blog.csdn.net/nineya_com/article/details/103394315">参考文章</a></p>
-<ul>
-<li>2025年1月11日</li>
-</ul>
-<p>增加pdf插入功能，next主题自带的pdf插入功能在about界面效果良好，但在博客文章界面效果一般，故根据<a href="https://blog.zhilu.cyou/">纸鹿哥</a>的建议，我采用iframe方式实现pdf嵌入功能:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;pdf-container&quot;</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;/lib/pdf/last_question_of_analog_IC_quiz.pdf&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;800&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span></span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>PDFjs的方式我未能成功实现pdf嵌入，iframe方案对我来说实现起来较为简单，值得推荐，感谢纸鹿哥！</p>
-]]></content>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>氢原子模型和类氢原子模型</title>
-    <url>/2024/11/16/Hydrogen_like_model/</url>
-    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
-<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
-<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+    <title>简并or退化？本征or掺杂？</title>
+    <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
+    <content><![CDATA[<h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
+<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
 </blockquote>
-<ul>
-<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 $E_{1}$ 、 $E_{2}$ 、 $E_{3}$ ……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
-<li>跃迁假设：电子从 $E_{m}$ 能级跃迁到 $E_{n}$ 能级所需的能量满足 $h\nu=E_{n}-E_{m}$ 。</li>
-<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 $2\pi r\cdot m_{e} v = n h$ ，即电子只能在轨道角动量等于约化普朗克常数 $\hbar$ 的整数倍的轨道上运动。</li>
-</ul>
-<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：</p>
-<script type="math/tex; mode=display">\begin{align*}
-   &m v r = n \frac{h}{2\pi} \\
-   &m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}
-\end{align*}</script><p>联立得:</p>
-<script type="math/tex; mode=display">\begin{align*}
-   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
-\end{align*}</script><p>考虑电子的总能量为动能与势能之和：</p>
-<script type="math/tex; mode=display">\begin{align*}
-   E_{n} &= E_{k,n} + E_{p,n} \\
-   &= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\\
-   &= -\frac{1}{2}mv^{2}
-\end{align*}</script><p>化简得:</p>
-<script type="math/tex; mode=display">\begin{align*}
-   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}
-\end{align*}</script><h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
-<p>考虑如下两条修正:</p>
+<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
+<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
 </blockquote>
-<ul>
-<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 $\epsilon=\epsilon_{0}\epsilon_{r}$ 的介质中。</li>
-<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量 $m_{0}$ 用有效质量 $m^{\ast}$ 替代。</li>
+<p>其中费米狄拉克分布函数为:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}</script><p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}</script><p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    \big\vert E - E_{F} \big\vert > 3k_{0} T
+\end{align*}</script><p>因此<strong>对于非简并半导体</strong>，我们要求：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    E_{v} + 3k_{0}T < E_{F} < E_{c} - 3k_{0}T
+\end{align*}</script><p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    n_{0} &= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) 
+\end{align*}</script><p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
+<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>半导体掺杂后可能带来简并或非简并。</li>
+<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
+<li>非简并的半导体可能是考虑了杂质补偿。</li>
+<li>非简并的半导体既有掺杂的也有本征的。</li>
 </ul>
-<p>即得:</p>
-<script type="math/tex; mode=display">\begin{align*}
-   r_{n} &= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \\
-   E_{n} &= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}
-\end{align*}</script><p>当$n=1$时为基态，此时</p>
-<script type="math/tex; mode=display">\begin{align*}
-   r_{0} &= 0.053nm \\
-   E_{0} &= 13.6eV
-\end{align*}</script><p>则进一步化简得:</p>
-<script type="math/tex; mode=display">\begin{align*}
-   r_{n} &= \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \\
-   \triangle E_{n} &= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
-\end{align*}</script><p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+</ul>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
       </tags>
   </entry>
   <entry>
-    <title>利用传输门做二选一选择器的CMOS电路分析</title>
-    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
-    <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
-<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，只需关注<strong>导电沟道是否产生</strong>即可。</p>
-<p><img src="https://www.helloimg.com/i/2024/12/17/67613d69eaf82.png" alt="图1传输门CMOS电路"></p>
-<p>如图1所示为传输门的CMOS电路示意图</p>
-<ul>
-<li>当 $C=1$ 时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">
-\begin{align*}
-    \because &C=1\\
-    \therefore &V_{GN} = V_{DD} \\
-    \because &V_{BN} = 0V\\
-\end{align*}</script><script type="math/tex; mode=display">
-\begin{align*}
-    \therefore &V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i} 
-\end{align*}</script><h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">
-\begin{align*}
-    \because &\overline{C}=0\\
-    \therefore &V_{GP} = 0V \\
-    \because &V_{BP} = V_{DD}\\
-\end{align*}</script><script type="math/tex; mode=display">
-\begin{align*}
-    \therefore &V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} - V_{DD}) = - V_{i}
-\end{align*}</script><p>当 $V_{i}&lt;V_{DD}-V_{TH}$ ，可保证 $V_{GSN}=V_{DD}-V_{i}\geq v_{TH}$ ，即NMOS产生导电沟道；</p>
-<p>当 $V_{i} &gt;  V_{TH} $ ，可保证 $V_{GSP}=-V_{i}\leq-v_{TH}$ ，即PMOS产生导电沟道；</p>
-<p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都可保证至少有一个MOS管存在导电沟道，使得 $V_{o}=V_{i}$ 。</p>
-<ul>
-<li>当 $C=0$ 时，下面对MOS管的导通情况进行分析:</li>
-</ul>
-<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
-    \because &C=1\\
-    \therefore &V_{GN} = 0V \\
-    \because &V_{BN} = 0V\\
-\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
-    \therefore &V_{GSN} = 0  < V_{TH} 
-\end{align*}</script><h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
-    \because &\overline{C}=1\\
-    \therefore &V_{GP} = V_{DD} \\
-    \because &V_{BP} = V_{DD}\\
-\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
-    \therefore &V_{GSP} > - V_{TH}
-\end{align*}</script><p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都无法使任意一个MOS管存在导电沟道。</p>
-<h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
-<p><img src="https://www.helloimg.com/i/2024/12/17/67613d6a1873b.png" alt="图2传输门实现二选一选择器"></p>
-]]></content>
+    <title>四川大学微电子2022级大三上期末考试植树</title>
+    <url>/2024/12/27/2024_Fall_final_exam_review/</url>
+    <content><![CDATA[<h2 id="模拟集成电路期末复盘"><a href="#模拟集成电路期末复盘" class="headerlink" title="模拟集成电路期末复盘"></a>模拟集成电路期末复盘</h2><h3 id="ppt中的一些英文单词-12分"><a href="#ppt中的一些英文单词-12分" class="headerlink" title="ppt中的一些英文单词(12分)"></a>ppt中的一些英文单词(12分)</h3><h3 id="简答题"><a href="#简答题" class="headerlink" title="简答题"></a>简答题</h3><p>二、对于半导体物理、半导体器件、半导体工艺、模拟集成电路四门课程之间的思考(8分)</p>
+<p>三(每个6分，共48分)</p>
+<p>1.nmos和pmos的区别，请画出结构示意图</p>
+<p>2.有源极负反馈的共源极放大电路与源跟随器之间的对比</p>
+<p>3.共源极放大电路中二极管连接型负载和电流源负载的对比</p>
+<p>4.差分对和单端工作模式之间的比较，为何尾部要采用尾管电流源</p>
+<p>5.电流镜的工作原理及任意倍数参考电流复制在版图中的实现</p>
+<p>6.沟道噪声、热噪声，闪烁噪声及其大小</p>
+<p>7.我们能从传输函数获得哪些信息？</p>
+<p>8.负反馈的缺点，为什么要引入负反馈</p>
+<h3 id="三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解"><a href="#三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解" class="headerlink" title="三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解"></a>三、考虑沟道长度调制效应、体效应的带源极负反馈的共源极放大电路的增益及输出电阻求解</h3><h3 id="四、小测最后一题变形"><a href="#四、小测最后一题变形" class="headerlink" title="四、小测最后一题变形"></a>四、小测最后一题变形</h3><p><img src="https://www.helloimg.com/i/2025/01/11/67824be5a0605.png" alt="模集小测最后一题电路图"></p>
+<center>模集小测最后一题解析by MeiShao</center>
+
+<div class="pdf-container">
+  <iframe src="/lib/pdf/last_question_of_analog_IC_quiz.pdf" width="100%" height="800" frameborder="0"></iframe>
+</div>
+
+
+
+
+
+
+<h3 id="所需要认识和了解的单词举例"><a href="#所需要认识和了解的单词举例" class="headerlink" title="所需要认识和了解的单词举例:"></a>所需要认识和了解的单词举例:</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>英文术语</th>
+<th>中文翻译</th>
+<th>英文术语</th>
+<th>中文翻译</th>
+<th>英文术语</th>
+<th>中文翻译</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aspect ratio</td>
+<td>宽长比</td>
+<td>back-gate effect</td>
+<td>背栅效应</td>
+<td>capacitive coupling</td>
+<td>电容耦合</td>
+</tr>
+<tr>
+<td>a “single-ended” signal</td>
+<td>单端信号</td>
+<td>bootstrap</td>
+<td>自举</td>
+<td>Cascode Stage</td>
+<td>共源共棚级</td>
+</tr>
+<tr>
+<td>a differential signal</td>
+<td>差动信号</td>
+<td>body effect</td>
+<td>体效应</td>
+<td>clipping</td>
+<td>失真</td>
+</tr>
+<tr>
+<td>a feed through path</td>
+<td>直流通路</td>
+<td>bulk</td>
+<td>衬底</td>
+<td>common-mode rejection ratio</td>
+<td>共模抑制比</td>
+</tr>
+<tr>
+<td>Depletion region</td>
+<td>耗尽区</td>
+<td>dependent current source</td>
+<td>独立电流源</td>
+<td>Complementary MOS</td>
+<td>互补MOS</td>
+</tr>
+<tr>
+<td>drain</td>
+<td>漏端</td>
+<td>effective channel length</td>
+<td>有效沟道长度</td>
+<td>Diode-Connected</td>
+<td>二极管连接型</td>
+</tr>
+<tr>
+<td>intrinsic gain</td>
+<td>本征增益</td>
+<td>excursion</td>
+<td>偏移</td>
+<td>equilibrium</td>
+<td>平衡态</td>
+</tr>
+<tr>
+<td>immunity</td>
+<td>抗干扰</td>
+<td>Inversion layer</td>
+<td>反型层</td>
+<td>half-width</td>
+<td>半栅宽</td>
+</tr>
+<tr>
+<td>gate capacitance</td>
+<td>栅电容</td>
+<td>Gate Oxide</td>
+<td>栅氧</td>
+<td>gain-bandwidth trade-offs</td>
+<td>增益-带宽折中</td>
+</tr>
+<tr>
+<td>liner region</td>
+<td>线性区</td>
+<td>low-pass filter</td>
+<td>低通滤波器</td>
+<td>Miller’s approximation</td>
+<td>密勒近似</td>
+</tr>
+<tr>
+<td>overdrive voltage</td>
+<td>过驱动电压</td>
+<td>peak-to-peak swing</td>
+<td>峰峰摆幅</td>
+<td>power dissipation</td>
+<td>功耗</td>
+</tr>
+<tr>
+<td>parallel</td>
+<td>并联</td>
+<td>series</td>
+<td>串联</td>
+<td>Source Degeneration</td>
+<td>源极负反馈</td>
+</tr>
+<tr>
+<td>supply noise rejection</td>
+<td>电源噪声抑制</td>
+<td>Subthreshold conduction</td>
+<td>亚阈区导电</td>
+<td>substrate bias effect</td>
+<td>衬底偏置效应</td>
+</tr>
+<tr>
+<td>saturation region</td>
+<td>饱和区</td>
+<td>shields</td>
+<td>屏蔽</td>
+<td>threshold voltage</td>
+<td>阈值电压</td>
+</tr>
+<tr>
+<td>topology</td>
+<td>拓扑</td>
+<td>transfer function</td>
+<td>传递函数</td>
+<td>transconductance</td>
+<td>跨导</td>
+</tr>
+<tr>
+<td>transistor</td>
+<td>晶体管</td>
+<td>triode region</td>
+<td>三极管区</td>
+<td>thevenin equivalent</td>
+<td>戴维南等效</td>
+</tr>
+<tr>
+<td>voltage buffer</td>
+<td>电压缓冲器</td>
+<td>voltage headroom</td>
+<td>电压余度</td>
+<td>voltage swings</td>
+<td>电压摆幅</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="半导体物理期末"><a href="#半导体物理期末" class="headerlink" title="半导体物理期末"></a>半导体物理期末</h2><h3 id="填空10分"><a href="#填空10分" class="headerlink" title="填空10分"></a>填空10分</h3><p>1.硅的本征载流子浓度；硅的禁带宽度</p>
+<p>2.发生杂质补偿时且有 $N_{D}&gt;N_{A}$ ，那么有效杂质浓度是()，是()导电，迁移率取决于()</p>
+<p>3.GaAs的散射机构有哪三个？</p>
+<p>4.pn结中的势垒电容是()联，扩散电容是()联。(串or并)</p>
+<h3 id="名词解释20分"><a href="#名词解释20分" class="headerlink" title="名词解释20分"></a>名词解释20分</h3><p>回旋共振</p>
+<p>深能级</p>
+<p>玻尔兹曼分布</p>
+<p>俄歇复合</p>
+<h3 id="简答20分"><a href="#简答20分" class="headerlink" title="简答20分"></a>简答20分</h3><p>1.理想pn结的4个假设</p>
+<p>2.算p型半导体功函数，判断与金属Al、Au、Pt是形成阻挡层还是非阻挡层</p>
+<h3 id="材料分析50分"><a href="#材料分析50分" class="headerlink" title="材料分析50分"></a>材料分析50分</h3><p>背景是SBD和JBS</p>
+<p>1.理想金半接触的能带图及关键参数标注</p>
+<p>2.画出该器件MIS的正偏、反偏、零偏的能带图</p>
+<p>3.和pn结I-V特性不同的原因(该器件I-V曲线表现出双势垒)</p>
+<p>4.判断击穿类型，及其击穿电压的温度系数正负判断</p>
+<h3 id="选作5分"><a href="#选作5分" class="headerlink" title="选作5分"></a>选作5分</h3><p>分析高反向偏压下SBD势垒降低的原因</p>
+<h2 id="数字逻辑与系统设计期末复盘-开卷"><a href="#数字逻辑与系统设计期末复盘-开卷" class="headerlink" title="数字逻辑与系统设计期末复盘(开卷)"></a>数字逻辑与系统设计期末复盘(开卷)</h2><h3 id="填空题24分"><a href="#填空题24分" class="headerlink" title="填空题24分"></a>填空题24分</h3><p>1.二进制、十六进制转化</p>
+<p>2.正负8位二进制数补码的计算</p>
+<p>3.System verilog中terior是什么信号</p>
+<p>4.写出检测边沿信号的verilog代码；写出带异步复位功能+边沿信号检测的verilog代码</p>
+<p>5.2个16位无符号数的最大乘积是多少</p>
+<p>6.流水线处理器的好处</p>
+<h3 id="设计题40分"><a href="#设计题40分" class="headerlink" title="设计题40分"></a>设计题40分</h3><ol>
+<li><p>利用多路选择器设计函数</p>
+</li>
+<li><p>画出Y=not(AB+BC)的mos管级电路，要求利用最少的mos管数量</p>
+</li>
+<li><p>利用与非门实现异或逻辑</p>
+</li>
+<li><p>画出检测<code>11010</code>序列的状态机转换</p>
+</li>
+<li><p>3位格雷码转换的verilog代码</p>
+</li>
+<li><p>Y=BC+A存储器ROM利用点画线的方式描绘函数真值表</p>
+</li>
+<li><p>设计功能如下的<code>一个输入信号由0变1时输出信号变为1并持续一周期，否则为0</code>verilog代码。</p>
+</li>
+<li><p>8位计数器的verilog代码设计</p>
+</li>
+</ol>
+<h3 id="计算题36分"><a href="#计算题36分" class="headerlink" title="计算题36分"></a>计算题36分</h3><ol>
+<li><p>给定电路图的电路功能判断+关键路径和最小路径的延迟时间计算</p>
+</li>
+<li><p>字节寻址的存储器的第26个字的存储地址；第26个字在内存中的存储地址；绘制其在内存中的数据及地址图样(大端或小端序)</p>
+</li>
+<li><p>8级流水线处理器顺序处理100个指令需要多少个周期才能完成</p>
+</li>
+</ol>
+<h2 id="IC工艺制造期末复盘"><a href="#IC工艺制造期末复盘" class="headerlink" title="IC工艺制造期末复盘"></a>IC工艺制造期末复盘</h2><h3 id="填空"><a href="#填空" class="headerlink" title="填空"></a>填空</h3><ol>
+<li><p>各种CVD的中英文对应</p>
+</li>
+<li><p>同质外延和异质外延的定义及举例</p>
+</li>
+<li><p>CMP是<code>平坦化技术</code>或者说是<code>去除工艺</code>、需要利用<code>研磨浆</code>、目的是<code>抛光</code></p>
+</li>
+<li><p>热氧化分哪两种</p>
+</li>
+<li><p>二氧化硅层的应用</p>
+</li>
+</ol>
+<h3 id="判断-5个，5分"><a href="#判断-5个，5分" class="headerlink" title="判断(5个，5分)"></a>判断(5个，5分)</h3><ol>
+<li><p>SC-2溶液的配比及RCA清洗注意事项；</p>
+</li>
+<li><p>CVD生长比热氧化好，因为它不消耗硅；</p>
+</li>
+<li><p>其他记不得了</p>
+</li>
+</ol>
+<h3 id="简答若干"><a href="#简答若干" class="headerlink" title="简答若干"></a>简答若干</h3><ol>
+<li><p>给定显影后图案下，光刻胶的选择与对应光刻掩膜版的绘制</p>
+</li>
+<li><p>通道效应的定义及解决办法</p>
+</li>
+<li><p>离子轰击的应用及特点</p>
+</li>
+<li><p>离子注入和热扩散的区别及其原理</p>
+</li>
+<li><p>为什么采用硅作为原材料，干法刻蚀和湿法刻蚀的区别及优缺点</p>
+</li>
+<li><p>自对准工艺应用举例及图示</p>
+</li>
+</ol>
+<hr>
+<p>2025年1月11日笔者寒假回家的路上闲来无事，故对该文进行补充和修订</p>
+<h2 id="电磁场与微波技术期末复盘"><a href="#电磁场与微波技术期末复盘" class="headerlink" title="电磁场与微波技术期末复盘"></a>电磁场与微波技术期末复盘</h2><h3 id="填空-24个，48分"><a href="#填空-24个，48分" class="headerlink" title="填空(24个，48分)"></a>填空(24个，48分)</h3><p>考点很细，部分罗列如下：</p>
+<p>麦克斯韦方程组的微分形式及其边界条件(常规情况、有限电导率的介质、理想介质、理想导体都建议熟悉)；电流连续性方程的微分形式(导体情况)；平行双导线、同轴导线情况的电容、电感求解；静电比拟法的应用；镜像法的运用，具体考的是球壳不接地且外部有电荷等等</p>
+<p>注：有些笔者记不太清了，电磁场的传播及其后面的内容考的相对较少(<strong>仅以2024年电磁波期末正考为例，样本数较少，不具备统计价值，建议大家都学习掌握好</strong>)</p>
+<h3 id="计算题-47分"><a href="#计算题-47分" class="headerlink" title="计算题(47分)"></a>计算题(47分)</h3><h4 id="一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分"><a href="#一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分" class="headerlink" title="一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)"></a>一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)</h4><p>从麦克斯韦方程组出发，利用洛伦兹规范消元即可；可从单位的角度出发来检验是否推导正确，比如笔者就推出来了 $\frac{\mu_{0}}{\epsilon_{0}}$ 的因子，这肯定是有问题的，一般都是二者相乘出现类似光速的单位 😭</p>
+<p>洛伦兹规范即下式:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    \Delta \cdot A + \mu \epsilon \frac{\partial \phi }{ \partial t } = 0
+\end{align}</script><p>具体方程形式如下:</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        \Delta^{2} \phi &- \mu \epsilon \frac{\partial^{2} \phi }{ \partial t^{2} } = - \frac{ \rho }{ \epsilon }& \\
+        \Delta^{2} A &- \mu \epsilon \frac{\partial^{2} A }{ \partial t^{2} } = - \mu J&
+    \end{aligned}    
+    \right.
+\end{equation}</script><h4 id="二、垂直入射的电磁波的反射波、合成波的计算-10分"><a href="#二、垂直入射的电磁波的反射波、合成波的计算-10分" class="headerlink" title="二、垂直入射的电磁波的反射波、合成波的计算(10分)"></a>二、垂直入射的电磁波的反射波、合成波的计算(10分)</h4><p>根据波阻抗算透射系数和反射系数即可。</p>
+<h4 id="三、笔者忘了，期待读者补充-10分"><a href="#三、笔者忘了，期待读者补充-10分" class="headerlink" title="三、笔者忘了，期待读者补充(10分)"></a>三、笔者忘了，期待读者补充(10分)</h4><h4 id="四、笔者忘了，期待读者补充-10分"><a href="#四、笔者忘了，期待读者补充-10分" class="headerlink" title="四、笔者忘了，期待读者补充(10分)"></a>四、笔者忘了，期待读者补充(10分)</h4><h3 id="附加题：笔者忘了，期待读者补充-5分"><a href="#附加题：笔者忘了，期待读者补充-5分" class="headerlink" title="附加题：笔者忘了，期待读者补充  (5分)"></a>附加题：笔者忘了，期待读者补充  (5分)</h3>]]></content>
       <tags>
-        <tag>模集(拉扎维)</tag>
+        <tag>大学生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1394,56 +1215,6 @@
       </tags>
   </entry>
   <entry>
-    <title>简并or退化？本征or掺杂？</title>
-    <url>/2024/11/16/Degenerate_degenerate_intrinsic_doping/</url>
-    <content><![CDATA[<h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
-<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
-</blockquote>
-<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
-<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
-</blockquote>
-<p>其中费米狄拉克分布函数为:</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
-\end{align*}</script><p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
-\end{align*}</script><p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-    \big\vert E - E_{F} \big\vert > 3k_{0} T
-\end{align*}</script><p>因此<strong>对于非简并半导体</strong>，我们要求：</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-    E_{v} + 3k_{0}T < E_{F} < E_{c} - 3k_{0}T
-\end{align*}</script><p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：</p>
-<script type="math/tex; mode=display">
-\begin{align*}
-    n_{0} &= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-    p_{0} &= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
-    n_{0}p_{0} &= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) 
-\end{align*}</script><p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
-<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
-</blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>半导体掺杂后可能带来简并或非简并。</li>
-<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
-<li>非简并的半导体可能是考虑了杂质补偿。</li>
-<li>非简并的半导体既有掺杂的也有本征的。</li>
-</ul>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</title>
     <url>/2024/11/16/MOS(100)_BJT(111)/</url>
     <content><![CDATA[<h1 id="为什么MOS管常用-100-晶向的晶圆，BJT常用-111-晶向的晶圆？"><a href="#为什么MOS管常用-100-晶向的晶圆，BJT常用-111-晶向的晶圆？" class="headerlink" title="为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？"></a>为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</h1><blockquote>
@@ -1477,6 +1248,191 @@
       </tags>
   </entry>
   <entry>
+    <title>FPGA中乘法器的加速运算</title>
+    <url>/2025/01/07/8_bits_multiplier/</url>
+    <content><![CDATA[<h1 id="数字逻辑与系统设计设计报告"><a href="#数字逻辑与系统设计设计报告" class="headerlink" title="数字逻辑与系统设计设计报告"></a>数字逻辑与系统设计设计报告</h1><h2 id="项目内容"><a href="#项目内容" class="headerlink" title="项目内容"></a>项目内容</h2><blockquote>
+<p>题目：8位乘法器\<br>实现的功能:</p>
+<ul>
+<li>输入为两个8位有符号数或无符号数，输出16位相乘结果</li>
+<li>采用Booth算法对乘法转化为部分和求和</li>
+<li>采用Wallace算法减少部分和求和时所使用的全加器数量</li>
+</ul>
+</blockquote>
+<h3 id="编译器及测试仿真环境"><a href="#编译器及测试仿真环境" class="headerlink" title="编译器及测试仿真环境"></a>编译器及测试仿真环境</h3><blockquote>
+<p>win11系统，EDA环境为<code>Quartus</code>，EDA软件版本为<code>18.0</code>，验证板卡为<code>DE10Lite</code>，波形仿真软件为<code>Modelsim</code>，软件版本为<code>SE-64 2020.4</code></p>
+</blockquote>
+<h3 id="该8位乘法器设计特点"><a href="#该8位乘法器设计特点" class="headerlink" title="该8位乘法器设计特点"></a>该8位乘法器设计特点</h3><blockquote>
+<p>本文采用<code>Radix-4 Booth乘法器</code>对乘法运算化简为<code>4个部分和</code>求和；同时对化简后的部分和采用<code>Wallace树</code>算法进行加速运算，减少全加器和半加器数量的使用。</p>
+</blockquote>
+<h3 id="Radix-4-Booth算法"><a href="#Radix-4-Booth算法" class="headerlink" title="Radix-4 Booth算法"></a>Radix-4 Booth算法</h3><p><strong>Booth算法原理:</strong></p>
+<p>对于8位有符号数A可以表示为如(1)式所示，其中用$A_{i}$表示A的第$i$位:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A = -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i}
+\end{align}</script><p>同时考虑对$A_{i}$进行如下分解:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A_{i} = A_{i} \times ( 2^{i+1} - 2\times 2^{i } )
+\end{align}</script><p>进而可以对8位有符号数A进行如下分解，补充定义$A_{-1}=0$得:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A =& -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i} \notag\\
+    =& -A_{7} \cdot 2^{7} + A_{6} \cdot 2^{6} +  A_{5} \cdot ( 2^{6} - 2 2^{4} ) \notag\\
+     &  + A_{4} \cdot ( 2^{5} - 2\times 2^{3} ) + ... + A_{0} \cdot  2^{0} \notag\\
+    =& (-2A_{7} + A_{6} + A_{5})\cdot 2^{6} + (-2A_{5} + A_{4} + A_{3})\cdot 2^{4} \notag\\
+    &+ (-2A_{3} + A_{2} + A_{1})\cdot 2^{2} + (-2A_{1} + A_{0} + A_{-1})\cdot 2^{0} \notag\\
+    =& Coef_{3}\cdot 2^{6} + Coef_{2}\cdot 2^{4} + Coef_{1}\cdot 2^{2} + Coef_{0}\cdot 2^{0} \\
+\end{align}</script><p>因此$A\times B$可表示如下式所示:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A\times B=&Coef_{3}\cdot 2^{6}\times B + Coef_{2}\cdot 2^{4}\times B \notag\\
+     &+ Coef_{1}\cdot 2^{2}\times B + Coef_{0}\cdot 2^{0}\times B
+\end{align}</script><p>可以发现$2^{i},i=0,2,4,6$前的系数是由$A_{i},A_{i+1},A_{i+1}$构成的形式相近的式子，不妨记为$Coef$，故$Coef$与$A_{i}$,$A_{i+1}$,$A_{i+1}$满足的关系如下表所示:</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$A_{i+1}$</th>
+<th>$A_{i}$</th>
+<th>$A_{i-1}$</th>
+<th>$Coef$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>故可以将两个8位有符号数A,B的乘积$A\times B$转变为4个部分和的形式，实现计算量和资源使用量的减少。同时$Coef$的系数是有限的，故我们可以将$Coef$对应的操作按如下方式使用寄存器提前存储。</p>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line">p &lt;= <span class="number">16&#x27;d0</span>;</span><br><span class="line"><span class="comment">// 完成 M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;,multiplicand&#125;;</span><br><span class="line"><span class="comment">// 完成 -M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;,~multiplicand+<span class="number">1&#x27;b1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 2M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2 &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;, multiplicand &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 -2M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;, (~multiplicand+<span class="number">1&#x27;b1</span>) &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// N 来选择 booth 的操作，因此用来寄存乘数的值，最后补一个 0，相当于y_&#123;-1&#125;</span></span><br><span class="line">N &lt;= &#123;multiplier,<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line">shift_num &lt;= <span class="number">4&#x27;d0</span>;</span><br><span class="line">i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br></pre></td></tr></table></figure>
+<p>同时定义RSTn和done信号用于表征乘法运算的开始和结束，同时利用case语句实现对4个部分和的逐次表征，并利用多个$if$语句实现对$Coef$的判断进而实现对部分和形式的确定。</p>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> booth_multiply#(</span><br><span class="line">    <span class="keyword">parameter</span> DATAWIDTH = <span class="number">8</span><span class="comment">//定义符号数宽度为8bit</span></span><br><span class="line">)</span><br><span class="line">(</span><br><span class="line">    <span class="keyword">input</span>                            CLK,<span class="comment">//定义系统时钟</span></span><br><span class="line">    <span class="keyword">input</span>                            RSTn,<span class="comment">//定义复位信号RSTn</span></span><br><span class="line">    <span class="keyword">input</span>                            START,<span class="comment">//定义乘法器工作开启信号，拉低时有效</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     A,<span class="comment">//定义multiplier</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     B,<span class="comment">//定义multiplicand</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">output</span> [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] RESULT,<span class="comment">//定义product</span></span><br><span class="line">    <span class="keyword">output</span>                           Done<span class="comment">//定义乘法器工作结束信号，拉高时有效</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] i;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] P;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_reg;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_bm;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] N;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] result_reg;</span><br><span class="line"><span class="keyword">reg</span>                       isDone;</span><br><span class="line"></span><br><span class="line"><span class="keyword">always</span> @ ( <span class="keyword">posedge</span> CLK <span class="keyword">or</span> <span class="keyword">negedge</span> RSTn )</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (!RSTn)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        i &lt;= <span class="number">0</span>;</span><br><span class="line">        P &lt;= <span class="number">0</span>;</span><br><span class="line">        A_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        A_bm &lt;= <span class="number">0</span>;</span><br><span class="line">        result_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        N &lt;=<span class="number">0</span>;</span><br><span class="line">        isDone &lt;= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (START)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">case</span> (i)</span><br><span class="line"></span><br><span class="line">        <span class="number">0</span>:<span class="keyword">begin</span></span><br><span class="line">          A_reg &lt;= A;<span class="comment">//计算A的补码,方便后面的+-操作</span></span><br><span class="line">          A_bm &lt;= ~A + <span class="number">1&#x27;b1</span>;    </span><br><span class="line">          P &lt;= &#123; <span class="number">8&#x27;d0</span>, B, <span class="number">1&#x27;b0</span> &#125;;  <span class="comment">//B add to last 8bit of P</span></span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          N &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span><span class="comment">//operating 这一个状态用来判断最低两位，然后决定执行什么操作</span></span><br><span class="line">        <span class="number">1</span>:<span class="keyword">begin</span></span><br><span class="line">          <span class="keyword">if</span> (N == DATAWIDTH)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            N &lt;= <span class="number">0</span>;</span><br><span class="line">            i &lt;= i + <span class="number">2&#x27;b10</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b00</span> | P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b11</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= P;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b01</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_reg,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b10</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_bm,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">            <span class="comment">//shift 这是无论最低两位是什么，最后都要执行的移位操作</span></span><br><span class="line">        <span class="number">2</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          P &lt;= &#123;P[<span class="number">16</span>],P[<span class="number">16</span>:<span class="number">1</span>]&#125;;</span><br><span class="line">          N &lt;= N + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          i &lt;= i - <span class="number">1&#x27;b1</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">        <span class="number">3</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">1</span>;</span><br><span class="line">          result_reg &lt;= P;</span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">        <span class="number">4</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">0</span>;</span><br><span class="line">          i &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">endcase</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> Done = isDone;</span><br><span class="line"><span class="keyword">assign</span> RESULT = result_reg[<span class="number">16</span>:<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<h3 id="仿真测试与波形查看"><a href="#仿真测试与波形查看" class="headerlink" title="仿真测试与波形查看"></a>仿真测试与波形查看</h3><ul>
+<li>testbench代码撰写如下:</li>
+</ul>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="comment">//注若要完整运行所有结果，至少运行1400ns</span></span><br><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;</span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<p>同时仿真波形如下图1所示:</p>
+<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e644c82.png" alt="图1 非随机数仿真波形"></p>
+<p>同时如果检测该乘法器对所有8位有符号数相乘的可行性，则上述在testbench中手动设置乘数和被乘数的方法则会过于麻烦，因此也可以考虑如下方法来设置随机数仿真。</p>
+<ul>
+<li>随机数型乘法器仿真testbench代码可补充如下:</li>
+</ul>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;<span class="comment">//random版</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+<p>但verilog中的随机数生成依赖于其中的<code>种子seed</code>，故我们可以直接<code>利用乘数A的值做为下一次random生成所需的种子</code>，这样我们就可以不用每次仿真调整随机数了，为我们测试乘法器的可靠性和鲁棒性带来方便。即将<strong>initial begin里的语句</strong>改成如下所示即可:</p>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">initial</span> <span class="keyword">begin</span></span><br><span class="line">	A = <span class="number">0</span>;</span><br><span class="line">	B = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">repeat</span>(<span class="number">10</span>) <span class="keyword">begin</span></span><br><span class="line">		#<span class="number">200</span> A = &#123;<span class="built_in">$random</span>(A)&#125;%<span class="number">100</span>;</span><br><span class="line">		B = &#123;<span class="built_in">$random</span>(A-<span class="number">1</span>)&#125;%<span class="number">100</span>;</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	#<span class="number">5</span> <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span>	</span><br></pre></td></tr></table></figure>
+<p>同时仿真波形如下图2-图3所示:</p>
+<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e728300.png" alt="图2 随机数seed=1时仿真波形"></p>
+<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e536bf9.png" alt="图3 随机数seed=A时仿真波形"></p>
+<h3 id="Wallace算法"><a href="#Wallace算法" class="headerlink" title="Wallace算法"></a>Wallace算法</h3><p>本文采用<code>Wallace算法</code>实现对8位无符号数乘法器的加速，实现了部分和求和时所使用的全加器数量的减少。</p>
+<p><strong>全加器与半加器</strong>：全加器是一个三输入两输出的逻辑单元，它可以同时处理两个数据输入位以及一个来自前一级的进位输入，并产生一个本级的和输出以及一个向后一级传递的进位输出。而半加器仅处理两个数据输入位而不考虑前一级的进位，因此它的结构相对简单。</p>
+<p>对于8位无符号数相乘，会出现8个部分积，故我们采用4:2压缩器，将其先压缩为4个部分积，再压缩为2个部分积</p>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义16位部分积的4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> wallace(x, y, out);</span><br><span class="line"><span class="keyword">parameter</span> size = <span class="number">8</span>; <span class="comment">// 定义参数，乘法器的位数(8位无符号数)</span></span><br><span class="line"><span class="keyword">input</span> [size-<span class="number">1</span>:<span class="number">0</span>] x, y; <span class="comment">// 输入y是乘数，x是被乘数</span></span><br><span class="line"><span class="keyword">output</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [size*size-<span class="number">1</span>:<span class="number">0</span>] a; <span class="comment">// a为部分积</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] b0, b1; <span class="comment">// 第一级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] c0, c1, c2, c3; <span class="comment">// 第二级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">5</span>:<span class="number">0</span>] add_a, add_b; <span class="comment">// 第三级的输入</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">6</span>:<span class="number">0</span>] add_out; <span class="comment">// 第三级的输出</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out; <span class="comment">// 乘法器的输出（组合逻辑）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> a = &#123;x[<span class="number">3</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>],x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">0</span>]&#125;</span><br><span class="line">&amp; &#123;y[<span class="number">3</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">3</span>], y[<span class="number">2</span>],y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">0</span>]&#125;; <span class="comment">// 部分积</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> compressor4_2(i1,i2,i3,i4,cin,c_out,C,S)</span><br><span class="line"><span class="keyword">input</span> i1,i2,i3,i4,cin;</span><br><span class="line"><span class="keyword">output</span> C,S;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> s_temp;</span><br><span class="line"><span class="keyword">assign</span> &#123;cout,s_temp&#125; = i1+i2+i3;<span class="comment">//4:2压缩器中的第一级全加器</span></span><br><span class="line"><span class="keyword">assign</span> &#123;C,S&#125; = cin+s_temp+i4;<span class="comment">//4:2压缩器中的第二级全加器</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> pp_compressor4_2(</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in1,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in2,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in3,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in4,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] C,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_temp;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">16</span>:<span class="number">0</span>] C_temp_append_0;</span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> C_temp_append_0 = &#123;C_temp,<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//[0]位的进位Cin为1&#x27;b0;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">genvar</span> i;</span><br><span class="line"><span class="keyword">generate</span> </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">16</span>;i=i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">begin</span>:compressor4_2_inst</span><br><span class="line">        compressor4_2 u_compressor4_2(</span><br><span class="line">            <span class="variable">.i1</span>(pp_in1[i]),</span><br><span class="line">            <span class="variable">.i2</span>(pp_in2[i]),</span><br><span class="line">            <span class="variable">.i3</span>(pp_in3[i]),</span><br><span class="line">            <span class="variable">.i4</span>(pp_in4[i]),</span><br><span class="line">            <span class="variable">.cin</span>(C_temp_append_0[i]),</span><br><span class="line">            <span class="variable">.cout</span>(C_temp_append_0[i+<span class="number">1</span>]),</span><br><span class="line">            <span class="variable">.C</span>(C_comb[i]),</span><br><span class="line">            <span class="variable">.S</span>(S_comb[i])</span><br><span class="line">        );</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">endgenerate</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> S=S_comb;</span><br><span class="line"><span class="keyword">assign</span> C=&#123;C_comb[<span class="number">14</span>:<span class="number">0</span>],<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//进位C比Sum高一位，故左移一位</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span>(</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] a,</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] b,</span><br><span class="line"><span class="keyword">output</span>[<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res0;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res4;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res5;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res6;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res7;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S3;</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算8个16位部分积</span></span><br><span class="line"><span class="keyword">assign</span> partial_res0=&#123;<span class="number">8&#x27;b0</span>,b*a[<span class="number">0</span>]&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res1=&#123;<span class="number">7&#x27;b0</span>,b*a[<span class="number">1</span>],<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res2=&#123;<span class="number">6&#x27;b0</span>,b*a[<span class="number">2</span>],<span class="number">2&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res3=&#123;<span class="number">5&#x27;b0</span>,b*a[<span class="number">3</span>],<span class="number">3&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res4=&#123;<span class="number">4&#x27;b0</span>,b*a[<span class="number">4</span>],<span class="number">4&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res5=&#123;<span class="number">3&#x27;b0</span>,b*a[<span class="number">5</span>],<span class="number">5&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res6=&#123;<span class="number">2&#x27;b0</span>,b*a[<span class="number">6</span>],<span class="number">6&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res7=&#123;<span class="number">1&#x27;b0</span>,b*a[<span class="number">7</span>],<span class="number">7&#x27;b0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第一次压缩，将8个部分积压缩为4个部分积</span></span><br><span class="line">pp_compressor4_2 u1(partial_res0,partial_res1,partial_res2,partial_res3,C1,S1);</span><br><span class="line">pp_compressor4_2 u2(partial_res4,partial_res5,partial_res6,partial_res7,C2,S2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二次压缩，将4个部分积压缩为2个部分积</span></span><br><span class="line">pp_compressor4_2 u3(C1,S1,C2,S2,C3,S3);</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算最终结果</span></span><br><span class="line"><span class="keyword">assign</span> S = C3+S3;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>verilog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <url>/2024/11/16/Transmission_gate_CMOS_circuit/</url>
+    <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
+<p>注：分析传输门的CMOS电路时，<code>不需要关注MOS管是否工作在饱和区</code>，只需关注<strong>导电沟道是否产生</strong>即可。</p>
+<p><img src="https://www.helloimg.com/i/2024/12/17/67613d69eaf82.png" alt="图1传输门CMOS电路"></p>
+<p>如图1所示为传输门的CMOS电路示意图</p>
+<ul>
+<li>当 $C=1$ 时，下面对MOS管的导通情况进行分析:</li>
+</ul>
+<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">
+\begin{align*}
+    \because &C=1\\
+    \therefore &V_{GN} = V_{DD} \\
+    \because &V_{BN} = 0V\\
+\end{align*}</script><script type="math/tex; mode=display">
+\begin{align*}
+    \therefore &V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i} 
+\end{align*}</script><h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">
+\begin{align*}
+    \because &\overline{C}=0\\
+    \therefore &V_{GP} = 0V \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">
+\begin{align*}
+    \therefore &V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} - V_{DD}) = - V_{i}
+\end{align*}</script><p>当 $V_{i}&lt;V_{DD}-V_{TH}$ ，可保证 $V_{GSN}=V_{DD}-V_{i}\geq v_{TH}$ ，即NMOS产生导电沟道；</p>
+<p>当 $V_{i} &gt;  V_{TH} $ ，可保证 $V_{GSP}=-V_{i}\leq-v_{TH}$ ，即PMOS产生导电沟道；</p>
+<p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都可保证至少有一个MOS管存在导电沟道，使得 $V_{o}=V_{i}$ 。</p>
+<ul>
+<li>当 $C=0$ 时，下面对MOS管的导通情况进行分析:</li>
+</ul>
+<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &C=1\\
+    \therefore &V_{GN} = 0V \\
+    \because &V_{BN} = 0V\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSN} = 0  < V_{TH} 
+\end{align*}</script><h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &\overline{C}=1\\
+    \therefore &V_{GP} = V_{DD} \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSP} > - V_{TH}
+\end{align*}</script><p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都无法使任意一个MOS管存在导电沟道。</p>
+<h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
+<p><img src="https://www.helloimg.com/i/2024/12/17/67613d6a1873b.png" alt="图2传输门实现二选一选择器"></p>
+]]></content>
+      <tags>
+        <tag>模集(拉扎维)</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
     <url>/2024/11/16/body_effect_reduce_resistence/</url>
     <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
@@ -1488,6 +1444,58 @@
 \end{aligned}</script></li>
 </ul>
 <p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>氢原子模型和类氢原子模型</title>
+    <url>/2024/11/16/Hydrogen_like_model/</url>
+    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
+<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
+<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+</blockquote>
+<ul>
+<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 $E_{1}$ 、 $E_{2}$ 、 $E_{3}$ ……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
+<li>跃迁假设：电子从 $E_{m}$ 能级跃迁到 $E_{n}$ 能级所需的能量满足 $h\nu=E_{n}-E_{m}$ 。</li>
+<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 $2\pi r\cdot m_{e} v = n h$ ，即电子只能在轨道角动量等于约化普朗克常数 $\hbar$ 的整数倍的轨道上运动。</li>
+</ul>
+<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：</p>
+<script type="math/tex; mode=display">\begin{align*}
+   &m v r = n \frac{h}{2\pi} \\
+   &m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}
+\end{align*}</script><p>联立得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
+\end{align*}</script><p>考虑电子的总能量为动能与势能之和：</p>
+<script type="math/tex; mode=display">\begin{align*}
+   E_{n} &= E_{k,n} + E_{p,n} \\
+   &= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\\
+   &= -\frac{1}{2}mv^{2}
+\end{align*}</script><p>化简得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}</script><h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
+<p>考虑如下两条修正:</p>
+</blockquote>
+<ul>
+<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 $\epsilon=\epsilon_{0}\epsilon_{r}$ 的介质中。</li>
+<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量 $m_{0}$ 用有效质量 $m^{\ast}$ 替代。</li>
+</ul>
+<p>即得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} &= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \\
+   E_{n} &= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}</script><p>当$n=1$时为基态，此时</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{0} &= 0.053nm \\
+   E_{0} &= 13.6eV
+\end{align*}</script><p>则进一步化简得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} &= \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \\
+   \triangle E_{n} &= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
+\end{align*}</script><p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
@@ -1509,6 +1517,51 @@
 ]]></content>
       <tags>
         <tag>IC工艺</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于势垒及衍生问题的一些思考</title>
+    <url>/2024/12/06/the_potential_barrier/</url>
+    <content><![CDATA[<h1 id="什么是势垒呢？"><a href="#什么是势垒呢？" class="headerlink" title="什么是势垒呢？"></a>什么是势垒呢？</h1><h2 id="pn结"><a href="#pn结" class="headerlink" title="pn结"></a>pn结</h2><p>在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
+<ul>
+<li><p>Q1:为什么pn结会形成统一的费米能级</p>
+</li>
+<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E_{F}$ 高的n区流向 $E_{F}$ 低的p区，相应的空穴从 $E_{F}$ 低的p区流向 $E_{F}$ 高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        n_{0} & =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+        p_{0} & =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T}) 
+    \end{aligned}
+    \right.
+\end{equation}</script><p>故 $E_{Fn}$ 不断下移， $E_{Fp}$ 不断上移，直至 $E_{Fn}=E_{Fp}$ 。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
+<ul>
+<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
+</ul>
+<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
+<h3 id="pn结加正向偏压"><a href="#pn结加正向偏压" class="headerlink" title="pn结加正向偏压"></a>pn结加正向偏压</h3><ul>
+<li>加正向偏压后，势垒由 $V_{D}$ 下降为 $V_{D}-V$ ，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为 $V_{D}-V$ ；在 $E_{out}$ 的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn’边界处空穴浓度增加，进而形成从nn’边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp’边界处电子浓度增加，进而形成从pp’边界到p区内部的电子扩散电流。</li>
+</ul>
+<p>由于nn’处电子减少，故从(1)式来看， $E_{Fn}$ 应远离 $E_{C}$ ；同理由于pp’处空穴减少，故从(1)式来看， $E_{Fp}$ 应远离 $E_{V}$ 。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 $E_{C}$ 以分析方便，进而先确定 $E_{C}$ 、 $E_{V}$ 的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
+<hr>
+<h2 id="金属半导体接触-Metal-Semiconductor-Contact"><a href="#金属半导体接触-Metal-Semiconductor-Contact" class="headerlink" title="金属半导体接触(Metal - Semiconductor Contact)"></a>金属半导体接触(Metal - Semiconductor Contact)</h2><p>这种情况下有两种势垒:</p>
+<ul>
+<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p>
+</li>
+<li><p>在金属中存在金属的势垒高度 $q\phi_{ns}$ ，其满足:</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\begin{align}
+q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal} 
+\end{align}</script><p>考虑到金属是<code>电子海</code>，故其 $(E_{C})_{metal}$ 保持不动。<br>·</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
       </tags>
   </entry>
   <entry>
@@ -1574,51 +1627,6 @@
 <script type="math/tex; mode=display">\begin{align*}
     \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}
 \end{align*}</script>]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于势垒及衍生问题的一些思考</title>
-    <url>/2024/12/06/the_potential_barrier/</url>
-    <content><![CDATA[<h1 id="什么是势垒呢？"><a href="#什么是势垒呢？" class="headerlink" title="什么是势垒呢？"></a>什么是势垒呢？</h1><h2 id="pn结"><a href="#pn结" class="headerlink" title="pn结"></a>pn结</h2><p>在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
-<ul>
-<li><p>Q1:为什么pn结会形成统一的费米能级</p>
-</li>
-<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E_{F}$ 高的n区流向 $E_{F}$ 低的p区，相应的空穴从 $E_{F}$ 低的p区流向 $E_{F}$ 高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p>
-</li>
-</ul>
-<script type="math/tex; mode=display">
-\begin{equation}
-    \left\{
-    \begin{aligned}
-        n_{0} & =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-        p_{0} & =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T}) 
-    \end{aligned}
-    \right.
-\end{equation}</script><p>故 $E_{Fn}$ 不断下移， $E_{Fp}$ 不断上移，直至 $E_{Fn}=E_{Fp}$ 。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
-<ul>
-<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
-</ul>
-<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
-<h3 id="pn结加正向偏压"><a href="#pn结加正向偏压" class="headerlink" title="pn结加正向偏压"></a>pn结加正向偏压</h3><ul>
-<li>加正向偏压后，势垒由 $V_{D}$ 下降为 $V_{D}-V$ ，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为 $V_{D}-V$ ；在 $E_{out}$ 的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn’边界处空穴浓度增加，进而形成从nn’边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp’边界处电子浓度增加，进而形成从pp’边界到p区内部的电子扩散电流。</li>
-</ul>
-<p>由于nn’处电子减少，故从(1)式来看， $E_{Fn}$ 应远离 $E_{C}$ ；同理由于pp’处空穴减少，故从(1)式来看， $E_{Fp}$ 应远离 $E_{V}$ 。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 $E_{C}$ 以分析方便，进而先确定 $E_{C}$ 、 $E_{V}$ 的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
-<hr>
-<h2 id="金属半导体接触-Metal-Semiconductor-Contact"><a href="#金属半导体接触-Metal-Semiconductor-Contact" class="headerlink" title="金属半导体接触(Metal - Semiconductor Contact)"></a>金属半导体接触(Metal - Semiconductor Contact)</h2><p>这种情况下有两种势垒:</p>
-<ul>
-<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p>
-</li>
-<li><p>在金属中存在金属的势垒高度 $q\phi_{ns}$ ，其满足:</p>
-</li>
-</ul>
-<script type="math/tex; mode=display">
-\begin{align}
-q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal} 
-\end{align}</script><p>考虑到金属是<code>电子海</code>，故其 $(E_{C})_{metal}$ 保持不动。<br>·</p>
-]]></content>
       <tags>
         <tag>半导体物理</tag>
       </tags>
