@@ -22,12 +22,12 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"love-learning-li.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"default"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-    <meta name="description" content="简并or退化？本征or掺杂？ 问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并) 故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故$\mathscr{MeiS">
+    <meta name="description" content="简并or退化？本征or掺杂？  问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并)  故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故\(\">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简并or退化？本征or掺杂？">
 <meta property="og:url" content="http://love-learning-li.github.io/2024/11/16/Degenerate_degenerate_intrinsic_doping/index.html">
 <meta property="og:site_name" content="李鸣翔会认真沉淀">
-<meta property="og:description" content="简并or退化？本征or掺杂？ 问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并) 故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故$\mathscr{MeiS">
+<meta property="og:description" content="简并or退化？本征or掺杂？  问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并)  故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故\(\">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-15T16:18:29.382Z">
 <meta property="article:modified_time" content="2024-11-15T17:01:22.104Z">
@@ -142,7 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%B9%B6or%E9%80%80%E5%8C%96%EF%BC%9F%E6%9C%AC%E5%BE%81or%E6%8E%BA%E6%9D%82%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">简并or退化？本征or掺杂？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#degeneration-%E9%80%80%E5%8C%96-%E5%9C%A8%E7%89%A9%E7%90%86%E5%AD%A6%E4%B8%AD%E5%B8%B8%E8%AF%91%E4%B8%BA%E7%AE%80%E5%B9%B6"><span class="nav-number">1.1.</span> <span class="nav-text">degeneration:退化(在物理学中常译为简并)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Explanation"><span class="nav-number">1.2.</span> <span class="nav-text">Explanation:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%B9%B6or%E9%80%80%E5%8C%96%E6%9C%AC%E5%BE%81or%E6%8E%BA%E6%9D%82"><span class="nav-number">1.</span> <span class="nav-text">简并or退化？本征or掺杂？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#degeneration%E9%80%80%E5%8C%96%E5%9C%A8%E7%89%A9%E7%90%86%E5%AD%A6%E4%B8%AD%E5%B8%B8%E8%AF%91%E4%B8%BA%E7%AE%80%E5%B9%B6"><span class="nav-number">1.1.</span> <span class="nav-text">degeneration:退化(在物理学中常译为简并)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#explanation"><span class="nav-number">1.2.</span> <span class="nav-text">Explanation:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -261,47 +261,69 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
+    <div class="post-body" itemprop="articleBody"><h1 id="简并or退化本征or掺杂">简并or退化？本征or掺杂？</h1>
+<blockquote>
 <p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
 </blockquote>
-<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
-<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
+<h2
+id="degeneration退化在物理学中常译为简并">degeneration:退化(在物理学中常译为简并)</h2>
+<blockquote>
+<p>故 a degenerate
+semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了
+impurity
+band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故<span
+class="math inline">\(\mathscr{MeiShao}\)</span>认为，将degenerate
+semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
 </blockquote>
-<p>其中费米狄拉克分布函数为:</p>
-<script type="math/tex; mode=display">
+<p>其中费米狄拉克分布函数为: <span class="math display">\[
 \begin{align*}
     f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
-\end{align*}</script><p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：</p>
-<script type="math/tex; mode=display">
+\end{align*}
+\]</span></p>
+<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：
+<span class="math display">\[
 \begin{align*}
     f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
-\end{align*}</script><p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：</p>
-<script type="math/tex; mode=display">
+\end{align*}
+\]</span></p>
+<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是： <span
+class="math display">\[
 \begin{align*}
-    \big\vert E - E_{F} \big\vert > 3k_{0} T
-\end{align*}</script><p>因此<strong>对于非简并半导体</strong>，我们要求：</p>
-<script type="math/tex; mode=display">
+    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T
+\end{align*}
+\]</span></p>
+<p>因此<strong>对于非简并半导体</strong>，我们要求： <span
+class="math display">\[
 \begin{align*}
-    E_{v} + 3k_{0}T < E_{F} < E_{c} - 3k_{0}T
-\end{align*}</script><p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：</p>
-<script type="math/tex; mode=display">
+    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T
+\end{align*}
+\]</span></p>
+<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：
+<span class="math display">\[
 \begin{align*}
-    n_{0} &= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
-    p_{0} &= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
-    n_{0}p_{0} &= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) 
-\end{align*}</script><p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
+    n_{0} &amp;= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &amp;= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &amp;= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})
+\end{align*}
+\]</span></p>
+<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="explanation">Explanation:</h2>
+<blockquote>
 <p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
 </blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<h2 id="总结">总结</h2>
+<ul>
 <li>半导体掺杂后可能带来简并或非简并。</li>
 <li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
 <li>非简并的半导体可能是考虑了杂质补偿。</li>
 <li>非简并的半导体既有掺杂的也有本征的。</li>
 </ul>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+<h1 id="参考资料">参考资料</h1>
+<ul>
+<li><a
+target="_blank" rel="noopener" href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
 </ul>
 
     </div>
@@ -319,13 +341,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/11/16/ppt_report/" rel="prev" title="课堂汇报(论文解读)的PPT注意事项">
-                  <i class="fa fa-angle-left"></i> 课堂汇报(论文解读)的PPT注意事项
+                <a href="/2024/11/16/ADC_parameter/" rel="prev" title="ADC参数总结">
+                  <i class="fa fa-angle-left"></i> ADC参数总结
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/11/16/ADC_parameter/" rel="next" title="ADC参数总结">
-                  ADC参数总结 <i class="fa fa-angle-right"></i>
+                <a href="/2024/11/28/semiconductor_physics_midterm_test/" rel="next" title="半导体物理半期考试参考解析">
+                  半导体物理半期考试参考解析 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -358,13 +380,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">59k</span>
+    <span title="站点总字数">61k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:47</span>
+    <span title="站点阅读时长">1:51</span>
   </span>
 </div>
 
@@ -442,6 +464,26 @@
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '64px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 <script class="next-config" data-name="twikoo" type="application/json">{"enable":true,"visitor":true,"envId":"https://comment.meishao.top/","el":"#twikoo-comments"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
@@ -463,26 +505,6 @@ document.addEventListener('page:loaded', () => {
   display: inline-block;
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-
-<script>
-var options = {
-  bottom: '64px',
-  right: '32px',
-  left: 'unset',
-  time: '0.5s',
-  mixColor: 'transparent',
-  backgroundColor: 'transparent',
-  buttonColorDark: '#100f2c',
-  buttonColorLight: '#fff',
-  saveInCookies: true,
-  label: '🌓',
-  autoMatchOsTheme: true
-}
-const darkmode = new Darkmode(options);
-window.darkmode = darkmode;
-darkmode.showWidget();
-</script>
 
 </body>
 </html>
