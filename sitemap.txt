@@ -1,4 +1,4 @@
-http://love-learning-li.github.io/2024/11/28/semiconductor_physics_midterm_test/
+http://love-learning-li.github.io/2025/04/12/Mind%20during%20BaoYan/
 http://love-learning-li.github.io/2025/01/02/50questions_review_IC_manufacture/
 http://love-learning-li.github.io/2024/12/10/IC_Manufacture_test_10problems/
 http://love-learning-li.github.io/2024/12/27/2024_Fall_final_exam_review/
@@ -19,11 +19,11 @@ http://love-learning-li.github.io/2024/11/16/ppt_report/
 http://love-learning-li.github.io/2024/11/16/Degenerate_degenerate_intrinsic_doping/
 http://love-learning-li.github.io/2024/11/16/ADC_parameter/
 http://love-learning-li.github.io/
-http://love-learning-li.github.io/tags/%E5%8D%9A%E5%AE%A2/
-http://love-learning-li.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/
 http://love-learning-li.github.io/tags/%E7%94%9F%E6%B4%BB/
-http://love-learning-li.github.io/tags/verilog/
+http://love-learning-li.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/
+http://love-learning-li.github.io/tags/%E5%8D%9A%E5%AE%A2/
 http://love-learning-li.github.io/tags/IC%E5%88%B6%E9%80%A0/
+http://love-learning-li.github.io/tags/verilog/
 http://love-learning-li.github.io/tags/IC%E5%B7%A5%E8%89%BA/
 http://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/
 http://love-learning-li.github.io/tags/%E6%A8%A1%E9%9B%86-%E6%8B%89%E6%89%8E%E7%BB%B4/
