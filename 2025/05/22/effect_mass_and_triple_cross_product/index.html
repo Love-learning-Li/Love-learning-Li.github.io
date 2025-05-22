@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解 | 李鸣翔会认真沉淀</title><meta name="author"><meta name="copyright"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解有效质量$m^{\ast}$求解今天上半导体物理课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看固体物理笔记复习后做此记录，与大家分享。 符号说明$\hbar$为约化普朗克常数 $f$为载流子所受所有外力的合力 $P$为载流子动量 首先我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解">
+<meta property="og:url" content="http://love-learning-li.github.io/2025/05/22/effect_mass_and_triple_cross_product/index.html">
+<meta property="og:site_name" content="李鸣翔会认真沉淀">
+<meta property="og:description" content="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解有效质量$m^{\ast}$求解今天上半导体物理课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看固体物理笔记复习后做此记录，与大家分享。 符号说明$\hbar$为约化普朗克常数 $f$为载流子所受所有外力的合力 $P$为载流子动量 首先我">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://love-learning-li.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-05-22T03:31:44.217Z">
+<meta property="article:modified_time" content="2024-12-11T12:01:48.175Z">
+<meta property="article:tag" content="半导体物理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://love-learning-li.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "有效质量$m^{\\ast}$求解及$\\vec{a}\\times(\\vec{b}\\times\\vec{c})$求解",
+  "url": "http://love-learning-li.github.io/2025/05/22/effect_mass_and_triple_cross_product/",
+  "image": "http://love-learning-li.github.io/img/butterfly-icon.png",
+  "datePublished": "2025-05-22T03:31:44.217Z",
+  "dateModified": "2024-12-11T12:01:48.175Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": null,
+      "url": "http://love-learning-li.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://love-learning-li.github.io/2025/05/22/effect_mass_and_triple_cross_product/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">李鸣翔会认真沉淀</span></a><a class="nav-page-title" href="/"><span class="site-name">有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-22T03:31:44.217Z" title="发表于 2025-05-22 11:31:44">2025-05-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-11T12:01:48.175Z" title="更新于 2024-12-11 20:01:48">2024-12-11</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="有效质量-m-ast-求解及-vec-a-times-vec-b-times-vec-c-求解"><a href="#有效质量-m-ast-求解及-vec-a-times-vec-b-times-vec-c-求解" class="headerlink" title="有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解"></a>有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</h1><h2 id="有效质量-m-ast-求解"><a href="#有效质量-m-ast-求解" class="headerlink" title="有效质量$m^{\ast}$求解"></a>有效质量$m^{\ast}$求解</h2><p>今天上<code>半导体物理</code>课程时，忘记了有效质量的推导过程，主要是除一个$\hbar$凑牛顿第二定理表达式那一步忘记了，回看<code>固体物理笔记</code>复习后做此记录，与大家分享。</p>
+<h2 id="符号说明"><a href="#符号说明" class="headerlink" title="符号说明"></a>符号说明</h2><p>$\hbar$为约化普朗克常数</p>
+<p>$f$为载流子所受所有外力的合力</p>
+<p>$P$为载流子动量</p>
+<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：<br>$$\begin{align*}<br>    f &amp;&#x3D; \frac{dP}{dt} \<br>    P&amp;&#x3D; \hbar k<br>\end{align*}$$</p>
+<p>载流子速度$v$可表示为:<br>$$\begin{align*}<br>    v &amp;&#x3D; \frac{1}{\hbar} \frac{dE}{dk}<br>\end{align*}$$</p>
+<p>则加速度$a$可表示为:<br>$$\begin{align*}<br>    a &amp;&#x3D; \frac{dv}{dt} \notag\<br>    &amp;&#x3D;\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\<br>    &amp;&#x3D;\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt} \notag<br>\end{align*}$$</p>
+<p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:<br>$$\begin{align*}<br>    a &amp;&#x3D;  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot \frac{d\hbar k}{dt} \notag\<br>    &amp;&#x3D; \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f<br>\end{align*}$$</p>
+<p>因此将$a$除到右侧，将$f$的系数除到左侧得:<br>$$\begin{align*}<br>    \frac{f}{a} &#x3D; \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}<br>\end{align*}$$</p>
+<p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:<br>$$\begin{align*}<br>    m^{\ast} &amp;&#x3D; \frac{f}{a} &#x3D; \frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}<br>\end{align*}$$</p>
+<p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:<br>$$\begin{align*}<br>    E(k) - E(0) &#x3D; \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}<br>\end{align*}$$</p>
+<p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
+<hr>
+<h2 id="vec-a-times-vec-b-times-vec-c-的化简求解"><a href="#vec-a-times-vec-b-times-vec-c-的化简求解" class="headerlink" title="$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解"></a>$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</h2><p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
+<p>首先$\vec{b}\times\vec{c}$得到的向量方向为$\vec{b}$、$\vec{c}$所构成的平面的法向量方向。</p>
+<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:<br>$$\begin{align*}<br>   \vec{s} &#x3D; \vec{a}\times(\vec{b}\times\vec{c}) &#x3D; m\vec{b} + n \vec{c}<br>\end{align*}$$</p>
+<p>同时利用向量的叉乘关系:<br>$$\begin{align*}<br>    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}<br>\end{align*}$$</p>
+<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:<br>$$\begin{align*}<br>    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;&#x3D; 0 \<br>    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &amp;&#x3D;0<br>\end{align*}$$</p>
+<p><code>很自然地</code>对$m$，$n$取如下式所示的值:<br>$$\begin{aligned}<br>	m&amp;&#x3D; -\vec{c} \cdot \vec{a}  &amp; \<br>	n&amp;&#x3D;  \vec{b} \cdot \vec{a} &amp;<br>\end{aligned}$$</p>
+<p>所以:<br>$$\begin{align*}<br>	\vec{s} &#x3D; k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]<br>\end{align*}$$</p>
+<p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
+<p>若取<br>$$\begin{aligned}<br>	\vec{a}&amp;&#x3D; \left[1,0,0\right]  &amp; \<br>	\vec{b}&amp;&#x3D; \left[0,1,0\right]  &amp; \<br>    \vec{c}&amp;&#x3D; \left[1,0,0\right]  &amp;<br>\end{aligned}$$</p>
+<p>代入解得$k&#x3D;-1$，所以得:<br>$$\begin{align*}<br>	\vec{s} &#x3D;   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}<br>\end{align*}$$</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://love-learning-li.github.io"></a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://love-learning-li.github.io/2025/05/22/effect_mass_and_triple_cross_product/">http://love-learning-li.github.io/2025/05/22/effect_mass_and_triple_cross_product/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://love-learning-li.github.io" target="_blank">李鸣翔会认真沉淀</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/">半导体物理</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/05/22/chebyshev-calculator/" title="切比雪夫滤波器阶数计算器"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">切比雪夫滤波器阶数计算器</div></div><div class="info-2"><div class="info-item-1">                    切比雪夫滤波器阶数计算器                                  tailwind.config = {             theme: {                 extend: {                     colors: {                         primary: '#3B82F6',                         secondary: '#10B981',                         accent: '#6366F1',                         dark: '#1E293B',                         light: '#F8FAFC'                     },                     fontFamily: {                         sans: ['Inter', 'system-ui',...</div></div></div></a><a class="pagination-related" href="/2025/05/22/MOS(100)_BJT(111)/" title="为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/05/22/Degenerate_degenerate_intrinsic_doping/" title="简并or退化？本征or掺杂？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-22</div><div class="info-item-2">简并or退化？本征or掺杂？</div></div><div class="info-2"><div class="info-item-1">简并or退化？本征or掺杂？ 问题来源于在看半导体物理教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。  degeneration:退化(在物理学中常译为简并) 故 a degenerate semiconductor指的是重掺杂的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即由半导体退化成金属了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为退化半导体更容易理解。  其中费米狄拉克分布函数为:$$\begin{align*}    f(E) &#x3D; \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}\end{align*}$$ 由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：$$\begin{align*}    f(E) &#x3D;...</div></div></div></a><a class="pagination-related" href="/2025/05/22/Hydrogen_like_model/" title="氢原子模型和类氢原子模型"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-22</div><div class="info-item-2">氢原子模型和类氢原子模型</div></div><div class="info-2"><div class="info-item-1">氢原子模型和类氢原子模型灵感来自半导体物理课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。 氢原子模型 基于量子力学的理论，我们根据玻尔三大假设书写方程。   定态假设：原子系统只能处于一系列不连续的分立的能量状态 $E_{1}$ 、 $E_{2}$ 、 $E_{3}$ ……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。 跃迁假设：电子从 $E_{m}$ 能级跃迁到 $E_{n}$ 能级所需的能量满足 $h\nu&#x3D;E_{n}-E_{m}$ 。 轨道角动量量子化假设：在氢原子中，电子轨道需满足 $2\pi r\cdot m_{e} v &#x3D; n h$ ，即电子只能在轨道角动量等于约化普朗克常数 $\hbar$ 的整数倍的轨道上运动。  故根据轨道角动量量子化假设和圆周运动的向心力等于库仑力列写如下方程：$$\begin{align*}   &amp;m v r &#x3D; n \frac{h}{2\pi} \   &amp;m\frac{v^{2}}{r} &#x3D;...</div></div></div></a><a class="pagination-related" href="/2025/05/22/MOS(100)_BJT(111)/" title="为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-22</div><div class="info-item-2">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/2025/05/22/body_effect_reduce_resistence/" title="为什么考虑了MOS管的体效应后，其小信号模型电阻减小？"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-22</div><div class="info-item-2">为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</div></div><div class="info-2"><div class="info-item-1">提问： 为什么考虑了MOS管的体效应后，其小信号模型电阻减小？  我的思考 在MOS管模型中，体效应是等效为了一个独立电流源，大小为:$$\begin{aligned}  I &#x3D; g_{mb} V_{BS}\end{aligned}$$  同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外 </div></div></div></a><a class="pagination-related" href="/2025/05/22/the_potential_barrier/" title="关于势垒及衍生问题的一些思考"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-22</div><div class="info-item-2">关于势垒及衍生问题的一些思考</div></div><div class="info-2"><div class="info-item-1">什么是势垒呢？pn结在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。  Q1:为什么pn结会形成统一的费米能级  A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E_{F}$ 高的n区流向 $E_{F}$ 低的p区，相应的空穴从 $E_{F}$ 低的p区流向 $E_{F}$ 高的n区，也可以说n区电子占据导带的概率降低；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:   $$\begin{equation}	\left{	\begin{aligned}		n_{0} &amp; &#x3D;  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \		p_{0} &amp; &#x3D;  N_{v}...</div></div></div></a><a class="pagination-related" href="/2025/05/22/semiconductor_physics_midterm_test/" title="半导体物理半期考试参考解析"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-22</div><div class="info-item-2">半导体物理半期考试参考解析</div></div><div class="info-2"><div class="info-item-1">四川大学期中考试试题(开卷) (2024 - 2025 学年第 1 学期) A 卷课程名称：半导体物理 任课教师：杨治美 2024 年 11 月 25 日 1 题目 ${L}{n}(E)  &#x3D; ( )$ , ${L}{D} &#x3D;(   )$ 。  半导体中过剩电子浓度为 $ \Delta n &#x3D; {10}^{15} cm^{-3} $ ,过剩载流子的寿命为 $ \tau_{n0} &#x3D; {10}^{-6}s $ 。在 $ t &#x3D; 0 $ 时, 产生过剩载流子的外部作用停止,因此 $ t &gt; 0 $ 时半导体恢复到平衡状态, $ t &#x3D; {4\mu s} $ 时的过剩载流子的复合率 (   )。  假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 $ 1.0eV $ , B 的禁带宽度是 $1.2eV$,${300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是(  ...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name"></div><div class="author-info-description">记录自己的学习和笔记</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E8%B4%A8%E9%87%8F-m-ast-%E6%B1%82%E8%A7%A3%E5%8F%8A-vec-a-times-vec-b-times-vec-c-%E6%B1%82%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">有效质量$m^{\ast}$求解及$\vec{a}\times(\vec{b}\times\vec{c})$求解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E8%B4%A8%E9%87%8F-m-ast-%E6%B1%82%E8%A7%A3"><span class="toc-number">1.1.</span> <span class="toc-text">有效质量$m^{\ast}$求解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7%E8%AF%B4%E6%98%8E"><span class="toc-number">1.2.</span> <span class="toc-text">符号说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vec-a-times-vec-b-times-vec-c-%E7%9A%84%E5%8C%96%E7%AE%80%E6%B1%82%E8%A7%A3"><span class="toc-number">1.3.</span> <span class="toc-text">$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/22/MOS(100)_BJT(111)/" title="为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？">为什么MOS管常用(100)晶向的晶圆，BJT常用(111)晶向的晶圆？</a><time datetime="2025-05-22T03:31:44.228Z" title="发表于 2025-05-22 11:31:44">2025-05-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/22/Recent_state_of_mind/" title="近段时间心态总结">近段时间心态总结</a><time datetime="2025-05-22T03:31:44.228Z" title="发表于 2025-05-22 11:31:44">2025-05-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/22/Transmission_gate_CMOS_circuit/" title="利用传输门做二选一选择器的CMOS电路分析">利用传输门做二选一选择器的CMOS电路分析</a><time datetime="2025-05-22T03:31:44.228Z" title="发表于 2025-05-22 11:31:44">2025-05-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/22/the_potential_barrier/" title="关于势垒及衍生问题的一些思考">关于势垒及衍生问题的一些思考</a><time datetime="2025-05-22T03:31:44.228Z" title="发表于 2025-05-22 11:31:44">2025-05-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/05/22/semiconductor_physics_midterm_test/" title="半导体物理半期考试参考解析">半导体物理半期考试参考解析</a><time datetime="2025-05-22T03:31:44.228Z" title="发表于 2025-05-22 11:31:44">2025-05-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By null</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
