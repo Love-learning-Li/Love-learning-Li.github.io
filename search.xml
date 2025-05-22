@@ -5,11 +5,11 @@
     <url>/2025/05/22/0_Blog_version_update/</url>
     <content><![CDATA[<p>版本更新信息如下：</p>
 <ul>
-<li>V0.1 2024.11.14</li>
+<li>V0.1 2024.11.14 </li>
 </ul>
 <p>博客正式上线，基于GitHubpages搭建 </p>
 <ul>
-<li>V0.2 2024.12.15</li>
+<li>V0.2 2024.12.15 </li>
 </ul>
 <p>博客的评论系统由gittalk切换为twikoo，并且部署在Vercel平台实现CDN加速。</p>
 <ul>
@@ -21,7 +21,6 @@
 </ul>
 <p>增加pdf插入功能，next主题自带的pdf插入功能在about界面效果良好，但在博客文章界面效果一般，故根据<a href="https://blog.zhilu.cyou/">纸鹿哥</a>的建议，我采用iframe方式实现pdf嵌入功能:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;pdf-container&quot;</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;/lib/pdf/last_question_of_analog_IC_quiz.pdf&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;800&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span></span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
 <p>PDFjs的方式我未能成功实现pdf嵌入，iframe方案对我来说实现起来较为简单，值得推荐，感谢纸鹿哥！</p>
 ]]></content>
       <tags>
@@ -56,25 +55,18 @@
 <p>由于搬了校区之后，陌生的舍友需要时间来熟悉，很幸运遇到了4位很棒的舍友(至少一定程度上是很棒的)，</p>
 <p>望江效区的寝室距离教室很近再加上这学期没有早八，所以这学期我从早上早起吃早饭逐渐过渡为早上9点多起床跑到餐厅打包两个包子在飞奔向教室的过程中“狼吞虎咽”，进而过渡为早上9点多起床不吃早饭。因为我发现早上9点多打包包子上课会非常困，查资料说是因为胃在消化食物故对大脑的供血减少，进而脑子就转不动了。故为了保持清醒的大脑我选择不吃早饭，但发现不吃早饭确实有点饿，故逐渐转变为早上吃香蕉，香蕉是<strong>快碳</strong>，可以很快分解并提供能量。</p>
 <p>2024年秋季学期是多病的一学期，假期中得了荨麻疹，经历一学期也没能完全康复，但好在目前吃药能完全控制住病情，按医生说的是要忌口(忌发物)、并且洗澡不能用太热的水、提高免疫力，少熬夜。并且为了增强身体免疫力，我这学期也开始去健身房撸铁健身，但是由于期末周的原因也暂时搁置了一段时间，从明天开始恢复锻炼。</p>
-<p>2024年秋季学习的课程学习是吃力的，超难的专业课，需要多花时间加深自己对于课程的理解，比如说我觉得从下面两个式子可以推出很多式子，如果进一步进入准费米能级 $ E_{Fn} $ 、  $ E_{Fp} $ ，那这两个式子对pn结和MIS结构等很多内容都具有较好的解释性。</p>
-<p>$$<br>\begin{aligned}<br>    n&amp;&#x3D; N_{C} \exp (\frac{ E_{C} - E_{F} }{ K_{0} T })\<br>    p&amp;&#x3D; N_{V} \exp (\frac{ E_{F} - E_{V} }{ K_{0} T })<br>\end{aligned}<br>$$</p>
-<p>11月14日创建个人博客meishao.top，基于GitHub pages搭建，已经实现了诸多不错的效果。感谢纸鹿哥、睿明哥等大佬们在我搭建博客过程中提供的无私帮助。</p>
+<p>2024年秋季学习的课程学习是吃力的，超难的专业课，需要多花时间加深自己对于课程的理解，比如说我觉得从下面两个式子可以推出很多式子，如果进一步进入准费米能级 $ E<em>{Fn} $ 、  $ E</em>{Fp} $ ，那这两个式子对pn结和MIS结构等很多内容都具有较好的解释性。</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+    n&= N_{C} \exp (\frac{ E_{C} - E_{F} }{ K_{0} T })\\
+    p&= N_{V} \exp (\frac{ E_{F} - E_{V} }{ K_{0} T })
+\end{aligned}</script><p>11月14日创建个人博客meishao.top，基于GitHub pages搭建，已经实现了诸多不错的效果。感谢纸鹿哥、睿明哥等大佬们在我搭建博客过程中提供的无私帮助。</p>
 <h2 id="目标和总结"><a href="#目标和总结" class="headerlink" title="目标和总结"></a>目标和总结</h2><p>接下来可能就是喜闻乐见的新年目标环节，2025年希望自己加强关于模拟IC的学习和仿真练习，夯实基础知识。</p>
 <p>2024年是丰富的一年，大学生活转瞬即逝，还剩下一年半的大学时光，希望自己2025年夏令营一切顺利，拿到满意的offer！也祝我的家人万事如意，幸福安康，身体健康，平平安安，万事如意！</p>
 ]]></content>
       <tags>
         <tag>生活</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>ADC参数总结</title>
-    <url>/2025/05/22/ADC_parameter/</url>
-    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
-<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ&#x2F;step$</li>
-</ul>
-<p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
-<p>- </p>
-]]></content>
   </entry>
   <entry>
     <title>四川大学微电子2022级大三上期末考试植树</title>
@@ -101,7 +93,8 @@
 
 
 
-<h3 id="所需要认识和了解的单词举例"><a href="#所需要认识和了解的单词举例" class="headerlink" title="所需要认识和了解的单词举例:"></a>所需要认识和了解的单词举例:</h3><table>
+<h3 id="所需要认识和了解的单词举例"><a href="#所需要认识和了解的单词举例" class="headerlink" title="所需要认识和了解的单词举例:"></a>所需要认识和了解的单词举例:</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>英文术语</th>
@@ -112,7 +105,8 @@
 <th>中文翻译</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>aspect ratio</td>
 <td>宽长比</td>
 <td>back-gate effect</td>
@@ -248,9 +242,11 @@
 <td>voltage swings</td>
 <td>电压摆幅</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="半导体物理期末"><a href="#半导体物理期末" class="headerlink" title="半导体物理期末"></a>半导体物理期末</h2><h3 id="填空10分"><a href="#填空10分" class="headerlink" title="填空10分"></a>填空10分</h3><p>1.硅的本征载流子浓度；硅的禁带宽度</p>
-<p>2.发生杂质补偿时且有 $N_{D}&gt;N_{A}$ ，那么有效杂质浓度是()，是()导电，迁移率取决于()</p>
+<p>2.发生杂质补偿时且有 $N<em>{D}&gt;N</em>{A}$ ，那么有效杂质浓度是()，是()导电，迁移率取决于()</p>
 <p>3.GaAs的散射机构有哪三个？</p>
 <p>4.pn结中的势垒电容是()联，扩散电容是()联。(串or并)</p>
 <h3 id="名词解释20分"><a href="#名词解释20分" class="headerlink" title="名词解释20分"></a>名词解释20分</h3><p>回旋共振</p>
@@ -274,7 +270,7 @@
 <h3 id="设计题40分"><a href="#设计题40分" class="headerlink" title="设计题40分"></a>设计题40分</h3><ol>
 <li><p>利用多路选择器设计函数</p>
 </li>
-<li><p>画出Y&#x3D;not(AB+BC)的mos管级电路，要求利用最少的mos管数量</p>
+<li><p>画出Y=not(AB+BC)的mos管级电路，要求利用最少的mos管数量</p>
 </li>
 <li><p>利用与非门实现异或逻辑</p>
 </li>
@@ -282,7 +278,7 @@
 </li>
 <li><p>3位格雷码转换的verilog代码</p>
 </li>
-<li><p>Y&#x3D;BC+A存储器ROM利用点画线的方式描绘函数真值表</p>
+<li><p>Y=BC+A存储器ROM利用点画线的方式描绘函数真值表</p>
 </li>
 <li><p>设计功能如下的<code>一个输入信号由0变1时输出信号变为1并持续一周期，否则为0</code>verilog代码。</p>
 </li>
@@ -336,55 +332,43 @@
 <h2 id="电磁场与微波技术期末复盘"><a href="#电磁场与微波技术期末复盘" class="headerlink" title="电磁场与微波技术期末复盘"></a>电磁场与微波技术期末复盘</h2><h3 id="填空-24个，48分"><a href="#填空-24个，48分" class="headerlink" title="填空(24个，48分)"></a>填空(24个，48分)</h3><p>考点很细，部分罗列如下：</p>
 <p>麦克斯韦方程组的微分形式及其边界条件(常规情况、有限电导率的介质、理想介质、理想导体都建议熟悉)；电流连续性方程的微分形式(导体情况)；平行双导线、同轴导线情况的电容、电感求解；静电比拟法的应用；镜像法的运用，具体考的是球壳不接地且外部有电荷等等</p>
 <p>注：有些笔者记不太清了，电磁场的传播及其后面的内容考的相对较少(<strong>仅以2024年电磁波期末正考为例，样本数较少，不具备统计价值，建议大家都学习掌握好</strong>)</p>
-<h3 id="计算题-47分"><a href="#计算题-47分" class="headerlink" title="计算题(47分)"></a>计算题(47分)</h3><h4 id="一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分"><a href="#一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分" class="headerlink" title="一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)"></a>一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)</h4><p>从麦克斯韦方程组出发，利用洛伦兹规范消元即可；可从单位的角度出发来检验是否推导正确，比如笔者就推出来了 $\frac{\mu_{0}}{\epsilon_{0}}$ 的因子，这肯定是有问题的，一般都是二者相乘出现类似光速的单位 😭</p>
+<h3 id="计算题-47分"><a href="#计算题-47分" class="headerlink" title="计算题(47分)"></a>计算题(47分)</h3><h4 id="一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分"><a href="#一、洛伦兹规范下磁矢势-A-与电势-phi-所满足的波动方程的形式证明-10分" class="headerlink" title="一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)"></a>一、洛伦兹规范下磁矢势 $A$ 与电势 $\phi$ 所满足的波动方程的形式证明 (10分)</h4><p>从麦克斯韦方程组出发，利用洛伦兹规范消元即可；可从单位的角度出发来检验是否推导正确，比如笔者就推出来了 $\frac{\mu<em>{0}}{\epsilon</em>{0}}$ 的因子，这肯定是有问题的，一般都是二者相乘出现类似光速的单位 😭</p>
 <p>洛伦兹规范即下式:</p>
-<p>$$<br>\begin{align}<br>    \Delta \cdot A + \mu \epsilon \frac{\partial \phi }{ \partial t } &#x3D; 0<br>\end{align}<br>$$</p>
-<p>具体方程形式如下:</p>
-<p>$$<br>\begin{equation}<br>    \left{<br>    \begin{aligned}<br>        \Delta^{2} \phi &amp;- \mu \epsilon \frac{\partial^{2} \phi }{ \partial t^{2} } &#x3D; - \frac{ \rho }{ \epsilon }&amp; \<br>        \Delta^{2} A &amp;- \mu \epsilon \frac{\partial^{2} A }{ \partial t^{2} } &#x3D; - \mu J&amp;<br>    \end{aligned}<br>    \right.<br>\end{equation}<br>$$</p>
-<h4 id="二、垂直入射的电磁波的反射波、合成波的计算-10分"><a href="#二、垂直入射的电磁波的反射波、合成波的计算-10分" class="headerlink" title="二、垂直入射的电磁波的反射波、合成波的计算(10分)"></a>二、垂直入射的电磁波的反射波、合成波的计算(10分)</h4><p>根据波阻抗算透射系数和反射系数即可。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    \Delta \cdot A + \mu \epsilon \frac{\partial \phi }{ \partial t } = 0
+\end{align}</script><p>具体方程形式如下:</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        \Delta^{2} \phi &- \mu \epsilon \frac{\partial^{2} \phi }{ \partial t^{2} } = - \frac{ \rho }{ \epsilon }& \\
+        \Delta^{2} A &- \mu \epsilon \frac{\partial^{2} A }{ \partial t^{2} } = - \mu J&
+    \end{aligned}    
+    \right.
+\end{equation}</script><h4 id="二、垂直入射的电磁波的反射波、合成波的计算-10分"><a href="#二、垂直入射的电磁波的反射波、合成波的计算-10分" class="headerlink" title="二、垂直入射的电磁波的反射波、合成波的计算(10分)"></a>二、垂直入射的电磁波的反射波、合成波的计算(10分)</h4><p>根据波阻抗算透射系数和反射系数即可。</p>
 <h4 id="三、笔者忘了，期待读者补充-10分"><a href="#三、笔者忘了，期待读者补充-10分" class="headerlink" title="三、笔者忘了，期待读者补充(10分)"></a>三、笔者忘了，期待读者补充(10分)</h4><h4 id="四、笔者忘了，期待读者补充-10分"><a href="#四、笔者忘了，期待读者补充-10分" class="headerlink" title="四、笔者忘了，期待读者补充(10分)"></a>四、笔者忘了，期待读者补充(10分)</h4><h3 id="附加题：笔者忘了，期待读者补充-5分"><a href="#附加题：笔者忘了，期待读者补充-5分" class="headerlink" title="附加题：笔者忘了，期待读者补充  (5分)"></a>附加题：笔者忘了，期待读者补充  (5分)</h3>]]></content>
       <tags>
         <tag>大学生活</tag>
       </tags>
   </entry>
   <entry>
-    <title>简并or退化？本征or掺杂？</title>
-    <url>/2025/05/22/Degenerate_degenerate_intrinsic_doping/</url>
-    <content><![CDATA[<h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
-<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
-</blockquote>
-<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
-<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
-</blockquote>
-<p>其中费米狄拉克分布函数为:<br>$$<br>\begin{align*}<br>    f(E) &#x3D; \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}<br>\end{align*}<br>$$</p>
-<p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：<br>$$<br>\begin{align*}<br>    f(E) &#x3D; \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})<br>\end{align*}<br>$$</p>
-<p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：<br>$$<br>\begin{align*}<br>    \big\vert E - E_{F} \big\vert &gt; 3k_{0} T<br>\end{align*}<br>$$</p>
-<p>因此<strong>对于非简并半导体</strong>，我们要求：<br>$$<br>\begin{align*}<br>    E_{v} + 3k_{0}T &lt; E_{F} &lt; E_{c} - 3k_{0}T<br>\end{align*}<br>$$</p>
-<p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：<br>$$<br>\begin{align*}<br>    n_{0} &amp;&#x3D; N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \<br>    p_{0} &amp;&#x3D; N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \<br>    n_{0}p_{0} &amp;&#x3D; N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})<br>\end{align*}<br>$$</p>
-<p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
-<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
-<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
-</blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>半导体掺杂后可能带来简并或非简并。</li>
-<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
-<li>非简并的半导体可能是考虑了杂质补偿。</li>
-<li>非简并的半导体既有掺杂的也有本征的。</li>
+    <title>ADC参数总结</title>
+    <url>/2025/05/22/ADC_parameter/</url>
+    <content><![CDATA[<h1 id="ADC参数总结"><a href="#ADC参数总结" class="headerlink" title="ADC参数总结"></a>ADC参数总结</h1><ul>
+<li>FOM:energy-efficiency figure of merit ， 能效值 ， 单位: $nJ/step$</li>
 </ul>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
+<p><a href="https://e2echina.ti.com/blogs_/b/analogwire/posts/enob?keyMatch=ENOB&amp;_ticdt=MTY0Nzc2MTg0OHwwMTdkY2M5Y2I5ZjIwMDUxOGM5ZjNiNDA0NGYwMDUwODQwMDE2MDdjMDBiZDB8R0ExLjMuMTE2NjY2OTk5LjE2Mzk4MTUzNjM">ENOB和resolution的对比</a></p>
+<ul>
+<li></li>
 </ul>
 ]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
   </entry>
   <entry>
     <title>FPGA中乘法器的加速运算</title>
     <url>/2025/05/22/8_bits_multiplier/</url>
     <content><![CDATA[<h1 id="数字逻辑与系统设计设计报告"><a href="#数字逻辑与系统设计设计报告" class="headerlink" title="数字逻辑与系统设计设计报告"></a>数字逻辑与系统设计设计报告</h1><h2 id="项目内容"><a href="#项目内容" class="headerlink" title="项目内容"></a>项目内容</h2><blockquote>
-<p>题目：8位乘法器<br>实现的功能:</p>
+<p>题目：8位乘法器\<br>实现的功能:</p>
 <ul>
 <li>输入为两个8位有符号数或无符号数，输出16位相乘结果</li>
 <li>采用Booth算法对乘法转化为部分和求和</li>
@@ -398,11 +382,30 @@
 <p>本文采用<code>Radix-4 Booth乘法器</code>对乘法运算化简为<code>4个部分和</code>求和；同时对化简后的部分和采用<code>Wallace树</code>算法进行加速运算，减少全加器和半加器数量的使用。</p>
 </blockquote>
 <h3 id="Radix-4-Booth算法"><a href="#Radix-4-Booth算法" class="headerlink" title="Radix-4 Booth算法"></a>Radix-4 Booth算法</h3><p><strong>Booth算法原理:</strong></p>
-<p>对于8位有符号数A可以表示为如(1)式所示，其中用$A_{i}$表示A的第$i$位:<br>$$<br>\begin{align}<br>    A &#x3D; -A_{7}\times 2^{7} + \sum_{i&#x3D;0}^{6} A_{i} \times 2^{i}<br>\end{align}<br>$$</p>
-<p>同时考虑对$A_{i}$进行如下分解:<br>$$<br>\begin{align}<br>    A_{i} &#x3D; A_{i} \times ( 2^{i+1} - 2\times 2^{i } )<br>\end{align}<br>$$</p>
-<p>进而可以对8位有符号数A进行如下分解，补充定义$A_{-1}&#x3D;0$得:<br>$$<br>\begin{align}<br>    A &#x3D;&amp; -A_{7}\times 2^{7} + \sum_{i&#x3D;0}^{6} A_{i} \times 2^{i} \notag\<br>    &#x3D;&amp; -A_{7} \cdot 2^{7} + A_{6} \cdot 2^{6} +  A_{5} \cdot ( 2^{6} - 2 2^{4} ) \notag\<br>     &amp;  + A_{4} \cdot ( 2^{5} - 2\times 2^{3} ) + … + A_{0} \cdot  2^{0} \notag\<br>    &#x3D;&amp; (-2A_{7} + A_{6} + A_{5})\cdot 2^{6} + (-2A_{5} + A_{4} + A_{3})\cdot 2^{4} \notag\<br>    &amp;+ (-2A_{3} + A_{2} + A_{1})\cdot 2^{2} + (-2A_{1} + A_{0} + A_{-1})\cdot 2^{0} \notag\<br>    &#x3D;&amp; Coef_{3}\cdot 2^{6} + Coef_{2}\cdot 2^{4} + Coef_{1}\cdot 2^{2} + Coef_{0}\cdot 2^{0} \<br>\end{align}<br>$$</p>
-<p>因此$A\times B$可表示如下式所示:<br>$$<br>\begin{align}<br>    A\times B&#x3D;&amp;Coef_{3}\cdot 2^{6}\times B + Coef_{2}\cdot 2^{4}\times B \notag\<br>     &amp;+ Coef_{1}\cdot 2^{2}\times B + Coef_{0}\cdot 2^{0}\times B<br>\end{align}<br>$$</p>
-<p>可以发现$2^{i},i&#x3D;0,2,4,6$前的系数是由$A_{i},A_{i+1},A_{i+1}$构成的形式相近的式子，不妨记为$Coef$，故$Coef$与$A_{i}$,$A_{i+1}$,$A_{i+1}$满足的关系如下表所示:</p>
+<p>对于8位有符号数A可以表示为如(1)式所示，其中用$A_{i}$表示A的第$i$位:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A = -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i}
+\end{align}</script><p>同时考虑对$A_{i}$进行如下分解:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A_{i} = A_{i} \times ( 2^{i+1} - 2\times 2^{i } )
+\end{align}</script><p>进而可以对8位有符号数A进行如下分解，补充定义$A_{-1}=0$得:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A =& -A_{7}\times 2^{7} + \sum_{i=0}^{6} A_{i} \times 2^{i} \notag\\
+    =& -A_{7} \cdot 2^{7} + A_{6} \cdot 2^{6} +  A_{5} \cdot ( 2^{6} - 2 2^{4} ) \notag\\
+     &  + A_{4} \cdot ( 2^{5} - 2\times 2^{3} ) + ... + A_{0} \cdot  2^{0} \notag\\
+    =& (-2A_{7} + A_{6} + A_{5})\cdot 2^{6} + (-2A_{5} + A_{4} + A_{3})\cdot 2^{4} \notag\\
+    &+ (-2A_{3} + A_{2} + A_{1})\cdot 2^{2} + (-2A_{1} + A_{0} + A_{-1})\cdot 2^{0} \notag\\
+    =& Coef_{3}\cdot 2^{6} + Coef_{2}\cdot 2^{4} + Coef_{1}\cdot 2^{2} + Coef_{0}\cdot 2^{0} \\
+\end{align}</script><p>因此$A\times B$可表示如下式所示:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    A\times B=&Coef_{3}\cdot 2^{6}\times B + Coef_{2}\cdot 2^{4}\times B \notag\\
+     &+ Coef_{1}\cdot 2^{2}\times B + Coef_{0}\cdot 2^{0}\times B
+\end{align}</script><p>可以发现$2^{i},i=0,2,4,6$前的系数是由$A<em>{i},A</em>{i+1},A<em>{i+1}$构成的形式相近的式子，不妨记为$Coef$，故$Coef$与$A</em>{i}$,$A<em>{i+1}$,$A</em>{i+1}$满足的关系如下表所示:</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -412,7 +415,8 @@
 <th>$Coef$</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -460,19 +464,17 @@
 <td>1</td>
 <td>0</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>故可以将两个8位有符号数A,B的乘积$A\times B$转变为4个部分和的形式，实现计算量和资源使用量的减少。同时$Coef$的系数是有限的，故我们可以将$Coef$对应的操作按如下方式使用寄存器提前存储。</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line">p &lt;= <span class="number">16&#x27;d0</span>;</span><br><span class="line"><span class="comment">// 完成 M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;,multiplicand&#125;;</span><br><span class="line"><span class="comment">// 完成 -M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;,~multiplicand+<span class="number">1&#x27;b1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 2M 的位扩展，为防止 2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2 &lt;= &#123;&#123;<span class="number">8</span>&#123;multiplicand[<span class="number">7</span>]&#125;&#125;, multiplicand &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// 完成 -2M 的位扩展，为防止 -2M 溢出，因此扩展到 16 位</span></span><br><span class="line">M2_shadow &lt;= &#123;&#123;<span class="number">8</span>&#123;~multiplicand[<span class="number">7</span>]&#125;&#125;, (~multiplicand+<span class="number">1&#x27;b1</span>) &lt;&lt; <span class="number">1</span>&#125;;</span><br><span class="line"><span class="comment">// N 来选择 booth 的操作，因此用来寄存乘数的值，最后补一个 0，相当于y_&#123;-1&#125;</span></span><br><span class="line">N &lt;= &#123;multiplier,<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line">shift_num &lt;= <span class="number">4&#x27;d0</span>;</span><br><span class="line">i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br></pre></td></tr></table></figure>
-
 <p>同时定义RSTn和done信号用于表征乘法运算的开始和结束，同时利用case语句实现对4个部分和的逐次表征，并利用多个$if$语句实现对$Coef$的判断进而实现对部分和形式的确定。</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> booth_multiply#(</span><br><span class="line">    <span class="keyword">parameter</span> DATAWIDTH = <span class="number">8</span><span class="comment">//定义符号数宽度为8bit</span></span><br><span class="line">)</span><br><span class="line">(</span><br><span class="line">    <span class="keyword">input</span>                            CLK,<span class="comment">//定义系统时钟</span></span><br><span class="line">    <span class="keyword">input</span>                            RSTn,<span class="comment">//定义复位信号RSTn</span></span><br><span class="line">    <span class="keyword">input</span>                            START,<span class="comment">//定义乘法器工作开启信号，拉低时有效</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     A,<span class="comment">//定义multiplier</span></span><br><span class="line">    <span class="keyword">input</span>  [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     B,<span class="comment">//定义multiplicand</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">output</span> [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] RESULT,<span class="comment">//定义product</span></span><br><span class="line">    <span class="keyword">output</span>                           Done<span class="comment">//定义乘法器工作结束信号，拉高时有效</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] i;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] P;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_reg;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] A_bm;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ] N;</span><br><span class="line"><span class="keyword">reg</span> [ DATAWIDTH * <span class="number">2</span> : <span class="number">0</span> ] result_reg;</span><br><span class="line"><span class="keyword">reg</span>                       isDone;</span><br><span class="line"></span><br><span class="line"><span class="keyword">always</span> @ ( <span class="keyword">posedge</span> CLK <span class="keyword">or</span> <span class="keyword">negedge</span> RSTn )</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (!RSTn)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        i &lt;= <span class="number">0</span>;</span><br><span class="line">        P &lt;= <span class="number">0</span>;</span><br><span class="line">        A_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        A_bm &lt;= <span class="number">0</span>;</span><br><span class="line">        result_reg &lt;= <span class="number">0</span>;</span><br><span class="line">        N &lt;=<span class="number">0</span>;</span><br><span class="line">        isDone &lt;= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (START)</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">case</span> (i)</span><br><span class="line"></span><br><span class="line">        <span class="number">0</span>:<span class="keyword">begin</span></span><br><span class="line">          A_reg &lt;= A;<span class="comment">//计算A的补码,方便后面的+-操作</span></span><br><span class="line">          A_bm &lt;= ~A + <span class="number">1&#x27;b1</span>;    </span><br><span class="line">          P &lt;= &#123; <span class="number">8&#x27;d0</span>, B, <span class="number">1&#x27;b0</span> &#125;;  <span class="comment">//B add to last 8bit of P</span></span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          N &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span><span class="comment">//operating 这一个状态用来判断最低两位，然后决定执行什么操作</span></span><br><span class="line">        <span class="number">1</span>:<span class="keyword">begin</span></span><br><span class="line">          <span class="keyword">if</span> (N == DATAWIDTH)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            N &lt;= <span class="number">0</span>;</span><br><span class="line">            i &lt;= i + <span class="number">2&#x27;b10</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b00</span> | P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b11</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= P;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b01</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_reg,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span> (P[<span class="number">1</span>:<span class="number">0</span>] == <span class="number">2&#x27;b10</span>)</span><br><span class="line">            <span class="keyword">begin</span></span><br><span class="line">            P &lt;= &#123;P[<span class="number">16</span>:<span class="number">9</span>] + A_bm,P[<span class="number">8</span>:<span class="number">0</span>]&#125;;</span><br><span class="line">            i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">            <span class="comment">//shift 这是无论最低两位是什么，最后都要执行的移位操作</span></span><br><span class="line">        <span class="number">2</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          P &lt;= &#123;P[<span class="number">16</span>],P[<span class="number">16</span>:<span class="number">1</span>]&#125;;</span><br><span class="line">          N &lt;= N + <span class="number">1&#x27;b1</span>;</span><br><span class="line">          i &lt;= i - <span class="number">1&#x27;b1</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">        <span class="number">3</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">1</span>;</span><br><span class="line">          result_reg &lt;= P;</span><br><span class="line">          i &lt;= i + <span class="number">1&#x27;b1</span>;</span><br><span class="line">		  <span class="keyword">end</span></span><br><span class="line">        <span class="number">4</span>:</span><br><span class="line">          <span class="keyword">begin</span></span><br><span class="line">          isDone &lt;= <span class="number">0</span>;</span><br><span class="line">          i &lt;= <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">end</span></span><br><span class="line">		<span class="keyword">endcase</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> Done = isDone;</span><br><span class="line"><span class="keyword">assign</span> RESULT = result_reg[<span class="number">16</span>:<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
-
-
 <h3 id="仿真测试与波形查看"><a href="#仿真测试与波形查看" class="headerlink" title="仿真测试与波形查看"></a>仿真测试与波形查看</h3><ul>
 <li>testbench代码撰写如下:</li>
 </ul>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="comment">//注若要完整运行所有结果，至少运行1400ns</span></span><br><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;</span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
-
 <p>同时仿真波形如下图1所示:</p>
 <p><img src="https://www.helloimg.com/i/2025/01/07/677d16e644c82.png" alt="图1 非随机数仿真波形"></p>
 <p>同时如果检测该乘法器对所有8位有符号数相乘的可行性，则上述在testbench中手动设置乘数和被乘数的方法则会过于麻烦，因此也可以考虑如下方法来设置随机数仿真。</p>
@@ -480,20 +482,15 @@
 <li>随机数型乘法器仿真testbench代码可补充如下:</li>
 </ul>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="meta">`<span class="keyword">timescale</span>  1ns / 1ps    </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> tb_booth_multiply;<span class="comment">//random版</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">parameter</span> PERIOD     = <span class="number">10</span>;<span class="comment">//定义时钟周期</span></span><br><span class="line"><span class="keyword">parameter</span> DATAWIDTH  = <span class="number">8</span>;<span class="comment">// 定义乘数和被乘数的位宽</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为寄存器reg类型</span></span><br><span class="line"><span class="keyword">reg</span>   CLK                                  = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   RSTn                                 = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   START                                = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  A             = <span class="number">0</span> ;</span><br><span class="line"><span class="keyword">reg</span>   [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]  B             = <span class="number">0</span> ;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义输出信号为线网wire类型</span></span><br><span class="line"><span class="keyword">wire</span>  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ]  RESULT    ;</span><br><span class="line"><span class="keyword">wire</span>  Done                                 ;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">forever</span> <span class="variable">#(PERIOD/2)</span>  CLK=~CLK;<span class="comment">//时钟周期没到一半时钟信号翻转一次</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    <span class="variable">#(PERIOD)</span> RSTn  =  <span class="number">1</span>;START = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">booth_multiply #(</span><br><span class="line">    <span class="variable">.DATAWIDTH</span> ( DATAWIDTH ))</span><br><span class="line"> u_booth_multiply (</span><br><span class="line">    <span class="variable">.CLK</span>                     ( CLK                               ),</span><br><span class="line">    <span class="variable">.RSTn</span>                    ( RSTn                              ),</span><br><span class="line">    <span class="variable">.START</span>                   ( START                             ),</span><br><span class="line">    <span class="variable">.A</span>                       ( A       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line">    <span class="variable">.B</span>                       ( B       [ DATAWIDTH - <span class="number">1</span> : <span class="number">0</span> ]     ),</span><br><span class="line"></span><br><span class="line">    <span class="variable">.RESULT</span>                  ( RESULT  [ DATAWIDTH * <span class="number">2</span> - <span class="number">1</span> : <span class="number">0</span> ] ),</span><br><span class="line">    <span class="variable">.Done</span>                    ( Done                              )</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">initial</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">    A = <span class="number">2</span>;</span><br><span class="line">    B = <span class="number">4</span>;<span class="comment">//正确输出结果应为8</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">3</span>;</span><br><span class="line">    B = <span class="number">5</span>;<span class="comment">//正确输出结果应为15</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">4</span>;</span><br><span class="line">    B = <span class="number">6</span>;<span class="comment">//正确输出结果应为-24</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">123</span>;</span><br><span class="line">    B = -<span class="number">56</span>;<span class="comment">//正确输出结果应为-6888</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">99</span>;</span><br><span class="line">    B = <span class="number">44</span>;<span class="comment">//正确输出结果应为4356</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = -<span class="number">34</span>;</span><br><span class="line">    B = -<span class="number">66</span>;<span class="comment">//正确输出结果应为2244</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">23</span>;</span><br><span class="line">    B = <span class="number">12</span>;<span class="comment">//正确输出结果应为276</span></span><br><span class="line">    #<span class="number">200</span></span><br><span class="line">    A = <span class="number">111</span>;</span><br><span class="line">    B = <span class="number">100</span>;<span class="comment">//正确输出结果应为11100</span></span><br><span class="line">    #<span class="number">400</span></span><br><span class="line">    <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
-
 <p>但verilog中的随机数生成依赖于其中的<code>种子seed</code>，故我们可以直接<code>利用乘数A的值做为下一次random生成所需的种子</code>，这样我们就可以不用每次仿真调整随机数了，为我们测试乘法器的可靠性和鲁棒性带来方便。即将<strong>initial begin里的语句</strong>改成如下所示即可:</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">initial</span> <span class="keyword">begin</span></span><br><span class="line">	A = <span class="number">0</span>;</span><br><span class="line">	B = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">repeat</span>(<span class="number">10</span>) <span class="keyword">begin</span></span><br><span class="line">		#<span class="number">200</span> A = &#123;<span class="built_in">$random</span>(A)&#125;%<span class="number">100</span>;</span><br><span class="line">		B = &#123;<span class="built_in">$random</span>(A-<span class="number">1</span>)&#125;%<span class="number">100</span>;</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	#<span class="number">5</span> <span class="built_in">$finish</span>;</span><br><span class="line"><span class="keyword">end</span>	</span><br></pre></td></tr></table></figure>
-
-
 <p>同时仿真波形如下图2-图3所示:</p>
-<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e728300.png" alt="图2 随机数seed&#x3D;1时仿真波形"></p>
-<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e536bf9.png" alt="图3 随机数seed&#x3D;A时仿真波形"></p>
+<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e728300.png" alt="图2 随机数seed=1时仿真波形"></p>
+<p><img src="https://www.helloimg.com/i/2025/01/07/677d16e536bf9.png" alt="图3 随机数seed=A时仿真波形"></p>
 <h3 id="Wallace算法"><a href="#Wallace算法" class="headerlink" title="Wallace算法"></a>Wallace算法</h3><p>本文采用<code>Wallace算法</code>实现对8位无符号数乘法器的加速，实现了部分和求和时所使用的全加器数量的减少。</p>
 <p><strong>全加器与半加器</strong>：全加器是一个三输入两输出的逻辑单元，它可以同时处理两个数据输入位以及一个来自前一级的进位输入，并产生一个本级的和输出以及一个向后一级传递的进位输出。而半加器仅处理两个数据输入位而不考虑前一级的进位，因此它的结构相对简单。</p>
 <p>对于8位无符号数相乘，会出现8个部分积，故我们采用4:2压缩器，将其先压缩为4个部分积，再压缩为2个部分积</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义16位部分积的4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> wallace(x, y, out);</span><br><span class="line"><span class="keyword">parameter</span> size = <span class="number">8</span>; <span class="comment">// 定义参数，乘法器的位数(8位无符号数)</span></span><br><span class="line"><span class="keyword">input</span> [size-<span class="number">1</span>:<span class="number">0</span>] x, y; <span class="comment">// 输入y是乘数，x是被乘数</span></span><br><span class="line"><span class="keyword">output</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [size*size-<span class="number">1</span>:<span class="number">0</span>] a; <span class="comment">// a为部分积</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] b0, b1; <span class="comment">// 第一级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">1</span>:<span class="number">0</span>] c0, c1, c2, c3; <span class="comment">// 第二级的输出，包含进位</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">5</span>:<span class="number">0</span>] add_a, add_b; <span class="comment">// 第三级的输入</span></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">6</span>:<span class="number">0</span>] add_out; <span class="comment">// 第三级的输出</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> [<span class="number">2</span>*size-<span class="number">1</span>:<span class="number">0</span>] out; <span class="comment">// 乘法器的输出（组合逻辑）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> a = &#123;x[<span class="number">3</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>],x[<span class="number">2</span>], x[<span class="number">3</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">2</span>], x[<span class="number">0</span>], x[<span class="number">1</span>], x[<span class="number">0</span>]&#125;</span><br><span class="line">&amp; &#123;y[<span class="number">3</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">3</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">3</span>], y[<span class="number">2</span>],y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">2</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">1</span>], y[<span class="number">0</span>], y[<span class="number">0</span>]&#125;; <span class="comment">// 部分积</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 4:2压缩器</span></span><br><span class="line"><span class="keyword">module</span> compressor4_2(i1,i2,i3,i4,cin,c_out,C,S)</span><br><span class="line"><span class="keyword">input</span> i1,i2,i3,i4,cin;</span><br><span class="line"><span class="keyword">output</span> C,S;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span> s_temp;</span><br><span class="line"><span class="keyword">assign</span> &#123;cout,s_temp&#125; = i1+i2+i3;<span class="comment">//4:2压缩器中的第一级全加器</span></span><br><span class="line"><span class="keyword">assign</span> &#123;C,S&#125; = cin+s_temp+i4;<span class="comment">//4:2压缩器中的第二级全加器</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> pp_compressor4_2(</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in1,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in2,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in3,</span><br><span class="line"><span class="keyword">input</span> [<span class="number">15</span>:<span class="number">0</span>] pp_in4,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] C,</span><br><span class="line"><span class="keyword">output</span> [<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S_comb;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C_temp;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">16</span>:<span class="number">0</span>] C_temp_append_0;</span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> C_temp_append_0 = &#123;C_temp,<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//[0]位的进位Cin为1&#x27;b0;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">genvar</span> i;</span><br><span class="line"><span class="keyword">generate</span> </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">16</span>;i=i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">begin</span>:compressor4_2_inst</span><br><span class="line">        compressor4_2 u_compressor4_2(</span><br><span class="line">            <span class="variable">.i1</span>(pp_in1[i]),</span><br><span class="line">            <span class="variable">.i2</span>(pp_in2[i]),</span><br><span class="line">            <span class="variable">.i3</span>(pp_in3[i]),</span><br><span class="line">            <span class="variable">.i4</span>(pp_in4[i]),</span><br><span class="line">            <span class="variable">.cin</span>(C_temp_append_0[i]),</span><br><span class="line">            <span class="variable">.cout</span>(C_temp_append_0[i+<span class="number">1</span>]),</span><br><span class="line">            <span class="variable">.C</span>(C_comb[i]),</span><br><span class="line">            <span class="variable">.S</span>(S_comb[i])</span><br><span class="line">        );</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">endgenerate</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">assign</span> S=S_comb;</span><br><span class="line"><span class="keyword">assign</span> C=&#123;C_comb[<span class="number">14</span>:<span class="number">0</span>],<span class="number">1&#x27;b0</span>&#125;;<span class="comment">//进位C比Sum高一位，故左移一位</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span>(</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] a,</span><br><span class="line"><span class="keyword">input</span>[<span class="number">7</span>:<span class="number">0</span>] b,</span><br><span class="line"><span class="keyword">output</span>[<span class="number">15</span>:<span class="number">0</span>] S</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res0;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res4;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res5;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res6;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] partial_res7;</span><br><span class="line"></span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] C3;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S1;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S2;</span><br><span class="line"><span class="keyword">wire</span>[<span class="number">15</span>:<span class="number">0</span>] S3;</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算8个16位部分积</span></span><br><span class="line"><span class="keyword">assign</span> partial_res0=&#123;<span class="number">8&#x27;b0</span>,b*a[<span class="number">0</span>]&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res1=&#123;<span class="number">7&#x27;b0</span>,b*a[<span class="number">1</span>],<span class="number">1&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res2=&#123;<span class="number">6&#x27;b0</span>,b*a[<span class="number">2</span>],<span class="number">2&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res3=&#123;<span class="number">5&#x27;b0</span>,b*a[<span class="number">3</span>],<span class="number">3&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res4=&#123;<span class="number">4&#x27;b0</span>,b*a[<span class="number">4</span>],<span class="number">4&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res5=&#123;<span class="number">3&#x27;b0</span>,b*a[<span class="number">5</span>],<span class="number">5&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res6=&#123;<span class="number">2&#x27;b0</span>,b*a[<span class="number">6</span>],<span class="number">6&#x27;b0</span>&#125;;</span><br><span class="line"><span class="keyword">assign</span> partial_res7=&#123;<span class="number">1&#x27;b0</span>,b*a[<span class="number">7</span>],<span class="number">7&#x27;b0</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第一次压缩，将8个部分积压缩为4个部分积</span></span><br><span class="line">pp_compressor4_2 u1(partial_res0,partial_res1,partial_res2,partial_res3,C1,S1);</span><br><span class="line">pp_compressor4_2 u2(partial_res4,partial_res5,partial_res6,partial_res7,C2,S2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二次压缩，将4个部分积压缩为2个部分积</span></span><br><span class="line">pp_compressor4_2 u3(C1,S1,C2,S2,C3,S3);</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算最终结果</span></span><br><span class="line"><span class="keyword">assign</span> S = C3+S3;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
@@ -503,15 +500,18 @@
   <entry>
     <title>比较器offset论文研读</title>
     <url>/2025/05/22/Comparator_offset_calculate/</url>
-    <content><![CDATA[<h1 id="比较器offset论文研读"><a href="#比较器offset论文研读" class="headerlink" title="比较器offset论文研读"></a>比较器offset论文研读</h1><p>笔者最近在做比较器的相关电路，需要仿真offset，如果 $V_{FS}&#x3D;1V$ ，并且是10Bits的ADC的话，则要求offset满足 $V_{OS}&lt;\frac{1}{2}LSB&#x3D;0.48mV$ 。因此仿真计算比较器的offset有重大意义。</p>
+    <content><![CDATA[<h1 id="比较器offset论文研读"><a href="#比较器offset论文研读" class="headerlink" title="比较器offset论文研读"></a>比较器offset论文研读</h1><p>笔者最近在做比较器的相关电路，需要仿真offset，如果 $V<em>{FS}=1V$ ，并且是10Bits的ADC的话，则要求offset满足 $V</em>{OS}&lt;\frac{1}{2}LSB=0.48mV$ 。因此仿真计算比较器的offset有重大意义。</p>
 <p>遗憾的是笔者在某宝买的虚拟机没有mis模型，跑不了蒙卡，因此笔者也就萌生出了手算offset的想法，故也就有了本文。</p>
-<h2 id="offset定义"><a href="#offset定义" class="headerlink" title="offset定义"></a>offset定义</h2><p>offset定义：当比较器输出达到 $\frac{V_{DD}}{2}$ 时，输入端 $V_{in}$ 和 $V_{ip}$ 的差值。</p>
+<h2 id="offset定义"><a href="#offset定义" class="headerlink" title="offset定义"></a>offset定义</h2><p>offset定义：当比较器输出达到 $\frac{V<em>{DD}}{2}$ 时，输入端 $V</em>{in}$ 和 $V_{ip}$ 的差值。</p>
 <p>首先offset由系统失配和随机失配带来。系统失配指的是电路本身设计所带来的，如下图所示：</p>
 <h3 id="系统失配"><a href="#系统失配" class="headerlink" title="系统失配"></a>系统失配</h3><p><img src="https://www.helloimg.com/i/2025/05/10/681e3dfb2b261.png" alt="图1 二级运放电路图"></p>
 <p>在图1的二级运放电路图中我们需要保证M3、M4、M6的 $V_{GS}$ 一致，即若实际直流工作点存在偏差的话则会贡献有一部分offset，本文重点分析random mismatch带来的offset。</p>
 <h3 id="随机失配"><a href="#随机失配" class="headerlink" title="随机失配"></a>随机失配</h3><p>在实际芯片生产过程中，存在梯度效应，简单来说就是工艺生产的不均匀性，所以可能存在沿某一方向某一指标的持续恶化，例如沿东南方向电子迁移率持续降低。这和Layout时尽量对角对称的初衷差不多。本文重点分析关于导通电压 $V_{TH}$ 和迁移率 $\mu$ 的mismatch，结合文中的结论，它近似满足如下分布：</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{TH}^{2} &amp;&#x3D; \frac{A_{Vt}^{2}}{W\cdot L}+ S_{V_{T}}^{2} \cdot D^{2} \<br>\sigma_{\mu_{i}&#x2F;\mu_{n}}^{2} &amp;&#x3D; \frac{A_{\mu}^{2}}{W\cdot L}+ S_{\mu}^{2} \cdot D^{2}<br>\end{aligned}<br>$$</p>
-<p>其中 $A_{Vt}$ 为制造工艺决定的常数，$D$ 为chip中各pair管子之间的距离。</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{TH}^{2} &= \frac{A_{Vt}^{2}}{W\cdot L}+ S_{V_{T}}^{2} \cdot D^{2} \\
+\sigma_{\mu_{i}/\mu_{n}}^{2} &= \frac{A_{\mu}^{2}}{W\cdot L}+ S_{\mu}^{2} \cdot D^{2} 
+\end{aligned}</script><p>其中 $A_{Vt}$ 为制造工艺决定的常数，$D$ 为chip中各pair管子之间的距离。</p>
 <p>其中的具体参数可以参考下方链接中的文档，也可参考下方的图2图3所示：</p>
 <blockquote>
 <p><a href="https://bbs.eetop.cn/thread-988998-1-1.html">https://bbs.eetop.cn/thread-988998-1-1.html</a></p>
@@ -520,14 +520,23 @@
 <p><img src="https://www.helloimg.com/i/2025/05/10/681e3dfc14efb.png" alt="图3 p18 mismatch"></p>
 <h2 id="手算offset"><a href="#手算offset" class="headerlink" title="手算offset"></a>手算offset</h2><p>OK回归主题，开始计算offset。本文以图4所示的Lewis-Gray型动态比较器结构来分析：</p>
 <p><img src="https://www.helloimg.com/i/2025/05/10/681e3dfa87574.png" alt="图4 比较器结构图"></p>
-<p>思路十分简单：从KCL出发，将M5-M6 pair，M7-M8 pair，M10-M11 pair的电流与M1-M2、M3-M4的电流关联起来，同时通过KCL做差求解 $V_{OS} &#x3D; V_{in+} - V_{in-}$ 。</p>
+<p>思路十分简单：从KCL出发，将M5-M6 pair，M7-M8 pair，M10-M11 pair的电流与M1-M2、M3-M4的电流关联起来，同时通过KCL做差求解 $V<em>{OS} = V</em>{in+} - V_{in-}$ 。</p>
 <p>思路就是这样，下面是具体的分析过程，为了考虑 $V_{TH}$ 和迁移率 $\mu$ 的mismatch，我们考虑如下形式引入微小变化量，以M5-M6 pair为例：</p>
-<p>$$<br>\begin{aligned}<br>\mu_{5} &amp;&#x3D; \mu_{n} + \Delta \mu_{5} \<br>\mu_{6} &amp;&#x3D; \mu_{n} + \Delta \mu_{6} \<br>V_{t5} &amp;&#x3D; V_{tn} + \Delta V_{t5} \<br>V_{t6} &amp;&#x3D; V_{tn} + \Delta V_{t6}<br>\end{aligned}<br>$$</p>
-<p>考虑如下KCL方程：</p>
-<p>$$<br>\begin{aligned}<br>I_{D5} &amp;&#x3D; I_{D1} + I_{D2} \<br>I_{D6} &amp;&#x3D; I_{D3} + I_{D4}<br>\end{aligned}<br>$$</p>
-<p>进而通过求解 $V_{in+} - V_{in-}$ 求解 $V_{OS}$。</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\mu_{5} &= \mu_{n} + \Delta \mu_{5} \\
+\mu_{6} &= \mu_{n} + \Delta \mu_{6} \\
+V_{t5} &= V_{tn} + \Delta V_{t5} \\
+V_{t6} &= V_{tn} + \Delta V_{t6} 
+\end{aligned}</script><p>考虑如下KCL方程：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+I_{D5} &= I_{D1} + I_{D2} \\
+I_{D6} &= I_{D3} + I_{D4} 
+\end{aligned}</script><p>进而通过求解 $V<em>{in+} - V</em>{in-}$ 求解 $V_{OS}$。</p>
 <h3 id="阈值电压和迁移率mismatch的计算结果"><a href="#阈值电压和迁移率mismatch的计算结果" class="headerlink" title="阈值电压和迁移率mismatch的计算结果"></a>阈值电压和迁移率mismatch的计算结果</h3><p>本文基于如下简化分析，讨论：</p>
-<p>选择 $V_{latch}$ 刚达到 $V_{DD}$ 时的时刻来分析；所有管子具有相同的栅长 $L$ ；M1-M4具有相同的尺寸；同时各管子工作在如下工作区：</p>
+<p>选择 $V<em>{latch}$ 刚达到 $V</em>{DD}$ 时的时刻来分析；所有管子具有相同的栅长 $L$ ；M1-M4具有相同的尺寸；同时各管子工作在如下工作区：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -535,7 +544,8 @@
 <th>工作区</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>M1-M4</td>
 <td>三极管区</td>
 </tr>
@@ -551,38 +561,61 @@
 <td>M10-M11</td>
 <td>饱和区</td>
 </tr>
-</tbody></table>
-<p>其中M9和M12的mismatch影响可以忽略不记。同时考虑 $V_{TH}$ 和 $\mu$ 的失配服从Guassian分布，则各pair管子所贡献的 $V_{OS}$ 的方差满足下列式子：</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{V_{OS}-M5M6}^{2} &amp;&#x3D; (\frac{V_{out+}-V_{s5}-V_{tn}}{V_{s5}}\cdot \frac{W_{5}}{W_{1}})^{2} \cdot \sigma_{V_{t5}}^{2} + (\frac{V_{out-}-V_{s6}-V_{tn}}{V_{s6}}\cdot \frac{W_{6}}{W_{1}})^{2} \cdot \sigma_{V_{t6}}^{2} \<br>&amp;+(\frac{(V_{out+}-V_{s5}-V_{tn})^{2}}{2\cdot V_{s5}}\cdot \frac{W_{5}}{W_{1}})^{2} \cdot \sigma_{\mu_{5}&#x2F;\mu_{n}}^{2} + (\frac{(V_{out-}-V_{s6}-V_{tn})^{2}}{2\cdot V_{s6}}\cdot \frac{W_{6}}{W_{1}})^{2} \cdot \sigma_{\mu_{6}&#x2F;\mu_{n}}^{2}<br>\end{aligned}<br>$$</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{V_{OS}-M1M4}^{2} &amp;&#x3D;  \sigma_{V_{t1}}^{2} +  \sigma_{V_{t4}}^{2} +(V_{ref-}-V_{tn})^{2} \cdot \sigma_{\mu_{1}&#x2F;\mu_{n}}^{2} + (V_{ref+}-V_{tn})^{2} \cdot \sigma_{\mu_{4}&#x2F;\mu_{n}}^{2}<br>\end{aligned}<br>$$</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{V_{OS}-M2M3}^{2} &amp;&#x3D;  \sigma_{V_{t2}}^{2} +  \sigma_{V_{t3}}^{2} +(V_{in+}-V_{tn})^{2} \cdot \sigma_{\mu_{2}&#x2F;\mu_{n}}^{2} + (V_{in-}-V_{tn})^{2} \cdot \sigma_{\mu_{3}&#x2F;\mu_{n}}^{2}<br>\end{aligned}<br>$$</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{V_{OS}-M10M11}^{2} &amp;&#x3D; (\frac{V_{DD}-V_{out+}-V_{tp}}{3\cdot V_{s5}})^{2} \cdot \sigma_{V_{t10}}^{2} + (\frac{V_{DD}-V_{out+}-V_{tp}}{3\cdot V_{s6}})^{2} \cdot \sigma_{V_{t11}}^{2} \<br>&amp;+(\frac{(V_{DD}-V_{out+}-V_{tp})^{2}}{6\cdot V_{s5}})^{2} \cdot \sigma_{\mu_{5}&#x2F;\mu_{n}}^{2} + (\frac{(V_{DD}-V_{out+}-V_{tp})^{2}}{6\cdot V_{s6}})^{2} \cdot \sigma_{\mu_{6}&#x2F;\mu_{n}}^{2}<br>\end{aligned}<br>$$</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{V_{OS}-M7M8}^{2} &amp;&#x3D; (\frac{W_{7}}{W_{2}} \cdot \frac{V_{ds7}}{V_{s5}} )^{2} \cdot \sigma_{V_{t7}}^{2} + (\frac{W_{7}}{W_{2}} \cdot \frac{V_{ds7}}{V_{s5}} )^{2}\cdot ( V_{latch}-V_{d5}-V_{tn}-\frac{V_{ds7}}{2} )^{2} \cdot \sigma_{\mu_{7}&#x2F;\mu_{n}}^{2}  \<br>&amp;+ (\frac{W_{8}}{W_{2}} \cdot \frac{V_{ds8}}{V_{s5}} )^{2} \cdot \sigma_{V_{t8}}^{2}  + (\frac{W_{8}}{W_{2}} \cdot \frac{V_{ds8}}{V_{s5}} )^{2}\cdot ( V_{latch}-V_{d5}-V_{tn}-\frac{V_{ds8}}{2} )^{2} \cdot  \sigma_{\mu_{8}&#x2F;\mu_{n}}^{2}<br>\end{aligned}<br>$$</p>
-<p>考虑到每对pair的管子的mismatch是独立分布的，因此总的 $V_{OS}$ 满足下式：</p>
-<p>$$<br>\begin{aligned}<br>\sigma_{V_{OS}} &#x3D;( \sigma_{V_{OS}-M5M6}^{2} + \sigma_{V_{OS}-M1M4}^{2} + \sigma_{V_{OS}-M2M3}^{2} + \sigma_{V_{OS}-M7M8}^{2} +\sigma_{V_{OS}-M10M11}^{2} )^{1&#x2F;2}<br>\end{aligned}<br>$$</p>
-<p>下面这张图是40nm下比较器的offset的蒙卡仿真结果与手算结果的比较：</p>
+</tbody>
+</table>
+</div>
+<p>其中M9和M12的mismatch影响可以忽略不记。同时考虑 $V<em>{TH}$ 和 $\mu$ 的失配服从Guassian分布，则各pair管子所贡献的 $V</em>{OS}$ 的方差满足下列式子：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{V_{OS}-M5M6}^{2} &= (\frac{V_{out+}-V_{s5}-V_{tn}}{V_{s5}}\cdot \frac{W_{5}}{W_{1}})^{2} \cdot \sigma_{V_{t5}}^{2} + (\frac{V_{out-}-V_{s6}-V_{tn}}{V_{s6}}\cdot \frac{W_{6}}{W_{1}})^{2} \cdot \sigma_{V_{t6}}^{2} \\
+&+(\frac{(V_{out+}-V_{s5}-V_{tn})^{2}}{2\cdot V_{s5}}\cdot \frac{W_{5}}{W_{1}})^{2} \cdot \sigma_{\mu_{5}/\mu_{n}}^{2} + (\frac{(V_{out-}-V_{s6}-V_{tn})^{2}}{2\cdot V_{s6}}\cdot \frac{W_{6}}{W_{1}})^{2} \cdot \sigma_{\mu_{6}/\mu_{n}}^{2}
+\end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{V_{OS}-M1M4}^{2} &=  \sigma_{V_{t1}}^{2} +  \sigma_{V_{t4}}^{2} +(V_{ref-}-V_{tn})^{2} \cdot \sigma_{\mu_{1}/\mu_{n}}^{2} + (V_{ref+}-V_{tn})^{2} \cdot \sigma_{\mu_{4}/\mu_{n}}^{2}
+\end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{V_{OS}-M2M3}^{2} &=  \sigma_{V_{t2}}^{2} +  \sigma_{V_{t3}}^{2} +(V_{in+}-V_{tn})^{2} \cdot \sigma_{\mu_{2}/\mu_{n}}^{2} + (V_{in-}-V_{tn})^{2} \cdot \sigma_{\mu_{3}/\mu_{n}}^{2}
+\end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{V_{OS}-M10M11}^{2} &= (\frac{V_{DD}-V_{out+}-V_{tp}}{3\cdot V_{s5}})^{2} \cdot \sigma_{V_{t10}}^{2} + (\frac{V_{DD}-V_{out+}-V_{tp}}{3\cdot V_{s6}})^{2} \cdot \sigma_{V_{t11}}^{2} \\
+&+(\frac{(V_{DD}-V_{out+}-V_{tp})^{2}}{6\cdot V_{s5}})^{2} \cdot \sigma_{\mu_{5}/\mu_{n}}^{2} + (\frac{(V_{DD}-V_{out+}-V_{tp})^{2}}{6\cdot V_{s6}})^{2} \cdot \sigma_{\mu_{6}/\mu_{n}}^{2}
+\end{aligned}</script><script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{V_{OS}-M7M8}^{2} &= (\frac{W_{7}}{W_{2}} \cdot \frac{V_{ds7}}{V_{s5}} )^{2} \cdot \sigma_{V_{t7}}^{2} + (\frac{W_{7}}{W_{2}} \cdot \frac{V_{ds7}}{V_{s5}} )^{2}\cdot ( V_{latch}-V_{d5}-V_{tn}-\frac{V_{ds7}}{2} )^{2} \cdot \sigma_{\mu_{7}/\mu_{n}}^{2}  \\
+&+ (\frac{W_{8}}{W_{2}} \cdot \frac{V_{ds8}}{V_{s5}} )^{2} \cdot \sigma_{V_{t8}}^{2}  + (\frac{W_{8}}{W_{2}} \cdot \frac{V_{ds8}}{V_{s5}} )^{2}\cdot ( V_{latch}-V_{d5}-V_{tn}-\frac{V_{ds8}}{2} )^{2} \cdot  \sigma_{\mu_{8}/\mu_{n}}^{2}
+\end{aligned}</script><p>考虑到每对pair的管子的mismatch是独立分布的，因此总的 $V_{OS}$ 满足下式：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\sigma_{V_{OS}} =( \sigma_{V_{OS}-M5M6}^{2} + \sigma_{V_{OS}-M1M4}^{2} + \sigma_{V_{OS}-M2M3}^{2} + \sigma_{V_{OS}-M7M8}^{2} +\sigma_{V_{OS}-M10M11}^{2} )^{1/2}
+\end{aligned}</script><p>下面这张图是40nm下比较器的offset的蒙卡仿真结果与手算结果的比较：</p>
 <p><img src="https://www.helloimg.com/i/2025/05/10/681e3dfcece70.png" alt="图5 40nm下比较器的offset的蒙卡仿真结果与手算结果的比较"></p>
-<p>总体符合拉扎维先生在**《The Design of a Comparator》**一文中提出的结论:在一个典型的设计中，当把M7和M8之间的失调等效到输入端时，需要先除以一个大约为 $A_{v}&#x3D;10$ 的因子（第二阶段的增益倍率）；而当M10、M11导致的失调等效到输入端时，需要除以一个大约为10的因子，这是因为考虑到了M10、M11管只有在最后两个阶段的时候才导通。</p>
+<p>总体符合拉扎维先生在<strong>《The Design of a Comparator》</strong>一文中提出的结论:在一个典型的设计中，当把M7和M8之间的失调等效到输入端时，需要先除以一个大约为 $A_{v}=10$ 的因子（第二阶段的增益倍率）；而当M10、M11导致的失调等效到输入端时，需要除以一个大约为10的因子，这是因为考虑到了M10、M11管只有在最后两个阶段的时候才导通。</p>
 <p>但是拉扎维先生论文中比较器的电路和本文讨论的略有不同。</p>
 <h3 id="寄生电容mismatch的计算结果"><a href="#寄生电容mismatch的计算结果" class="headerlink" title="寄生电容mismatch的计算结果"></a>寄生电容mismatch的计算结果</h3><p>此处先给出一些典型值，1fF的电容失配可能会带来输出结点几十毫伏的输入参考失配电压。其中包含寄生电容的比较器结构图如下图所示：</p>
 <p><img src="https://www.helloimg.com/i/2025/05/10/681e3dfabf0b8.png" alt="图6 比较器内部寄生电容图示"></p>
-<p>为简化分析，只讨论输出节点的寄生电容 $C_{5}$ 和 $C_{6}$  ，同时忽略其他电容的分流作用，因此得到如下方程:</p>
-<p>$$<br>\begin{aligned}<br>C_{5} \frac{dV_{out-}}{dt} &#x3D;&amp; I_{ds1} + I_{ds2}\<br>C_{6} \frac{dV_{out+}}{dt} &#x3D;&amp; I_{ds3} + I_{ds4}\<br>\frac{dV_{out-}}{dt} &amp;&#x3D;\frac{dV_{out+}}{dt}<br>\end{aligned}<br>$$</p>
-<p>同时考虑 $C_{5}$ 和 $C_{6}$ 之间存在微小失配，即有下式：</p>
-<p>$$<br>\begin{aligned}<br>C_{5} &#x3D; C_{6} + \Delta C_{56}<br>\end{aligned}<br>$$</p>
-<p>进而得到:</p>
-<p>$$<br>\begin{aligned}<br>V_{OS,C56} &#x3D; \frac{\Delta C_{56}}{C_{6}} \frac{I_{ds3}+I_{ds4}}{\mu_{n}C_{ox}\frac{W_{2}}{L_{2}}V_{ds1}}<br>\end{aligned}<br>$$</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>调整为下图所示的拓扑结构可以优化offset表现:</p>
+<p>为简化分析，只讨论输出节点的寄生电容 $C<em>{5}$ 和 $C</em>{6}$  ，同时忽略其他电容的分流作用，因此得到如下方程:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+C_{5} \frac{dV_{out-}}{dt} =& I_{ds1} + I_{ds2}\\
+C_{6} \frac{dV_{out+}}{dt} =& I_{ds3} + I_{ds4}\\
+\frac{dV_{out-}}{dt} &=\frac{dV_{out+}}{dt}
+\end{aligned}</script><p>同时考虑 $C<em>{5}$ 和 $C</em>{6}$ 之间存在微小失配，即有下式：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+C_{5} = C_{6} + \Delta C_{56}
+\end{aligned}</script><p>进而得到:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+V_{OS,C56} = \frac{\Delta C_{56}}{C_{6}} \frac{I_{ds3}+I_{ds4}}{\mu_{n}C_{ox}\frac{W_{2}}{L_{2}}V_{ds1}}
+\end{aligned}</script><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>调整为下图所示的拓扑结构可以优化offset表现:</p>
 <p><img src="https://www.helloimg.com/i/2025/05/10/681e3e0ebcb5d.png" alt="图7 比较器结构图2"></p>
 <p>不愧是TCAS-I的文章，读起来就是通畅。</p>
 <h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><blockquote>
 <ol>
-<li>Analyses of Static and Dynamic Random Offset Voltages in Dynamic Comparators</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="2">
-<li><a href="https://wx.seu.edu.cn/_upload/article/files/78/6c/091d364c47e288410db0cc79f7a8/3ba08ec5-4c20-43fa-b82d-a7d9aff7ccd3.pdf">https://wx.seu.edu.cn/_upload/article/files/78/6c/091d364c47e288410db0cc79f7a8/3ba08ec5-4c20-43fa-b82d-a7d9aff7ccd3.pdf</a></li>
+<li><p>Analyses of Static and Dynamic Random Offset Voltages in Dynamic Comparators</p>
+</li>
+<li><p><a href="https://wx.seu.edu.cn/_upload/article/files/78/6c/091d364c47e288410db0cc79f7a8/3ba08ec5-4c20-43fa-b82d-a7d9aff7ccd3.pdf">https://wx.seu.edu.cn/_upload/article/files/78/6c/091d364c47e288410db0cc79f7a8/3ba08ec5-4c20-43fa-b82d-a7d9aff7ccd3.pdf</a></p>
+</li>
 </ol>
 </blockquote>
 ]]></content>
@@ -617,7 +650,7 @@
 <p>(iv) $ Si O_{2} $ 是良好绝缘体，适合用来做隔离和掩蔽层；</p>
 <p>(v) 用与Ge比，Si能隙大，能承受较高的工作温度和较大的杂质掺杂范围；</p>
 <p>(vi) Si的临界击穿电压比Ge高，且 $Ge {O}_{2}$ 有水溶性。</p>
-<h2 id="9：离子注入、多晶硅、PSG"><a href="#9：离子注入、多晶硅、PSG" class="headerlink" title="9：离子注入、多晶硅、PSG"></a>9：离子注入、多晶硅、PSG</h2><p>(i) 由于离子注入可以独立地控制掺杂浓度和结深，表现出各向异性，故其逐步取代热扩散技术；且可以形成自对准的源&#x2F;漏极；</p>
+<h2 id="9：离子注入、多晶硅、PSG"><a href="#9：离子注入、多晶硅、PSG" class="headerlink" title="9：离子注入、多晶硅、PSG"></a>9：离子注入、多晶硅、PSG</h2><p>(i) 由于离子注入可以独立地控制掺杂浓度和结深，表现出各向异性，故其逐步取代热扩散技术；且可以形成自对准的源/漏极；</p>
 <p>(ii) 同时多晶硅取代铝成为栅材料和局部连线。</p>
 <p>(iii) 掺磷硅玻璃PSG是金属沉积前的电介质(PMD)，能俘获移动离子的如 $ Na^{+} $ ，以防止他们扩散到栅极而损害晶体管的特性。</p>
 <h2 id="10-LOCOS替代整面全区氧化、BPSG"><a href="#10-LOCOS替代整面全区氧化、BPSG" class="headerlink" title="10: LOCOS替代整面全区氧化、BPSG"></a>10: LOCOS替代整面全区氧化、BPSG</h2><p>(i) CMOS中用LOCOS替代整面全区式氧化; 但由于氧的热扩散是各向同性故导致鸟喙效应的出现;</p>
@@ -636,8 +669,16 @@
 <h2 id="12-材料结构和缺陷"><a href="#12-材料结构和缺陷" class="headerlink" title="12. 材料结构和缺陷"></a>12. 材料结构和缺陷</h2><p>(i) 材料结构：非晶态、单晶态、多晶态；</p>
 <p>(ii) 缺陷：点缺陷、间隙替代、位错缺陷；</p>
 <p>(iii) 缺陷会带来一些悬浮键，这些悬浮键会来束缚杂质原子，使其无法移动。晶圆背面的缺陷是刻意制造用于捕获晶圆内部污染的粒子的，以防止这些可移动的杂质影响微电子元件的正常工作。 </p>
-<h2 id="13-硅的提纯"><a href="#13-硅的提纯" class="headerlink" title="13. 硅的提纯"></a>13. 硅的提纯</h2><p>$$<br>\begin{equation}<br>	\left{<br>	\begin{aligned}<br>		Si {O}<em>{2} + 2C    &amp; \xrightarrow[] { \text{加热 } }    Si  + 2CO &amp; \text{得到冶金级硅} \<br>		Si         + 3Hcl  &amp; \xrightarrow[] { \text{300°C加热 } }   SiHcl</em>{3} + H_{2} &amp; \text{得到三氯硅烷} \<br>        SiH {cl}<em>{2} + H</em>{2}    &amp; \xrightarrow[] { \text{1100°C加热 } }    Si  + 3Hcl &amp; \text{得到电子级硅}<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>利用电子级硅拉成单晶硅棒并制成集成电路用晶圆</p>
+<h2 id="13-硅的提纯"><a href="#13-硅的提纯" class="headerlink" title="13. 硅的提纯"></a>13. 硅的提纯</h2><script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        Si {O}_{2} + 2C    & \xrightarrow[] { \text{加热 } }    Si  + 2CO & \text{得到冶金级硅} \\
+        Si         + 3Hcl  & \xrightarrow[] { \text{300°C加热 } }   SiHcl_{3} + H_{2} & \text{得到三氯硅烷} \\
+        SiH {cl}_{2} + H_{2}    & \xrightarrow[] { \text{1100°C加热 } }    Si  + 3Hcl & \text{得到电子级硅} 
+    \end{aligned}
+    \right.
+\end{equation}</script><p>利用电子级硅拉成单晶硅棒并制成集成电路用晶圆</p>
 <h2 id="14-硅晶体的提拉"><a href="#14-硅晶体的提拉" class="headerlink" title="14. 硅晶体的提拉:"></a>14. 硅晶体的提拉:</h2><h3 id="查克洛斯基法-CZochralski-method-CZ法"><a href="#查克洛斯基法-CZochralski-method-CZ法" class="headerlink" title="查克洛斯基法 (CZochralski method) CZ法"></a>查克洛斯基法 (CZochralski method) CZ法</h3><ul>
 <li><p>speciality: 只有 ${CZ}$ 法能做出直径大于 $200mm$ 的晶圆；价格低(可以使用晶体碎片和Poly silicon)；同时它能把掺杂物与硅一起融化及凝固而生长出高掺杂的单晶硅。</p>
 </li>
@@ -651,7 +692,7 @@
 </li>
 <li><p>method: 加热线圈向上移动，多晶硅棒熔化，且靠近籽晶侧的熔融硅凝固，形成与籽晶相同的晶体结构。 </p>
 </li>
-<li><p>disadvantage: 成本高; 熔体与晶体界面复杂，很难得到无位错晶体; 需额外使用中子嬗变掺杂技术来掺杂。</p>
+<li><p>disadvantage: 成本高; 熔体与晶体界面复杂，很难得到无位错晶体; 需额外使用中子嬗变掺杂技术来掺杂。 </p>
 </li>
 </ul>
 <h2 id="15：单晶棒切割完后的处理及圆滑边缘的目的"><a href="#15：单晶棒切割完后的处理及圆滑边缘的目的" class="headerlink" title="15：单晶棒切割完后的处理及圆滑边缘的目的"></a>15：单晶棒切割完后的处理及圆滑边缘的目的</h2><p>单晶棒锯切完成后，利用机械方式将晶圆边缘磨光，并将切片过程中造成锋利的边缘磨圆。</p>
@@ -662,7 +703,7 @@
 <li><p>表面湿法刻蚀：去除 wafer 表面缺陷</p>
 </li>
 </ul>
-<p>利用 $ HN O_{3}$ 将 ${Si}$ 氧化成 ${Si} O_{2}$ ，再利用HF去除 ${Si} O_{2} $ ，用 $CH_{3} COOH $ 调控刻蚀速率。</p>
+<p>利用 $ HN O<em>{3}$ 将 ${Si}$ 氧化成 ${Si} O</em>{2}$ ，再利用HF去除 ${Si} O<em>{2} $ ，用 $CH</em>{3} COOH $ 调控刻蚀速率。</p>
 <ul>
 <li>化学机械研磨： 平坦化+减少缺陷</li>
 </ul>
@@ -683,7 +724,7 @@
 </ul>
 <p>对于BJT 即在 ${n}^{ + }$ buried layer上长一层外延层(对于MOS而言即在 substrate 上长一层外延层)；</p>
 <ul>
-<li>advantage:</li>
+<li>advantage: </li>
 </ul>
 <p>(i) 对BJT而言在低阻衬底上形成一个高电阻层，可提高BJT性能；</p>
 <p>(ii) BJT需要从外延硅在硅深部形成重掺杂掩埋层，通过其他方法很难实现；</p>
@@ -694,20 +735,36 @@
 <li>fabricate: 1000°C高温化学气相淀积外延硅:</li>
 </ul>
 <p>利用下式生成外延硅:</p>
-<p>$$<br>\begin{equation}<br>	\left{<br>	\begin{aligned}<br>		Si {H}<em>{4}  &amp; \xrightarrow[]{ \text{1000°C加热 } }  &amp; {Si} + 2{H}</em>{2} \<br>		Si {H}<em>{2} C{l}</em>{2}  &amp; \xrightarrow[] { \text{1100°C加热 } } &amp;  {Si} + 2{Hcl}   \<br>        SiH {cl}<em>{3} + H</em>{2}    &amp; \xrightarrow[] { \text{1100°C加热 } }   &amp; {Si}  + 3{Hcl}<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>利用下式实现外延硅掺杂(气相掺杂):</p>
-<p>$$<br>\begin{equation}<br>	\left{<br>	\begin{aligned}<br>		{A}<em>{s} {H}</em>{3}  &amp; \xrightarrow[]{ \text{1000°C加热 } }  &amp; {As} + \frac{3}{2} {H}<em>{2} \<br>		P{H}</em>{3}  &amp; \xrightarrow[] { \text{1000°C加热 } } &amp;  P + \frac{3}{2} {H}<em>{2}   \<br>        {B}</em>{2} {H}_{6}  &amp; \xrightarrow[] { \text{1000°C加热 } }   &amp; 2{B} + {3Hcl}<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>外延硅薄膜的生长速率与温度的关系常用如下分法：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        Si {H}_{4}  & \xrightarrow[]{ \text{1000°C加热 } }  & {Si} + 2{H}_{2} \\
+        Si {H}_{2} C{l}_{2}  & \xrightarrow[] { \text{1100°C加热 } } &  {Si} + 2{Hcl}   \\
+        SiH {cl}_{3} + H_{2}    & \xrightarrow[] { \text{1100°C加热 } }   & {Si}  + 3{Hcl}  
+    \end{aligned}
+    \right.
+\end{equation}</script><p>利用下式实现外延硅掺杂(气相掺杂):</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        {A}_{s} {H}_{3}  & \xrightarrow[]{ \text{1000°C加热 } }  & {As} + \frac{3}{2} {H}_{2} \\
+        P{H}_{3}  & \xrightarrow[] { \text{1000°C加热 } } &  P + \frac{3}{2} {H}_{2}   \\
+        {B}_{2} {H}_{6}  & \xrightarrow[] { \text{1000°C加热 } }   & 2{B} + {3Hcl} 
+    \end{aligned}
+    \right.
+\end{equation}</script><p>外延硅薄膜的生长速率与温度的关系常用如下分法：</p>
 <p>按温度从低到高反应区域分为：表面反应控制区(低温区间、生长速率对温度<strong>敏感</strong>)、质量传输控制区(高温区间、生长速率对温度<strong>不敏感</strong>)和气相成核区(更高温区间、<strong>应当避免</strong>)</p>
 <p>以 $ Si H_{4} $ 为例，其表面反应控制区和质量传输控制区的分界点是900°C</p>
 <ul>
-<li>instrument:</li>
+<li>instrument: </li>
 </ul>
 <p>(i)桶状式反应器: 均匀性好; 但反应器超过 1200°C 后变得不稳定;</p>
 <p>(ii)水平式反应器：简单成本低；均匀性差；</p>
 <p>(iii)平板式垂直反向器：均匀性好，机械复杂度高；</p>
 <h3 id="Q-为什么水平式反应器会有一定倾角？"><a href="#Q-为什么水平式反应器会有一定倾角？" class="headerlink" title="Q. 为什么水平式反应器会有一定倾角？"></a>Q. 为什么水平式反应器会有一定倾角？</h3><p>A: 为了让气态反应物在表面均匀分布，以使生长出来的硅厚度均匀，掺杂均匀。</p>
-<h3 id="Q：为什么外延层生长的用-H-2-清洁反应室而不用-N-2-清洁？"><a href="#Q：为什么外延层生长的用-H-2-清洁反应室而不用-N-2-清洁？" class="headerlink" title="Q：为什么外延层生长的用 $ H_{2} $ 清洁反应室而不用 $ N_{2} $ 清洁？"></a>Q：为什么外延层生长的用 $ H_{2} $ 清洁反应室而不用 $ N_{2} $ 清洁？</h3><p>A: 因为此时自应室内处于1000°C以上的高温， $ N_{2} $ 从会与Si反产生成氮化硅；但若实验室温度较低仅几百摄氏度时，则用 ${N}_{2}$ 清洁是具备经济性和安全性的。</p>
+<h3 id="Q：为什么外延层生长的用-H-2-清洁反应室而不用-N-2-清洁？"><a href="#Q：为什么外延层生长的用-H-2-清洁反应室而不用-N-2-清洁？" class="headerlink" title="Q：为什么外延层生长的用 $ H{2} $ 清洁反应室而不用 $ N{2} $ 清洁？"></a>Q：为什么外延层生长的用 $ H<em>{2} $ 清洁反应室而不用 $ N</em>{2} $ 清洁？</h3><p>A: 因为此时自应室内处于1000°C以上的高温， $ N<em>{2} $ 从会与Si反产生成氮化硅；但若实验室温度较低仅几百摄氏度时，则用 ${N}</em>{2}$ 清洁是具备经济性和安全性的。</p>
 <h2 id="19-绝缘体上硅-Silicon-on-Insulator-SOI"><a href="#19-绝缘体上硅-Silicon-on-Insulator-SOI" class="headerlink" title="19:绝缘体上硅(Silicon on Insulator, SOI)"></a>19:绝缘体上硅(Silicon on Insulator, SOI)</h2><ul>
 <li><p>advantage: 隔离器件与周围部分，减少相互之间的干扰和漏电；提高器件速度和性能。</p>
 </li>
@@ -732,11 +789,11 @@
 </li>
 <li><p>由于氧分子扩散速率低于 $ {H}_{2} O $ 在高温下分解成 $ HO $ 的扩散速率，故干氧氧化慢于湿氧氧化。</p>
 </li>
-<li><p>&lt;111&gt;晶向原子面密度高，故&lt;111&gt;晶向硅氧化速率快于&lt;110&gt; 晶向。</p>
+<li><p><111>晶向原子面密度高，故<111>晶向硅氧化速率快于<110> 晶向。</p>
 </li>
 <li><p>重掺杂 $Si$ 比较低掺杂 $Si$ 的氧化速率快。</p>
 </li>
-<li><p>故反应速度取决于温度 $T$ 下的压强 $P$ 、氧气来源(干&#x2F;湿)、晶向、掺杂浓度、催化气体(氯源气体如 $ Hcl $ 可提高反应速率);</p>
+<li><p>故反应速度取决于温度 $T$ 下的压强 $P$ 、氧气来源(干/湿)、晶向、掺杂浓度、催化气体(氯源气体如 $ Hcl $ 可提高反应速率);</p>
 </li>
 </ul>
 <p><img src="https://www.helloimg.com/i/2025/02/20/67b6a00188fe1.png" alt="分凝效应——二氧化硅吸硼吐磷后表面附近杂质的重新分布"></p>
@@ -748,11 +805,14 @@
 <p>(iv) 翻译催化剂，加快反应速率；</p>
 <h2 id="23-湿氧氧化"><a href="#23-湿氧氧化" class="headerlink" title="23.湿氧氧化"></a>23.湿氧氧化</h2><p><code>注意:无论是湿氧氧化还是干氧氧化均利用的时衬底上的硅而非外来硅源</code></p>
 <ul>
-<li>利用 ${H}<em>{2}O$ 取代 ${O}</em>{2}$ 作为氧源：<br>$$<br>\begin{align}<br>  2{H}<em>{2}O + Si  \xrightarrow[]{ \text{高温} }  Si{O}</em>{2} + 2{H}_{2}<br>\end{align}<br>$$</li>
+<li>利用 ${H}<em>{2}O$ 取代 ${O}</em>{2}$ 作为氧源：<script type="math/tex; mode=display">
+\begin{align}
+  2{H}_{2}O + Si  \xrightarrow[]{ \text{高温} }  Si{O}_{2} + 2{H}_{2} 
+\end{align}</script></li>
 </ul>
 <p>其中水汽源有：煮沸式、气泡式、冲水式、燃烧式四种；其中仅有<code>燃烧式</code>能准确控制水蒸气气流流量。</p>
 <ul>
-<li>因为 $ H_{2} $ 在高温下易发爆炸，则常将 ${H}<em>{2}$ : ${O}</em>{2}$ 比定为 ${1.8} : 1 \sim  {1.9} : 1$ ，即处于氧过量的状态，以减少爆炸的风险。</li>
+<li>因为 $ H<em>{2} $ 在高温下易发爆炸，则常将 ${H}</em>{2}$ : ${O}_{2}$ 比定为 ${1.8} : 1 \sim  {1.9} : 1$ ，即处于氧过量的状态，以减少爆炸的风险。</li>
 </ul>
 <h3 id="Q-为什么湿氧氧化不用-HCl"><a href="#Q-为什么湿氧氧化不用-HCl" class="headerlink" title="Q:为什么湿氧氧化不用 $ HCl $ ?"></a>Q:为什么湿氧氧化不用 $ HCl $ ?</h3><p>A:因为湿氧氧化反应速率以及足够快，无需额外加速；同时 $ HCl $ + 水会产生腐蚀性物质可能会腐蚀金属连线等；并且湿氧氧化对界面态要求较低，无需处理悬浮键。</p>
 <ul>
@@ -776,10 +836,10 @@
 <li><p>扩散掺杂工艺的顺序：先预淀积再驱入( $ drive-in $ )</p>
 </li>
 </ul>
-<p>首先在晶圆表面淀积一层掺杂氧化层如 $ B_{2} O_{3} $ 、 $ P_{2} O_{5} $ ，再用热氧化工艺消耗掉残余的掺杂物气体，并且在硅晶圆上生长。</p>
+<p>首先在晶圆表面淀积一层掺杂氧化层如 $ B<em>{2} O</em>{3} $ 、 $ P<em>{2} O</em>{5} $ ，再用热氧化工艺消耗掉残余的掺杂物气体，并且在硅晶圆上生长。</p>
 <p>(注：一层 $ Si O_{2} $ 覆盖掺杂物，避免掺杂物的外扩散。)</p>
 <p>接着在<code>氧气环境</code>下升温，使掺杂物快速扩散至硅衬底。</p>
-<h3 id="Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？"><a href="#Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？" class="headerlink" title="Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？"></a>Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？</h3><p>A: 硼、磷在 $O_{2}$ 环境比在 $N_{2}$ 环境下扩散得更快：( $Si O_{2}$ 界面有较多间隙 $Si$ ，B、P替换间隙 $Si$ 使部分B、P在间隙中扩散进而增强扩散速度)</p>
+<h3 id="Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？"><a href="#Q-为什么扩散掺杂-drive-in-时要在-O-2-环境下进行？" class="headerlink" title="Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？"></a>Q:为什么扩散掺杂 $drive-in$ 时要在 $O_{2}$ 环境下进行？</h3><p>A: 硼、磷在 $O<em>{2}$ 环境比在 $N</em>{2}$ 环境下扩散得更快：( $Si O_{2}$ 界面有较多间隙 $Si$ ，B、P替换间隙 $Si$ 使部分B、P在间隙中扩散进而增强扩散速度)</p>
 <ul>
 <li><p>由于扩散是各向同性的，故有：横向扩散通常是纵向扩撒结深的 75% - 85%。</p>
 </li>
@@ -807,14 +867,21 @@
 <li>Poly-silicon: 利用低压CVD技术(即LPCVD)，用作制造栅极介质</li>
 </ul>
 <p>利用式：</p>
-<p>$$<br>\begin{equation}<br>	\left{<br>	\begin{aligned}<br>		Si {H}<em>{4}  &amp; \xrightarrow[]{ \text{高温 } }   {Si} + 2{H}</em>{2} &amp;\<br>		Si {H}<em>{2} C{l}</em>{2}  &amp; \xrightarrow[] { \text{高温 } }   {Si} + 2{Hcl} &amp;<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>同时输入 $AH_{3}$， $PH_{3}$ 或 $B_{2} H_{6}$ 与 $ SiH_{4}$ 或 $ SiH_{2} Cl_{2}$ 。可实现 $LPCVD$ 淀积掺杂后的Poly-Silion。</p>
-<h3 id="氮化硅-Si-3-N-4-的作用："><a href="#氮化硅-Si-3-N-4-的作用：" class="headerlink" title="氮化硅 $ Si_{3}N_{4} $ 的作用："></a>氮化硅 $ Si_{3}N_{4} $ 的作用：</h3><p>(i)  $Si$ 的 $LOCOS$ 工艺时用氮化硅作为阻挡氧气扩散的遮蔽层;</p>
-<p>(ii) 用手的照片用于 $STI$ 形成中 $CMP$ 的停止层(因为 $Si_{3}N_{4}$ 的研磨速率比 ${USG}$ 低);</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        Si {H}_{4}  & \xrightarrow[]{ \text{高温 } }   {Si} + 2{H}_{2} &\\
+        Si {H}_{2} C{l}_{2}  & \xrightarrow[] { \text{高温 } }   {Si} + 2{Hcl} & 
+    \end{aligned}
+    \right.
+\end{equation}</script><p>同时输入 $AH<em>{3}$， $PH</em>{3}$ 或 $B<em>{2} H</em>{6}$ 与 $ SiH<em>{4}$ 或 $ SiH</em>{2} Cl_{2}$ 。可实现 $LPCVD$ 淀积掺杂后的Poly-Silion。</p>
+<h3 id="氮化硅-Si-3-N-4-的作用："><a href="#氮化硅-Si-3-N-4-的作用：" class="headerlink" title="氮化硅 $ Si{3}N{4} $ 的作用："></a>氮化硅 $ Si<em>{3}N</em>{4} $ 的作用：</h3><p>(i)  $Si$ 的 $LOCOS$ 工艺时用氮化硅作为阻挡氧气扩散的遮蔽层;</p>
+<p>(ii) 用手的照片用于 $STI$ 形成中 $CMP$ 的停止层(因为 $Si<em>{3}N</em>{4}$ 的研磨速率比 ${USG}$ 低);</p>
 <p>(iii) 所形成侧壁空间层的刻蚀停止层或空间层;</p>
-<p>在金属沉积前的电介质层 $PSG$ 、 $BPSG$ 淀积过程中，首先淀积 $Si_{3}N_{4}$ 做为掺杂物的扩散阻挡层，从而防止硼或磷穿过超薄栅氧层进入硅衬底;</p>
+<p>在金属沉积前的电介质层 $PSG$ 、 $BPSG$ 淀积过程中，首先淀积 $Si<em>{3}N</em>{4}$ 做为掺杂物的扩散阻挡层，从而防止硼或磷穿过超薄栅氧层进入硅衬底;</p>
 <p>(iv) 自对准工艺的刻蚀停止层;</p>
-<p>(v) 铜的金属化时， $Si_{3}N_{4}$ 薄层常用作金属层间由电介质层的密封层和刻蚀停止层;</p>
+<p>(v) 铜的金属化时， $Si<em>{3}N</em>{4}$ 薄层常用作金属层间由电介质层的密封层和刻蚀停止层;</p>
 <p>厚的 ${Si}<em>{3}{N}</em>{4}$ 用于芯片的钝化保护电介质层。</p>
 <p>(vi)最后的钝化保护层PD层(阻挡水汽与可移动离子的扩散);</p>
 <ul>
@@ -840,10 +907,12 @@
 <li>尖峰退火：$spike-annealling$</li>
 </ul>
 <p>用高峰值温度来最大限度的激发掺杂物，并快速升降温度以减少杂质扩散。</p>
-<h2 id="32-Q-何使用高K-高介电常数-电介质？"><a href="#32-Q-何使用高K-高介电常数-电介质？" class="headerlink" title="32.Q:何使用高K(高介电常数)电介质？"></a>32.Q:何使用高K(高介电常数)电介质？</h2><p>A: 在缩小电容尺寸的同时维持同样的电容值。常见的如 $TiO_{2}$、 $HfO_{2}$、 $Al_{2} O_{3}$</p>
+<h2 id="32-Q-何使用高K-高介电常数-电介质？"><a href="#32-Q-何使用高K-高介电常数-电介质？" class="headerlink" title="32.Q:何使用高K(高介电常数)电介质？"></a>32.Q:何使用高K(高介电常数)电介质？</h2><p>A: 在缩小电容尺寸的同时维持同样的电容值。常见的如 $TiO<em>{2}$、 $HfO</em>{2}$、 $Al<em>{2} O</em>{3}$</p>
 <p>从下式可得：</p>
-<p>$$<br>\begin{align}<br>	C &#x3D; k \epsilon_{0} \frac{h l }{d}<br>\end{align}<br>$$</p>
-<h2 id="33-光刻技术"><a href="#33-光刻技术" class="headerlink" title="33.光刻技术"></a>33.光刻技术</h2><p>光刻技术分为3个过程：光刻胶涂敷、对准和曝光、光刻胶显影。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    C = k \epsilon_{0} \frac{h l }{d}
+\end{align}</script><h2 id="33-光刻技术"><a href="#33-光刻技术" class="headerlink" title="33.光刻技术"></a>33.光刻技术</h2><p>光刻技术分为3个过程：光刻胶涂敷、对准和曝光、光刻胶显影。</p>
 <ul>
 <li>光刻胶类型：</li>
 </ul>
@@ -875,7 +944,7 @@
 <li>旧式手动技术下的光刻技术流程分为如下几步：晶圆清洗，预燃烤，底漆层涂敷，光刻壁自旋涂敷，煎烘、对准、曝光、曝光后烘烤、显影、后烘、图形检测。</li>
 </ul>
 <h3 id="I-晶圆清洗：目的是去除污染物和微粒；"><a href="#I-晶圆清洗：目的是去除污染物和微粒；" class="headerlink" title="(I)晶圆清洗：目的是去除污染物和微粒；"></a>(I)晶圆清洗：目的是去除污染物和微粒；</h3><p>因为微粒会在光刻胶上造成针孔降低成品率，污染物，会阻碍光刻胶的正常附着。</p>
-<p>方法：先进行RCA清洗：SC-I溶液( $H_{2}SO_{4}:H_{2}O_{2}:H_{2}O&#x3D;1:2:7$ )、 SC-II溶液( $NH_{4}OH:H_{2}O_{2}:H_{2}O&#x3D;1:2:8$ ) + 超纯去离子水(DI water)</p>
+<p>方法：先进行RCA清洗：SC-I溶液( $H<em>{2}SO</em>{4}:H<em>{2}O</em>{2}:H<em>{2}O=1:2:7$ )、 SC-II溶液( $NH</em>{4}OH:H<em>{2}O</em>{2}:H_{2}O=1:2:8$ ) + 超纯去离子水(DI water)</p>
 <h3 id="II-预处理"><a href="#II-预处理" class="headerlink" title="(II)预处理"></a>(II)预处理</h3><ul>
 <li>加热（预热）：去除吸附在晶圆表面的湿气，以增强光刻取在晶圆表面的附着能力；</li>
 </ul>
@@ -914,7 +983,7 @@
 <h3 id="v-曝光后烘烤：降低驻波效应。"><a href="#v-曝光后烘烤：降低驻波效应。" class="headerlink" title="(v)曝光后烘烤：降低驻波效应。"></a>(v)曝光后烘烤：降低驻波效应。</h3><ul>
 <li><p>Definition: 当曝光的光线从光刻胶与衬底的界面反射时，会与入射的曝光光线干涉，则相关干涉处则会产生过曝相消干涉处则会曝光不足，进而形成的条纹状结构。</p>
 </li>
-<li><p>Method:</p>
+<li><p>Method: </p>
 </li>
 </ul>
 <p>(i) PR内加染料减小反射强度;</p>
@@ -941,19 +1010,26 @@
 <h2 id="36：-分辨率与晕深"><a href="#36：-分辨率与晕深" class="headerlink" title="36： 分辨率与晕深"></a>36： 分辨率与晕深</h2><ul>
 <li>Definition: 分辨率R服从:</li>
 </ul>
-<p>$$<br>\begin{align}<br>	R&#x3D;\frac{ k_{1} \lambda }{ NA } &#x3D; \frac{ k_{1} \lambda D }{ 2r_{0} }<br>\end{align}<br>$$</p>
-<p>其中 $k_{1}$ 为系统常数，$\lambda$ 为光波长，$NA$ 为数值孔径， $2r_{0}$ 为透镜亮度， $D$ 是光刻板与透镜间的距离。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    R=\frac{ k_{1} \lambda }{ NA } = \frac{ k_{1} \lambda D }{ 2r_{0} }
+\end{align}</script><p>其中 $k<em>{1}$ 为系统常数，$\lambda$ 为光波长，$NA$ 为数值孔径， $2r</em>{0}$ 为透镜亮度， $D$ 是光刻板与透镜间的距离。</p>
 <p>景深 ($Depth-of-Focus$， DoF)满足下式:</p>
-<p>$$<br>\begin{align}<br>	DOF &#x3D; \frac{ k_{2} \lambda }{ 2(NA)^{2} }<br>\end{align}<br>$$</p>
-<p>光将在景深范围内聚焦于透镜焦距上，投射影像在景深范围内可以获得高分辨率。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    DOF = \frac{ k_{2} \lambda }{ 2(NA)^{2} }
+\end{align}</script><p>光将在景深范围内聚焦于透镜焦距上，投射影像在景深范围内可以获得高分辨率。</p>
 <p><code>但DOF与R需进行平衡。</code></p>
 <h3 id="分辨率增强技术"><a href="#分辨率增强技术" class="headerlink" title="分辨率增强技术"></a>分辨率增强技术</h3><p>(i)相位移掩模：降低 $k_{1}$ 提高 Resolution；许多小图形紧密排列，因为光的折射和干涉操作使图形扭曲变形；加入相位移掩模以抑制干涉</p>
 <p>(ii)光学邻近校正：当图形特征尺寸小于光波长时，光栅衍射效应很严重，转移到wafer上的图形与光刻版的图形不再相同；</p>
 <p>故微型化功能被添加到光刻版上，以补偿光的衍射效应。</p>
 <p>(iii)离轴光照：通过使用光圈将入射光线以一定角度入射到光学系统的透镜上，以收集光刻版上光栅的一阶衍射，可有效降低 $k_{1}$ 增强分辨率</p>
 <p>(iv)浸入式光刻技术：在显微镜的物镜和样品间的空隙中浸入水或油，此时Resolution服从</p>
-<p>$$<br>\begin{align}<br>	R &amp;&#x3D; \frac{ k_{1} \lambda }{ n_{ fluid } NA }  \<br>	DOF &amp;&#x3D; \frac{ 1 - \sqrt{ 1 - (\frac{ \lambda }{ p })^{2} } }{ n_{ fluid } - \sqrt{ n^{2}<em>{ fluid } - (\frac{ \lambda }{ p })^{2} } } \cdot \frac{ k</em>{2} \lambda }{ 2(NA)^{2} }<br>\end{align}<br>$$</p>
-<p>故可增加DOF、增加数值孔径，提高分辨率。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    R &= \frac{ k_{1} \lambda }{ n_{ fluid } NA }  \\
+    DOF &= \frac{ 1 - \sqrt{ 1 - (\frac{ \lambda }{ p })^{2} } }{ n_{ fluid } - \sqrt{ n^{2}_{ fluid } - (\frac{ \lambda }{ p })^{2} } } \cdot \frac{ k_{2} \lambda }{ 2(NA)^{2} }
+\end{align}</script><p>故可增加DOF、增加数值孔径，提高分辨率。</p>
 <h3 id="多重圆形化技术："><a href="#多重圆形化技术：" class="headerlink" title="多重圆形化技术："></a>多重圆形化技术：</h3><p>例如LFLE: 光刻-固化-光刻-刻蚀；</p>
 <p>通过固化第一次光刻显影后的PR，并采用第二层光刻胶曝光，可以实现间距密度的翻倍。</p>
 <ul>
@@ -991,7 +1067,7 @@
 <h2 id="38-Plasma-的-Application"><a href="#38-Plasma-的-Application" class="headerlink" title="38: Plasma 的 Application :"></a>38: Plasma 的 Application :</h2><p>(i)通过电子离化分子产生的自由基，大大提高CVD的反应速率：</p>
 <p>PECVD是铝金属化后的金属层间电介质沉积的必需工艺，由于IMD的CVD必须在低温下进行，因为铝导线无法承受高温且避免下侧有源区的自扩散。故采用PECVD来加速反应速率。</p>
 <p>(ii)利用Plasma控制薄膜应力</p>
-<p>由于 $Si$ 加热时膨胀率比 $SiO_{2}$ 快，则会形成张力。若 $SiO_{2}$ 室温下具有张力，加热时的张力变得更强，高强度的引力会引发 film 断裂甚至 wafer 破裂.</p>
+<p>由于 $Si$ 加热时膨胀率比 $SiO<em>{2}$ 快，则会形成张力。若 $SiO</em>{2}$ 室温下具有张力，加热时的张力变得更强，高强度的引力会引发 film 断裂甚至 wafer 破裂.</p>
 <ul>
 <li>Theory: 离子轰击通过碰撞分子使薄膜致密，从而使film应力变得更加收缩。</li>
 </ul>
@@ -1004,6 +1080,7 @@
 <p>增加射频功率可显著提高刻蚀速率。</p>
 <p>通过监测刻蚀副产物的发光颜色来监测刻蚀终点，相对时间、目测等更准确。</p>
 <p>Plasma etch compare to chemistry etch : 减少了化学药品的使用量。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -1012,7 +1089,8 @@
 <th>反应压力</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>PECVD</td>
 <td>$\sim 1$</td>
 <td>高压</td>
@@ -1020,9 +1098,11 @@
 <tr>
 <td>PE etch</td>
 <td>相差很大</td>
-<td>常压&#x2F;低压</td>
+<td>常压/低压</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>(vii)离子注入，物理气相沉积PVD</p>
 <p>(viii)Remote Plasma (遥控等离子体).</p>
 <p>仅利用Plasma产生自由基且避免离子轰击引发等离子体诱发损伤。</p>
@@ -1037,17 +1117,19 @@
 </ul>
 <h3 id="碰撞分类"><a href="#碰撞分类" class="headerlink" title="碰撞分类:"></a>碰撞分类:</h3><p>(i) 与晶格原子碰撞：原子核阻滞 （适合低能，高原子序列的粒子）$S_{n}-nucleus$</p>
 <p>(ii) 与电子碰撞：电子阻滞（适合高能，低原子序列的粒子） $S_{e}-electron $          </p>
-<p>$$<br>\begin{align}<br>	S_{total} &#x3D; S_{n} + S_{e}<br>\end{align}<br>$$</p>
-<h3 id="通道效应"><a href="#通道效应" class="headerlink" title="通道效应"></a>通道效应</h3><ul>
+<script type="math/tex; mode=display">
+\begin{align}
+    S_{total} = S_{n} + S_{e}
+\end{align}</script><h3 id="通道效应"><a href="#通道效应" class="headerlink" title="通道效应"></a>通道效应</h3><ul>
 <li><p>Definition: 通道效应：单晶硅中的晶格原子排列整齐，而且在特定的角度具有很多通道，若一电子以某一注入角度入射通道则会带来很少的能量形成很深的结深，与预期的掺杂物分布轮廓不符 </p>
 </li>
-<li><p>Method:</p>
+<li><p>Method: </p>
 </li>
 </ul>
 <p>(i) 在倾斜的wafer上进行离子注入过程。</p>
 <p>但该方法会带来阴影区效应(部分三角形区域未掺杂)，可通过晶圆的转动及注入后退火的少量掺杂物扩散解决。</p>
 <p>(ii) 让离子穿过一层 $SiO_{2}$ film屏蔽层后再注入。</p>
-<p>由于加热生长的 $SiO_{2}$ 是非晶材料热可加强离子的碰撞和散射以减小通道效应，同时可以防止衬底与光刻胶接触污染。但该方法会导致回弹效应：屏蔽层中某些原子从高能离子中获得足够的能量并注入到 $Si$ 中。以 $SiO_{2}$ 的氧原子为例，在靠近 $Si$ 和 $SiO_{2}$ 界面附近的硅衬底内形成了高氧浓度区，从而引入深捕获能级降低载流子迁移率。</p>
+<p>由于加热生长的 $SiO<em>{2}$ 是非晶材料热可加强离子的碰撞和散射以减小通道效应，同时可以防止衬底与光刻胶接触污染。但该方法会导致回弹效应：屏蔽层中某些原子从高能离子中获得足够的能量并注入到 $Si$ 中。以 $SiO</em>{2}$ 的氧原子为例，在靠近 $Si$ 和 $SiO_{2}$ 界面附近的硅衬底内形成了高氧浓度区，从而引入深捕获能级降低载流子迁移率。</p>
 <p><code>某些情况下可通用牺牲氧化层缓解。</code></p>
 <h3 id="退火"><a href="#退火" class="headerlink" title="退火"></a>退火</h3><ul>
 <li>purpose: 修复晶格损伤并激活掺杂物。</li>
@@ -1078,13 +1160,14 @@
 <ul>
 <li><p>Other Application: 光刻胶硬化；图形化磁碟; 制造EUV光刻版; 制造太阳能电池。</p>
 </li>
-<li><p>Disadvantage:</p>
+<li><p>Disadvantage: </p>
 </li>
 </ul>
-<p>(i)粒子污染，SDE或S&#x2F;D注入时造成掺杂的界面不完整</p>
+<p>(i)粒子污染，SDE或S/D注入时造成掺杂的界面不完整</p>
 <p>(ii)元素污染：某些粒子荷质比相近，质谱仪不能将其分开，故可能带来污染</p>
 <p>USJ: $ultra-shallow-juntion$ 超浅结</p>
-<h2 id="41：刻蚀对象、作用、主要内容"><a href="#41：刻蚀对象、作用、主要内容" class="headerlink" title="41：刻蚀对象、作用、主要内容"></a>41：刻蚀对象、作用、主要内容</h2><table>
+<h2 id="41：刻蚀对象、作用、主要内容"><a href="#41：刻蚀对象、作用、主要内容" class="headerlink" title="41：刻蚀对象、作用、主要内容"></a>41：刻蚀对象、作用、主要内容</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>刻蚀对象</th>
@@ -1092,7 +1175,8 @@
 <th>注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>单晶硅</td>
 <td>形成浅沟槽隔离 (深槽电容，FinFET)</td>
 <td>硬膜常为 $S{i}<em>{3} {N}</em>{4}$ 和 $S{i}<em>{2} {O}</em>{2}$；用 $H{B}_{r}$ 刻蚀</td>
@@ -1110,7 +1194,7 @@
 <tr>
 <td>金属</td>
 <td>形成连线</td>
-<td>用 $HNO_{3}$ 氧化 $Al$，$H_{3}PO_{4}$ 溶解 $Al_{2}O_{3}$ ，搭配 $CH_{3}COOH$ 和 $H_{2}O_{2}$ ； $H_{2}O_{2}$ + $H_{2}SO_{4}$ 刻蚀镍</td>
+<td>用 $HNO<em>{3}$ 氧化 $Al$，$H</em>{3}PO<em>{4}$ 溶解 $Al</em>{2}O<em>{3}$ ，搭配 $CH</em>{3}COOH$ 和 $H<em>{2}O</em>{2}$ ； $H<em>{2}O</em>{2}$ + $H<em>{2}SO</em>{4}$ 刻蚀镍</td>
 </tr>
 <tr>
 <td>整面全区etch</td>
@@ -1120,23 +1204,24 @@
 <tr>
 <td>电介质的非等向性回刻蚀</td>
 <td>或侧壁空间层，形成接触窗，连接不同导体层间的接触窗孔</td>
-<td>$PMD$ 为 $PSG$ &#x2F; $BPSG$ (降低 $reflow$ 温度，吸附可移动离子)，$ILD$ 为 $USG$、 $FSG$ 、低k介质</td>
+<td>$PMD$ 为 $PSG$ / $BPSG$ (降低 $reflow$ 温度，吸附可移动离子)，$ILD$ 为 $USG$、 $FSG$ 、低k介质</td>
 </tr>
 <tr>
 <td>钛</td>
 <td>钛硅化合物形成后剥除多余的钛</td>
-<td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>补充：</p>
 <p>(i)poly silicon的etch时易在侧壁上留下部分poly silicon，故需采用过刻蚀(需要有对 $SiO_{2}$的高选择比)3个过程(突破过程、主刻蚀过程，过刻蚀过程)；利用高离子轰击移除原生氧化层，F(突破)；</p>
 <p>从主刻蚀到过刻蚀的切换判断，可利用刻蚀栅氧时释放的氧原子穿过薄膜被感应器监测到实现。</p>
 <p>(ii)硅刻蚀时需先用 $HNO_{3}$ 氧化再用 $HF$ 刻蚀，不同晶向刻蚀速度不同；</p>
 <p>V型沟槽是通过这种非等向性的单晶硅过程进行湿法刻蚀得到的。</p>
 <p>(iii)电分质刻蚀时使用重离子轰击氟，利用破坏厚理形成非等向性刻蚀轮廓，常用氟碳气化。</p>
-<p>F&#x2F;C比高刻蚀快，同时F&#x2F;C比影响刻蚀选择性，F&#x2F;C小于2时发生聚合反应。</p>
+<p>F/C比高刻蚀快，同时F/C比影响刻蚀选择性，F/C小于2时发生聚合反应。</p>
 <p><code>氧化物刻蚀时F/C比的变化过程如下:</code></p>
-<p>其过程为 $F$ 刻蚀氧化物时， $F$ 取代 $O$ ， $O$ 与 $C$ 形成 $CO$ 、$CO_{2}$挥发，F&#x2F;C比上升 ；刻蚀到 $Si$ 或者金属 $Si$ 化物表面，F&#x2F;C比下降反应进入聚合作用区，降低刻蚀速率。</p>
+<p>其过程为 $F$ 刻蚀氧化物时， $F$ 取代 $O$ ， $O$ 与 $C$ 形成 $CO$ 、$CO_{2}$挥发，F/C比上升 ；刻蚀到 $Si$ 或者金属 $Si$ 化物表面，F/C比下降反应进入聚合作用区，降低刻蚀速率。</p>
 <p>(iv)干法刻蚀用于形成多晶硅虚栅；湿法刻蚀用于去除多晶硅虚栅。</p>
 <h2 id="42-底切效应和过刻蚀"><a href="#42-底切效应和过刻蚀" class="headerlink" title="42: 底切效应和过刻蚀"></a>42: 底切效应和过刻蚀</h2><ul>
 <li>Definition:</li>
@@ -1164,9 +1249,10 @@
 <li>Dry etch: 刻蚀轮廓好</li>
 </ul>
 <p>设备昂贵且为晶格带来损伤</p>
-<p>注: <strong>氧气常用来改善氧化物硬式遮蔽层的选择性；也可以与副产物 $SiBr$ 形成沉积 $SiBr_{x} O_{y}$ ，然后通过离子轰击移除</strong></p>
+<p>注: <strong>氧气常用来改善氧化物硬式遮蔽层的选择性；也可以与副产物 $SiBr$ 形成沉积 $SiBr<em>{x} O</em>{y}$ ，然后通过离子轰击移除</strong></p>
 <p>chapter 10:</p>
-<h2 id="46：各种CVD的对比"><a href="#46：各种CVD的对比" class="headerlink" title="46：各种CVD的对比"></a>46：各种CVD的对比</h2><table>
+<h2 id="46：各种CVD的对比"><a href="#46：各种CVD的对比" class="headerlink" title="46：各种CVD的对比"></a>46：各种CVD的对比</h2><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>CVD类型</th>
@@ -1177,7 +1263,8 @@
 <th>注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>APCVD</td>
 <td>反应温度高</td>
 <td>阶梯覆盖性一般</td>
@@ -1207,22 +1294,24 @@
 <td>阶梯覆盖性好</td>
 <td>成本较高</td>
 <td>不可批量化处理</td>
-<td>dep&#x2F;etch&#x2F;dep的一种方式(沉积速率慢，旧工艺需在两个反应室之间转移产量低)</td>
+<td>dep/etch/dep的一种方式(沉积速率慢，旧工艺需在两个反应室之间转移产量低)</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="47-电介质层种类"><a href="#47-电介质层种类" class="headerlink" title="47: 电介质层种类:"></a>47: 电介质层种类:</h2><p>(i) $Shallow-Trench-Isolation$ ， STI 、 USG； 垫氧+氮化硅+USG的CVD淀积+CMP+蚀刻</p>
-<p>(ii) $Sidewall-spacer$，USG(先CVD淀积再刻蚀) 形成LDD；抑制热载流子效应；为S&#x2F;D提供扩散缓冲区；SA中避免S&#x2F;D短路</p>
+<p>(ii) $Sidewall-spacer$，USG(先CVD淀积再刻蚀) 形成LDD；抑制热载流子效应；为S/D提供扩散缓冲区；SA中避免S/D短路</p>
 <p>(iii) $Pre-metal-dielectric$ ，PMD、PSG、BPSG； 捕获可动离子如钠离子，降低 $reflow$ 温度；但磷较多时会形成磷酸腐蚀金属 </p>
 <p>(iv) $Inter-metal-dielectric$ ， IMD、USG、FSG；</p>
 <p>(v) $Anti-reflection-coating$ ，ARC、 $SiON$ ； 提高光刻解析度；常用氮化钛 CVD在铝合金上</p>
-<p>(vi) $Passivation-dielectric$，PD， $Oxide&#x2F;Ntride$； 屏蔽湿汽和可动离子</p>
+<p>(vi) $Passivation-dielectric$，PD， $Oxide/Ntride$； 屏蔽湿汽和可动离子</p>
 <h2 id="48：-阶梯覆盖产生空洞的原因"><a href="#48：-阶梯覆盖产生空洞的原因" class="headerlink" title="48： 阶梯覆盖产生空洞的原因"></a>48： 阶梯覆盖产生空洞的原因</h2><ul>
 <li><p>reason: 前驱物的顶部与底部到达角不同，且需填充的洞深宽比过大;低迁移率、</p>
 </li>
-<li><p>Solution: LPCVD增大平均自由程; 更换高迁移率材料; 沉积&#x2F;刻蚀&#x2F;再沉积，低特征尺寸下用 HDPCVD（氩离子溅射）来完成该过程；增大到达角；增大温度 (but limited)；引入间隙填充工艺:旋凃硅玻璃SOG工艺</p>
+<li><p>Solution: LPCVD增大平均自由程; 更换高迁移率材料; 沉积/刻蚀/再沉积，低特征尺寸下用 HDPCVD（氩离子溅射）来完成该过程；增大到达角；增大温度 (but limited)；引入间隙填充工艺:旋凃硅玻璃SOG工艺</p>
 </li>
 </ul>
-<p>间隙填充：Dep&#x2F;Etch&#x2F;Dep工艺;高表面迁移率材料(低黏附系数)： $O_{3}-$ 四乙氧基硅烷氧化物CVD、钨CVD.</p>
+<p>间隙填充：Dep/Etch/Dep工艺;高表面迁移率材料(低黏附系数)： $O_{3}-$ 四乙氧基硅烷氧化物CVD、钨CVD.</p>
 <p>但有时也会选择保留空洞void：利用PECVD 薄膜形成void ；在金属导线中形成牺牲材料：</p>
 <ul>
 <li>reason: 空洞的介电常数小，可减小寄生电容.</li>
@@ -1236,7 +1325,7 @@
 </ul>
 <p>令热膨胀系数小的有压应力如 $SiO_{2}$ (相对于 $Si$ 而言)</p>
 <p>PECVD增加射频功率可增大收缩应力。</p>
-<h2 id="51：反应室消洗："><a href="#51：反应室消洗：" class="headerlink" title="51：反应室消洗："></a>51：反应室消洗：</h2><p>(i) PECVD + 氟碳气体：连意F&#x2F;C要大于2. 避免产生聚合反应，但会降低设备寿命提高成本，不环保。</p>
+<h2 id="51：反应室消洗："><a href="#51：反应室消洗：" class="headerlink" title="51：反应室消洗："></a>51：反应室消洗：</h2><p>(i) PECVD + 氟碳气体：连意F/C要大于2. 避免产生聚合反应，但会降低设备寿命提高成本，不环保。</p>
 <p>(ii)遥控等离子体清洁：延长反应室零部件寿命，转低的成本月且显著降低氟化物排放量环保。</p>
 <p>补充： 沉积 High K 介质可用ALD生长，但速率慢、反应物利用率低且成本高。</p>
 ]]></content>
@@ -1245,126 +1334,50 @@
       </tags>
   </entry>
   <entry>
-    <title>IC工艺课的10个问题总结-I</title>
-    <url>/2025/05/22/IC_Manufacture_test_10problems/</url>
-    <content><![CDATA[<h1 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h1><p>参考教材<code>半导体制造技术导论(第二版)——萧宏</code>，课程<code>半导体材料及IC工艺原理</code>。</p>
-<p>该总结是课程期末作业的一部分，边复习边总结。</p>
-<h1 id="Chapter1-5"><a href="#Chapter1-5" class="headerlink" title="Chapter1-5"></a>Chapter1-5</h1><h2 id="1-为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？"><a href="#1-为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？" class="headerlink" title="1. 为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？"></a>1. 为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？</h2><p><strong>解答</strong>:若假设晶圆的缺陷密度一样，那么越大的晶圆面积则会拥有更多的缺陷，进而会导致更低的成品率。</p>
-<p>$$<br>\begin{align}<br>    Y \propto \frac{1}{ (1+DA)^{n} }<br>\end{align}<br>$$</p>
-<p>其中Y表示成品率，D表示缺陷密度，A表示晶圆面积，n表示该wafer所需要处理的工序数。</p>
-<p>同时更大的wafer在生产过程中也需要更大的设备相匹配，例如LPCVD机器、蚀刻机、离子注入机、高温炉管等等。适用于更大尺寸wafer的生产设备的制造难度及成本是具备挑战性的，同时更大的设备无疑会需要更大的无尘间体积，这将会为生产成本带来增加。</p>
-<p>并且当前12英寸的wafer生产过程成熟，市场反馈良好，当前其生产过程中仍具备诸多可优化的流程以提高成品率，其局限性和瓶颈暂不明显，市场目前并未表现出对更大尺寸wafer的强烈呼唤。</p>
-<h2 id="2-为什么测试结构全都做在晶粒的切割道上？"><a href="#2-为什么测试结构全都做在晶粒的切割道上？" class="headerlink" title="2. 为什么测试结构全都做在晶粒的切割道上？"></a>2. 为什么测试结构全都做在晶粒的切割道上？</h2><p><strong>解答</strong>:为了节约硅晶圆的面积，<code>有待后续补充</code>。</p>
-<h2 id="3-为什么使用高k-高介电常数-和低k介质来取代二氧化硅做绝缘层？"><a href="#3-为什么使用高k-高介电常数-和低k介质来取代二氧化硅做绝缘层？" class="headerlink" title="3. 为什么使用高k(高介电常数)和低k介质来取代二氧化硅做绝缘层？"></a>3. 为什么使用高k(高介电常数)和低k介质来取代二氧化硅做绝缘层？</h2><p><strong>解答</strong>:首先对于平行板电容器模型，其电容大小满足下式</p>
-<p>$$<br>\begin{align}<br>    C &#x3D; k \varepsilon_{0} \frac{hl}{d}<br>\end{align}<br>$$</p>
-<p>其中称k为介电常数(与电磁波课程中不同，电磁波课程中称$\varepsilon$为介电常数，k这种称法工业界常用)，故为了减小电容的尺寸，可以通过使用高k介质来保证在缩小电容尺寸的同时维持同样的电容值。</p>
-<h3 id="高k介质"><a href="#高k介质" class="headerlink" title="高k介质"></a>高k介质</h3><p>同时用高k介质替代 $ \mathrm{ SiO_{2} }$ 做为栅介质能大幅减小栅漏电流，在满足性能和功耗要求的同时允许器件尺寸进一步微缩。但是高k介质替代 $ \mathrm{ SiO_{2} }$ 又带来的两个问题[1]:</p>
-<ul>
-<li><p>Poly silicon和高k介质之间的费米能级钉扎效应导致阈值电压增大，</p>
-</li>
-<li><p>远程声子散射导致的载流子迁移率下降，这是因为高k介质与硅沟道之间的界面陷阱密度大，沟道中的载流子被俘获到陷阱中。</p>
-</li>
-</ul>
-<p>但是这些问题是可以解决的，通过利用金属替代Poly silicon做为栅电极，可以产生较少的界面缺陷、减弱硼穿透效应，还能有效降低高k介质层中的缺陷密度。以pMOS器件为例，金属栅极材料的选择有众多约束，其中最主要的是金属材料必须具有与Si的价带底相近的功函数(5.0-5.2eV)以获得合适的电压阈值，同时金属栅极需具有良好的热稳定性使其有效功函数不受高温退火的影响[2]。同时采用应变技术能够进一步提升迁移率，应变分为全局应变和局域应变两种，前者一般通过在 $Si_{1-x}Ge_{x} $ 渐变层上外延生长Si或Ge实现；后者针对NMOS和PMOS，分别通过沉积氮化硅帽层和漏区沉积SiGe实现。</p>
-<p><img src="https://www.helloimg.com/i/2024/12/09/6756fb1cd428a.png" alt="采用HKMG工艺的效果"></p>
-<p>同时定义有效氧化层厚度(Effective Oxide Thickness,EOT)满足下式:<br>$$<br>\begin{align}<br>    \mathrm{EOT} &#x3D; k \times T_{ox}<br>\end{align}<br>$$</p>
-<p>其中 $T_{ox}$ 为氧化层厚度，以高k介质氧化铪为例，它的k是20，是二氧化硅的6倍。故6nm厚的 $\mathrm{Hf O_{2} } $ 提供相当于1nm厚的 $\mathrm{Si O_{2} } $ 的EOT，故在维持栅极电容大小不变的基础上，栅极可以采用较厚的介质进而实现较小的漏极泄露电流。<a href="https://zhuanlan.zhihu.com/p/346851712">参考资料:HKMG(High-K栅氧化物层+Metal Gate)技术</a></p>
-<h3 id="低k介质"><a href="#低k介质" class="headerlink" title="低k介质"></a>低k介质</h3><p>当集成电路的特征尺寸减少至0.18 $\mu m$ 或更小时，互连寄生的电阻、电容引起的延迟、串扰和功耗已成为发展高速、高密度和多功能集成电路需解决的瓶颈问题。</p>
-<p>在芯片内互连技术节点迭代过程中，已有多种技术被用于减少互连线路的RC延迟。其中减少寄生电容较为直接的方法是采用更低介电常数(低k)的材料做层间及线间介质来实现，例如氟化硅玻璃($k\sim 3.6$)；通过PECVD实现有机硅酸盐SiCOH(K&lt;3)的沉积，以及实现多孔SiCOH($k\sim 2.5$)的应用[3]。</p>
-<p>介电常数低于 $\mathrm{Si O_{2} } $ 的低k介质材料的介电常数 $k_{low-k} $ 范围需满足:<br>$$<br>\begin{align}<br>    k_{air} \leq k_{low-k} \leq k_{ \mathrm{Si O_{2} } }<br>\end{align}<br>$$</p>
-<p>其中 $k_{air}$ 是空气的介电常数，大小为1；$ k_{ \mathrm{Si O_{2} } }$ 是 $\mathrm{Si O_{2} }$ 的介电常数，大小为3.9-4.2，具体值取决于制作 $\mathrm{Si O_{2} }$ 时的工艺[4]。</p>
-<p>IC芯片多层立体布线，不同传导层之间必须相互绝缘，使用层间淀积绝缘介质(inter level dielectric, ILD)来实现层间绝缘。特别是当工艺进入0.13 $\mu m$ 以下的节点，更倾向于采用低k介质做为介质层材料取代传统的二氧化硅介质。例如多孔二氧化硅aerogel、有机聚合物聚酰亚胺等等。故现在较为成熟的互连工艺时在金属线间嵌入低k介质薄膜，在微通孔见嵌入等离子体增强淀积的二氧化硅电介质，即可实现RC延迟降低，也可实现热功耗降低和器件稳定性提高，同时兼容目前的刻蚀、CMP工艺，在生产成本方面是具有优势的。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在工艺特征尺寸持续减小的过程中，采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，实现厚度减小的情况下所提供的电容大小不同步减少，以保障栅极漏电流的减小。但其与ploy电极之间的费米钉扎效应等副效应仍有待解决，目前已经提出采用改换金属电极替代poly和使用应变技术提升迁移率等多种方案来缓解副效应。</p>
-<p>同时采用低k介质替代二氧化硅做为各传导层之间的绝缘介质，其拥有较少的寄生电容，可以实现较低的电路互连的RC延迟，但其生产与当前生产工艺流程的兼容性、成本经济性等仍受到挑战。</p>
-<h3 id="问题3参考文献"><a href="#问题3参考文献" class="headerlink" title="问题3参考文献"></a>问题3参考文献</h3><p>[1] <a href="https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.61.137701">黄力, 黄安平, 郑晓虎, 肖志松, 王玖. 高k介质再新型半导体器件中的应用[J]. 物理学报, 2012, 61(13): 137701.</a></p>
-<p>[2] <a href="http://www.wuli.ac.cn/cn/article/id/31655">杨智超, 黄安平, 肖志松. pMOS金属栅极材料的研究进展[J]. 物理, 2010, 39(02): 113-122.</a></p>
-<p>[3] <a href="http://www.wuli.ac.cn/cn/article/id/31655">张思勉, 邓晓楠, 王宇祺, 武逸飞, 刘佳宁, 李正操, 蔡坚, 王琛. 后摩尔时代芯片互连新材料及工艺革新[J]. 中国科学:化学, 2023, 53(10).</a></p>
-<p>[4] <a href="https://www.ejournal.org.cn/CN/Y2000/V28/I11/84">阮刚, 肖夏, 朱兆. 低介电常数(low-k)介质在ULSI中的应用前景[J]. 电子学报, 2000, 28(11): 84-87.</a></p>
-<h2 id="4-DRAM是怎么读取和存入数据的？"><a href="#4-DRAM是怎么读取和存入数据的？" class="headerlink" title="4. DRAM是怎么读取和存入数据的？"></a>4. DRAM是怎么读取和存入数据的？</h2><p>动态随机存储器(Drnamic random and memory)</p>
-<h2 id="5-为什么低速CMOS和DRAM均避免使用外延层-eoitaxy-？"><a href="#5-为什么低速CMOS和DRAM均避免使用外延层-eoitaxy-？" class="headerlink" title="5. 为什么低速CMOS和DRAM均避免使用外延层(eoitaxy)？"></a>5. 为什么低速CMOS和DRAM均避免使用外延层(eoitaxy)？</h2><p><strong>解答</strong>:<code>暂未查到详细答案，有待后续补充</code>。</p>
-<h2 id="6-热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？"><a href="#6-热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？" class="headerlink" title="6. 热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？"></a>6. 热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？</h2><blockquote>
-<p>热氧化时加入氯离子的目的如下：</p>
+    <title>简并or退化？本征or掺杂？</title>
+    <url>/2025/05/22/Degenerate_degenerate_intrinsic_doping/</url>
+    <content><![CDATA[<h1 id="简并or退化？本征or掺杂？"><a href="#简并or退化？本征or掺杂？" class="headerlink" title="简并or退化？本征or掺杂？"></a>简并or退化？本征or掺杂？</h1><blockquote>
+<p>问题来源于在看<code>半导体物理</code>教材时的疑惑，经查找资料后清楚了些，故作此纪录与诸君分享。</p>
 </blockquote>
-<ul>
-<li><ol>
-<li>增强氧化速度，能使氧化速率提升 10%~15%。</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>钝化可动离子，特别是 $Na^{+}$ ， $K^{+}$，钠，钾离子在电场作用下移动到硅片表面，影响电学特性，导致器件不稳定。而掺氯可固定可动离子，避免其移动。</li>
-</ol>
-</li>
-<li><ol start="3">
-<li>中和Si-SiO2界面处电荷，减少氧化层缺陷。</li>
-</ol>
-</li>
-</ul>
-<blockquote>
-<p>同时氯离子过多时会导致器件性能下降：</p>
+<h2 id="degeneration-退化-在物理学中常译为简并"><a href="#degeneration-退化-在物理学中常译为简并" class="headerlink" title="degeneration:退化(在物理学中常译为简并)"></a>degeneration:退化(在物理学中常译为简并)</h2><blockquote>
+<p>故 a degenerate semiconductor指的是<strong>重掺杂</strong>的半导体，杂质能级形成了 impurity band，把带隙给填满了，因此材料的电导率等性质就更像金属了，即<strong>由半导体退化成金属</strong>了，故$\mathscr{MeiShao}$认为，将degenerate semiconductor 翻译为<strong>退化半导体</strong>更容易理解。</p>
 </blockquote>
-<ul>
-<li><ol>
-<li>$Cl^{-}$ 过多时在界面处会积聚较多负电荷，进而排斥电子吸引空穴，降低了载流子迁移率；</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>$Al$ 做金属电极时，会与 $Al$ 发生腐蚀形成副产物，降低器件性能。</li>
-</ol>
-</li>
-</ul>
-<h2 id="7-为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？"><a href="#7-为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？" class="headerlink" title="7. 为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？"></a>7. 为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？</h2><p><strong>解答</strong>：CMOS器件的关键性能指标是驱动电流 $I_{d}$ ，其大小满足(5)式，与栅极电容大小成正相关。同时栅极电容大小满足(6)式，即与栅极表面积成正比，与栅介质厚度成反比。因此可以通过增加栅极表面积和降低栅介质厚度来提高栅极电容[1]。</p>
-<p>$$<br>\begin{align}<br>    I_{D} &#x3D; \frac{1}{2} \frac{W}{L} C_{ox} (V_{gs} - V_{th} )^{2}<br>\end{align}<br>$$</p>
-<p>$$<br>\begin{align}<br>    C_{ox} \propto k\varepsilon \frac{A}{d}<br>\end{align}<br>$$</p>
-<p>随着半导体工艺技术的不断发展，集成电路的集成度不断提高，这对增加栅极表面积产生了极大的制约。因此在半导体技术的发展过程中，降低栅介质栅氧化层厚度变成了推进CMOS器件性能提高的主要手段。</p>
-<p>但随着MOSFET的沟道长度缩短，这就导致了MOSFET管中的Source和Drain（源和漏）的距离越来越短，因此栅极对沟道的控制能力变差，这就意味着栅极电压夹断（pinch off）沟道的难度变大，于是使得亚阈值漏电（subthreshold leakage）现象，即短沟道效应（short-channel effect）更加容易发生。</p>
-<p>短沟道效应指的是当晶体管体积缩小时，源漏耗尽层宽度在整个沟道中所占比重越来越大。开启电压在沟道很短时将随沟道变小而迅速下降，其详细的计算和I-V关系位于参考文献[2]中。基于BSIM4模型，亚阈值泄露电流$I_{sub}$满足下式:</p>
-<p>$$<br>\begin{align}<br>    I_{sub} &#x3D; I_{0} \exp\big(\frac{ V_{gs} - V_{th} }{ nkT&#x2F;q }\big) \big( 1- \exp(\frac{ -V_{ds} }{ kT&#x2F;q }) \big)<br>\end{align}<br>$$</p>
-<p>从上式可以看出随着阈值电压的减小，<code>亚阈值漏电电流</code>呈指数增加。</p>
-<p>同时随着栅极氧化层厚度的变薄，<code>栅极泄露电流</code>不容忽略。栅极氧化层厚度的变薄导致氧化层间的电场增加，较高的电场加上很薄的栅氧化层会导致在nMOS晶体管的沟道和栅极之间有电子隧道(对于pMOS是空穴隧道)产生，这将会带来栅氧化层隧道电流，其也是栅极泄露电流的最主要组成部分，其电流密度可简单表示为下式[3]:</p>
-<p>$$<br>\begin{align}<br>    J_{T}&#x3D;A(\frac{ V_{ox} }{ T_{ox} })^{2} \exp (-\frac{B\big(1-(1-\frac{V_{ox } }{\phi_{ox} })^{\frac{3}{2} } \big) }{V_{ox }&#x2F;T_{ox } })<br>\end{align}<br>$$</p>
-<p>其中A、B是于工艺有关的参数；$T_{ox}$ 是栅氧化层厚度； $\phi_{ox}$ 是隧道粒子的势垒。可发现随着栅氧化层厚度的减小，隧道电流急剧增长。</p>
-<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>随着工艺的推进，为提高CMOS器件的驱动电流进而则需提高其栅极电容，由于小尺寸工艺下栅氧化层面积很难增大，故选择持续减小栅氧化层厚度来实现驱动电流增大的目的。这会带来栅极泄露电流的急剧增加。同时栅极中掺入的B等杂质会从栅极中扩散至硅衬底或固定在栅介质中，这会影响器件的阈值电压。</p>
-<p>目前通过采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，但这又引入了一些新的问题，具体可参考问题3。</p>
-<h3 id="问题7参考文献"><a href="#问题7参考文献" class="headerlink" title="问题7参考文献"></a>问题7参考文献</h3><p>[1] <a href="https://d.wanfangdata.com.cn/thesis/D446460">王蒙. 超大规模集成电路制造工艺中对消除1&#x2F;f噪声影响的研究. 复旦大学硕士论文. 2011</a></p>
-<p>[2] <a href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdukdfnAPAQ4YfvbWpXBQErMz01Eb7-HbZLbKQFyGeDRTFVItEq0qKc7hUxN5-plTt2gpFwGOCiKWdoJHyoRIQ0Ho9Z32-_q0-zMmh6nBLn7svNYkiXqRdoYJpa3XfVEuZpEYI9CWqogeUVWW8Tf5KG25B2302ClcgL6s7RKMhqp0tDSPz87z-ra&uniplatform=NZKPT&language=CHS">T.L.周, H.N.高斯, 李松发. 具有短沟道的结栅场效应晶体管的特性. 半导体情报. 1973(11)</a></p>
-<p>[3] <a href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdupREhI1qHd6c8_aWkrHdFqCiWEOqJAeqcWeP70mMofL24gnKYC-ScUetc9n0HDpS-Ijau5R1l9bKWKqfIG4ZEo-WENIS7unufFE5BxOyEz_2kKQ_lLbfin5TCh71OzdgQSTEkZ_TKg3Njc79nMRN6QjKtWls0JuYuYHVki4o_CrZJvLHAjlOIq&uniplatform=NZKPT&language=CHS">杨松, 王宏, 杨志家. 45nm体硅工艺下使用双-栅氧化层厚度降低SRAM的泄漏功耗. 半导体学报. 2007(05)</a></p>
-<h2 id="8-为什么扩散掺杂drive-in的时候要通入氧气？"><a href="#8-为什么扩散掺杂drive-in的时候要通入氧气？" class="headerlink" title="8. 为什么扩散掺杂drive-in的时候要通入氧气？"></a>8. 为什么扩散掺杂drive-in的时候要通入氧气？</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料:"></a>参考资料:</h3><ol>
-<li><a href="https://wenku.baidu.com/view/1e6dc74126c52cc58bd63186bceb19e8b8f6ec68.html?_wkts_=1734678567622&needWelcomeRecommand=1&unResetStore=1&ILK=17346783-0778-4397-0383-176385599790">Drive-in 扩散相关知识介绍</a></li>
-</ol>
-<h2 id="9-为什么要生长金属硅化物？"><a href="#9-为什么要生长金属硅化物？" class="headerlink" title="9. 为什么要生长金属硅化物？"></a>9. 为什么要生长金属硅化物？</h2><p>最早的金属硅化物工艺是Polycide工艺技术，是为了减少多晶硅栅的等效串联电阻和接触孔的接触电阻。但Polycide仅能在poly silicion上形成，在Source和Drain上无法生长，无法改善Source和Drain区的等效串联电阻和接触孔的接触电阻。为改善这一问题引入了Salicide工艺技术，即<code>self-aligned silicide</code>，能在poly gate、drain、source上形成金属硅化物。</p>
-<p>Polycide的材料是硅化钨，Salicide的材料是Ti、Co和NiPt。</p>
-]]></content>
-      <tags>
-        <tag>IC工艺</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>氢原子模型和类氢原子模型</title>
-    <url>/2025/05/22/Hydrogen_like_model/</url>
-    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
-<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
-<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+<p>其中费米狄拉克分布函数为:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \frac{1}{1+\mathrm{exp}(\frac{E-E_{F}}{k_{0}T})}
+\end{align*}</script><p>由于费米狄拉克分布函数积分时较为困难，因此常将其在某些情况下进行简化，即玻尔兹曼分布函数：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    f(E) = \mathrm{exp}(-\frac{E-E_{F}}{k_{0}T})
+\end{align*}</script><p>其中利用玻尔兹曼分布函数近似费米狄拉克分布函数的条件是：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    \big\vert E - E_{F} \big\vert > 3k_{0} T
+\end{align*}</script><p>因此<strong>对于非简并半导体</strong>，我们要求：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    E_{v} + 3k_{0}T < E_{F} < E_{c} - 3k_{0}T
+\end{align*}</script><p>在满足该条件的基础上，我们进一步可以给出本征激发的导带电子浓度、价带空穴浓度以及质量作用定律：</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    n_{0} &= N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+    p_{0} &= N_{v} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}) \\
+    n_{0}p_{0} &= N_{C}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}) 
+\end{align*}</script><p>但在简并半导体中(即费米能级与导带或价带之间的距离很小)，上述三式均不成立，即<code>在简并情况下半导体退化成金属，故没有本征激发这一说了</code>。</p>
+<h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation:"></a>Explanation:</h2><blockquote>
+<p>当掺杂浓度非常大时，杂质之间的距离变得非常近，彼此之间产生相互作用，局域的杂质能级变成了能带，形成了半导体的带尾，所以半导体的能隙也就相应减小，故<code>简并掺杂会导致半导体能隙减小</code>，这也是<code>掺杂后半导体性质退化为金属</code>的原因，因为无论是价带的电子跃迁至受主能级在价带中留下导电空穴还是施主能级电子跃迁至导带在导带中留下导电电子，均可改善半导体导电性能。</p>
 </blockquote>
-<ul>
-<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 $E_{1}$ 、 $E_{2}$ 、 $E_{3}$ ……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
-<li>跃迁假设：电子从 $E_{m}$ 能级跃迁到 $E_{n}$ 能级所需的能量满足 $h\nu&#x3D;E_{n}-E_{m}$ 。</li>
-<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 $2\pi r\cdot m_{e} v &#x3D; n h$ ，即电子只能在轨道角动量等于约化普朗克常数 $\hbar$ 的整数倍的轨道上运动。</li>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>半导体掺杂后可能带来简并或非简并。</li>
+<li>简并的半导体性质由半导体退化(degenerate)为金属。</li>
+<li>非简并的半导体可能是考虑了杂质补偿。</li>
+<li>非简并的半导体既有掺杂的也有本征的。</li>
 </ul>
-<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：<br>$$\begin{align*}<br>   &amp;m v r &#x3D; n \frac{h}{2\pi} \<br>   &amp;m\frac{v^{2}}{r} &#x3D; \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}<br>\end{align*}$$</p>
-<p>联立得:<br>$$\begin{align*}<br>   r_{n} &#x3D; \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}<br>\end{align*}$$</p>
-<p>考虑电子的总能量为动能与势能之和：<br>$$\begin{align*}<br>   E_{n} &amp;&#x3D; E_{k,n} + E_{p,n} \<br>   &amp;&#x3D; \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\<br>   &amp;&#x3D; -\frac{1}{2}mv^{2}<br>\end{align*}$$</p>
-<p>化简得:<br>$$\begin{align*}<br>   E_{n} &#x3D; -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
-<h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
-<p>考虑如下两条修正:</p>
-</blockquote>
-<ul>
-<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 $\epsilon&#x3D;\epsilon_{0}\epsilon_{r}$ 的介质中。</li>
-<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量 $m_{0}$ 用有效质量 $m^{\ast}$ 替代。</li>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://wuli.iphy.ac.cn/en/article/pdf/preview/56261.pdf">对degeneration讲的非常透彻</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/436659016?utm_id=0">辅助理解</a></li>
 </ul>
-<p>即得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \<br>   E_{n} &amp;&#x3D; -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}<br>\end{align*}$$</p>
-<p>当$n&#x3D;1$时为基态，此时<br>$$\begin{align*}<br>   r_{0} &amp;&#x3D; 0.053nm \<br>   E_{0} &amp;&#x3D; 13.6eV<br>\end{align*}$$</p>
-<p>则进一步化简得:<br>$$\begin{align*}<br>   r_{n} &amp;&#x3D; \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \<br>   \triangle E_{n} &amp;&#x3D; \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}<br>\end{align*}$$</p>
-<p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
@@ -1404,21 +1417,6 @@
       </tags>
   </entry>
   <entry>
-    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
-    <url>/2025/05/22/body_effect_reduce_resistence/</url>
-    <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
-<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
-</blockquote>
-<h2 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h2><ul>
-<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<br>$$\begin{aligned}<br>  I &#x3D; g_{mb} V_{BS}<br>\end{aligned}$$</li>
-</ul>
-<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用传输门做二选一选择器的CMOS电路分析</title>
     <url>/2025/05/22/Transmission_gate_CMOS_circuit/</url>
     <content><![CDATA[<h1 id="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"><a href="#祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析"></a>祝老师教师节快乐！暨利用传输门做二选一选择器的CMOS电路分析</h1><h1 id="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"><a href="#祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！" class="headerlink" title="祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！"></a>祝天下的老师们教师节快乐！祝老师工作顺利，万事如意！</h1><h1 id="利用传输门做二选一选择器的CMOS电路分析"><a href="#利用传输门做二选一选择器的CMOS电路分析" class="headerlink" title="利用传输门做二选一选择器的CMOS电路分析"></a>利用传输门做二选一选择器的CMOS电路分析</h1><p><code>灵感来源于今天的数字逻辑课程</code>，因为对学数电时的传输门的印象不清了，然后分析传输门的CMOS电路时绕晕了，故做此记录。</p>
@@ -1426,28 +1424,229 @@
 <p><img src="https://www.helloimg.com/i/2024/12/17/67613d69eaf82.png" alt="图1传输门CMOS电路"></p>
 <p>如图1所示为传输门的CMOS电路示意图</p>
 <ul>
-<li>当 $C&#x3D;1$ 时，下面对MOS管的导通情况进行分析:</li>
+<li>当 $C=1$ 时，下面对MOS管的导通情况进行分析:</li>
 </ul>
-<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$<br>\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; V_{DD} \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}<br>$$</p>
-<p>$$<br>\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; V_{GBN} -V_{SBN} &#x3D; V_{DD} - V_{i}<br>\end{align*}<br>$$</p>
-<h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$<br>\begin{align*}<br>    \because &amp;\overline{C}&#x3D;0\<br>    \therefore &amp;V_{GP} &#x3D; 0V \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}<br>$$</p>
-<p>$$<br>\begin{align*}<br>    \therefore &amp;V_{GSP} &#x3D; V_{GBP} - V_{SBP} &#x3D; V_{DD} - (V_{i} - V_{DD}) &#x3D; - V_{i}<br>\end{align*}<br>$$</p>
-<p>当 $V_{i}&lt;V_{DD}-V_{TH}$ ，可保证 $V_{GSN}&#x3D;V_{DD}-V_{i}\geq v_{TH}$ ，即NMOS产生导电沟道；</p>
-<p>当 $V_{i} &gt;  V_{TH} $ ，可保证 $V_{GSP}&#x3D;-V_{i}\leq-v_{TH}$ ，即PMOS产生导电沟道；</p>
-<p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都可保证至少有一个MOS管存在导电沟道，使得 $V_{o}&#x3D;V_{i}$ 。</p>
+<h3 id="NMOS导通情况"><a href="#NMOS导通情况" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">
+\begin{align*}
+    \because &C=1\\
+    \therefore &V_{GN} = V_{DD} \\
+    \because &V_{BN} = 0V\\
+\end{align*}</script><script type="math/tex; mode=display">
+\begin{align*}
+    \therefore &V_{GSN} = V_{GBN} -V_{SBN} = V_{DD} - V_{i} 
+\end{align*}</script><h3 id="PMOS导通情况"><a href="#PMOS导通情况" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">
+\begin{align*}
+    \because &\overline{C}=0\\
+    \therefore &V_{GP} = 0V \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">
+\begin{align*}
+    \therefore &V_{GSP} = V_{GBP} - V_{SBP} = V_{DD} - (V_{i} - V_{DD}) = - V_{i}
+\end{align*}</script><p>当 $V<em>{i}&lt;V</em>{DD}-V<em>{TH}$ ，可保证 $V</em>{GSN}=V<em>{DD}-V</em>{i}\geq v_{TH}$ ，即NMOS产生导电沟道；</p>
+<p>当 $V<em>{i} &gt;  V</em>{TH} $ ，可保证 $V<em>{GSP}=-V</em>{i}\leq-v_{TH}$ ，即PMOS产生导电沟道；</p>
+<p>故 $V<em>{i}$ 无论取任何值(但都必须保证小于 $V</em>{DD}$ )都可保证至少有一个MOS管存在导电沟道，使得 $V<em>{o}=V</em>{i}$ 。</p>
 <ul>
-<li>当 $C&#x3D;0$ 时，下面对MOS管的导通情况进行分析:</li>
+<li>当 $C=0$ 时，下面对MOS管的导通情况进行分析:</li>
 </ul>
-<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;C&#x3D;1\<br>    \therefore &amp;V_{GN} &#x3D; 0V \<br>    \because &amp;V_{BN} &#x3D; 0V\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSN} &#x3D; 0  &lt; V_{TH}<br>\end{align*}$$</p>
-<h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><p>$$\begin{align*}<br>    \because &amp;\overline{C}&#x3D;1\<br>    \therefore &amp;V_{GP} &#x3D; V_{DD} \<br>    \because &amp;V_{BP} &#x3D; V_{DD}\<br>\end{align*}$$</p>
-<p>$$\begin{align*}<br>    \therefore &amp;V_{GSP} &gt; - V_{TH}<br>\end{align*}$$</p>
-<p>故 $V_{i}$ 无论取任何值(但都必须保证小于 $V_{DD}$ )都无法使任意一个MOS管存在导电沟道。</p>
+<h3 id="NMOS导通情况-1"><a href="#NMOS导通情况-1" class="headerlink" title="NMOS导通情况"></a>NMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &C=1\\
+    \therefore &V_{GN} = 0V \\
+    \because &V_{BN} = 0V\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSN} = 0  < V_{TH} 
+\end{align*}</script><h3 id="PMOS导通情况-1"><a href="#PMOS导通情况-1" class="headerlink" title="PMOS导通情况"></a>PMOS导通情况</h3><script type="math/tex; mode=display">\begin{align*}
+    \because &\overline{C}=1\\
+    \therefore &V_{GP} = V_{DD} \\
+    \because &V_{BP} = V_{DD}\\
+\end{align*}</script><script type="math/tex; mode=display">\begin{align*}
+    \therefore &V_{GSP} > - V_{TH}
+\end{align*}</script><p>故 $V<em>{i}$ 无论取任何值(但都必须保证小于 $V</em>{DD}$ )都无法使任意一个MOS管存在导电沟道。</p>
 <h1 id="故根据传输门导通规律设计如下图所示的二选一数选器"><a href="#故根据传输门导通规律设计如下图所示的二选一数选器" class="headerlink" title="故根据传输门导通规律设计如下图所示的二选一数选器"></a>故根据传输门导通规律设计如下图所示的二选一数选器</h1><p>如图2所示。</p>
 <p><img src="https://www.helloimg.com/i/2024/12/17/67613d6a1873b.png" alt="图2传输门实现二选一选择器"></p>
 ]]></content>
       <tags>
         <tag>模集(拉扎维)</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IC工艺课的10个问题总结-I</title>
+    <url>/2025/05/22/IC_Manufacture_test_10problems/</url>
+    <content><![CDATA[<h1 id="情况说明"><a href="#情况说明" class="headerlink" title="情况说明"></a>情况说明</h1><p>参考教材<code>半导体制造技术导论(第二版)——萧宏</code>，课程<code>半导体材料及IC工艺原理</code>。</p>
+<p>该总结是课程期末作业的一部分，边复习边总结。</p>
+<h1 id="Chapter1-5"><a href="#Chapter1-5" class="headerlink" title="Chapter1-5"></a>Chapter1-5</h1><h2 id="1-为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？"><a href="#1-为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？" class="headerlink" title="1. 为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？"></a>1. 为什么目前市场上主流的最大晶圆的大小均为12英寸，为什么没有13、14英寸的wafer投入生产？</h2><p><strong>解答</strong>:若假设晶圆的缺陷密度一样，那么越大的晶圆面积则会拥有更多的缺陷，进而会导致更低的成品率。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    Y \propto \frac{1}{ (1+DA)^{n} }
+\end{align}</script><p>其中Y表示成品率，D表示缺陷密度，A表示晶圆面积，n表示该wafer所需要处理的工序数。</p>
+<p>同时更大的wafer在生产过程中也需要更大的设备相匹配，例如LPCVD机器、蚀刻机、离子注入机、高温炉管等等。适用于更大尺寸wafer的生产设备的制造难度及成本是具备挑战性的，同时更大的设备无疑会需要更大的无尘间体积，这将会为生产成本带来增加。</p>
+<p>并且当前12英寸的wafer生产过程成熟，市场反馈良好，当前其生产过程中仍具备诸多可优化的流程以提高成品率，其局限性和瓶颈暂不明显，市场目前并未表现出对更大尺寸wafer的强烈呼唤。</p>
+<h2 id="2-为什么测试结构全都做在晶粒的切割道上？"><a href="#2-为什么测试结构全都做在晶粒的切割道上？" class="headerlink" title="2. 为什么测试结构全都做在晶粒的切割道上？"></a>2. 为什么测试结构全都做在晶粒的切割道上？</h2><p><strong>解答</strong>:为了节约硅晶圆的面积，<code>有待后续补充</code>。</p>
+<h2 id="3-为什么使用高k-高介电常数-和低k介质来取代二氧化硅做绝缘层？"><a href="#3-为什么使用高k-高介电常数-和低k介质来取代二氧化硅做绝缘层？" class="headerlink" title="3. 为什么使用高k(高介电常数)和低k介质来取代二氧化硅做绝缘层？"></a>3. 为什么使用高k(高介电常数)和低k介质来取代二氧化硅做绝缘层？</h2><p><strong>解答</strong>:首先对于平行板电容器模型，其电容大小满足下式</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    C = k \varepsilon_{0} \frac{hl}{d}
+\end{align}</script><p>其中称k为介电常数(与电磁波课程中不同，电磁波课程中称$\varepsilon$为介电常数，k这种称法工业界常用)，故为了减小电容的尺寸，可以通过使用高k介质来保证在缩小电容尺寸的同时维持同样的电容值。</p>
+<h3 id="高k介质"><a href="#高k介质" class="headerlink" title="高k介质"></a>高k介质</h3><p>同时用高k介质替代 $ \mathrm{ SiO<em>{2} }$ 做为栅介质能大幅减小栅漏电流，在满足性能和功耗要求的同时允许器件尺寸进一步微缩。但是高k介质替代 $ \mathrm{ SiO</em>{2} }$ 又带来的两个问题[1]:</p>
+<ul>
+<li><p>Poly silicon和高k介质之间的费米能级钉扎效应导致阈值电压增大，</p>
+</li>
+<li><p>远程声子散射导致的载流子迁移率下降，这是因为高k介质与硅沟道之间的界面陷阱密度大，沟道中的载流子被俘获到陷阱中。</p>
+</li>
+</ul>
+<p>但是这些问题是可以解决的，通过利用金属替代Poly silicon做为栅电极，可以产生较少的界面缺陷、减弱硼穿透效应，还能有效降低高k介质层中的缺陷密度。以pMOS器件为例，金属栅极材料的选择有众多约束，其中最主要的是金属材料必须具有与Si的价带底相近的功函数(5.0-5.2eV)以获得合适的电压阈值，同时金属栅极需具有良好的热稳定性使其有效功函数不受高温退火的影响[2]。同时采用应变技术能够进一步提升迁移率，应变分为全局应变和局域应变两种，前者一般通过在 $Si<em>{1-x}Ge</em>{x} $ 渐变层上外延生长Si或Ge实现；后者针对NMOS和PMOS，分别通过沉积氮化硅帽层和漏区沉积SiGe实现。</p>
+<p><img src="https://www.helloimg.com/i/2024/12/09/6756fb1cd428a.png" alt="采用HKMG工艺的效果"></p>
+<p>同时定义有效氧化层厚度(Effective Oxide Thickness,EOT)满足下式:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    \mathrm{EOT} = k \times T_{ox}
+\end{align}</script><p>其中 $T<em>{ox}$ 为氧化层厚度，以高k介质氧化铪为例，它的k是20，是二氧化硅的6倍。故6nm厚的 $\mathrm{Hf O</em>{2} } $ 提供相当于1nm厚的 $\mathrm{Si O_{2} } $ 的EOT，故在维持栅极电容大小不变的基础上，栅极可以采用较厚的介质进而实现较小的漏极泄露电流。<a href="https://zhuanlan.zhihu.com/p/346851712">参考资料:HKMG(High-K栅氧化物层+Metal Gate)技术</a></p>
+<h3 id="低k介质"><a href="#低k介质" class="headerlink" title="低k介质"></a>低k介质</h3><p>当集成电路的特征尺寸减少至0.18 $\mu m$ 或更小时，互连寄生的电阻、电容引起的延迟、串扰和功耗已成为发展高速、高密度和多功能集成电路需解决的瓶颈问题。</p>
+<p>在芯片内互连技术节点迭代过程中，已有多种技术被用于减少互连线路的RC延迟。其中减少寄生电容较为直接的方法是采用更低介电常数(低k)的材料做层间及线间介质来实现，例如氟化硅玻璃($k\sim 3.6$)；通过PECVD实现有机硅酸盐SiCOH(K&lt;3)的沉积，以及实现多孔SiCOH($k\sim 2.5$)的应用[3]。</p>
+<p>介电常数低于 $\mathrm{Si O<em>{2} } $ 的低k介质材料的介电常数 $k</em>{low-k} $ 范围需满足:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    k_{air} \leq k_{low-k} \leq k_{ \mathrm{Si O_{2} } }
+\end{align}</script><p>其中 $k<em>{air}$ 是空气的介电常数，大小为1；$ k</em>{ \mathrm{Si O<em>{2} } }$ 是 $\mathrm{Si O</em>{2} }$ 的介电常数，大小为3.9-4.2，具体值取决于制作 $\mathrm{Si O_{2} }$ 时的工艺[4]。</p>
+<p>IC芯片多层立体布线，不同传导层之间必须相互绝缘，使用层间淀积绝缘介质(inter level dielectric, ILD)来实现层间绝缘。特别是当工艺进入0.13 $\mu m$ 以下的节点，更倾向于采用低k介质做为介质层材料取代传统的二氧化硅介质。例如多孔二氧化硅aerogel、有机聚合物聚酰亚胺等等。故现在较为成熟的互连工艺时在金属线间嵌入低k介质薄膜，在微通孔见嵌入等离子体增强淀积的二氧化硅电介质，即可实现RC延迟降低，也可实现热功耗降低和器件稳定性提高，同时兼容目前的刻蚀、CMP工艺，在生产成本方面是具有优势的。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>在工艺特征尺寸持续减小的过程中，采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，实现厚度减小的情况下所提供的电容大小不同步减少，以保障栅极漏电流的减小。但其与ploy电极之间的费米钉扎效应等副效应仍有待解决，目前已经提出采用改换金属电极替代poly和使用应变技术提升迁移率等多种方案来缓解副效应。</p>
+<p>同时采用低k介质替代二氧化硅做为各传导层之间的绝缘介质，其拥有较少的寄生电容，可以实现较低的电路互连的RC延迟，但其生产与当前生产工艺流程的兼容性、成本经济性等仍受到挑战。</p>
+<h3 id="问题3参考文献"><a href="#问题3参考文献" class="headerlink" title="问题3参考文献"></a>问题3参考文献</h3><p>[1] <a href="https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.61.137701">黄力, 黄安平, 郑晓虎, 肖志松, 王玖. 高k介质再新型半导体器件中的应用[J]. 物理学报, 2012, 61(13): 137701.</a></p>
+<p>[2] <a href="http://www.wuli.ac.cn/cn/article/id/31655">杨智超, 黄安平, 肖志松. pMOS金属栅极材料的研究进展[J]. 物理, 2010, 39(02): 113-122.</a></p>
+<p>[3] <a href="http://www.wuli.ac.cn/cn/article/id/31655">张思勉, 邓晓楠, 王宇祺, 武逸飞, 刘佳宁, 李正操, 蔡坚, 王琛. 后摩尔时代芯片互连新材料及工艺革新[J]. 中国科学:化学, 2023, 53(10).</a></p>
+<p>[4] <a href="https://www.ejournal.org.cn/CN/Y2000/V28/I11/84">阮刚, 肖夏, 朱兆. 低介电常数(low-k)介质在ULSI中的应用前景[J]. 电子学报, 2000, 28(11): 84-87.</a></p>
+<h2 id="4-DRAM是怎么读取和存入数据的？"><a href="#4-DRAM是怎么读取和存入数据的？" class="headerlink" title="4. DRAM是怎么读取和存入数据的？"></a>4. DRAM是怎么读取和存入数据的？</h2><p>动态随机存储器(Drnamic random and memory)</p>
+<h2 id="5-为什么低速CMOS和DRAM均避免使用外延层-eoitaxy-？"><a href="#5-为什么低速CMOS和DRAM均避免使用外延层-eoitaxy-？" class="headerlink" title="5. 为什么低速CMOS和DRAM均避免使用外延层(eoitaxy)？"></a>5. 为什么低速CMOS和DRAM均避免使用外延层(eoitaxy)？</h2><p><strong>解答</strong>:<code>暂未查到详细答案，有待后续补充</code>。</p>
+<h2 id="6-热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？"><a href="#6-热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？" class="headerlink" title="6. 热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？"></a>6. 热氧化时为什么加入氯离子可以改善界面态？又为什么氯离子过多时器件性能下降？</h2><blockquote>
+<p>热氧化时加入氯离子的目的如下：</p>
+</blockquote>
+<ul>
+<li><ol>
+<li>增强氧化速度，能使氧化速率提升 10%~15%。</li>
+</ol>
+</li>
+<li><ol>
+<li>钝化可动离子，特别是 $Na^{+}$ ， $K^{+}$，钠，钾离子在电场作用下移动到硅片表面，影响电学特性，导致器件不稳定。而掺氯可固定可动离子，避免其移动。</li>
+</ol>
+</li>
+<li><ol>
+<li>中和Si-SiO2界面处电荷，减少氧化层缺陷。</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>同时氯离子过多时会导致器件性能下降：</p>
+</blockquote>
+<ul>
+<li><ol>
+<li>$Cl^{-}$ 过多时在界面处会积聚较多负电荷，进而排斥电子吸引空穴，降低了载流子迁移率；</li>
+</ol>
+</li>
+<li><ol>
+<li>$Al$ 做金属电极时，会与 $Al$ 发生腐蚀形成副产物，降低器件性能。</li>
+</ol>
+</li>
+</ul>
+<h2 id="7-为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？"><a href="#7-为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？" class="headerlink" title="7. 为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？"></a>7. 为什么深亚微米工艺中要持续做薄栅氧化层？如何实现？</h2><p><strong>解答</strong>：CMOS器件的关键性能指标是驱动电流 $I_{d}$ ，其大小满足(5)式，与栅极电容大小成正相关。同时栅极电容大小满足(6)式，即与栅极表面积成正比，与栅介质厚度成反比。因此可以通过增加栅极表面积和降低栅介质厚度来提高栅极电容[1]。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    I_{D} = \frac{1}{2} \frac{W}{L} C_{ox} (V_{gs} - V_{th} )^{2}
+\end{align}</script><script type="math/tex; mode=display">
+\begin{align}
+    C_{ox} \propto k\varepsilon \frac{A}{d}
+\end{align}</script><p>随着半导体工艺技术的不断发展，集成电路的集成度不断提高，这对增加栅极表面积产生了极大的制约。因此在半导体技术的发展过程中，降低栅介质栅氧化层厚度变成了推进CMOS器件性能提高的主要手段。</p>
+<p>但随着MOSFET的沟道长度缩短，这就导致了MOSFET管中的Source和Drain（源和漏）的距离越来越短，因此栅极对沟道的控制能力变差，这就意味着栅极电压夹断（pinch off）沟道的难度变大，于是使得亚阈值漏电（subthreshold leakage）现象，即短沟道效应（short-channel effect）更加容易发生。</p>
+<p>短沟道效应指的是当晶体管体积缩小时，源漏耗尽层宽度在整个沟道中所占比重越来越大。开启电压在沟道很短时将随沟道变小而迅速下降，其详细的计算和I-V关系位于参考文献[2]中。基于BSIM4模型，亚阈值泄露电流$I_{sub}$满足下式:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    I_{sub} = I_{0} \exp\big(\frac{ V_{gs} - V_{th} }{ nkT/q }\big) \big( 1- \exp(\frac{ -V_{ds} }{ kT/q }) \big)
+\end{align}</script><p>从上式可以看出随着阈值电压的减小，<code>亚阈值漏电电流</code>呈指数增加。</p>
+<p>同时随着栅极氧化层厚度的变薄，<code>栅极泄露电流</code>不容忽略。栅极氧化层厚度的变薄导致氧化层间的电场增加，较高的电场加上很薄的栅氧化层会导致在nMOS晶体管的沟道和栅极之间有电子隧道(对于pMOS是空穴隧道)产生，这将会带来栅氧化层隧道电流，其也是栅极泄露电流的最主要组成部分，其电流密度可简单表示为下式[3]:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+    J_{T}=A(\frac{ V_{ox} }{ T_{ox} })^{2} \exp (-\frac{B\big(1-(1-\frac{V_{ox } }{\phi_{ox} })^{\frac{3}{2} } \big) }{V_{ox }/T_{ox } })
+\end{align}</script><p>其中A、B是于工艺有关的参数；$T<em>{ox}$ 是栅氧化层厚度； $\phi</em>{ox}$ 是隧道粒子的势垒。可发现随着栅氧化层厚度的减小，隧道电流急剧增长。</p>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>随着工艺的推进，为提高CMOS器件的驱动电流进而则需提高其栅极电容，由于小尺寸工艺下栅氧化层面积很难增大，故选择持续减小栅氧化层厚度来实现驱动电流增大的目的。这会带来栅极泄露电流的急剧增加。同时栅极中掺入的B等杂质会从栅极中扩散至硅衬底或固定在栅介质中，这会影响器件的阈值电压。</p>
+<p>目前通过采用高k介质替代二氧化硅做为栅与金属电极之间的层间介质，但这又引入了一些新的问题，具体可参考问题3。</p>
+<h3 id="问题7参考文献"><a href="#问题7参考文献" class="headerlink" title="问题7参考文献"></a>问题7参考文献</h3><p>[1] <a href="https://d.wanfangdata.com.cn/thesis/D446460">王蒙. 超大规模集成电路制造工艺中对消除1/f噪声影响的研究. 复旦大学硕士论文. 2011</a></p>
+<p>[2] <a href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdukdfnAPAQ4YfvbWpXBQErMz01Eb7-HbZLbKQFyGeDRTFVItEq0qKc7hUxN5-plTt2gpFwGOCiKWdoJHyoRIQ0Ho9Z32-_q0-zMmh6nBLn7svNYkiXqRdoYJpa3XfVEuZpEYI9CWqogeUVWW8Tf5KG25B2302ClcgL6s7RKMhqp0tDSPz87z-ra&amp;uniplatform=NZKPT&amp;language=CHS">T.L.周, H.N.高斯, 李松发. 具有短沟道的结栅场效应晶体管的特性. 半导体情报. 1973(11)</a></p>
+<p>[3] <a href="https://kns.cnki.net/kcms2/article/abstract?v=-xbefZa1CdupREhI1qHd6c8_aWkrHdFqCiWEOqJAeqcWeP70mMofL24gnKYC-ScUetc9n0HDpS-Ijau5R1l9bKWKqfIG4ZEo-WENIS7unufFE5BxOyEz_2kKQ_lLbfin5TCh71OzdgQSTEkZ_TKg3Njc79nMRN6QjKtWls0JuYuYHVki4o_CrZJvLHAjlOIq&amp;uniplatform=NZKPT&amp;language=CHS">杨松, 王宏, 杨志家. 45nm体硅工艺下使用双-栅氧化层厚度降低SRAM的泄漏功耗. 半导体学报. 2007(05)</a></p>
+<h2 id="8-为什么扩散掺杂drive-in的时候要通入氧气？"><a href="#8-为什么扩散掺杂drive-in的时候要通入氧气？" class="headerlink" title="8. 为什么扩散掺杂drive-in的时候要通入氧气？"></a>8. 为什么扩散掺杂drive-in的时候要通入氧气？</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料:"></a>参考资料:</h3><ol>
+<li><a href="https://wenku.baidu.com/view/1e6dc74126c52cc58bd63186bceb19e8b8f6ec68.html?_wkts_=1734678567622&amp;needWelcomeRecommand=1&amp;unResetStore=1&amp;ILK=17346783-0778-4397-0383-176385599790">Drive-in 扩散相关知识介绍</a></li>
+</ol>
+<h2 id="9-为什么要生长金属硅化物？"><a href="#9-为什么要生长金属硅化物？" class="headerlink" title="9. 为什么要生长金属硅化物？"></a>9. 为什么要生长金属硅化物？</h2><p>最早的金属硅化物工艺是Polycide工艺技术，是为了减少多晶硅栅的等效串联电阻和接触孔的接触电阻。但Polycide仅能在poly silicion上形成，在Source和Drain上无法生长，无法改善Source和Drain区的等效串联电阻和接触孔的接触电阻。为改善这一问题引入了Salicide工艺技术，即<code>self-aligned silicide</code>，能在poly gate、drain、source上形成金属硅化物。</p>
+<p>Polycide的材料是硅化钨，Salicide的材料是Ti、Co和NiPt。</p>
+]]></content>
+      <tags>
+        <tag>IC工艺</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>氢原子模型和类氢原子模型</title>
+    <url>/2025/05/22/Hydrogen_like_model/</url>
+    <content><![CDATA[<h1 id="氢原子模型和类氢原子模型"><a href="#氢原子模型和类氢原子模型" class="headerlink" title="氢原子模型和类氢原子模型"></a>氢原子模型和类氢原子模型</h1><p>灵感来自<code>半导体物理</code>课程的课后题，发现推不出来表达式，上网查阅资料后做此记录，与大家分享。</p>
+<h1 id="氢原子模型"><a href="#氢原子模型" class="headerlink" title="氢原子模型"></a>氢原子模型</h1><blockquote>
+<p>基于量子力学的理论，我们根据<strong>玻尔三大假设</strong>书写方程。</p>
+</blockquote>
+<ul>
+<li>定态假设：原子系统只能处于一系列不连续的分立的能量状态 $E<em>{1}$ 、 $E</em>{2}$ 、 $E_{3}$ ……，在这些状态下，电子虽做加速运动，但不向外辐射能量，称这样的状态为定态。</li>
+<li>跃迁假设：电子从 $E<em>{m}$ 能级跃迁到 $E</em>{n}$ 能级所需的能量满足 $h\nu=E<em>{n}-E</em>{m}$ 。</li>
+<li>轨道角动量量子化假设：在氢原子中，电子轨道需满足 $2\pi r\cdot m_{e} v = n h$ ，即电子只能在轨道角动量等于约化普朗克常数 $\hbar$ 的整数倍的轨道上运动。</li>
+</ul>
+<p>故根据<code>轨道角动量量子化假设</code>和<code>圆周运动的向心力等于库仑力</code>列写如下方程：</p>
+<script type="math/tex; mode=display">\begin{align*}
+   &m v r = n \frac{h}{2\pi} \\
+   &m\frac{v^{2}}{r} = \frac{1}{4\pi\epsilon_{0}} \cdot \frac{e^{2}}{r^{2}}
+\end{align*}</script><p>联立得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} = \frac{\epsilon_{0}h^{2}}{\pi m e^{2}} n^{2}
+\end{align*}</script><p>考虑电子的总能量为动能与势能之和：</p>
+<script type="math/tex; mode=display">\begin{align*}
+   E_{n} &= E_{k,n} + E_{p,n} \\
+   &= \frac{1}{2}mv^{2} + -(\frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r})\\
+   &= -\frac{1}{2}mv^{2}
+\end{align*}</script><p>化简得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   E_{n} = -\frac{me^{4}}{8 \epsilon_{0}^{2} h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}</script><h2 id="类氢原子模型"><a href="#类氢原子模型" class="headerlink" title="类氢原子模型"></a>类氢原子模型</h2><blockquote>
+<p>考虑如下两条修正:</p>
+</blockquote>
+<ul>
+<li>考虑晶体内的杂质原子，即正负电荷处在介电常数 $\epsilon=\epsilon<em>{0}\epsilon</em>{r}$ 的介质中。</li>
+<li>考虑电子并非自由电子，而是运动在晶格周期性势场当中，故将电子的惯性质量 $m_{0}$ 用有效质量 $m^{\ast}$ 替代。</li>
+</ul>
+<p>即得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} &= \frac{\epsilon_{0}\epsilon_{r}h^{2}}{\pi m^{\ast} e^{2}} n^{2} \\
+   E_{n} &= -\frac{m^{\ast} e^{4}}{8 (\epsilon_{0}\epsilon_{r})^{2} h^{2}} \cdot \frac{1}{n^{2}}
+\end{align*}</script><p>当$n=1$时为基态，此时</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{0} &= 0.053nm \\
+   E_{0} &= 13.6eV
+\end{align*}</script><p>则进一步化简得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   r_{n} &= \frac{m^{\ast}}{m_{0}} \cdot \frac{E_{0}}{\epsilon_{r}^{2}} \\
+   \triangle E_{n} &= \frac{m^{0}}{m_{\ast}} \epsilon_{r} r_{0}
+\end{align*}</script><p>其中E为电子的基态能量，r为电子的基态轨道半径。</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</title>
+    <url>/2025/05/22/body_effect_reduce_resistence/</url>
+    <content><![CDATA[<h1 id="提问："><a href="#提问：" class="headerlink" title="提问："></a>提问：</h1><blockquote>
+<p>为什么考虑了MOS管的体效应后，其小信号模型电阻减小？</p>
+</blockquote>
+<h2 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h2><ul>
+<li>在MOS管模型中，体效应是等效为了一个独立电流源，大小为:<script type="math/tex; mode=display">\begin{aligned}
+  I = g_{mb} V_{BS}
+\end{aligned}</script></li>
+</ul>
+<p>同时它的效果在小信号模型中也能用一个线性电阻表示,因此与原来的VCCS的$R_{eq}$形成并联结构，对外</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
       </tags>
   </entry>
   <entry>
@@ -1789,7 +1988,7 @@
 </html>
     ]]></content>
       <tags>
-        <tag>模拟IC</tag>
+        <tag>射频IC</tag>
       </tags>
   </entry>
   <entry>
@@ -1799,26 +1998,62 @@
 <h2 id="符号说明"><a href="#符号说明" class="headerlink" title="符号说明"></a>符号说明</h2><p>$\hbar$为约化普朗克常数</p>
 <p>$f$为载流子所受所有外力的合力</p>
 <p>$P$为载流子动量</p>
-<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：<br>$$\begin{align*}<br>    f &amp;&#x3D; \frac{dP}{dt} \<br>    P&amp;&#x3D; \hbar k<br>\end{align*}$$</p>
-<p>载流子速度$v$可表示为:<br>$$\begin{align*}<br>    v &amp;&#x3D; \frac{1}{\hbar} \frac{dE}{dk}<br>\end{align*}$$</p>
-<p>则加速度$a$可表示为:<br>$$\begin{align*}<br>    a &amp;&#x3D; \frac{dv}{dt} \notag\<br>    &amp;&#x3D;\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\<br>    &amp;&#x3D;\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt} \notag<br>\end{align*}$$</p>
-<p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:<br>$$\begin{align*}<br>    a &amp;&#x3D;  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot \frac{d\hbar k}{dt} \notag\<br>    &amp;&#x3D; \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f<br>\end{align*}$$</p>
-<p>因此将$a$除到右侧，将$f$的系数除到左侧得:<br>$$\begin{align*}<br>    \frac{f}{a} &#x3D; \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}}<br>\end{align*}$$</p>
-<p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:<br>$$\begin{align*}<br>    m^{\ast} &amp;&#x3D; \frac{f}{a} &#x3D; \frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}}<br>\end{align*}$$</p>
-<p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:<br>$$\begin{align*}<br>    E(k) - E(0) &#x3D; \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}<br>\end{align*}$$</p>
-<p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
+<p>首先我们需要给出牛顿第二定律的原始(非常见)形式：</p>
+<script type="math/tex; mode=display">\begin{align*}
+    f &= \frac{dP}{dt} \\
+    P&= \hbar k 
+\end{align*}</script><p>载流子速度$v$可表示为:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    v &= \frac{1}{\hbar} \frac{dE}{dk} 
+\end{align*}</script><p>则加速度$a$可表示为:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    a &= \frac{dv}{dt} \notag\\
+    &=\frac{1}{\hbar} \frac{1}{dt} (\frac{dE}{dk} ) \notag\\
+    &=\frac{1}{\hbar} \frac{d^{2}E}{dk^{2}} \cdot \frac{dk}{dt} \notag 
+\end{align*}</script><p>注意到$\frac{dk}{dt}$我们是不知道怎么直接处理的，因此我们将其转化为$\frac{d\hbar k}{dt}$，然后就可以利用牛顿第二定律来进行转化了:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    a &=  \frac{1}{\hbar^{2}} \frac{d^{2}E}{dt^{2}} \cdot \frac{d\hbar k}{dt} \notag\\
+    &= \frac{1}{\hbar^{2}} \frac{d^{2}E}{dk^{2}} \cdot f 
+\end{align*}</script><p>因此将$a$除到右侧，将$f$的系数除到左侧得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dkt^{2}}} 
+\end{align*}</script><p>注意到$\frac{f}{a}$表示的是载流子所受到的所有外力，且$a$表示的是载流子的加速度，因此有:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    m^{\ast} &= \frac{f}{a} = \frac{\hbar^{2}}{\frac{d^{2}E}{dk^{2}}} 
+\end{align*}</script><p>实际中常根据<code>回旋共振实验</code>测定$m^{\ast}$，同时根据固体物理理论，产生电流的载流子主要是导带底和价带顶的电子，因此利用下式:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    E(k) - E(0) = \frac{\hbar^{2} k^{2}}{2m_{n}^{\ast}}
+\end{align*}</script><p>故可通过实验测定有效值量进而得到半导体中的能带$E(k)$。</p>
 <hr>
 <h2 id="vec-a-times-vec-b-times-vec-c-的化简求解"><a href="#vec-a-times-vec-b-times-vec-c-的化简求解" class="headerlink" title="$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解"></a>$\vec{a}\times(\vec{b}\times\vec{c})$的化简求解</h2><p>这个公式在<code>电磁场与电磁波</code>课程中用到时没记住展开后的式子，上网查到了有些大佬给出的<strong>流氓证明</strong>，非常好用，与大家分享。</p>
 <p>首先$\vec{b}\times\vec{c}$得到的向量方向为$\vec{b}$、$\vec{c}$所构成的平面的法向量方向。</p>
-<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:<br>$$\begin{align*}<br>   \vec{s} &#x3D; \vec{a}\times(\vec{b}\times\vec{c}) &#x3D; m\vec{b} + n \vec{c}<br>\end{align*}$$</p>
-<p>同时利用向量的叉乘关系:<br>$$\begin{align*}<br>    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a}<br>\end{align*}$$</p>
-<p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:<br>$$\begin{align*}<br>    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &amp;&#x3D; 0 \<br>    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &amp;&#x3D;0<br>\end{align*}$$</p>
-<p><code>很自然地</code>对$m$，$n$取如下式所示的值:<br>$$\begin{aligned}<br>	m&amp;&#x3D; -\vec{c} \cdot \vec{a}  &amp; \<br>	n&amp;&#x3D;  \vec{b} \cdot \vec{a} &amp;<br>\end{aligned}$$</p>
-<p>所以:<br>$$\begin{align*}<br>	\vec{s} &#x3D; k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]<br>\end{align*}$$</p>
-<p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
-<p>若取<br>$$\begin{aligned}<br>	\vec{a}&amp;&#x3D; \left[1,0,0\right]  &amp; \<br>	\vec{b}&amp;&#x3D; \left[0,1,0\right]  &amp; \<br>    \vec{c}&amp;&#x3D; \left[1,0,0\right]  &amp;<br>\end{aligned}$$</p>
-<p>代入解得$k&#x3D;-1$，所以得:<br>$$\begin{align*}<br>	\vec{s} &#x3D;   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}<br>\end{align*}$$</p>
-]]></content>
+<p>所以$\vec{a}\times(\vec{b}\times\vec{c})$得到的向量平行于$\vec{b}$、$\vec{c}$所构成的平面，故有下式:</p>
+<script type="math/tex; mode=display">\begin{align*}
+   \vec{s} = \vec{a}\times(\vec{b}\times\vec{c}) = m\vec{b} + n \vec{c}
+\end{align*}</script><p>同时利用向量的叉乘关系:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{a}\times(\vec{b}\times\vec{c}) \perp  \vec{a} 
+\end{align*}</script><p>因为存在垂直关系可以得到二者的点乘为0，并将式(9)的左侧利用式(8)进行代换得到:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    (m\vec{b} + n \vec{c}) \cdot  \vec{a} &= 0 \\
+    \Rightarrow m \vec{b} \cdot \vec{a} + n \vec{c} \cdot \vec{a} &=0
+\end{align*}</script><p><code>很自然地</code>对$m$，$n$取如下式所示的值:</p>
+<script type="math/tex; mode=display">\begin{aligned}
+    m&= -\vec{c} \cdot \vec{a}  & \\
+    n&=  \vec{b} \cdot \vec{a} &
+\end{aligned}</script><p>所以:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{s} = k \left[ (-\vec{c} \cdot \vec{a})\vec{b} + (-\vec{b} \cdot \vec{a})\vec{c} \right]
+\end{align*}</script><p>因为$k$的值应与<code>向量a、b、c的取值无关</code>，所以我们可以任意取一组好算的$\vec{a},\vec{b},\vec{c}$求解出$k$即可。</p>
+<p>若取</p>
+<script type="math/tex; mode=display">\begin{aligned}
+    \vec{a}&= \left[1,0,0\right]  & \\
+    \vec{b}&= \left[0,1,0\right]  & \\
+    \vec{c}&= \left[1,0,0\right]  & 
+\end{aligned}</script><p>代入解得$k=-1$，所以得:</p>
+<script type="math/tex; mode=display">\begin{align*}
+    \vec{s} =   (\vec{c} \cdot \vec{a})\vec{b} - (\vec{b} \cdot \vec{a})\vec{c}
+\end{align*}</script>]]></content>
       <tags>
         <tag>半导体物理</tag>
       </tags>
@@ -1842,28 +2077,73 @@
       </tags>
   </entry>
   <entry>
+    <title>关于势垒及衍生问题的一些思考</title>
+    <url>/2025/05/22/the_potential_barrier/</url>
+    <content><![CDATA[<h1 id="什么是势垒呢？"><a href="#什么是势垒呢？" class="headerlink" title="什么是势垒呢？"></a>什么是势垒呢？</h1><h2 id="pn结"><a href="#pn结" class="headerlink" title="pn结"></a>pn结</h2><p>在pn结中记n区、p区的导带 $E<em>{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E</em>{F}$ 靠近导带 $E<em>{C}$ ；p区的费米能级靠近价带 $E</em>{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
+<ul>
+<li><p>Q1:为什么pn结会形成统一的费米能级</p>
+</li>
+<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E<em>{F}$ 高的n区流向 $E</em>{F}$ 低的p区，相应的空穴从 $E<em>{F}$ 低的p区流向 $E</em>{F}$ 高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        n_{0} & =  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \\
+        p_{0} & =  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T}) 
+    \end{aligned}
+    \right.
+\end{equation}</script><p>故 $E<em>{Fn}$ 不断下移， $E</em>{Fp}$ 不断上移，直至 $E<em>{Fn}=E</em>{Fp}$ 。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
+<ul>
+<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
+</ul>
+<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
+<h3 id="pn结加正向偏压"><a href="#pn结加正向偏压" class="headerlink" title="pn结加正向偏压"></a>pn结加正向偏压</h3><ul>
+<li>加正向偏压后，势垒由 $V<em>{D}$ 下降为 $V</em>{D}-V$ ，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为 $V<em>{D}-V$ ；在 $E</em>{out}$ 的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn’边界处空穴浓度增加，进而形成从nn’边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp’边界处电子浓度增加，进而形成从pp’边界到p区内部的电子扩散电流。</li>
+</ul>
+<p>由于nn’处电子减少，故从(1)式来看， $E<em>{Fn}$ 应远离 $E</em>{C}$ ；同理由于pp’处空穴减少，故从(1)式来看， $E<em>{Fp}$ 应远离 $E</em>{V}$ 。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 $E<em>{C}$ 以分析方便，进而先确定 $E</em>{C}$ 、 $E_{V}$ 的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
+<hr>
+<h2 id="金属半导体接触-Metal-Semiconductor-Contact"><a href="#金属半导体接触-Metal-Semiconductor-Contact" class="headerlink" title="金属半导体接触(Metal - Semiconductor Contact)"></a>金属半导体接触(Metal - Semiconductor Contact)</h2><p>这种情况下有两种势垒:</p>
+<ul>
+<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p>
+</li>
+<li><p>在金属中存在金属的势垒高度 $q\phi_{ns}$ ，其满足:</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\begin{align}
+q\phi_{ns} = qV_{D} + E_{n} = (E_{C})_{metal} - (E_{F})_{metal} 
+\end{align}</script><p>考虑到金属是<code>电子海</code>，故其 $(E<em>{C})</em>{metal}$ 保持不动。<br>·</p>
+]]></content>
+      <tags>
+        <tag>半导体物理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>半导体物理半期考试参考解析</title>
     <url>/2025/05/22/semiconductor_physics_midterm_test/</url>
     <content><![CDATA[<h1 id="四川大学期中考试试题-开卷-2024-2025-学年第-1-学期-A-卷"><a href="#四川大学期中考试试题-开卷-2024-2025-学年第-1-学期-A-卷" class="headerlink" title="四川大学期中考试试题(开卷) (2024 - 2025 学年第 1 学期) A 卷"></a>四川大学期中考试试题(开卷) (2024 - 2025 学年第 1 学期) A 卷</h1><p>课程名称：半导体物理 任课教师：杨治美</p>
 <p>2024 年 11 月 25 日</p>
 <h2 id="1-题目"><a href="#1-题目" class="headerlink" title="1 题目"></a>1 题目</h2><ol>
-<li><p>${L}<em>{n}(E)  &#x3D; ( )$ , ${L}</em>{D} &#x3D;(   )$ 。</p>
+<li><p>${L}<em>{n}(E)  = ( )$ , ${L}</em>{D} =(   )$ 。</p>
 </li>
-<li><p>半导体中过剩电子浓度为 $ \Delta n &#x3D; {10}^{15} cm^{-3} $ ,过剩载流子的寿命为 $ \tau_{n0} &#x3D; {10}^{-6}s $ 。在 $ t &#x3D; 0 $ 时, 产生过剩载流子的外部作用停止,因此 $ t &gt; 0 $ 时半导体恢复到平衡状态, $ t &#x3D; {4\mu s} $ 时的过剩载流子的复合率 (   )。</p>
+<li><p>半导体中过剩电子浓度为 $ \Delta n = {10}^{15} cm^{-3} $ ,过剩载流子的寿命为 $ \tau_{n0} = {10}^{-6}s $ 。在 $ t = 0 $ 时, 产生过剩载流子的外部作用停止,因此 $ t &gt; 0 $ 时半导体恢复到平衡状态, $ t = {4\mu s} $ 时的过剩载流子的复合率 (   )。</p>
 </li>
 <li><p>假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 $ 1.0eV $ , B 的禁带宽度是 $1.2eV$,${300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是(   )。</p>
 </li>
-<li><p>特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu_{1}&#x3D;2000cm^{2}&#x2F;(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu_{2}&#x3D;1500cm^{2}&#x2F;(V\cdot s)$ ，只存在第三种散射机制时的迁移率 $\mu_{1}&#x3D;2000cm^{2}&#x2F;(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu_{3}&#x3D;500cm^{2}&#x2F;(V\cdot s)$，总的迁移率为( $\quad$ )</p>
+<li><p>特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu<em>{1}=2000cm^{2}/(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu</em>{2}=1500cm^{2}/(V\cdot s)$ ，只存在第三种散射机制时的迁移率 $\mu<em>{1}=2000cm^{2}/(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu</em>{3}=500cm^{2}/(V\cdot s)$，总的迁移率为( $\quad$ )</p>
 </li>
 <li><p>最有利效的复合中心能级位置在 (   ) 附近；最有利陷阱作用的能级位置在 (   ) 附近, 常见的是 (   ) 陷阱。</p>
 </li>
 </ol>
 <p>A. ${E}<em>{A}$ B. ${E}</em>{D}$ C. ${E}<em>{F}$ D. ${E}</em>{i}$ E. 少子 F. 多子</p>
-<ol start="6">
+<ol>
 <li>当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(   )。</li>
 </ol>
-<p>A. $\frac{1}{n_{0}}$ $\quad$ B. $\frac{1}{\Delta n}$ $\quad$  C. $\frac{1}{p_{0}}$ $\quad$  D. $\frac{1}{\Delta p}$</p>
-<ol start="7">
+<p>A. $\frac{1}{n<em>{0}}$ $\quad$ B. $\frac{1}{\Delta n}$ $\quad$  C. $\frac{1}{p</em>{0}}$ $\quad$  D. $\frac{1}{\Delta p}$</p>
+<ol>
 <li>以下 4 种半导体最适合制作高温器件的是(   )。</li>
 </ol>
 <p>A.Si $\quad$ B.Ge $\quad$  C.GaAs $\quad$  D.GaN</p>
@@ -1880,62 +2160,100 @@
 <p>四、讨论杂质浓度和温度分别对禁带宽度、迁移率、电阻率的影响。(10 分)</p>
 <p>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺Au后寿命为什么会明显下降?(10 分)</p>
 <p>六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法, 并简要说明基本测试原理(15 分)</p>
-<p>七、一 $\mathrm{n}$ 型半导体样品,复合能级 ${E}<em>{t}$ 在导带底之下三分之一 ${E}</em>{g}$ 处,设 ${\tau }<em>{n}$ 和 ${\tau }</em>{p}$ 为同一数量级, 并且与温度无关。试根据复合中心理论讨论寿命与温度的关系, 并根据得出的结果, 说明复合中心能级 ${E}_{t}$ 位置的方法。(25 分)
-	</p>
-<h2 id="2-参考解析"><a href="#2-参考解析" class="headerlink" title="2 参考解析"></a>2 参考解析</h2><h3 id="1-L-n-E-电子牵引长度-L-D-德拜长度-。"><a href="#1-L-n-E-电子牵引长度-L-D-德拜长度-。" class="headerlink" title="1. $ { L } _ { n } ( E )  &#x3D; $ (电子牵引长度) , $ { L }_{ D } &#x3D; $ (德拜长度)。"></a>1. $ { L } _ { n } ( E )  &#x3D; $ (电子牵引长度) , $ { L }_{ D } &#x3D; $ (德拜长度)。</h3><p>解: ${L}<em>{n}\left( E\right)$ 是电子牵引长度,其中下标 $\mathrm{n}$ 表示电子,要同 ${L}</em>{n}$ 电子扩散长度区分; ${L}_{D}$ 是德拜长度。</p>
-<h3 id="2-半导体中过剩电子浓度为-Delta-n-10-15-mathrm-cm-3-过剩载流子的寿命为-tau-n0-10-6-s-。在-t-0-时-产生过剩载流子的外部作用停止-因此-t-0-时半导体恢复到平衡状态-t-4-mu-s-时的过剩载流子的复合率-1-83-times-10-19-mathrm-cm-3-mathrm-s-1-。"><a href="#2-半导体中过剩电子浓度为-Delta-n-10-15-mathrm-cm-3-过剩载流子的寿命为-tau-n0-10-6-s-。在-t-0-时-产生过剩载流子的外部作用停止-因此-t-0-时半导体恢复到平衡状态-t-4-mu-s-时的过剩载流子的复合率-1-83-times-10-19-mathrm-cm-3-mathrm-s-1-。" class="headerlink" title="2. 半导体中过剩电子浓度为 ${\Delta n} &#x3D; {10}^{15}{\mathrm{cm}}^{-3}$ ,过剩载流子的寿命为 ${\tau }_{n0} &#x3D; {10}^{-6}s$ 。在 $t &#x3D; 0$ 时, 产生过剩载流子的外部作用停止,因此 $t &gt; 0$ 时半导体恢复到平衡状态, $t &#x3D; {4\mu s}$ 时的过剩载流子的复合率 $( {1.83} \times  {10}^{19}{\mathrm{cm}}^{-3}{\mathrm{s}}^{-1})$ 。"></a>2. 半导体中过剩电子浓度为 ${\Delta n} &#x3D; {10}^{15}{\mathrm{cm}}^{-3}$ ,过剩载流子的寿命为 ${\tau }_{n0} &#x3D; {10}^{-6}s$ 。在 $t &#x3D; 0$ 时, 产生过剩载流子的外部作用停止,因此 $t &gt; 0$ 时半导体恢复到平衡状态, $t &#x3D; {4\mu s}$ 时的过剩载流子的复合率 $( {1.83} \times  {10}^{19}{\mathrm{cm}}^{-3}{\mathrm{s}}^{-1})$ 。</h3><p>解: 首先考虑连续性方程:</p>
-<p>$$<br>\begin{align}<br>\frac{\partial \Delta n}{\partial t} &#x3D; D_{n} \frac{\partial^{2} \Delta n}{\partial x^{2}} - \mu_{n}E\frac{\partial \Delta n}{\partial x} - \mu_{n} n \frac{\partial E}{\partial t} -\frac{\Delta n}{\tau} +g_{p}<br>\end{align}<br>$$</p>
-<p>其中 $t &#x3D; 0$ 时外部作用停止,故 ${g}_{p} &#x3D; 0$ ; 且 $t &gt; 0$ 时半导体恢复至平衡状态,故过剩载流子均匀分布,即 $\frac{\partial {\Delta n}}{\partial x} &#x3D; 0$ ; 同时电场强度 $E &#x3D; 0$ ,故上式化简为:</p>
-<p>$$<br>\begin{align}<br>\frac{\partial \Delta n}{\partial t} &#x3D;  -\frac{\Delta n}{\tau}<br>\end{align}<br>$$</p>
-<p>解得:</p>
-<p>$$<br>\begin{align}<br>\Delta n &#x3D; \Delta n(t&#x3D;0) e^{-\frac{t}{\tau}}<br>\end{align}<br>$$</p>
-<p>故过剩载流子的复合率等于单位时间内过剩载流子数量的减少量, 即:</p>
-<p>$$<br>\begin{align}<br>U&#x3D;-\frac{d \Delta n}{d t}&#x3D; \frac{\Delta n(t&#x3D;0)}{\tau} e^{-\frac{t}{\tau}}<br>\end{align}<br>$$</p>
-<p>代入$\Delta n&#x3D;10^{15}cm^{-3}$，$\tau_{n0}&#x3D;10^{-6}s$，$t&#x3D;4\mu s$得:</p>
-<p>$$<br>\begin{align}<br>U&#x3D;\frac{10^{15} cm^{-3} }{10^{-6}s}\cdot e^{-\frac{4\mu s}{1\mu s}}&#x3D;1.83\times 10^{19} cm^{-3}s^{-1}<br>\end{align}<br>$$</p>
-<h3 id="3-假设两块半导体材料-mathrm-A-和-mathrm-B-除了禁带宽度不同-其它参数完全相同。-mathrm-A-的禁带宽度是-1-0-mathrm-eV-B-的禁带宽度是-1-2-mathrm-eV-300-mathrm-K-时两种材料的-n-i-的比值是-46-812-。"><a href="#3-假设两块半导体材料-mathrm-A-和-mathrm-B-除了禁带宽度不同-其它参数完全相同。-mathrm-A-的禁带宽度是-1-0-mathrm-eV-B-的禁带宽度是-1-2-mathrm-eV-300-mathrm-K-时两种材料的-n-i-的比值是-46-812-。" class="headerlink" title="3. 假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 ${1.0}\mathrm{eV}$ , B 的禁带宽度是 ${1.2}\mathrm{eV},{300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是 (46.812)。"></a>3. 假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 ${1.0}\mathrm{eV}$ , B 的禁带宽度是 ${1.2}\mathrm{eV},{300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是 (46.812)。</h3><p>解：考虑</p>
-<p>$$<br>\begin{align}<br>n_{i} &#x3D; N_{C} N_{V} e^{-\frac{E_{g}}{2k_{0}T}}<br>\end{align}<br>$$</p>
-<p>故有:</p>
-<p>$$<br>\begin{equation}<br>\begin{aligned}<br>\frac{n_{iA}}{n_{iB}} &amp;&#x3D; \frac{\exp(-\frac{E_{gA}}{2k_{0}T})}{\exp(-\frac{E_{gB}}{2k_{0}T})} \<br>&amp;&#x3D;\exp(\frac{E_{gB}-E_{gA}}{2k_{0}T}) \<br>&amp;&#x3D;\exp(\frac{0.2eV}{2 \times 0.026eV}) \<br>&amp;&#x3D;46.812<br>\end{aligned}<br>\end{equation}\<br>$$</p>
-<h3 id="4-特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在第二种散射机制时的迁移率为-mu-2-1500cm-2-V-cdot-s-，只存在第三种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在二种散射机制时的迁移率为-mu-3-500cm-2-V-cdot-s-，总的迁移率为-quad"><a href="#4-特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在第二种散射机制时的迁移率为-mu-2-1500cm-2-V-cdot-s-，只存在第三种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在二种散射机制时的迁移率为-mu-3-500cm-2-V-cdot-s-，总的迁移率为-quad" class="headerlink" title="4. 特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu_{1}&#x3D;2000cm^{2}&#x2F;(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu_{2}&#x3D;1500cm^{2}&#x2F;(V\cdot s)$ ，只存在第三种散射机制时的迁移率为 $\mu_{1}&#x3D;2000cm^{2}&#x2F;(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu_{3}&#x3D;500cm^{2}&#x2F;(V\cdot s)$ ，总的迁移率为( $\quad$ )"></a>4. 特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu_{1}&#x3D;2000cm^{2}&#x2F;(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu_{2}&#x3D;1500cm^{2}&#x2F;(V\cdot s)$ ，只存在第三种散射机制时的迁移率为 $\mu_{1}&#x3D;2000cm^{2}&#x2F;(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu_{3}&#x3D;500cm^{2}&#x2F;(V\cdot s)$ ，总的迁移率为( $\quad$ )</h3><p>解: 考虑载流子迁移率和散射概率之间满足:</p>
-<p>$$<br>\begin{align}<br>\mu &#x3D; \frac{q\tau}{m^{\ast}} &#x3D; \frac{q}{m^{\ast}P}<br>\end{align}<br>$$</p>
-<p>其中 $\tau$ 为相邻两次散射之间的平均自由时间, $p$ 为散射概率。其中载流子的散射总概率满足:</p>
-<p>$$<br>\begin{align}<br>&amp;{P}<em>{sum} &#x3D; {P}</em>{I} + {P}<em>{II} + {P}</em>{III} + \ldots \<br>&amp;\frac{1}{\tau_{sum} } &#x3D; \frac{1}{\tau_{I}} + \frac{1}{\tau_{II} } + \frac{1}{ \tau_{III} } + \ldots  \<br>&amp;\frac{1}{\mu_{sum} } &#x3D; \frac{1}{\mu_{I} } + \frac{1}{\mu_{II} } + \frac{1}{\mu_{III} } + \ldots<br>\end{align}<br>$$</p>
-<p>其中 ${P}<em>{I},{P}</em>{II},{P}<em>{III}$ 分别表示不同散射机制的散射概率,对应的 ${\tau }</em>{I},{\tau }<em>{I},{\tau }</em>{I}$ 是对应散射机制的平均自由运动时间,对应的 ${\mu }<em>{I},{\mu }</em>{I},{\mu }_{I}$ 是对应散射机制的载流子迁移率。</p>
+<p>七、一 $\mathrm{n}$ 型半导体样品,复合能级 ${E}<em>{t}$ 在导带底之下三分之一 ${E}</em>{g}$ 处,设 ${\tau }<em>{n}$ 和 ${\tau }</em>{p}$ 为同一数量级, 并且与温度无关。试根据复合中心理论讨论寿命与温度的关系, 并根据得出的结果, 说明复合中心能级 ${E}_{t}$ 位置的方法。(25 分)</p>
+<h2 id="2-参考解析"><a href="#2-参考解析" class="headerlink" title="2 参考解析"></a>2 参考解析</h2><h3 id="1-L-n-E-电子牵引长度-L-D-德拜长度-。"><a href="#1-L-n-E-电子牵引长度-L-D-德拜长度-。" class="headerlink" title="1. $ { L }  { n } ( E )  = $ (电子牵引长度) , $ { L }{ D } = $ (德拜长度)。"></a>1. $ { L } <em> { n } ( E )  = $ (电子牵引长度) , $ { L }</em>{ D } = $ (德拜长度)。</h3><p>解: ${L}<em>{n}\left( E\right)$ 是电子牵引长度,其中下标 $\mathrm{n}$ 表示电子,要同 ${L}</em>{n}$ 电子扩散长度区分; ${L}_{D}$ 是德拜长度。</p>
+<h3 id="2-半导体中过剩电子浓度为-Delta-n-10-15-mathrm-cm-3-过剩载流子的寿命为-tau-n0-10-6-s-。在-t-0-时-产生过剩载流子的外部作用停止-因此-t-gt-0-时半导体恢复到平衡状态-t-4-mu-s-时的过剩载流子的复合率-1-83-times-10-19-mathrm-cm-3-mathrm-s-1-。"><a href="#2-半导体中过剩电子浓度为-Delta-n-10-15-mathrm-cm-3-过剩载流子的寿命为-tau-n0-10-6-s-。在-t-0-时-产生过剩载流子的外部作用停止-因此-t-gt-0-时半导体恢复到平衡状态-t-4-mu-s-时的过剩载流子的复合率-1-83-times-10-19-mathrm-cm-3-mathrm-s-1-。" class="headerlink" title="2. 半导体中过剩电子浓度为 ${\Delta n} = {10}^{15}{\mathrm{cm}}^{-3}$ ,过剩载流子的寿命为 ${\tau }_{n0} = {10}^{-6}s$ 。在 $t = 0$ 时, 产生过剩载流子的外部作用停止,因此 $t &gt; 0$ 时半导体恢复到平衡状态, $t = {4\mu s}$ 时的过剩载流子的复合率 $( {1.83} \times  {10}^{19}{\mathrm{cm}}^{-3}{\mathrm{s}}^{-1})$ 。"></a>2. 半导体中过剩电子浓度为 ${\Delta n} = {10}^{15}{\mathrm{cm}}^{-3}$ ,过剩载流子的寿命为 ${\tau }_{n0} = {10}^{-6}s$ 。在 $t = 0$ 时, 产生过剩载流子的外部作用停止,因此 $t &gt; 0$ 时半导体恢复到平衡状态, $t = {4\mu s}$ 时的过剩载流子的复合率 $( {1.83} \times  {10}^{19}{\mathrm{cm}}^{-3}{\mathrm{s}}^{-1})$ 。</h3><p>解: 首先考虑连续性方程:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\frac{\partial \Delta n}{\partial t} = D_{n} \frac{\partial^{2} \Delta n}{\partial x^{2}} - \mu_{n}E\frac{\partial \Delta n}{\partial x} - \mu_{n} n \frac{\partial E}{\partial t} -\frac{\Delta n}{\tau} +g_{p}
+\end{align}</script><p>其中 $t = 0$ 时外部作用停止,故 ${g}_{p} = 0$ ; 且 $t &gt; 0$ 时半导体恢复至平衡状态,故过剩载流子均匀分布,即 $\frac{\partial {\Delta n}}{\partial x} = 0$ ; 同时电场强度 $E = 0$ ,故上式化简为:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\frac{\partial \Delta n}{\partial t} =  -\frac{\Delta n}{\tau} 
+\end{align}</script><p>解得:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\Delta n = \Delta n(t=0) e^{-\frac{t}{\tau}} 
+\end{align}</script><p>故过剩载流子的复合率等于单位时间内过剩载流子数量的减少量, 即:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U=-\frac{d \Delta n}{d t}= \frac{\Delta n(t=0)}{\tau} e^{-\frac{t}{\tau}} 
+\end{align}</script><p>代入$\Delta n=10^{15}cm^{-3}$，$\tau_{n0}=10^{-6}s$，$t=4\mu s$得:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U=\frac{10^{15} cm^{-3} }{10^{-6}s}\cdot e^{-\frac{4\mu s}{1\mu s}}=1.83\times 10^{19} cm^{-3}s^{-1}
+\end{align}</script><h3 id="3-假设两块半导体材料-mathrm-A-和-mathrm-B-除了禁带宽度不同-其它参数完全相同。-mathrm-A-的禁带宽度是-1-0-mathrm-eV-B-的禁带宽度是-1-2-mathrm-eV-300-mathrm-K-时两种材料的-n-i-的比值是-46-812-。"><a href="#3-假设两块半导体材料-mathrm-A-和-mathrm-B-除了禁带宽度不同-其它参数完全相同。-mathrm-A-的禁带宽度是-1-0-mathrm-eV-B-的禁带宽度是-1-2-mathrm-eV-300-mathrm-K-时两种材料的-n-i-的比值是-46-812-。" class="headerlink" title="3. 假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 ${1.0}\mathrm{eV}$ , B 的禁带宽度是 ${1.2}\mathrm{eV},{300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是 (46.812)。"></a>3. 假设两块半导体材料 $\mathrm{A}$ 和 $\mathrm{B}$ 除了禁带宽度不同,其它参数完全相同。 $\mathrm{A}$ 的禁带宽度是 ${1.0}\mathrm{eV}$ , B 的禁带宽度是 ${1.2}\mathrm{eV},{300}\mathrm{K}$ 时两种材料的 ${n}_{i}$ 的比值是 (46.812)。</h3><p>解：考虑</p>
+<script type="math/tex; mode=display">
+\begin{align}
+n_{i} = N_{C} N_{V} e^{-\frac{E_{g}}{2k_{0}T}}
+\end{align}</script><p>故有:</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+\frac{n_{iA}}{n_{iB}} &= \frac{\exp(-\frac{E_{gA}}{2k_{0}T})}{\exp(-\frac{E_{gB}}{2k_{0}T})} \\
+&=\exp(\frac{E_{gB}-E_{gA}}{2k_{0}T}) \\
+&=\exp(\frac{0.2eV}{2 \times 0.026eV}) \\
+&=46.812
+\end{aligned}
+\end{equation}\\</script><h3 id="4-特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在第二种散射机制时的迁移率为-mu-2-1500cm-2-V-cdot-s-，只存在第三种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在二种散射机制时的迁移率为-mu-3-500cm-2-V-cdot-s-，总的迁移率为-quad"><a href="#4-特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在第二种散射机制时的迁移率为-mu-2-1500cm-2-V-cdot-s-，只存在第三种散射机制时的迁移率为-mu-1-2000cm-2-V-cdot-s-，只存在二种散射机制时的迁移率为-mu-3-500cm-2-V-cdot-s-，总的迁移率为-quad" class="headerlink" title="4. 特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu{1}=2000cm^{2}/(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu{2}=1500cm^{2}/(V\cdot s)$ ，只存在第三种散射机制时的迁移率为 $\mu{1}=2000cm^{2}/(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu{3}=500cm^{2}/(V\cdot s)$ ，总的迁移率为( $\quad$ )"></a>4. 特定半导体内存在三种散射机制，只存在一种散射机制时的迁移率为 $\mu<em>{1}=2000cm^{2}/(V\cdot s)$ ，只存在第二种散射机制时的迁移率为 $\mu</em>{2}=1500cm^{2}/(V\cdot s)$ ，只存在第三种散射机制时的迁移率为 $\mu<em>{1}=2000cm^{2}/(V\cdot s)$ ，只存在二种散射机制时的迁移率为 $\mu</em>{3}=500cm^{2}/(V\cdot s)$ ，总的迁移率为( $\quad$ )</h3><p>解: 考虑载流子迁移率和散射概率之间满足:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\mu = \frac{q\tau}{m^{\ast}} = \frac{q}{m^{\ast}P}
+\end{align}</script><p>其中 $\tau$ 为相邻两次散射之间的平均自由时间, $p$ 为散射概率。其中载流子的散射总概率满足:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+&{P}_{sum} = {P}_{I} + {P}_{II} + {P}_{III} + \ldots \\
+&\frac{1}{\tau_{sum} } = \frac{1}{\tau_{I}} + \frac{1}{\tau_{II} } + \frac{1}{ \tau_{III} } + \ldots  \\
+&\frac{1}{\mu_{sum} } = \frac{1}{\mu_{I} } + \frac{1}{\mu_{II} } + \frac{1}{\mu_{III} } + \ldots
+\end{align}</script><p>其中 ${P}<em>{I},{P}</em>{II},{P}<em>{III}$ 分别表示不同散射机制的散射概率,对应的 ${\tau }</em>{I},{\tau }<em>{I},{\tau }</em>{I}$ 是对应散射机制的平均自由运动时间,对应的 ${\mu }<em>{I},{\mu }</em>{I},{\mu }_{I}$ 是对应散射机制的载流子迁移率。</p>
 <p>故代入本题数据得:</p>
-<p>$$<br>\begin{align}<br>\frac{1}{\mu_{sum} } &amp;&#x3D; \frac{1}{\mu_{1} }  + \frac{1}{\mu_{2} } + \frac{1}{\mu_{3}} \notag\<br>&amp;&#x3D; \frac{1}{2000} + \frac{1}{1500} + \frac{1}{1500} \<br>\Rightarrow \mu_{sum} &amp;&#x3D; 316 cm^{2}&#x2F;(V\cdot s)<br>\end{align}<br>$$</p>
-<h3 id="5-最有利效的复合中心能级位置在-D-附近-最有利陷阱作用的能级位置在-C-附近-常见的是-E-陷阱。"><a href="#5-最有利效的复合中心能级位置在-D-附近-最有利陷阱作用的能级位置在-C-附近-常见的是-E-陷阱。" class="headerlink" title="5. 最有利效的复合中心能级位置在 (D) 附近; 最有利陷阱作用的能级位置在 (C) 附近, 常见的是 (E) 陷阱。"></a>5. 最有利效的复合中心能级位置在 (D) 附近; 最有利陷阱作用的能级位置在 (C) 附近, 常见的是 (E) 陷阱。</h3><p>A. ${E}<em>{A};$ B. ${E}</em>{D};$ C. ${E}<em>{F};$ D. ${E}</em>{i};$ E. 少子 F. 多子</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\frac{1}{\mu_{sum} } &= \frac{1}{\mu_{1} }  + \frac{1}{\mu_{2} } + \frac{1}{\mu_{3}} \notag\\
+&= \frac{1}{2000} + \frac{1}{1500} + \frac{1}{1500} \\
+\Rightarrow \mu_{sum} &= 316 cm^{2}/(V\cdot s)
+\end{align}</script><h3 id="5-最有利效的复合中心能级位置在-D-附近-最有利陷阱作用的能级位置在-C-附近-常见的是-E-陷阱。"><a href="#5-最有利效的复合中心能级位置在-D-附近-最有利陷阱作用的能级位置在-C-附近-常见的是-E-陷阱。" class="headerlink" title="5. 最有利效的复合中心能级位置在 (D) 附近; 最有利陷阱作用的能级位置在 (C) 附近, 常见的是 (E) 陷阱。"></a>5. 最有利效的复合中心能级位置在 (D) 附近; 最有利陷阱作用的能级位置在 (C) 附近, 常见的是 (E) 陷阱。</h3><p>A. ${E}<em>{A}\;$ B. ${E}</em>{D}\;$ C. ${E}<em>{F}\;$ D. ${E}</em>{i}\;$ E. 少子 F. 多子</p>
 <p>解:</p>
 <ul>
-<li>最有效的复合中心能级位于禁带中央附近即 ${E}<em>{i}$ 附近,若假设 ${r}</em>{n} &#x3D; {r}_{p} &#x3D; r$ ,则</li>
+<li>最有效的复合中心能级位于禁带中央附近即 ${E}<em>{i}$ 附近,若假设 ${r}</em>{n} = {r}_{p} = r$ ,则</li>
 </ul>
-<p>$$<br>\begin{align}<br>U &#x3D; \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i} ch(\frac{E_{t}-E_{i}}{k_{0}T})}<br>\end{align}<br>$$</p>
-<p>当且仅当 ${E}<em>{t} &#x3D; {E}</em>{i}$ 时上式的分母最小,即复合率最大,故此时复合中心最有效。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U = \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i} ch(\frac{E_{t}-E_{i}}{k_{0}T})}
+\end{align}</script><p>当且仅当 ${E}<em>{t} = {E}</em>{i}$ 时上式的分母最小,即复合率最大,故此时复合中心最有效。</p>
 <ul>
 <li><p>最有效的陷阱作用的能级位于费米能级附近即 ${E}<em>{F}$ 附近,因为费米能级以下的能级已经被填充满, 起不到俘获电子的作用; 若能级费米能级以上, 则其上的电子容易在热激发的作用下回到导带,起不到俘获电子的作用,故最有效的陷阱作用的能级位于费米能级附近即 ${E}</em>{F}$ 附近。其中常俘获少子。</p>
 </li>
 <li><p>杂质能级的这种积累非平衡载流子的作用就称为陷阱效应, 故陷阱能级主要俘获非平衡少数载流子, 即主要为少子能级。</p>
 </li>
 </ul>
-<h3 id="6-当一种-mathrm-n-型半导体的少子寿命由直接辐射复合决定时-其小注入下少子寿命正比于-A-。"><a href="#6-当一种-mathrm-n-型半导体的少子寿命由直接辐射复合决定时-其小注入下少子寿命正比于-A-。" class="headerlink" title="6. 当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(A)。"></a>6. 当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(A)。</h3><p>A. $\frac{1}{ {n}<em>{0} };$ B. $\frac{1}{\Delta n};$ C. $\frac{1}{ {p}</em>{0} };$ D. $\frac{1}{\Delta p}$</p>
+<h3 id="6-当一种-mathrm-n-型半导体的少子寿命由直接辐射复合决定时-其小注入下少子寿命正比于-A-。"><a href="#6-当一种-mathrm-n-型半导体的少子寿命由直接辐射复合决定时-其小注入下少子寿命正比于-A-。" class="headerlink" title="6. 当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(A)。"></a>6. 当一种 $\mathrm{n}$ 型半导体的少子寿命由直接辐射复合决定时,其小注入下少子寿命正比于(A)。</h3><p>A. $\frac{1}{ {n}<em>{0} }\;$ B. $\frac{1}{\Delta n}\;$ C. $\frac{1}{ {p}</em>{0} }\;$ D. $\frac{1}{\Delta p}$</p>
 <p>解: 考虑直接复合的少子寿命满足:</p>
-<p>$$<br>\begin{align}<br>\tau &#x3D; \frac{1}{r(n_{0} + p_{0} + \Delta p )}<br>\end{align}<br>$$</p>
-<p>对于 $\mathrm{n}$ 型半导体在小注入条件下有:</p>
-<p>$$<br>\begin{align}<br>n_{0} \gg  p_{0} , n_{0} \gg \Delta p<br>\end{align}<br>$$</p>
-<p>故有:</p>
-<p>$$<br>\begin{align}<br>\tau \sim \frac{1}{rn_{0} }<br>\end{align}<br>$$</p>
-<p>故少子寿命正比于 $\frac{1}{ {n}_{0} }$ 。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\tau = \frac{1}{r(n_{0} + p_{0} + \Delta p )}
+\end{align}</script><p>对于 $\mathrm{n}$ 型半导体在小注入条件下有:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+n_{0} \gg  p_{0} , n_{0} \gg \Delta p
+\end{align}</script><p>故有:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\tau \sim \frac{1}{rn_{0} }
+\end{align}</script><p>故少子寿命正比于 $\frac{1}{ {n}_{0} }$ 。</p>
 <h3 id="7-以下-4-种半导体最适合制作高温器件的是-D-。"><a href="#7-以下-4-种半导体最适合制作高温器件的是-D-。" class="headerlink" title="7. 以下 4 种半导体最适合制作高温器件的是 (D)。"></a>7. 以下 4 种半导体最适合制作高温器件的是 (D)。</h3><p>A.Si B.Ge C.GaAs D.GaN</p>
 <p>解: 若半导体器件的禁带宽度越宽,则该器件的极限工作温度越高; 本征载流子浓度 ${n}_{i}$ 满足下式:</p>
-<p>$$<br>\begin{align}<br>n_{i} &#x3D; \left[ \frac{2(2\pi k_{0} T)^{\frac{2}{3}} (m_{n}^{\ast} m_{p}^{\ast} )^{\frac{3}{4}} }{\hbar^{3}} \right] exp(-\frac{E_{g} }{2k_{0}T})<br>\end{align}<br>$$</p>
-<p>半导体器件正常工作指的是本征载流子浓度至少比杂质浓度第一个数量级,故 ${n}<em>{i}$ 越小,则器件的极限工作温度越高; 从上式可以发现 ${E}</em>{g}$ 越大就可以实现越小的 ${n}_{i}$ ,即可以实现更高的极限工作温度。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+n_{i} = \left[ \frac{2(2\pi k_{0} T)^{\frac{2}{3}} (m_{n}^{\ast} m_{p}^{\ast} )^{\frac{3}{4}} }{\hbar^{3}} \right] exp(-\frac{E_{g} }{2k_{0}T})
+\end{align}</script><p>半导体器件正常工作指的是本征载流子浓度至少比杂质浓度第一个数量级,故 ${n}<em>{i}$ 越小,则器件的极限工作温度越高; 从上式可以发现 ${E}</em>{g}$ 越大就可以实现越小的 ${n}_{i}$ ,即可以实现更高的极限工作温度。</p>
 <p>其中 Si、Ge、GaAs、GaN 的禁带宽度分别为:1.12eV、0.6643eV、1.42eV、3.44eV；故 GaN 最适合做高温器件。</p>
 <h3 id="二、根据对-Si-晶体结构基本认识-尝试回答以下问题-10-分"><a href="#二、根据对-Si-晶体结构基本认识-尝试回答以下问题-10-分" class="headerlink" title="二、根据对 (Si) 晶体结构基本认识, 尝试回答以下问题: (10 分)"></a>二、根据对 (Si) 晶体结构基本认识, 尝试回答以下问题: (10 分)</h3><ol>
 <li>试画出 $\mathrm{Si}$ 的晶体结构图；</li>
 </ol>
 <p>解: $\mathrm{Si}$ 的晶体结构图如下图所示</p>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5c624e50.png" alt="图 1: $\mathrm{Si}$ 的晶体结构图"></p>
-<ol start="2">
+<ol>
 <li>试比较 (100)、(110) 和 (111) 面密度的大小, 要求写出详细计算过程; 解: 其中各晶向如下图所示:</li>
 </ol>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5c74800b.png" alt="图 2: 金刚石晶胞的各个晶向"></p>
@@ -1943,34 +2261,55 @@
 <li>(100) 晶面</li>
 </ul>
 <p>(100) 晶面上的原子分布情况如下: 4 个顶点各有一个原子, 面心一个原子, 所以 (100) 晶面上的原子数为:</p>
-<p>$$<br>\begin{align}<br>   \text{原子数}&#x3D;1+4\times \frac{1}{4} &#x3D; 2<br>\end{align}<br>$$</p>
-<p>乘积因子的解释：其中面心的原子为该晶面独占；顶点的四个原子分别同另外三个 **其他晶胞的 (100) 晶面 **共用,所以算原子数时需要乘 $\frac{1}{4}$ 。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{原子数}=1+4\times \frac{1}{4} = 2
+\end{align}</script><p>乘积因子的解释：其中面心的原子为该晶面独占；顶点的四个原子分别同另外三个 <strong>其他晶胞的 (100) 晶面 </strong>共用,所以算原子数时需要乘 $\frac{1}{4}$ 。</p>
 <p>同时 (100) 晶面的面积为:</p>
-<p>$$<br>\begin{align}<br>   \text{(100)晶面面积} &#x3D; a^{2} &#x3D;(5.43\times 10^{-8}\mathrm{cm})^{2}<br>\end{align}<br>$$</p>
-<p>所以 (100) 晶面的原子面密度为:</p>
-<p>$$<br>\begin{align}<br>   \text{(100)晶面原子面密度} &amp;&#x3D; \frac{2}{(5.43\times 10^{-8}\mathrm{cm})^{2}} \<br>   &amp;&#x3D; 6.78\times 10^{14} \mathrm{cm}^{-2}<br>\end{align}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{(100)晶面面积} = a^{2} =(5.43\times 10^{-8}\mathrm{cm})^{2}
+\end{align}</script><p>所以 (100) 晶面的原子面密度为:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{(100)晶面原子面密度} &= \frac{2}{(5.43\times 10^{-8}\mathrm{cm})^{2}} \\
+   &= 6.78\times 10^{14} \mathrm{cm}^{-2}
+\end{align}</script><ul>
 <li>(110) 晶面</li>
 </ul>
 <p>(110) 晶面上的原子分布情况如下：4 个顶点各有一个原子；上下棱的棱心各有一个原子；面上有原晶胞的体对角线上的两个原子, 所以 (110) 晶面上的原子数为:</p>
-<p>$$<br>\begin{align}<br>   \text{原子数}&#x3D;2+4\times \frac{1}{4} +2\times \frac{1}{2} &#x3D; 4<br>\end{align}<br>$$</p>
-<p>乘积因子的解释：其中面上的 2 个原子为该晶面独占；顶点的四个原子分别同另外三个 <strong>其他晶胞的(110)晶面</strong> 共用,所以算原子数时需要乘 $\frac{1}{4}$ ;上(下) 棱的棱心的原子分别与正上 (下) 方的一个 <strong>晶胞的 (110) 晶面</strong>共用,所以算原子数时需要乘 $\frac{1}{2}$ 。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{原子数}=2+4\times \frac{1}{4} +2\times \frac{1}{2} = 4
+\end{align}</script><p>乘积因子的解释：其中面上的 2 个原子为该晶面独占；顶点的四个原子分别同另外三个 <strong>其他晶胞的(110)晶面</strong> 共用,所以算原子数时需要乘 $\frac{1}{4}$ ;上(下) 棱的棱心的原子分别与正上 (下) 方的一个 <strong>晶胞的 (110) 晶面</strong>共用,所以算原子数时需要乘 $\frac{1}{2}$ 。</p>
 <p>同时 (110) 晶面的面积为:</p>
-<p>$$<br>\begin{align}<br>   \text{(110)晶面面积} &#x3D; a\times \sqrt{2}a &#x3D;\sqrt{2}(5.43\times 10^{-8}\mathrm{cm})^{2}<br>\end{align}<br>$$</p>
-<p>所以 (110) 晶面的原子面密度为:</p>
-<p>$$<br>\begin{align}<br>   \text{(110)晶面原子面密度} &amp;&#x3D; \frac{4}{\sqrt{2}(5.43\times 10^{-8}\mathrm{cm})^{2}} \<br>   &amp;&#x3D; 9.62\times 10^{14} \mathrm{cm}^{-2}<br>\end{align}<br>$$</p>
-<ul>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{(110)晶面面积} = a\times \sqrt{2}a =\sqrt{2}(5.43\times 10^{-8}\mathrm{cm})^{2}
+\end{align}</script><p>所以 (110) 晶面的原子面密度为:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{(110)晶面原子面密度} &= \frac{4}{\sqrt{2}(5.43\times 10^{-8}\mathrm{cm})^{2}} \\
+   &= 9.62\times 10^{14} \mathrm{cm}^{-2}
+\end{align}</script><ul>
 <li>(111) 晶面</li>
 </ul>
 <p>(111) 晶面上的原子分布情况如下: 三角形的 3 个顶点各有一个原子, 三角形的三条边分别有一个原子 (原晶胞的三个面心上的原子):</p>
-<p>$$<br>\begin{align}<br>   \text{原子数}&#x3D;3\times \frac{1}{6}+3\times \frac{1}{2} &#x3D; 2<br>\end{align}<br>$$</p>
-<p>乘积因子的解释: 三角形的 3 个顶点的原子如下图所示分别同另外六个其他晶胞的 (111) 晶面共用,所以算原子数时需要乘 $\frac{1}{6}$ ; 边上的原子分别同另外一个晶胞的 (111) 晶面共用,所以算原子数时需要乘 $\frac{1}{2}$ 。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{原子数}=3\times \frac{1}{6}+3\times \frac{1}{2} = 2
+\end{align}</script><p>乘积因子的解释: 三角形的 3 个顶点的原子如下图所示分别同另外六个其他晶胞的 (111) 晶面共用,所以算原子数时需要乘 $\frac{1}{6}$ ; 边上的原子分别同另外一个晶胞的 (111) 晶面共用,所以算原子数时需要乘 $\frac{1}{2}$ 。</p>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5c2c6bca.png" alt="图 3: 111 晶面的六分之一图示"></p>
 <p>同时 (111) 晶面的面积为:</p>
-<p>$$<br>\begin{align}<br>   \text{(111)晶面面积} &#x3D; \frac{\sqrt{3}}{4} (\sqrt{2}a)^{2} &#x3D;\frac{\sqrt{3}}{2}(5.43\times 10^{-8}\mathrm{cm})^{2}<br>\end{align}<br>$$</p>
-<p>所以 (111) 晶面的原子面密度为:</p>
-<p>$$<br>\begin{align}<br>   \text{(111)晶面原子面密度} &amp;&#x3D; \frac{2}{\frac{\sqrt{3}}{2}(5.43\times 10^{-8}\mathrm{cm})^{2}} \<br>   &amp;&#x3D; 7.84\times 10^{14} \mathrm{cm}^{-2}<br>\end{align}<br>$$</p>
-<p>3.MOSFET 器件和 NPN 晶体管制造过程中, 会分别选用那种晶向的衬底, 为什么?</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{(111)晶面面积} = \frac{\sqrt{3}}{4} (\sqrt{2}a)^{2} =\frac{\sqrt{3}}{2}(5.43\times 10^{-8}\mathrm{cm})^{2}
+\end{align}</script><p>所以 (111) 晶面的原子面密度为:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+   \text{(111)晶面原子面密度} &= \frac{2}{\frac{\sqrt{3}}{2}(5.43\times 10^{-8}\mathrm{cm})^{2}} \\
+   &= 7.84\times 10^{14} \mathrm{cm}^{-2}
+\end{align}</script><p>3.MOSFET 器件和 NPN 晶体管制造过程中, 会分别选用那种晶向的衬底, 为什么?</p>
 <p>解:</p>
 <ul>
 <li>MOS 管常用 (100) 晶向的晶圆来制作器件。</li>
@@ -2013,31 +2352,45 @@
 </ul>
 <p>随着杂质浓度的升高, 杂质原子之间靠得更近, 导致杂质原子之间的电子波函数发生重叠, 使孤立的杂质能级扩展为能带, 常称为杂质能带, 特别的若杂质能带进入了导带或价带, 并与导带或价带相连, 则形成了新的简并能带, 使能带的状态密度发生了变化, 简并能带的尾部伸入禁带,形成带尾。导致禁带宽度由 $\mathrm{E}\mathrm{g}$ 减小为 $\mathrm{E}$ ’ $\mathrm{g}$ ,禁带宽度变窄。</p>
 <p>考虑 Varshni 模型, 温度与禁带宽度之间满足:</p>
-<p>$$<br>\begin{align}<br>E_{g}(T) &#x3D; E_{g}(0) - \frac{\alpha T^{2}}{\beta + T}<br>\end{align}<br>$$</p>
-<p>常见的半导体如 $\mathrm{Si}$ 和 $\mathrm{Ge}$ 的禁带宽度具有负温度系数,但特别地锑化铟的 ${E}_{g}$ 具有正温度系数。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+E_{g}(T) = E_{g}(0) - \frac{\alpha T^{2}}{\beta + T}
+\end{align}</script><p>常见的半导体如 $\mathrm{Si}$ 和 $\mathrm{Ge}$ 的禁带宽度具有负温度系数,但特别地锑化铟的 ${E}_{g}$ 具有正温度系数。</p>
 <ul>
 <li>杂质浓度和温度对半导体迁移率的影响:</li>
 </ul>
 <p>硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系如下图所示：</p>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5c52c8ed.png" alt="图 4: 硅中电子迁移率和空穴迁移率与杂质浓度和温度的关系"></p>
 <p>若只考虑电离杂质散射和声学波散射,则载流子迁移率 $\mu$ 服从:</p>
-<p>$$<br>\begin{align}<br>\mu &#x3D; \frac{q}{m^{\ast}} \cdot \frac{1}{A T^{\frac{2}{3}} + \frac{BN_{i}}{T^{\frac{2}{3}}}}<br>\end{align}<br>$$</p>
-<p>故从图 4 和式 (2.30) 中均可得到如下结论：随着温度的升高, 载流子迁移率降低; 同时随着杂质浓度的升高, 载流子迁移率降低。但当杂质浓度较大时, 低温区域内载流子迁移率会随着温度升高有小幅度的增加, 而后随着温度的升高而降低。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\mu = \frac{q}{m^{\ast}} \cdot \frac{1}{A T^{\frac{2}{3}} + \frac{BN_{i}}{T^{\frac{2}{3}}}}
+\end{align}</script><p>故从图 4 和式 (2.30) 中均可得到如下结论：随着温度的升高, 载流子迁移率降低; 同时随着杂质浓度的升高, 载流子迁移率降低。但当杂质浓度较大时, 低温区域内载流子迁移率会随着温度升高有小幅度的增加, 而后随着温度的升高而降低。</p>
 <p>杂质浓度很高的 $\mathrm{n}$ 型硅,由于施主能级扩展成杂质能带,导致禁带变窄,导带中运动的电子除受到电离杂质的散射外, 还会被施主能级所俘获, 这些被俘获的电子经过一定的时间还会被释放到导带中参与导电, 这些电子在导带中做漂移运动时, 不断地被施主能级俘获, 再释放, 再俘获, 使得电子的漂移运动减慢, 此外一些杂质带中的电子由于杂质原子轨道重叠, 也可能在施主原子间运动, 而不参与导电, 因此导带中有相当一部分电子在杂质带上运动, 从而迁移率有所降低。</p>
 <ul>
 <li>杂质浓度和温度对半导体电阻率的影响:</li>
 </ul>
 <p>若只考虑电离杂质散射和声学波散射, 则半导体电阻率、电导率与载流子迁移率存在如下关系 (以 $\mathrm{n}$ 型半导体为例):</p>
-<p>$$<br>\begin{equation}<br>\begin{aligned}<br>\rho &amp;&#x3D; \frac{1}{\sigma} \<br>\sigma &amp;&#x3D; n \mu_{n} q\<br>\Rightarrow \rho &amp;&#x3D;  \frac{m^{\ast}}{q} \frac{A T^{\frac{2}{3}} + \frac{BN_{i}}{T^{\frac{2}{3}}}}{ nq  }<br>\end{aligned}<br>\end{equation}<br>$$</p>
-<p>故硅的电阻率随杂质浓度、温度的变化如下图所示:</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+\rho &= \frac{1}{\sigma} \\
+\sigma &= n \mu_{n} q\\
+\Rightarrow \rho &=  \frac{m^{\ast}}{q} \frac{A T^{\frac{2}{3}} + \frac{BN_{i}}{T^{\frac{2}{3}}}}{ nq  }
+\end{aligned}
+\end{equation}</script><p>故硅的电阻率随杂质浓度、温度的变化如下图所示:</p>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab6af2e81e.png" alt="图 5: 硅的电阻率随杂质浓度、温度的变化"></p>
 <p>故随着杂质浓度的升高, 器件电阻率降低; 随着温度的升高, 器件电阻率先下降再升高再下降。</p>
-<h3 id="五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？-说明掺-mathrm-Au-后寿命为什么会明显下降-10-分-解"><a href="#五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？-说明掺-mathrm-Au-后寿命为什么会明显下降-10-分-解" class="headerlink" title="五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺 $\mathrm{Au}$ 后寿命为什么会明显下降?(10 分) 解:"></a>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺 $\mathrm{Au}$ 后寿命为什么会明显下降?(10 分) 解:</h3><p>直接复合即导带中的电子直接落入价带与空穴复合。间接复合即非平衡载流子通过复合中心的复合。若假设 ${r}<em>{n} &#x3D; {r}</em>{p} &#x3D; r$ ,则</p>
-<p>$$<br>\begin{align}<br>U &#x3D; \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i} ch(\frac{E_{t}-E_{i}}{k_{0}T})}<br>\end{align}<br>$$</p>
-<p>故从上式得到如下结论: 当且仅当 ${E}<em>{t} &#x3D; {E}</em>{i}$ 时上式的分母最小,即复合率最大,故位于禁带中央附近的复合中心能级最有效。</p>
+<h3 id="五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？-说明掺-mathrm-Au-后寿命为什么会明显下降-10-分-解"><a href="#五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？-说明掺-mathrm-Au-后寿命为什么会明显下降-10-分-解" class="headerlink" title="五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺 $\mathrm{Au}$ 后寿命为什么会明显下降?(10 分) 解:"></a>五、描述直接复合与间接复合的物理过程。为什么只有深能级才能起到有效复合中心的作用？ 说明掺 $\mathrm{Au}$ 后寿命为什么会明显下降?(10 分) 解:</h3><p>直接复合即导带中的电子直接落入价带与空穴复合。间接复合即非平衡载流子通过复合中心的复合。若假设 ${r}<em>{n} = {r}</em>{p} = r$ ,则</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U = \frac{N_{t} r (np - n_{i}^{2})}{n+p+2n_{i} ch(\frac{E_{t}-E_{i}}{k_{0}T})}
+\end{align}</script><p>故从上式得到如下结论: 当且仅当 ${E}<em>{t} = {E}</em>{i}$ 时上式的分母最小,即复合率最大,故位于禁带中央附近的复合中心能级最有效。</p>
 <p>掺入金后,在 $\mathrm{Si}$ 中形成了深能级的复合能级,是有效的复合中心。其中 $\mathrm{n}$ 型硅的少子寿命满足:</p>
-<p>$$<br>\begin{align}<br>\tau_{p}  &#x3D; \frac{1}{N_{t}r_{p}}<br>\end{align}<br>$$</p>
-<p>故随着金浓度 ${N}_{t}$ 的增大,少子寿命等比例的减小,故少量的有效复合中心就能大大缩短少子寿命。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\tau_{p}  = \frac{1}{N_{t}r_{p}}
+\end{align}</script><p>故随着金浓度 ${N}_{t}$ 的增大,少子寿命等比例的减小,故少量的有效复合中心就能大大缩短少子寿命。</p>
 <h3 id="六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些-并说明原因？写出三种或三种以上少子寿命检测的方法-并简要说明基本测试原理-15-分-解"><a href="#六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些-并说明原因？写出三种或三种以上少子寿命检测的方法-并简要说明基本测试原理-15-分-解" class="headerlink" title="六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法, 并简要说明基本测试原理 (15 分) 解:"></a>六、何谓少子寿命？决定半导体少子寿命的主要因素有哪些,并说明原因？写出三种或三种以上少子寿命检测的方法, 并简要说明基本测试原理 (15 分) 解:</h3><p>少子寿命即载流子两次相邻散射之间的平均自由运动时间,或者是载流子复合率的倒数。</p>
 <p>影响半导体少子寿命的主要有：复合能级位置、复合中心浓度、俘获系数、温度、器件的杂质浓度。</p>
 <p>少子寿命检测方法:</p>
@@ -2046,93 +2399,98 @@
 </ol>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5c843924.png" alt="图 6: 直流光电导衰减法测少子寿命"></p>
 <p>基于下式</p>
-<p>$$<br>\begin{align}<br>\Delta p(t) &#x3D; \Delta p(0)\cdot e^{-\frac{t}{\tau}}<br>\end{align}<br>$$</p>
-<p>测量电导率衰减为峰值的 $\frac{1}{e}$ 时的时间即可测得少子寿命</p>
-<ol start="2">
+<script type="math/tex; mode=display">
+\begin{align}
+\Delta p(t) = \Delta p(0)\cdot e^{-\frac{t}{\tau}}
+\end{align}</script><p>测量电导率衰减为峰值的 $\frac{1}{e}$ 时的时间即可测得少子寿命</p>
+<ol>
 <li>霍尔效应法</li>
 </ol>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5c1920b1.png" alt="图 7: 霍尔效应法测少子寿命"></p>
 <p>基于下式：</p>
-<p>$$<br>\begin{equation}<br>\begin{aligned}<br>E_{H} &amp;&#x3D; \frac{R_{H}IB}{A}\<br>R_{H} &amp;&#x3D; -\frac{1}{nq} \<br>\mu_{H} &amp;&#x3D; \sigma R_{H}<br>\end{aligned}<br>\end{equation}<br>$$</p>
-<p>通过测量电导率衰减为峰值的 $\frac{1}{e}$ 时的时间即可测得少子寿命</p>
-<ol start="3">
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+E_{H} &= \frac{R_{H}IB}{A}\\
+R_{H} &= -\frac{1}{nq} \\
+\mu_{H} &= \sigma R_{H}
+\end{aligned}
+\end{equation}</script><p>通过测量电导率衰减为峰值的 $\frac{1}{e}$ 时的时间即可测得少子寿命</p>
+<ol>
 <li>微波光电导衰减法 参考资料</li>
 </ol>
 <p><img src="https://www.helloimg.com/i/2025/02/23/67bab5ca2045d.png" alt="图 8: 微波光电导衰减法"></p>
 <p>由于微波信号的变化量正比于电导率的变化量, 从而可以通过探测微波反射信号来探测电导率的变化, 得到样品的载流子寿命。</p>
 <h3 id="七、一-mathrm-n-型半导体样品-复合能级-E-t-在导带底之下三分之一-E-g-处-设-tau-n-和-tau-p-为同一数量级-并且与温度无关。试根据复合中心理论讨论寿命与温度的关系-并根据得出的结果-说明复合中心能级-E-t-位置的方法。-25-分"><a href="#七、一-mathrm-n-型半导体样品-复合能级-E-t-在导带底之下三分之一-E-g-处-设-tau-n-和-tau-p-为同一数量级-并且与温度无关。试根据复合中心理论讨论寿命与温度的关系-并根据得出的结果-说明复合中心能级-E-t-位置的方法。-25-分" class="headerlink" title="七、一 $\mathrm{n}$ 型半导体样品,复合能级 ${E}{t}$ 在导带底之下三分之一 ${E}{g}$ 处,设 ${\tau }{n}$ 和 ${\tau }{p}$ 为同一数量级, 并且与温度无关。试根据复合中心理论讨论寿命与温度的关系, 并根据得出的结果, 说明复合中心能级 ${E}_{t}$ 位置的方法。(25 分)"></a>七、一 $\mathrm{n}$ 型半导体样品,复合能级 ${E}<em>{t}$ 在导带底之下三分之一 ${E}</em>{g}$ 处,设 ${\tau }<em>{n}$ 和 ${\tau }</em>{p}$ 为同一数量级, 并且与温度无关。试根据复合中心理论讨论寿命与温度的关系, 并根据得出的结果, 说明复合中心能级 ${E}_{t}$ 位置的方法。(25 分)</h3><p>解:</p>
 <p>则根据直接复合理论,非平衡载流子的复合率 $\mathrm{U}$ 可以表示为:</p>
-<p>$$<br>\begin{align}<br>U &#x3D; \frac{ r_{n}(n_{0}+n_{1}) + r_{p}(p_{0}+p_{1})  }{ N_{t} r_{p}r_{n}(n_{0}+p_{0})  }<br>\end{align}<br>$$</p>
-<p>其中</p>
-<p>$$<br>\begin{equation}<br>\left{<br>	\begin{aligned}<br>		n_{0} &amp;&#x3D;N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) ,   &amp;n_{1}&#x3D;N_{C} \mathrm{exp}(\frac{E_{t}-E_{C}}{k_{0}T})\<br>		p_{0} &amp;&#x3D;N_{V} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}),    &amp;p_{1}&#x3D;N_{V} \mathrm{exp}(\frac{E_{V}-E_{t}}{k_{0}T})<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>其中硅中金的空穴俘获截面的典型值满足下式：<a href="%7Bhttps://kns.cnki.net/kcms2/article/abstract?v=At0rObma_qMOynZbg_rKnty9IOGve9tMSHhOV72TG4QoMl8W3aQC60XOf_Bnh2O2WXS2wDPwP6nto8KpV1iVKIp2oKyJV_SAJ_JminOY5txmhMijmPkmiYGm8CA4H4MX4Lnjc3UEO8uGVoPd8WspAB878D_qkkOj62xE3zs9t_I_lVBJ_410bwGEBHjmQV2T&uniplatform=NZKPT&language=CHS">数据出处</a></p>
-<p>$$<br>\begin{equation}<br>\left{<br>	\begin{aligned}<br>		\sigma_{P} &amp;&#x3D;(3.7\pm 0.7)\times 10^{-15} (\frac{300}{T})^{2.9\pm 0.3} \mathrm{cm}^{2},   &amp;T\in (150K,200K) \<br>		\sigma_{P} &amp;&#x3D;(1.4\pm 0.3)\times 10^{-15} (\frac{300}{T})^{2} \mathrm{exp} (-\frac{19 meV}{k_{0}T}) \mathrm{cm}^{2},   &amp;T\in (160K,318K)\<br>		\sigma_{P} &amp;&#x3D;(2.3\pm 0.3)\times 10^{-15} (\frac{300}{T})^{1.2\pm 0.2}  \mathrm{cm}^{2},   &amp;T\in (77K,180K)<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>故电子俘获截面 ${\sigma }<em>{ - }$ 和空穴俘获截面 ${\sigma }</em>{ + }$ 与温度之间的关系近似满足:</p>
-<p>$$<br>\begin{align}<br>\sigma \sim T^{-n} , n \in(2,4)<br>\end{align}<br>$$</p>
-<p>若考虑电子俘获率和空穴俘获率满足下式:</p>
-<p>$$<br>\begin{equation}<br>\left{<br>	\begin{aligned}<br>		r_{p} &amp;&#x3D;\sigma_{P} V_{T}   &amp;\<br>		r_{n} &amp;&#x3D;\sigma_{n} V_{T}   &amp;\<br>		V_{T} &amp;&#x3D;\sqrt{\frac{3k_{0}T}{m^{\ast}}}   &amp;<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>则式 (2.39) 可变换成下式:</p>
-<p>$$<br>\begin{align}<br>U &#x3D; \frac{\sigma_{+}\sigma_{-}V_{T}N_{t}(np-N_{c}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}))}{\sigma_{-}\left[ n + (N_{c}N_{v})^{\frac{1}{2}} \mathrm{exp}(-\frac{5E_{g}}{6k_{0}T})  \right] + \sigma_{+}\left[ p + (N_{c}N_{v})^{\frac{1}{2}} \mathrm{exp}(-\frac{7E_{g}}{6k_{0}T})  \right] }<br>\end{align}<br>$$</p>
-<p>其中 ${N}<em>{c}$、${N}</em>{v}$ 满足:</p>
-<p>$$<br>\begin{equation}<br>\left{<br>	\begin{aligned}<br>		N_{c} &amp;&#x3D;2(\frac{m_{n}^{\ast} k_{0} T }{2\pi \hbar^{2}})^{\frac{3}{2}}  &amp;\<br>		N_{v} &amp;&#x3D;2(\frac{m_{p}^{\ast} k_{0} T }{2\pi \hbar^{2}})^{\frac{3}{2}}  &amp;<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>则 (2.40) 可近似等价为:</p>
-<p>$$<br>\begin{align}<br>U \sim \frac{T^{\alpha-\frac{3}{2}} ( np - T^{3}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})) }{n+T^{\frac{3}{2}} \mathrm{exp}(-\frac{E_{g}}{k_{0}T}) \mathrm{ch}(\frac{E_{g}}{6k_{0}T}) } , \alpha\in (0,1)<br>\end{align}<br>$$</p>
-<p>但该式子 $U$ 与 $T$ 的关系图较难绘制,故通过如下方式考虑简化式子来讨论。</p>
-<p>根据<a href="https://kns.cnki.net/kcms2/article/abstract?v=J38Mj5ylEu88tQBJNFw5h1IwWRjtcf_dazc2fmWHJqQx4i96YpQofdjMrRyTwOQEhUz_gRjk3J8olPV2CUyyPpMytd1c6H-dLLm8kGaFSclYiNLVGkP2TgxA-MNFS6JTU1yvBp2Z61w3KWg45T6K5sBH5kA97s6ntFxcDiWvHkM0RjAd08gQLGcqsUdFXL_b&uniplatform=NZKPT&language=CHS">参考资料</a>我们有全温度范围内的硅的费米能级变化, 同时该图像考虑了禁带宽度随温度增加的变化的 varish 模型, 是较为准确的数据。</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U = \frac{ r_{n}(n_{0}+n_{1}) + r_{p}(p_{0}+p_{1})  }{ N_{t} r_{p}r_{n}(n_{0}+p_{0})  }
+\end{align}</script><p>其中</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\left\{
+    \begin{aligned}
+        n_{0} &=N_{C} \mathrm{exp}(\frac{E_{F}-E_{C}}{k_{0}T}) ,   &n_{1}=N_{C} \mathrm{exp}(\frac{E_{t}-E_{C}}{k_{0}T})\\
+        p_{0} &=N_{V} \mathrm{exp}(\frac{E_{V}-E_{F}}{k_{0}T}),    &p_{1}=N_{V} \mathrm{exp}(\frac{E_{V}-E_{t}}{k_{0}T})
+    \end{aligned}
+    \right.
+\end{equation}</script><p>其中硅中金的空穴俘获截面的典型值满足下式：<a href="{https://kns.cnki.net/kcms2/article/abstract?v=At0rObma_qMOynZbg_rKnty9IOGve9tMSHhOV72TG4QoMl8W3aQC60XOf_Bnh2O2WXS2wDPwP6nto8KpV1iVKIp2oKyJV_SAJ_JminOY5txmhMijmPkmiYGm8CA4H4MX4Lnjc3UEO8uGVoPd8WspAB878D_qkkOj62xE3zs9t_I_lVBJ_410bwGEBHjmQV2T&amp;uniplatform=NZKPT&amp;language=CHS">数据出处</a></p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\left\{
+    \begin{aligned}
+        \sigma_{P} &=(3.7\pm 0.7)\times 10^{-15} (\frac{300}{T})^{2.9\pm 0.3} \mathrm{cm}^{2},   &T\in (150K,200K) \\
+        \sigma_{P} &=(1.4\pm 0.3)\times 10^{-15} (\frac{300}{T})^{2} \mathrm{exp} (-\frac{19 meV}{k_{0}T}) \mathrm{cm}^{2},   &T\in (160K,318K)\\
+        \sigma_{P} &=(2.3\pm 0.3)\times 10^{-15} (\frac{300}{T})^{1.2\pm 0.2}  \mathrm{cm}^{2},   &T\in (77K,180K)
+    \end{aligned}
+    \right.
+\end{equation}</script><p>故电子俘获截面 ${\sigma }<em>{ - }$ 和空穴俘获截面 ${\sigma }</em>{ + }$ 与温度之间的关系近似满足:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\sigma \sim T^{-n} , n \in(2,4)
+\end{align}</script><p>若考虑电子俘获率和空穴俘获率满足下式:</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\left\{
+    \begin{aligned}
+        r_{p} &=\sigma_{P} V_{T}   &\\
+        r_{n} &=\sigma_{n} V_{T}   &\\
+        V_{T} &=\sqrt{\frac{3k_{0}T}{m^{\ast}}}   &
+    \end{aligned}
+    \right.
+\end{equation}</script><p>则式 (2.39) 可变换成下式:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U = \frac{\sigma_{+}\sigma_{-}V_{T}N_{t}(np-N_{c}N_{v}\mathrm{exp}(-\frac{E_{g}}{k_{0}T}))}{\sigma_{-}\left[ n + (N_{c}N_{v})^{\frac{1}{2}} \mathrm{exp}(-\frac{5E_{g}}{6k_{0}T})  \right] + \sigma_{+}\left[ p + (N_{c}N_{v})^{\frac{1}{2}} \mathrm{exp}(-\frac{7E_{g}}{6k_{0}T})  \right] }
+\end{align}</script><p>其中 ${N}<em>{c}$、${N}</em>{v}$ 满足:</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\left\{
+    \begin{aligned}
+        N_{c} &=2(\frac{m_{n}^{\ast} k_{0} T }{2\pi \hbar^{2}})^{\frac{3}{2}}  &\\
+        N_{v} &=2(\frac{m_{p}^{\ast} k_{0} T }{2\pi \hbar^{2}})^{\frac{3}{2}}  &
+    \end{aligned}
+    \right.
+\end{equation}</script><p>则 (2.40) 可近似等价为:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+U \sim \frac{T^{\alpha-\frac{3}{2}} ( np - T^{3}\mathrm{exp}(-\frac{E_{g}}{k_{0}T})) }{n+T^{\frac{3}{2}} \mathrm{exp}(-\frac{E_{g}}{k_{0}T}) \mathrm{ch}(\frac{E_{g}}{6k_{0}T}) } , \alpha\in (0,1)
+\end{align}</script><p>但该式子 $U$ 与 $T$ 的关系图较难绘制,故通过如下方式考虑简化式子来讨论。</p>
+<p>根据<a href="https://kns.cnki.net/kcms2/article/abstract?v=J38Mj5ylEu88tQBJNFw5h1IwWRjtcf_dazc2fmWHJqQx4i96YpQofdjMrRyTwOQEhUz_gRjk3J8olPV2CUyyPpMytd1c6H-dLLm8kGaFSclYiNLVGkP2TgxA-MNFS6JTU1yvBp2Z61w3KWg45T6K5sBH5kA97s6ntFxcDiWvHkM0RjAd08gQLGcqsUdFXL_b&amp;uniplatform=NZKPT&amp;language=CHS">参考资料</a>我们有全温度范围内的硅的费米能级变化, 同时该图像考虑了禁带宽度随温度增加的变化的 varish 模型, 是较为准确的数据。</p>
 <p><img src="https://www.helloimg.com/i/2024/12/15/675ee52d167b4.png" alt="图 9: 全温度范围内的硅的费米能级变化"></p>
 <p>故从较大的温度范围内来看, 硅的费米能级随温度的变化满足下述规律:</p>
-<ol>
-<li><p>在温度 ${0K} &lt; T &lt; {100K}$ 的低温弱电离区间, 费米能级随温度的升高而逐渐增大。温度约为 ${100}\mathrm{K}$ 时,最大费米能级位于导带底以下 ${0.059}\mathrm{eV}$ 处。</p>
-</li>
-<li><p>在温度 ${100K} &lt; T &lt; {700K}$ 范围内,费米能级几乎呈线性下降。</p>
-</li>
-<li><p>温度大于 ${700}\mathrm{K}$ 时,费米能级逐渐趋于平缓,接近带隙中间,即本征半导体的费米能级。</p>
-</li>
-</ol>
-<p>同时由于 ${E}<em>{t} - {E}</em>{i} &#x3D; \frac{ {E}<em>{g} }{6} &#x3D; {0.187}\mathrm{ {eV} }$ ,故可根据图 9 所示的 ${E}</em>{F}$ 变化曲线近似估计少子寿命 $\tau$ 的变化。</p>
+<p>1) 在温度 ${0K} &lt; T &lt; {100K}$ 的低温弱电离区间, 费米能级随温度的升高而逐渐增大。温度约为 ${100}\mathrm{K}$ 时,最大费米能级位于导带底以下 ${0.059}\mathrm{eV}$ 处。</p>
+<p>2) 在温度 ${100K} &lt; T &lt; {700K}$ 范围内,费米能级几乎呈线性下降。</p>
+<p>3) 温度大于 ${700}\mathrm{K}$ 时,费米能级逐渐趋于平缓,接近带隙中间,即本征半导体的费米能级。</p>
+<p>同时由于 ${E}<em>{t} - {E}</em>{i} = \frac{ {E}<em>{g} }{6} = {0.187}\mathrm{ {eV} }$ ,故可根据图 9 所示的 ${E}</em>{F}$ 变化曲线近似估计少子寿命 $\tau$ 的变化。</p>
 <h4 id="新文献结果补充"><a href="#新文献结果补充" class="headerlink" title="新文献结果补充:"></a>新文献结果补充:</h4><p><img src="https://www.helloimg.com/i/2024/12/27/676e8251dca9c.png" alt="用SRH复合模拟Si样品过量载流子衰变[3]"></p>
 <p>可利用载流子浓度衰减为峰值的 $\frac{1}{e}$ 所需的时间来估计少子寿命。</p>
 <p><img src="https://www.helloimg.com/i/2024/12/27/676e8252a177a.png" alt="p型硅样品的高、低注入寿命值和高、低注入寿命之比随温度的变化曲线[4]"></p>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] 陈开茅,毛晋昌,晏懋洵,吴恩,曾奇勇. 硅中金的空穴俘获截面的研究. 北京大学物理系, 1983.</p>
 <p>[2] 王惠,杨伟强,严金梅,魏红军. 关于 $\mathrm{N}$ 型晶体硅费米能级的研究. 晶澳太阳能有限公司,2015.</p>
 <p>[3] Johnston S, Ahrenkiel R K. Measurement of the temperature dependence of silicon recombination lifetimes[J]. MRS Online Proceedings Library (OPL), 1998, 510: 607.</p>
-<p>[4] Johnston S W, Ahrenkiel R K. Measurement of the temperature-dependent recombination lifetimes in photovoltaic materials[C]&#x2F;&#x2F;AIP Conference Proceedings. American Institute of Physics, 1999, 462(1): 505-510.</p>
-]]></content>
-      <tags>
-        <tag>半导体物理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于势垒及衍生问题的一些思考</title>
-    <url>/2025/05/22/the_potential_barrier/</url>
-    <content><![CDATA[<h1 id="什么是势垒呢？"><a href="#什么是势垒呢？" class="headerlink" title="什么是势垒呢？"></a>什么是势垒呢？</h1><h2 id="pn结"><a href="#pn结" class="headerlink" title="pn结"></a>pn结</h2><p>在pn结中记n区、p区的导带 $E_{C}$ 之差为势垒。在形成pn结之前，n区的费米能级 $E_{F}$ 靠近导带 $E_{C}$ ；p区的费米能级靠近价带 $E_{V}$ ，形成pn结后形成统一的费米能级，在能带图中即体现为一条水平线。</p>
-<ul>
-<li><p>Q1:为什么pn结会形成统一的费米能级</p>
-</li>
-<li><p>A1:从能带角度理解：首先能级越低，该能级上的电子能量越高，该能级上的空穴能量越低。故形成pn结时电子从 $E_{F}$ 高的n区流向 $E_{F}$ 低的p区，相应的空穴从 $E_{F}$ 低的p区流向 $E_{F}$ 高的n区，也可以说<code>n区电子占据导带的概率降低</code>；同时考虑费米能级是标志载流子分布的能级，或者从下式分析:</p>
-</li>
-</ul>
-<p>$$<br>\begin{equation}<br>	\left{<br>	\begin{aligned}<br>		n_{0} &amp; &#x3D;  N_{c} \exp(\frac{E_{F}-E_{C}}{k_{0}T}) \<br>		p_{0} &amp; &#x3D;  N_{v} \exp(\frac{E_{V}-E_{F}}{k_{0}T})<br>	\end{aligned}<br>	\right.<br>\end{equation}<br>$$</p>
-<p>故 $E_{Fn}$ 不断下移， $E_{Fp}$ 不断上移，直至 $E_{Fn}&#x3D;E_{Fp}$ 。同时考虑到费米能级的变化是连续的，故最终会形成统一的费米能级。</p>
-<ul>
-<li><code>事实上，能带的相对移动是pn结中空间电荷区存在内建电场的结果</code>。pn结形成过程中，p区留下负电中心，n区留下正电中心，故存在电场且电场强度方向为从n区指向p区，故电势n区高、p区低；故电子在p区电势能高，空穴在n区电势能高，由于<code>外界补充的</code>电势能高，故对自身能带能量要求降低。</li>
-</ul>
-<p>同时固定p区的导带为基准，相当于取定了势能零点。故n区的电子获得负的电势能，故需要n区能带下移以让电子获得更多的能量以填补负的电势能带来的总能量下降。</p>
-<h3 id="pn结加正向偏压"><a href="#pn结加正向偏压" class="headerlink" title="pn结加正向偏压"></a>pn结加正向偏压</h3><ul>
-<li>加正向偏压后，势垒由 $V_{D}$ 下降为 $V_{D}-V$ ，可以考虑从内外两个电场利用类似<code>叠加定理</code>来分析，外加正向偏压V导致n区电势能上升。故需上移修正为 $V_{D}-V$ ；在 $E_{out}$ 的作用下对于n区来说：排斥n区电子，吸引p区空穴。故在nn’边界处空穴浓度增加，进而形成从nn’边界到n区内部的空穴扩散电流；相应的对于p区来说：排斥p区空穴，吸引n区电子。故在pp’边界处电子浓度增加，进而形成从pp’边界到p区内部的电子扩散电流。</li>
-</ul>
-<p>由于nn’处电子减少，故从(1)式来看， $E_{Fn}$ 应远离 $E_{C}$ ；同理由于pp’处空穴减少，故从(1)式来看， $E_{Fp}$ 应远离 $E_{V}$ 。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>先确定势能零点(或者说固定某一能带)，常固定p区的导带 $E_{C}$ 以分析方便，进而先确定 $E_{C}$ 、 $E_{V}$ 的变化，从<code>电势能的增减</code>+<code>能带标志着该位置上的同一载流子的能量一致性</code>出发来判断。出发点是pn结形成后的零偏情况下拥有统一的费米能级。</p>
-<hr>
-<h2 id="金属半导体接触-Metal-Semiconductor-Contact"><a href="#金属半导体接触-Metal-Semiconductor-Contact" class="headerlink" title="金属半导体接触(Metal - Semiconductor Contact)"></a>金属半导体接触(Metal - Semiconductor Contact)</h2><p>这种情况下有两种势垒:</p>
-<ul>
-<li><p>在半导体中，空间电荷区所形成的电场所带来的<strong>电势差</strong>。</p>
-</li>
-<li><p>在金属中存在金属的势垒高度 $q\phi_{ns}$ ，其满足:</p>
-</li>
-</ul>
-<p>$$<br>\begin{align}<br>q\phi_{ns} &#x3D; qV_{D} + E_{n} &#x3D; (E_{C})<em>{metal} - (E</em>{F})_{metal}<br>\end{align}<br>$$</p>
-<p>考虑到金属是<code>电子海</code>，故其 $(E_{C})_{metal}$ 保持不动。<br>·</p>
+<p>[4] Johnston S W, Ahrenkiel R K. Measurement of the temperature-dependent recombination lifetimes in photovoltaic materials[C]//AIP Conference Proceedings. American Institute of Physics, 1999, 462(1): 505-510.</p>
 ]]></content>
       <tags>
         <tag>半导体物理</tag>
