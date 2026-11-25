@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OPD vs RLVR Credit Assignment, Qwen3 Compute Magnitude, and TGPO Mechanism" viewBox="-20 -20 1228 542" width="1228" height="542">
+  <style>text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "Segoe UI", system-ui, -apple-system, sans-serif; }</style>
+  <rect x="-20" y="-20" width="1228" height="542" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <defs>
+            <marker id="s08-arr-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#059669"/>
+            </marker>
+            <marker id="s08-arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#E11D48"/>
+            </marker>
+          </defs>
+
+          <!-- TOP BAND: Credit Assignment + Qwen3 Compute Bar -->
+          <rect x="6" y="6" width="1176" height="240" rx="16" fill="#F8FAFC" stroke="#A5F3FC" stroke-width="1.6"/>
+          <text x="28" y="40" fill="#164E63" font-size="16.5" font-weight="800">① OPD vs 独立 RLVR：信用分配密度与算力直觉（Qwen3 / TML）</text>
+
+          <!-- Left: Credit Assignment Strip -->
+          <rect x="26" y="58" width="660" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+
+          <text x="46" y="108" fill="#475569" font-size="15" font-weight="800">独立 RLVR</text>
+          <rect x="148" y="84" width="340" height="36" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+          <text x="318" y="108" text-anchor="middle" fill="#64748B" font-size="14">1,000 Tokens · 过程无信号</text>
+          <rect x="502" y="82" width="166" height="40" rx="10" fill="#FFF1F2" stroke="#FDA4AF"/>
+          <text x="585" y="108" text-anchor="middle" fill="#BE123C" font-size="14.5" font-weight="800">末端 1-Bit</text>
+
+          <text x="46" y="182" fill="#0891B2" font-size="15" font-weight="800">在线 OPD</text>
+          <g transform="translate(148, 158)">
+            <rect x="0" y="0" width="52" height="36" rx="6" fill="#CCFBF1" stroke="#0D9488"/>
+            <text x="26" y="24" text-anchor="middle" fill="#0F766E" font-size="14" font-weight="800">+0.4</text>
+            <rect x="60" y="0" width="52" height="36" rx="6" fill="#CCFBF1" stroke="#0D9488"/>
+            <text x="86" y="24" text-anchor="middle" fill="#0F766E" font-size="14" font-weight="800">+0.9</text>
+            <rect x="120" y="0" width="52" height="36" rx="6" fill="#FFE4E6" stroke="#E11D48"/>
+            <text x="146" y="24" text-anchor="middle" fill="#BE123C" font-size="14" font-weight="800">−2.1</text>
+            <rect x="180" y="0" width="160" height="36" rx="6" fill="#ECFEFF" stroke="#0891B2"/>
+            <text x="260" y="24" text-anchor="middle" fill="#0E7490" font-size="13.5" font-weight="800">A_t = log(p_T/p_S)</text>
+          </g>
+          <rect x="502" y="156" width="166" height="40" rx="10" fill="#0891B2"/>
+          <text x="585" y="182" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">逐词稠密优势</text>
+
+          <!-- Right: Qwen3 ~10x Compute Magnitude Visual -->
+          <rect x="706" y="58" width="456" height="170" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5"/>
+          <text x="728" y="90" fill="#0F172A" font-size="15" font-weight="800">Qwen3-8B 后训练算力对比</text>
+
+          <text x="728" y="136" fill="#475569" font-size="14" font-weight="700">独立 RL</text>
+          <rect x="812" y="114" width="328" height="30" rx="7" fill="#94A3B8"/>
+          <text x="976" y="135" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="800">17,920 GPUh</text>
+
+          <text x="728" y="194" fill="#059669" font-size="14" font-weight="800">OPD</text>
+          <rect x="812" y="172" width="36" height="30" rx="7" fill="#059669"/>
+          <rect x="862" y="168" width="278" height="38" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="1.6"/>
+          <text x="1001" y="193" text-anchor="middle" fill="#065F46" font-size="15.5" font-weight="900">1,800 GPUh (~10×)</text>
+
+          <!-- BOTTOM BAND: TGPO Mechanism -->
+          <rect x="6" y="264" width="1176" height="232" rx="16" fill="#F8FAFC" stroke="#C7D2FE" stroke-width="1.6"/>
+          <text x="28" y="298" fill="#312E81" font-size="16.5" font-weight="800">② TGPO：大跨度 OPD + RLVR 防策略坍塌机制</text>
+
+          <!-- Left: Pure RKL Collapse -->
+          <rect x="26" y="316" width="548" height="162" rx="14" fill="#FFF1F2" stroke="#FECDD3" stroke-width="1.5"/>
+          <text x="48" y="348" fill="#BE123C" font-size="15.5" font-weight="800">✕ 纯 RKL-OPD（大跨度）</text>
+
+          <rect x="48" y="368" width="144" height="88" rx="10" fill="#FFFFFF" stroke="#FDA4AF"/>
+          <text x="120" y="406" text-anchor="middle" fill="#334155" font-size="14.5" font-weight="800">探索偏移</text>
+          <text x="120" y="434" text-anchor="middle" fill="#64748B" font-size="13.5">p_T(y_S) ≈ 0</text>
+
+          <path d="M196,412 L226,412" stroke="#E11D48" stroke-width="2.8" marker-end="url(#s08-arr-r)"/>
+
+          <rect x="234" y="368" width="174" height="88" rx="10" fill="#E11D48"/>
+          <text x="321" y="406" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">log(p_T/p_S) → −∞</text>
+          <text x="321" y="434" text-anchor="middle" fill="#FFE4E6" font-size="13.5">纯负惩罚尖峰</text>
+
+          <path d="M412,412 L438,412" stroke="#E11D48" stroke-width="2.8" marker-end="url(#s08-arr-r)"/>
+
+          <rect x="446" y="368" width="110" height="88" rx="10" fill="#FFE4E6" stroke="#E11D48"/>
+          <text x="501" y="418" text-anchor="middle" fill="#9F1239" font-size="15" font-weight="800">熵坍塌 ✕</text>
+
+          <!-- Right: TGPO Solution -->
+          <rect x="594" y="316" width="568" height="162" rx="14" fill="#ECFDF5" stroke="#059669" stroke-width="1.8"/>
+          <text x="616" y="348" fill="#065F46" font-size="15.5" font-weight="800">✓ TGPO：FKL 前向引导 + RLVR 验证</text>
+
+          <rect x="616" y="368" width="128" height="88" rx="10" fill="#FFFFFF" stroke="#6EE7B7"/>
+          <text x="680" y="406" text-anchor="middle" fill="#065F46" font-size="14.5" font-weight="800">当前前缀</text>
+          <text x="680" y="434" text-anchor="middle" fill="#475569" font-size="13.5">状态 s_t</text>
+
+          <path d="M748,412 L776,412" stroke="#059669" stroke-width="2.8" marker-end="url(#s08-arr-g)"/>
+
+          <rect x="784" y="368" width="174" height="88" rx="10" fill="#059669"/>
+          <text x="871" y="406" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">FKL 过程引导</text>
+          <text x="871" y="434" text-anchor="middle" fill="#D1FAE5" font-size="13.5">稀疏 Top-K</text>
+
+          <text x="976" y="420" text-anchor="middle" fill="#059669" font-size="22" font-weight="900">+</text>
+
+          <rect x="994" y="368" width="148" height="88" rx="10" fill="#0891B2"/>
+          <text x="1068" y="406" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">RLVR 终态</text>
+          <text x="1068" y="434" text-anchor="middle" fill="#CFFAFE" font-size="13.5">规则校验 ✓</text>
+</svg>

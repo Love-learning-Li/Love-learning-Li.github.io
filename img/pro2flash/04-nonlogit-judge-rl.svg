@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DeepSeek-GRM SPCT, Rubrics as Rewards, and Critique-GRPO Mechanisms" viewBox="-20 -20 1228 542" width="1228" height="542">
+  <style>text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "Segoe UI", system-ui, -apple-system, sans-serif; }</style>
+  <rect x="-20" y="-20" width="1228" height="542" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <defs>
+            <marker id="s10-arr-i" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#4F46E5"/>
+            </marker>
+            <marker id="s10-arr-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#059669"/>
+            </marker>
+            <marker id="s10-arr-c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#0891B2"/>
+            </marker>
+          </defs>
+
+          <!-- LANE 1: DeepSeek-GRM / SPCT -->
+          <rect x="6" y="6" width="1176" height="154" rx="16" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.6"/>
+          <rect x="24" y="18" width="286" height="30" rx="15" fill="#4F46E5"/>
+          <text x="167" y="39" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">① DeepSeek-GRM / SPCT · 裁判</text>
+
+          <rect x="24" y="62" width="212" height="82" rx="12" fill="#FFFFFF" stroke="#818CF8" stroke-width="1.5"/>
+          <text x="130" y="96" text-anchor="middle" fill="#312E81" font-size="15.5" font-weight="800">查询 x + 回复 y_S</text>
+          <text x="130" y="124" text-anchor="middle" fill="#64748B" font-size="14">Student Rollout</text>
+
+          <path d="M242,103 L282,103" stroke="#4F46E5" stroke-width="3" marker-end="url(#s10-arr-i)"/>
+
+          <rect x="292" y="62" width="320" height="82" rx="12" fill="#FFFFFF" stroke="#4F46E5" stroke-width="1.6"/>
+          <text x="452" y="96" text-anchor="middle" fill="#312E81" font-size="15.5" font-weight="800">SPCT 原则 + 批判</text>
+          <text x="452" y="124" text-anchor="middle" fill="#4338CA" font-size="14">Adaptive Principles</text>
+
+          <path d="M618,103 L658,103" stroke="#4F46E5" stroke-width="3" marker-end="url(#s10-arr-i)"/>
+
+          <rect x="668" y="62" width="224" height="82" rx="12" fill="#4F46E5"/>
+          <text x="780" y="96" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="800">Voting@K</text>
+          <text x="780" y="124" text-anchor="middle" fill="#E0E7FF" font-size="14">+ Meta-RM</text>
+
+          <path d="M898,103 L938,103" stroke="#4F46E5" stroke-width="3" marker-end="url(#s10-arr-i)"/>
+
+          <rect x="948" y="62" width="214" height="82" rx="12" fill="#1E293B"/>
+          <text x="1055" y="98" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="800">校准 RL 奖励</text>
+          <text x="1055" y="126" text-anchor="middle" fill="#38BDF8" font-size="14">Inference Scaling</text>
+
+          <!-- LANE 2: Rubrics as Rewards (RaR) -->
+          <rect x="6" y="174" width="1176" height="154" rx="16" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.6"/>
+          <rect x="24" y="186" width="296" height="30" rx="15" fill="#059669"/>
+          <text x="172" y="207" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">② Rubrics as Rewards · 评分表</text>
+
+          <rect x="24" y="230" width="224" height="82" rx="12" fill="#1E293B"/>
+          <text x="136" y="264" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="800">N_T (Offline 1×)</text>
+          <text x="136" y="292" text-anchor="middle" fill="#A7F3D0" font-size="14">离线拆解</text>
+
+          <path d="M254,271 L292,271" stroke="#059669" stroke-width="3" marker-end="url(#s10-arr-g)"/>
+
+          <rect x="302" y="230" width="296" height="82" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="1.6"/>
+          <text x="450" y="264" text-anchor="middle" fill="#065F46" font-size="15.5" font-weight="800">Checklist r₁…r_m</text>
+          <text x="450" y="292" text-anchor="middle" fill="#047857" font-size="14">✓ r₁(w₁) · ✓ r₂(w₂) · 加权</text>
+
+          <path d="M604,271 L642,271" stroke="#059669" stroke-width="3" marker-end="url(#s10-arr-g)"/>
+
+          <rect x="652" y="230" width="244" height="82" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="1.6"/>
+          <text x="774" y="264" text-anchor="middle" fill="#065F46" font-size="15.5" font-weight="800">小裁判核验</text>
+          <text x="774" y="292" text-anchor="middle" fill="#475569" font-size="14">0 在线 N_T</text>
+
+          <path d="M902,271 L938,271" stroke="#059669" stroke-width="3" marker-end="url(#s10-arr-g)"/>
+
+          <rect x="948" y="230" width="214" height="82" rx="12" fill="#059669"/>
+          <text x="1055" y="266" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="800">开放域 GRPO</text>
+          <text x="1055" y="294" text-anchor="middle" fill="#D1FAE5" font-size="14">抑长度偏置</text>
+
+          <!-- LANE 3: Critique-GRPO -->
+          <rect x="6" y="342" width="1176" height="154" rx="16" fill="#ECFEFF" stroke="#A5F3FC" stroke-width="1.6"/>
+          <rect x="24" y="354" width="290" height="30" rx="15" fill="#0891B2"/>
+          <text x="169" y="375" text-anchor="middle" fill="#FFFFFF" font-size="14.5" font-weight="800">③ Critique-GRPO · 批判探索</text>
+
+          <rect x="24" y="398" width="212" height="82" rx="12" fill="#FFFFFF" stroke="#67E8F9" stroke-width="1.5"/>
+          <text x="130" y="432" text-anchor="middle" fill="#164E63" font-size="15.5" font-weight="800">初始轨迹 y₀</text>
+          <text x="130" y="460" text-anchor="middle" fill="#BE123C" font-size="14">探索受阻</text>
+
+          <path d="M242,439 L282,439" stroke="#0891B2" stroke-width="3" marker-end="url(#s10-arr-c)"/>
+
+          <rect x="292" y="398" width="286" height="82" rx="12" fill="#1E293B"/>
+          <text x="435" y="432" text-anchor="middle" fill="#38BDF8" font-size="15.5" font-weight="800">自然语言批判</text>
+          <text x="435" y="460" text-anchor="middle" fill="#CBD5E1" font-size="14">纯文本纠错</text>
+
+          <path d="M584,439 L624,439" stroke="#0891B2" stroke-width="3" marker-end="url(#s10-arr-c)"/>
+
+          <rect x="634" y="398" width="248" height="82" rx="12" fill="#FFFFFF" stroke="#0891B2" stroke-width="1.6"/>
+          <text x="758" y="432" text-anchor="middle" fill="#0E7490" font-size="15.5" font-weight="800">修正轨迹 y₁</text>
+          <text x="758" y="460" text-anchor="middle" fill="#475569" font-size="14">y₀ + y₁ 双轨</text>
+
+          <path d="M888,439 L938,439" stroke="#0891B2" stroke-width="3" marker-end="url(#s10-arr-c)"/>
+
+          <rect x="948" y="398" width="214" height="82" rx="12" fill="#0891B2"/>
+          <text x="1055" y="434" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="800">联合 GRPO</text>
+          <text x="1055" y="462" text-anchor="middle" fill="#CFFAFE" font-size="14">语义 + 标量</text>
+</svg>

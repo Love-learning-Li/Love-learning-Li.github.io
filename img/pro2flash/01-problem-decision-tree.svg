@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One-Hot SFT vs Soft Distribution and Two-Pillar Decision Tree" viewBox="-20 -20 1228 542" width="1228" height="542">
+  <style>text { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "Segoe UI", system-ui, -apple-system, sans-serif; }</style>
+  <rect x="-20" y="-20" width="1228" height="542" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <defs>
+            <marker id="s02-arr-em" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#059669"/>
+            </marker>
+            <marker id="s02-arr-in" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="#4F46E5"/>
+            </marker>
+          </defs>
+
+          <!-- LEFT HALF: One-Hot vs Soft Distribution -->
+          <rect x="6" y="6" width="568" height="490" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+          <text x="290" y="42" text-anchor="middle" fill="#0F172A" font-size="17" font-weight="800">Next-Token 分布对比：return ____</text>
+
+          <rect x="26" y="64" width="528" height="190" rx="14" fill="#FFF1F2" stroke="#FECDD3" stroke-width="1.5"/>
+          <text x="46" y="96" fill="#BE123C" font-size="15.5" font-weight="800">✕ 离线 SFT（One-Hot）</text>
+          <rect x="412" y="74" width="124" height="30" rx="15" fill="#FFE4E6"/>
+          <text x="474" y="94" text-anchor="middle" fill="#BE123C" font-size="14" font-weight="800">次优归零</text>
+
+          <line x1="50" y1="214" x2="534" y2="214" stroke="#FDA4AF" stroke-width="2"/>
+          <rect x="74" y="116" width="64" height="98" rx="6" fill="#E11D48"/>
+          <text x="106" y="160" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">100%</text>
+          <text x="106" y="238" text-anchor="middle" fill="#881337" font-size="14" font-weight="700">sorted</text>
+          <rect x="174" y="210" width="60" height="4" fill="#FDA4AF"/>
+          <text x="204" y="200" text-anchor="middle" fill="#9F1239" font-size="13.5">0%</text>
+          <text x="204" y="238" text-anchor="middle" fill="#64748B" font-size="14">list</text>
+          <rect x="272" y="210" width="60" height="4" fill="#FDA4AF"/>
+          <text x="302" y="200" text-anchor="middle" fill="#9F1239" font-size="13.5">0%</text>
+          <text x="302" y="238" text-anchor="middle" fill="#64748B" font-size="14">np.sort</text>
+          <rect x="370" y="210" width="60" height="4" fill="#FDA4AF"/>
+          <text x="400" y="200" text-anchor="middle" fill="#9F1239" font-size="13.5">0%</text>
+          <text x="400" y="238" text-anchor="middle" fill="#64748B" font-size="14">heapq</text>
+          <text x="488" y="200" text-anchor="middle" fill="#9F1239" font-size="13.5">0%</text>
+          <text x="488" y="238" text-anchor="middle" fill="#94A3B8" font-size="13.5">150K Tail</text>
+
+          <rect x="26" y="274" width="528" height="202" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+          <text x="46" y="306" fill="#047857" font-size="15.5" font-weight="800">✓ 软分布监督</text>
+          <rect x="394" y="284" width="142" height="30" rx="15" fill="#D1FAE5"/>
+          <text x="465" y="304" text-anchor="middle" fill="#065F46" font-size="14" font-weight="800">保留次优排序</text>
+
+          <line x1="50" y1="436" x2="534" y2="436" stroke="#6EE7B7" stroke-width="2"/>
+          <rect x="74" y="336" width="64" height="100" rx="6" fill="#059669"/>
+          <text x="106" y="382" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="800">68%</text>
+          <text x="106" y="460" text-anchor="middle" fill="#065F46" font-size="14" font-weight="700">sorted</text>
+          <rect x="174" y="378" width="60" height="58" rx="6" fill="#10B981"/>
+          <text x="204" y="368" text-anchor="middle" fill="#047857" font-size="14" font-weight="800">16%</text>
+          <text x="204" y="460" text-anchor="middle" fill="#0F172A" font-size="14">list</text>
+          <rect x="272" y="398" width="60" height="38" rx="6" fill="#34D399"/>
+          <text x="302" y="388" text-anchor="middle" fill="#047857" font-size="14" font-weight="800">9%</text>
+          <text x="302" y="460" text-anchor="middle" fill="#0F172A" font-size="14">np.sort</text>
+          <rect x="370" y="414" width="60" height="22" rx="5" fill="#6EE7B7"/>
+          <text x="400" y="404" text-anchor="middle" fill="#047857" font-size="14" font-weight="800">5%</text>
+          <text x="400" y="460" text-anchor="middle" fill="#0F172A" font-size="14">heapq</text>
+          <rect x="462" y="424" width="52" height="12" rx="4" fill="#A7F3D0"/>
+          <text x="488" y="414" text-anchor="middle" fill="#047857" font-size="13.5" font-weight="800">2%</text>
+          <text x="488" y="460" text-anchor="middle" fill="#475569" font-size="13.5">Tail</text>
+
+          <!-- RIGHT HALF: Two-Pillar Decision Tree -->
+          <rect x="594" y="6" width="588" height="490" rx="16" fill="#F8FAFC" stroke="#C7D2FE" stroke-width="1.5"/>
+          <text x="620" y="42" fill="#0F172A" font-size="17" font-weight="800">两大主题二分决策树（MECE）</text>
+          <text x="1156" y="42" text-anchor="end" fill="#4F46E5" font-size="14.5" font-weight="800">N_T → N_S</text>
+
+          <rect x="720" y="64" width="336" height="52" rx="14" fill="#1E293B"/>
+          <text x="888" y="96" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="800">是否已有小参数基座？</text>
+
+          <path d="M800,116 L748,162" stroke="#059669" stroke-width="3" marker-end="url(#s02-arr-em)"/>
+          <path d="M976,116 L1028,162" stroke="#4F46E5" stroke-width="3" marker-end="url(#s02-arr-in)"/>
+
+          <rect x="656" y="126" width="84" height="28" rx="14" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+          <text x="698" y="145" text-anchor="middle" fill="#065F46" font-size="14" font-weight="800">✓ 有</text>
+          <rect x="1036" y="126" width="84" height="28" rx="14" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/>
+          <text x="1078" y="145" text-anchor="middle" fill="#312E81" font-size="14" font-weight="800">✕ 无</text>
+
+          <!-- Pillar 1 -->
+          <rect x="614" y="172" width="262" height="304" rx="14" fill="#ECFDF5" stroke="#059669" stroke-width="1.8"/>
+          <text x="745" y="206" text-anchor="middle" fill="#065F46" font-size="16" font-weight="800">主题一 · 分阶段引导</text>
+
+          <rect x="630" y="226" width="230" height="68" rx="10" fill="#FFFFFF" stroke="#6EE7B7"/>
+          <text x="745" y="254" text-anchor="middle" fill="#047857" font-size="15" font-weight="800">预训练 · S04–S06</text>
+          <text x="745" y="280" text-anchor="middle" fill="#475569" font-size="13.5">Soft KD · Rho-1 · CKA</text>
+
+          <rect x="630" y="308" width="230" height="68" rx="10" fill="#FFFFFF" stroke="#67E8F9"/>
+          <text x="745" y="336" text-anchor="middle" fill="#0E7490" font-size="15" font-weight="800">后训练 · S07–S10</text>
+          <text x="745" y="362" text-anchor="middle" fill="#475569" font-size="13.5">OPD · TGPO · Judge RL</text>
+
+          <rect x="630" y="390" width="230" height="68" rx="10" fill="#FFFBEB" stroke="#FCD34D"/>
+          <text x="745" y="418" text-anchor="middle" fill="#92400E" font-size="15" font-weight="800">系统与跨表 · S11</text>
+          <text x="745" y="444" text-anchor="middle" fill="#B45309" font-size="13.5">Liger · SE-KD · X-Token</text>
+
+          <!-- Pillar 2 -->
+          <rect x="898" y="172" width="262" height="304" rx="14" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.8"/>
+          <text x="1029" y="206" text-anchor="middle" fill="#312E81" font-size="16" font-weight="800">主题二 · 结构改造</text>
+
+          <rect x="914" y="226" width="230" height="82" rx="10" fill="#FFFFFF" stroke="#818CF8"/>
+          <text x="1029" y="258" text-anchor="middle" fill="#312E81" font-size="15" font-weight="800">Dense · S12–S14</text>
+          <text x="1029" y="288" text-anchor="middle" fill="#475569" font-size="13.5">Pruning · SVD · NAS</text>
+
+          <rect x="914" y="324" width="230" height="82" rx="10" fill="#F5F3FF" stroke="#A78BFA"/>
+          <text x="1029" y="356" text-anchor="middle" fill="#4C1D95" font-size="15" font-weight="800">MoE · S15–S16</text>
+          <text x="1029" y="386" text-anchor="middle" fill="#475569" font-size="13.5">D-Optimal · Sub-MoE</text>
+
+          <rect x="914" y="420" width="230" height="42" rx="10" fill="#4F46E5"/>
+          <text x="1029" y="446" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="800">← 轻恢复接主题一</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Blog Icon">
+  <defs>
+    <linearGradient id="bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="55%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="10" y1="6" x2="48" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#bg)"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="14.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5"/>
+  <path d="M17 2H47C55.284 2 62 8.716 62 17V25C48 31 24 33 2 24V17C2 8.716 8.716 2 17 2Z" fill="url(#sheen)"/>
+  <!-- Geometric L monogram + silicon/layer prism node -->
+  <path d="M21 17.5V44.5H43.5" fill="none" stroke="#FFFFFF" stroke-width="6.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M33.5 19.5L44.5 26L33.5 32.5L29 29.8L35.5 26L29 22.2Z" fill="#BAE6FD" fill-opacity="0.95"/>
+  <circle cx="43.5" cy="19.5" r="3" fill="#FFFFFF"/>
+</svg>

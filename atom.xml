@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Love-learning-Li</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://love-learning-li.github.io/</id>
+  <link href="https://love-learning-li.github.io/" rel="alternate"/>
+  <link href="https://love-learning-li.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Love-learning-Li</rights>
+  <subtitle>研究生在读</subtitle>
+  <title>LiMingXiang's Record</title>
+  <updated>2026-11-24T07:42:16.626Z</updated>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="LLM 与 AI 系统" scheme="https://love-learning-li.github.io/categories/LLM-%E4%B8%8E-AI-%E7%B3%BB%E7%BB%9F/"/>
+    <category term="Pro2Flash" scheme="https://love-learning-li.github.io/tags/Pro2Flash/"/>
+    <category term="LLM" scheme="https://love-learning-li.github.io/tags/LLM/"/>
+    <category term="Knowledge Distillation" scheme="https://love-learning-li.github.io/tags/Knowledge-Distillation/"/>
+    <category term="On-Policy Distillation" scheme="https://love-learning-li.github.io/tags/On-Policy-Distillation/"/>
+    <category term="Model Compression" scheme="https://love-learning-li.github.io/tags/Model-Compression/"/>
+    <category term="MoE" scheme="https://love-learning-li.github.io/tags/MoE/"/>
+    <category term="RLVR" scheme="https://love-learning-li.github.io/tags/RLVR/"/>
+    <category term="Survey" scheme="https://love-learning-li.github.io/tags/Survey/"/>
+    <id>https://love-learning-li.github.io/2026/11/24/Pro2Flash_LLM_Distillation_Survey/</id>
+    <link href="https://love-learning-li.github.io/2026/11/24/Pro2Flash_LLM_Distillation_Survey/"/>
+    <published>2026-11-23T16:00:00.000Z</published>
+    <summary>Pro2Flash 调研全景：围绕「是否已有小参数基座」构建 MECE 两大主题，系统梳理 2024–2026 年 48 篇前沿论文与技术报告，打通预训练软分布与数据筛选、在线 OPD 与非 Logit 裁判 RL、152K 词表算子、Dense 剪枝/SVD/NAS 与 MoE 改造全链路。</summary>
+    <title>Pro → Flash：大参数到小参数 LLM 高效产出技术全景（2024–2026 蒸馏与非蒸馏综述）</title>
+    <updated>2026-11-24T07:42:16.626Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="LLM 与 AI 系统" scheme="https://love-learning-li.github.io/categories/LLM-%E4%B8%8E-AI-%E7%B3%BB%E7%BB%9F/"/>
+    <category term="LLM" scheme="https://love-learning-li.github.io/tags/LLM/"/>
+    <category term="SFT" scheme="https://love-learning-li.github.io/tags/SFT/"/>
+    <category term="数据质量" scheme="https://love-learning-li.github.io/tags/%E6%95%B0%E6%8D%AE%E8%B4%A8%E9%87%8F/"/>
+    <id>https://love-learning-li.github.io/2026/06/30/Report_on_Quality_Evaluation_Method_for_SFT_Dataset/</id>
+    <link href="https://love-learning-li.github.io/2026/06/30/Report_on_Quality_Evaluation_Method_for_SFT_Dataset/"/>
+    <published>2026-06-29T16:00:00.000Z</published>
+    <summary>系统调研 SFT 数据集质量评估主流方法，涵盖表征与前向探针、数据归因、Loss/Perplexity 及 Reward Model 过滤，服务小参数模型的低成本数据筛选实践。</summary>
+    <title>SFT数据集质量评估方法调研报告</title>
+    <updated>2026-11-24T07:08:44.458Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="模拟与数字 IC" scheme="https://love-learning-li.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97-IC/"/>
+    <category term="SAR ADC" scheme="https://love-learning-li.github.io/tags/SAR-ADC/"/>
+    <id>https://love-learning-li.github.io/2025/07/02/CCLiu_paper_reading/</id>
+    <link href="https://love-learning-li.github.io/2025/07/02/CCLiu_paper_reading/"/>
+    <published>2025-07-01T16:00:00.000Z</published>
+    <summary>研读 C.-C. Liu 系列 SAR ADC 经典论文，梳理非二进制搜索、冗余容错窗口、失配静态参数以及时间交织等关键技术迭代。</summary>
+    <title>CCLiu 论文研读</title>
+    <updated>2026-11-24T08:05:15.458Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="随笔与记录" scheme="https://love-learning-li.github.io/categories/%E9%9A%8F%E7%AC%94%E4%B8%8E%E8%AE%B0%E5%BD%95/"/>
+    <category term="大学生活" scheme="https://love-learning-li.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/"/>
+    <id>https://love-learning-li.github.io/2025/06/18/2025_Spring_final_exam_reveiew/</id>
+    <link href="https://love-learning-li.github.io/2025/06/18/2025_Spring_final_exam_reveiew/"/>
+    <published>2025-06-17T16:00:00.000Z</published>
+    <summary>回顾四川大学微电子 2022 级大三下学期期末考题，整理 IC 设计基础与数字集成电路原理的典型电路、版图与逻辑设计解析。</summary>
+    <title>四川大学微电子2022级大三下期末考试植树</title>
+    <updated>2026-11-24T08:05:15.460Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="模拟与数字 IC" scheme="https://love-learning-li.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97-IC/"/>
+    <category term="模拟IC" scheme="https://love-learning-li.github.io/tags/%E6%A8%A1%E6%8B%9FIC/"/>
+    <id>https://love-learning-li.github.io/2025/06/03/2_stage_amp_parameter_desing_notes/</id>
+    <link href="https://love-learning-li.github.io/2025/06/03/2_stage_amp_parameter_desing_notes/"/>
+    <published>2025-06-02T16:00:00.000Z</published>
+    <summary>记录五管 OTA 加共源极两级运放的调参思路与仿真实践，围绕增益 Av、带宽 GBW、相位裕度 PM 与调零电阻设计总结参数调节经验。</summary>
+    <title>两级运放调参总结</title>
+    <updated>2026-11-24T08:05:15.459Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="模拟与数字 IC" scheme="https://love-learning-li.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97-IC/"/>
+    <category term="SAR ADC" scheme="https://love-learning-li.github.io/tags/SAR-ADC/"/>
+    <id>https://love-learning-li.github.io/2025/05/09/Comparator_offset_calculate/</id>
+    <link href="https://love-learning-li.github.io/2025/05/09/Comparator_offset_calculate/"/>
+    <published>2025-05-08T16:00:00.000Z</published>
+    <summary>结合论文推导 Lewis-Gray 型动态比较器的失调电压，区分系统失配与随机失配，通过 KCL 方程手算阈值电压与迁移率失配引入的输入等效 offset。</summary>
+    <title>比较器offset论文研读</title>
+    <updated>2026-11-24T08:05:15.460Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="模拟与数字 IC" scheme="https://love-learning-li.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97-IC/"/>
+    <category term="verilog" scheme="https://love-learning-li.github.io/tags/verilog/"/>
+    <id>https://love-learning-li.github.io/2025/01/07/8_bits_multiplier/</id>
+    <link href="https://love-learning-li.github.io/2025/01/07/8_bits_multiplier/"/>
+    <published>2025-01-06T16:00:00.000Z</published>
+    <summary>介绍基于 Radix-4 Booth 编码与 Wallace 树压缩的 8 位硬件乘法器设计，包含完整 Verilog 实现、ModelSim 波形仿真与 DE10-Lite FPGA 验证。</summary>
+    <title>FPGA中乘法器的加速运算</title>
+    <updated>2026-11-24T08:05:15.461Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
+    <category term="IC制造" scheme="https://love-learning-li.github.io/tags/IC%E5%88%B6%E9%80%A0/"/>
+    <id>https://love-learning-li.github.io/2025/01/02/50questions_review_IC_manufacture/</id>
+    <link href="https://love-learning-li.github.io/2025/01/02/50questions_review_IC_manufacture/"/>
+    <published>2025-01-01T16:00:00.000Z</published>
+    <summary>以 50 个核心问答系统回顾集成电路制造全流程，覆盖成品率与晶圆尺寸、光刻、氧化、扩散、离子注入、薄膜沉积、刻蚀与封装等关键工艺。</summary>
+    <title>50个问题回顾IC制造</title>
+    <updated>2026-11-24T08:05:15.465Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="随笔与记录" scheme="https://love-learning-li.github.io/categories/%E9%9A%8F%E7%AC%94%E4%B8%8E%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活" scheme="https://love-learning-li.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    <id>https://love-learning-li.github.io/2024/12/31/2024_Annual_Summary/</id>
+    <link href="https://love-learning-li.github.io/2024/12/31/2024_Annual_Summary/"/>
+    <published>2024-12-30T16:00:00.000Z</published>
+    <summary>记录 2024 年的学习、旅行、技术笔记写作与个人博客搭建历程，回顾大二大三期间的成长片段与新年展望。</summary>
+    <title>2024年度总结</title>
+    <updated>2026-11-24T08:05:15.462Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="随笔与记录" scheme="https://love-learning-li.github.io/categories/%E9%9A%8F%E7%AC%94%E4%B8%8E%E8%AE%B0%E5%BD%95/"/>
+    <category term="大学生活" scheme="https://love-learning-li.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB/"/>
+    <id>https://love-learning-li.github.io/2024/12/27/2024_Fall_final_exam_review/</id>
+    <link href="https://love-learning-li.github.io/2024/12/27/2024_Fall_final_exam_review/"/>
+    <published>2024-12-26T16:00:00.000Z</published>
+    <summary>复盘四川大学微电子 2022 级大三上学期模拟集成电路与半导体物理等课程期末考题，附英文专业术语对照与典型大题解析。</summary>
+    <title>四川大学微电子2022级大三上期末考试植树</title>
+    <updated>2026-11-24T08:05:15.462Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
+    <category term="IC工艺" scheme="https://love-learning-li.github.io/tags/IC%E5%B7%A5%E8%89%BA/"/>
+    <id>https://love-learning-li.github.io/2024/12/09/IC_Manufacture_test_10problems/</id>
+    <link href="https://love-learning-li.github.io/2024/12/09/IC_Manufacture_test_10problems/"/>
+    <published>2024-12-08T16:00:00.000Z</published>
+    <summary>围绕萧宏版 IC 工艺教材前五章梳理 10 个核心问题，深入解析 12 英寸晶圆、高 k 与低 k 介质、DRAM 读写、外延层、栅氧微缩与金属硅化物等工艺要点。</summary>
+    <title>IC工艺课的10个问题总结-I</title>
+    <updated>2026-11-24T08:05:15.463Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
+    <category term="半导体物理" scheme="https://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    <id>https://love-learning-li.github.io/2024/12/06/the_potential_barrier/</id>
+    <link href="https://love-learning-li.github.io/2024/12/06/the_potential_barrier/"/>
+    <published>2024-12-05T16:00:00.000Z</published>
+    <summary>从能带图与内建电场的物理直觉出发，梳理 PN 结统一费米能级、正向偏压下能带移动规律以及金属-半导体接触中的两类势垒概念。</summary>
+    <title>关于势垒及衍生问题的一些思考</title>
+    <updated>2026-11-24T07:09:28.046Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
+    <category term="半导体物理" scheme="https://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    <id>https://love-learning-li.github.io/2024/11/28/semiconductor_physics_midterm_test/</id>
+    <link href="https://love-learning-li.github.io/2024/11/28/semiconductor_physics_midterm_test/"/>
+    <published>2024-11-27T16:00:00.000Z</published>
+    <summary>整理 2024-2025 学年第一学期半导体物理期中开卷考试 A 卷原题与详细参考解析，涵盖载流子复合、散射迁移率、硅晶向面密度与少子寿命分析。</summary>
+    <title>半导体物理半期考试参考解析</title>
+    <updated>2026-11-24T08:05:15.463Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
+    <category term="半导体物理" scheme="https://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    <id>https://love-learning-li.github.io/2024/09/25/Hydrogen_like_model/</id>
+    <link href="https://love-learning-li.github.io/2024/09/25/Hydrogen_like_model/"/>
+    <published>2024-09-24T16:00:00.000Z</published>
+    <summary>从玻尔三大假设出发推导氢原子轨道半径与能级表达式，并引入相对介电常数与有效质量修正，得到半导体杂质原子的类氢原子模型。</summary>
+    <title>氢原子模型和类氢原子模型</title>
+    <updated>2026-11-24T07:09:41.444Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
+    <category term="半导体物理" scheme="https://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    <id>https://love-learning-li.github.io/2024/09/25/Degenerate_degenerate_intrinsic_doping/</id>
+    <link href="https://love-learning-li.github.io/2024/09/25/Degenerate_degenerate_intrinsic_doping/"/>
+    <published>2024-09-24T16:00:00.000Z</published>
+    <summary>辨析半导体物理中简并（退化）与非简并、本征与掺杂四组核心概念，结合费米-狄拉克分布与玻尔兹曼近似条件解释重掺杂下的能隙收缩效应。</summary>
+    <title>简并or退化？本征or掺杂？</title>
+    <updated>2026-11-24T07:09:33.160Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Love-learning-Li</name>
+    </author>
+    <category term="模拟与数字 IC" scheme="https://love-learning-li.github.io/categories/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97-IC/"/>
+    <category term="模集(拉扎维)" scheme="https://love-learning-li.github.io/tags/%E6%A8%A1%E9%9B%86-%E6%8B%89%E6%89%8E%E7%BB%B4/"/>
+    <id>https://love-learning-li.github.io/2024/09/10/Transmission_gate_CMOS_circuit/</id>
+    <link href="https://love-learning-li.github.io/2024/09/10/Transmission_gate_CMOS_circuit/"/>
+    <published>2024-09-09T16:00:00.000Z</published>
+    <summary>从导电沟道产生条件出发，逐一分析控制信号取高或取低时 CMOS 传输门中 NMOS 与 PMOS 的导通机制，并给出二选一数据选择器电路实现。</summary>
+    <title>利用传输门做二选一选择器的CMOS电路分析</title>
+    <updated>2026-11-24T08:05:15.464Z</updated>
+  </entry>
+</feed>
