@@ -16,8 +16,8 @@
       <name>Love-learning-Li</name>
     </author>
     <category term="LLM 与 AI 系统" scheme="https://love-learning-li.github.io/categories/LLM-%E4%B8%8E-AI-%E7%B3%BB%E7%BB%9F/"/>
-    <category term="Pro2Flash" scheme="https://love-learning-li.github.io/tags/Pro2Flash/"/>
     <category term="LLM" scheme="https://love-learning-li.github.io/tags/LLM/"/>
+    <category term="Pro2Flash" scheme="https://love-learning-li.github.io/tags/Pro2Flash/"/>
     <category term="Knowledge Distillation" scheme="https://love-learning-li.github.io/tags/Knowledge-Distillation/"/>
     <category term="On-Policy Distillation" scheme="https://love-learning-li.github.io/tags/On-Policy-Distillation/"/>
     <category term="Model Compression" scheme="https://love-learning-li.github.io/tags/Model-Compression/"/>
@@ -195,12 +195,12 @@
     </author>
     <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
     <category term="半导体物理" scheme="https://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"/>
-    <id>https://love-learning-li.github.io/2024/09/25/Hydrogen_like_model/</id>
-    <link href="https://love-learning-li.github.io/2024/09/25/Hydrogen_like_model/"/>
+    <id>https://love-learning-li.github.io/2024/09/25/Degenerate_degenerate_intrinsic_doping/</id>
+    <link href="https://love-learning-li.github.io/2024/09/25/Degenerate_degenerate_intrinsic_doping/"/>
     <published>2024-09-24T16:00:00.000Z</published>
-    <summary>从玻尔三大假设出发推导氢原子轨道半径与能级表达式，并引入相对介电常数与有效质量修正，得到半导体杂质原子的类氢原子模型。</summary>
-    <title>氢原子模型和类氢原子模型</title>
-    <updated>2026-11-24T07:09:41.444Z</updated>
+    <summary>辨析半导体物理中简并（退化）与非简并、本征与掺杂四组核心概念，结合费米-狄拉克分布与玻尔兹曼近似条件解释重掺杂下的能隙收缩效应。</summary>
+    <title>简并or退化？本征or掺杂？</title>
+    <updated>2026-11-24T07:09:33.160Z</updated>
   </entry>
   <entry>
     <author>
@@ -208,12 +208,12 @@
     </author>
     <category term="半导体与微电子工艺" scheme="https://love-learning-li.github.io/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%B8%8E%E5%BE%AE%E7%94%B5%E5%AD%90%E5%B7%A5%E8%89%BA/"/>
     <category term="半导体物理" scheme="https://love-learning-li.github.io/tags/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/"/>
-    <id>https://love-learning-li.github.io/2024/09/25/Degenerate_degenerate_intrinsic_doping/</id>
-    <link href="https://love-learning-li.github.io/2024/09/25/Degenerate_degenerate_intrinsic_doping/"/>
+    <id>https://love-learning-li.github.io/2024/09/25/Hydrogen_like_model/</id>
+    <link href="https://love-learning-li.github.io/2024/09/25/Hydrogen_like_model/"/>
     <published>2024-09-24T16:00:00.000Z</published>
-    <summary>辨析半导体物理中简并（退化）与非简并、本征与掺杂四组核心概念，结合费米-狄拉克分布与玻尔兹曼近似条件解释重掺杂下的能隙收缩效应。</summary>
-    <title>简并or退化？本征or掺杂？</title>
-    <updated>2026-11-24T07:09:33.160Z</updated>
+    <summary>从玻尔三大假设出发推导氢原子轨道半径与能级表达式，并引入相对介电常数与有效质量修正，得到半导体杂质原子的类氢原子模型。</summary>
+    <title>氢原子模型和类氢原子模型</title>
+    <updated>2026-11-24T07:09:41.444Z</updated>
   </entry>
   <entry>
     <author>
